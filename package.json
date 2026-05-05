@@ -1,0 +1,16 @@
+{
+  "name": "redmine-tests",
+  "version": "1.0.0",
+  "description": "Playwright tests for Redmine site",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "report": "allure generate allure-results --clean",
+    "open-report": "allure open allure-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "allure-playwright": "^2.9.2",
+    "allure-commandline": "^2.24.0"
+  }
+}
