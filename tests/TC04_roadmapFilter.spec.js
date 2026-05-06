@@ -12,7 +12,7 @@ test.describe('Roadmap Filter Tests', () => {
     homePage = new HomePage(page)
     roadmapPage = new RoadmapPage(page)
     await homePage.navigate('/')
-    await expect(page).toHaveURL('/')
+    await expect(page).toHaveURL('https://www.redmine.org/')
   })
 
   test('TC04 - Filtering roadmap by tracker type "Defect" only', async ({ page }) => {

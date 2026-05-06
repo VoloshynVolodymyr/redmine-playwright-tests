@@ -12,7 +12,7 @@ test.describe('Search Functionality Tests', () => {
     homePage = new HomePage(page)
     searchPage = new SearchPage(page)
     await homePage.navigate('/')
-    await expect(page).toHaveURL('/')
+    await expect(page).toHaveURL('https://www.redmine.org/')
   })
 
   test('TC03 - Searching the website using a non-existent keyword ("abracadabra")', async ({

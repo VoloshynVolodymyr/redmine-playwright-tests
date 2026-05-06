@@ -12,7 +12,7 @@ test.describe('Wiki Filtering Date Index Tests', () => {
     homePage = new HomePage(page)
     wikiPage = new WikiPage(page)
     await homePage.navigate('/')
-    await expect(page).toHaveURL('/')
+    await expect(page).toHaveURL('https://www.redmine.org/')
   })
 
   test('TC01 - Verification of descending order on the "Index by date" wiki page', async ({

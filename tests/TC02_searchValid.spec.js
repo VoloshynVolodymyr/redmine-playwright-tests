@@ -12,11 +12,16 @@ test.describe('Search Functionality Tests', () => {
     homePage = new HomePage(page)
     searchPage = new SearchPage(page)
     await homePage.navigate('/')
-    await expect(page).toHaveURL('/')
+    await expect(page).toHaveURL('https://www.redmine.org/')
   })
 
   test('TC02 - Searching the website using a valid keyword ("agenda")', async ({ page }) => {
     const validKeyword = 'agenda'
+
+    await test.step('Navigate to Redmine.org homepage', async () => {
+      await homePage.navigate('/')
+      await expect(page).toHaveURL('/')
+    })
 
     await test.step('Enter search keyword "agenda" and press Enter', async () => {
       await homePage.search(validKeyword)

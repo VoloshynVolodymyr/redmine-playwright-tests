@@ -6,7 +6,7 @@ test.describe('REST API Tests', () => {
   test('TC05 - Retrieve a list of public issues in JSON format via REST API', async ({
     request
   }) => {
-    const response = await request.get('/issues.json')
+    const response = await request.get('https://www.redmine.org/issues.json')
 
     await test.step('Verify HTTP status code is 200 OK', async () => {
       expect(response.status()).toBe(200)
