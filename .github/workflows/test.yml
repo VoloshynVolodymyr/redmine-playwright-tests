@@ -7,7 +7,7 @@ on:
     branches: [main, master]
   workflow_dispatch: # Дозволяє ручний запуск
 
-  permissions:
+permissions:
   contents: write
   pages: write
   id-token: write
