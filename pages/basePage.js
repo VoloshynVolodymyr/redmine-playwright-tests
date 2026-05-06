@@ -1,12 +1,10 @@
 export class BasePage {
   constructor(page) {
     this.page = page
-    this.baseUrl = process.env.PLAYWRIGHT_BASE_URL || 'https://www.redmine.org'
   }
 
   async navigate(path = '') {
-    const url = path.startsWith('http') ? path : `${this.baseUrl}${path}`
-    await this.page.goto(url)
+    await this.page.goto(path)
     await this.page.waitForLoadState('networkidle')
   }
 
