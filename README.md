@@ -1,27 +1,31 @@
-# Redmine Tests
+# Redmine.org Test Automation
 
-Playwright tests for Redmine site with Page Object Model (POM) and Allure reporting.
+[![Playwright Tests](https://github.com/YOUR_USERNAME/redmine-tests/actions/workflows/test.yml/badge.svg)](https://github.com/YOUR_USERNAME/redmine-tests/actions/workflows/test.yml)
+[![GitHub Pages](https://img.shields.io/badge/Allure-Report-blue)](https://YOUR_USERNAME.github.io/redmine-tests)
 
-## Setup
+## 📋 Test Coverage
 
-1. Install dependencies: `npm install`
-2. Install Playwright browsers: `npx playwright install`
-3. Run tests: `npm test`
-4. Generate Allure report: `npm run report`
-5. Open Allure report: `npm run open-report`
+| TC ID | Test Case Name                                                     | Priority | Area    |
+| ----- | ------------------------------------------------------------------ | -------- | ------- |
+| TC01  | Verification of descending order on the "Index by date" wiki page  | Medium   | Wiki    |
+| TC02  | Searching the website using a valid keyword ("agenda")             | High     | Search  |
+| TC03  | Searching the website using a non-existent keyword ("abracadabra") | Medium   | Search  |
+| TC04  | Filtering roadmap by tracker type "Defect" only                    | High     | Roadmap |
+| TC05  | [API] Retrieve a list of public issues in JSON format              | Medium   | API     |
 
-## Test Cases
+## 🚀 Quick Start
 
-- **TC003**: Check date sorting in Wiki Date Index
-- **TC004**: Search for existing word
-- **TC005**: Search for non-existing word
-- **TC006**: Filter defects in Roadmap
-- **TC007**: API test for issues
+```bash
+# Install dependencies
+npm install
 
-## Project Structure
+# Run all tests
+npm test
 
-- `pages/`: Page Object Model classes
-- `tests/`: Test specifications
-- `utils/`: Helper utilities
-- `config/`: Playwright configuration
-- `.github/workflows/`: CI/CD pipeline
+# Run specific test
+npx playwright test tests/TC01_indexByDate.spec.js
+
+# Generate Allure report
+npm run report:generate
+npm run report:open
+```

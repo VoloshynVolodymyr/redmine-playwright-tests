@@ -1,16 +1,27 @@
 {
   "name": "redmine-tests",
   "version": "1.0.0",
-  "description": "Playwright tests for Redmine site",
+  "description": "Playwright tests for Redmine.org with Allure report",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "playwright test",
-    "report": "allure generate allure-results --clean",
-    "open-report": "allure open allure-report"
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "test:api": "npx playwright test tests/TC05_apiIssues.spec.js",
+    "test:ui": "npx playwright test tests/TC01_*.spec.js tests/TC02_*.spec.js tests/TC03_*.spec.js tests/TC04_*.spec.js",
+    "report:generate": "npx allure generate allure-results -o allure-report --clean",
+    "report:open": "npx allure open allure-report",
+    "report:serve": "npx allure serve allure-results",
+    "lint": "eslint ."
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "@playwright/test": "^1.40.0",
+    "allure-commandline": "^2.24.0",
     "allure-playwright": "^2.9.2",
-    "allure-commandline": "^2.24.0"
+    "eslint": "^10.3.0",
+    "eslint-plugin-playwright": "^2.10.2",
+    "globals": "^17.6.0"
   }
 }

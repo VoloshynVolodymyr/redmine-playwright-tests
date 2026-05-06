@@ -1,30 +1,27 @@
-import { BasePage } from './basePage.js';
+import { BasePage } from './basePage.js'
 
 export class SearchPage extends BasePage {
   constructor(page) {
-    super(page);
-    this.searchUrl = '/search';
-    this.searchInput = '#q'; // Assuming search input id
-    this.searchButton = 'input[type="submit"]';
-    this.resultsSelector = '.search-results'; // Assuming results container
-    this.noResultsSelector = '.no-results'; // Assuming no results message
+    super(page)
+    this.resultsContainer = '#search-results'
+    this.resultItems = 'span.description'
+    this.resultCountHeading = 'h3:has(~ #search-results)'
+    this.highlightedWord = '.highlight'
+    this.searchInput = '#q'
   }
 
-  async goToSearch() {
-    await this.navigate(this.searchUrl);
+  async getSearchInputValue() {
+    return await this.page.inputValue(this.searchInput)
+  }
+  async getResultCount() {
+    const text = await this.page.textContent(this.resultCountHeading)
+    const match = text.match(/\((\d+)\)/)
+    return match ? parseInt(match[1]) : 0
   }
 
-  async performSearch(query) {
-    await this.type(this.searchInput, query);
-    await this.click(this.searchButton);
-    await this.waitForLoad();
-  }
-
-  async hasResults() {
-    return await this.page.isVisible(this.resultsSelector);
-  }
-
-  async hasNoResults() {
-    return await this.page.isVisible(this.noResultsSelector);
+  async getHighlightedTexts() {
+    return await this.page.$$eval(this.highlightedWord, (elements) =>
+      elements.map((el) => el.textContent)
+    )
   }
 }
