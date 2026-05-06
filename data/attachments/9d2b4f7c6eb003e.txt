@@ -1,0 +1,7 @@
+HTTP Status: 200
+Response body is valid JSON
+Found 25 issues
+First issue ID: 44024, Subject: Add REST API support for configuring project-specific time tracking activities
+Total issues: 4777
+Offset: 0
+Limit: 25
