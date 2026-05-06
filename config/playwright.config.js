@@ -5,6 +5,7 @@ export default defineConfig({
   timeout: 30000,
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 2 : undefined,
+
   use: {
     baseURL: 'https://www.redmine.org',
     headless: true,
@@ -12,6 +13,7 @@ export default defineConfig({
     video: 'retain-on-failure',
     trace: 'on-first-retry'
   },
+
   reporter: [
     ['line'],
     [
@@ -22,6 +24,7 @@ export default defineConfig({
       }
     ]
   ],
+
   projects: [
     {
       name: 'chromium',
