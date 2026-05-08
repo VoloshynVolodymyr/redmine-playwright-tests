@@ -1,0 +1,7 @@
+HTTP Status: 200
+Response body is valid JSON
+Found 25 issues
+First issue ID: 44039, Subject: Перенос на систему мониторинга ИБ  всех наших систем
+Total issues: 4779
+Offset: 0
+Limit: 25
