@@ -1,0 +1,7 @@
+HTTP Status: 200
+Response body is valid JSON
+Found 25 issues
+First issue ID: 44037, Subject: To be independent of the version of the Tabler library
+Total issues: 4777
+Offset: 0
+Limit: 25
