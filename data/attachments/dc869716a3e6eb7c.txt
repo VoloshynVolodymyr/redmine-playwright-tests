@@ -1,0 +1,7 @@
+HTTP Status: 200
+Response body is valid JSON
+Found 25 issues
+First issue ID: 44042, Subject: Watchers section in the sidebar is incorrectly updated when watching a subtasks or related issue via context menu
+Total issues: 4778
+Offset: 0
+Limit: 25
