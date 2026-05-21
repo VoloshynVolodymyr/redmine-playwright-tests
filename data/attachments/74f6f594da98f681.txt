@@ -1,0 +1,7 @@
+HTTP Status: 200
+Response body is valid JSON
+Found 25 issues
+First issue ID: 44074, Subject: ignored and unnecessary scope in twofa token lookup
+Total issues: 4784
+Offset: 0
+Limit: 25
