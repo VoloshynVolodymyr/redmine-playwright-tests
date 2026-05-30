@@ -1,0 +1,7 @@
+HTTP Status: 200
+Response body is valid JSON
+Found 25 issues
+First issue ID: 44127, Subject: Replace group avatar icon with SVG
+Total issues: 4780
+Offset: 0
+Limit: 25
