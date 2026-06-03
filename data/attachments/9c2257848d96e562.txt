@@ -1,0 +1,7 @@
+HTTP Status: 200
+Response body is valid JSON
+Found 25 issues
+First issue ID: 44135, Subject: Hide closed projects from the project list in Tracker settings
+Total issues: 4782
+Offset: 0
+Limit: 25
