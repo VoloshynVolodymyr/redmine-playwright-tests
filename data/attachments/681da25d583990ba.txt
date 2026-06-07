@@ -1,0 +1,7 @@
+HTTP Status: 200
+Response body is valid JSON
+Found 25 issues
+First issue ID: 44153, Subject: Include associated projects in issue custom fields API response
+Total issues: 4778
+Offset: 0
+Limit: 25
