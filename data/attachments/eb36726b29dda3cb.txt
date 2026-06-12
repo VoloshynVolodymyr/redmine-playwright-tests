@@ -1,0 +1,7 @@
+HTTP Status: 200
+Response body is valid JSON
+Found 25 issues
+First issue ID: 44165, Subject: Basic authentication challenge is sent for API key authentication failures
+Total issues: 4774
+Offset: 0
+Limit: 25
