@@ -1,0 +1,7 @@
+HTTP Status: 200
+Response body is valid JSON
+Found 25 issues
+First issue ID: 44184, Subject: Traditional Chinese translation (to r24781)
+Total issues: 4775
+Offset: 0
+Limit: 25
