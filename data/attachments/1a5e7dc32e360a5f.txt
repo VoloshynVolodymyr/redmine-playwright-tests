@@ -1,0 +1,7 @@
+HTTP Status: 200
+Response body is valid JSON
+Found 25 issues
+First issue ID: 44188, Subject: Подготовить программу мероприятия «День первокурсника»
+Total issues: 4775
+Offset: 0
+Limit: 25
