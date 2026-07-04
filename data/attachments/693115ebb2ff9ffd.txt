@@ -1,0 +1,7 @@
+HTTP Status: 200
+Response body is valid JSON
+Found 25 issues
+First issue ID: 44230, Subject: New hook for :view_issues_new_bottom
+Total issues: 4776
+Offset: 0
+Limit: 25
