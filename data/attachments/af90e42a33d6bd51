@@ -1,0 +1,78 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: TC005_apiIssues.spec.js >> REST API Tests >> TC05 - Retrieve a list of public issues in JSON format via REST API
+- Location: tests/TC005_apiIssues.spec.js:6:3
+
+# Error details
+
+```
+Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 200
+Received: 503
+```
+
+# Test source
+
+```ts
+  1  | // tests/TC05_apiIssues.spec.js
+  2  | 
+  3  | import { test, expect } from '@playwright/test'
+  4  | 
+  5  | test.describe('REST API Tests', () => {
+  6  |   test('TC05 - Retrieve a list of public issues in JSON format via REST API', async ({
+  7  |     request
+  8  |   }) => {
+  9  |     const response = await request.get('https://www.redmine.org/issues.json')
+  10 | 
+  11 |     await test.step('Verify HTTP status code is 200 OK', async () => {
+> 12 |       expect(response.status()).toBe(200)
+     |                                 ^ Error: expect(received).toBe(expected) // Object.is equality
+  13 |       console.log(`HTTP Status: ${response.status()}`)
+  14 |     })
+  15 | 
+  16 |     let responseBody
+  17 | 
+  18 |     await test.step('Verify response body is valid JSON', async () => {
+  19 |       responseBody = await response.json()
+  20 |       expect(responseBody).toBeDefined()
+  21 |       console.log('Response body is valid JSON')
+  22 |     })
+  23 | 
+  24 |     await test.step('Verify root element is an issues array with at least one issue', async () => {
+  25 |       expect(responseBody).toHaveProperty('issues')
+  26 |       expect(Array.isArray(responseBody.issues)).toBe(true)
+  27 |       expect(responseBody.issues.length).toBeGreaterThan(0)
+  28 | 
+  29 |       const firstIssue = responseBody.issues[0]
+  30 |       console.log(`Found ${responseBody.issues.length} issues`)
+  31 |       console.log(`First issue ID: ${firstIssue.id}, Subject: ${firstIssue.subject}`)
+  32 | 
+  33 |       expect(firstIssue).toHaveProperty('id')
+  34 |       expect(firstIssue).toHaveProperty('subject')
+  35 |       expect(firstIssue).toHaveProperty('status')
+  36 |     })
+  37 | 
+  38 |     await test.step('Verify pagination metadata (total_count, offset, limit) is present', async () => {
+  39 |       expect(responseBody).toHaveProperty('total_count')
+  40 |       expect(responseBody).toHaveProperty('offset')
+  41 |       expect(responseBody).toHaveProperty('limit')
+  42 | 
+  43 |       console.log(`Total issues: ${responseBody.total_count}`)
+  44 |       console.log(`Offset: ${responseBody.offset}`)
+  45 |       console.log(`Limit: ${responseBody.limit}`)
+  46 | 
+  47 |       expect(typeof responseBody.total_count).toBe('number')
+  48 |       expect(typeof responseBody.offset).toBe('number')
+  49 |       expect(typeof responseBody.limit).toBe('number')
+  50 |     })
+  51 |   })
+  52 | })
+  53 | 
+```
