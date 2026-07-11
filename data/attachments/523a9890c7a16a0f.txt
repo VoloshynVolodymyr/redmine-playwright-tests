@@ -1,0 +1,7 @@
+HTTP Status: 200
+Response body is valid JSON
+Found 25 issues
+First issue ID: 44257, Subject: Wiki page "Rename" form does not refresh "Parent page" options when "Project" is changed
+Total issues: 4783
+Offset: 0
+Limit: 25
