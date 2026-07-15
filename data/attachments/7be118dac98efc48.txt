@@ -1,0 +1,7 @@
+HTTP Status: 200
+Response body is valid JSON
+Found 25 issues
+First issue ID: 44261, Subject: Restrict user mentions to project members to prevent unintended notifications to non-members
+Total issues: 4786
+Offset: 0
+Limit: 25
