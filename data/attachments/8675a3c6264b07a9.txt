@@ -1,0 +1,7 @@
+HTTP Status: 200
+Response body is valid JSON
+Found 25 issues
+First issue ID: 44271, Subject: OAuth token scopes ignored for issue edit, notes and delete
+Total issues: 4788
+Offset: 0
+Limit: 25
