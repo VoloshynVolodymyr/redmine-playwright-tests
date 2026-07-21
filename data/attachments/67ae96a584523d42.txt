@@ -1,0 +1,7 @@
+HTTP Status: 200
+Response body is valid JSON
+Found 25 issues
+First issue ID: 44277, Subject: Translation missing: text_users_remove_from_group_confirmation
+Total issues: 4791
+Offset: 0
+Limit: 25
