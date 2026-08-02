@@ -1,0 +1,2882 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: TC01_indexByDate.spec.js >> Wiki Filtering Date Index Tests >> TC01 - Verification of descending order on the "Index by date" wiki page
+- Location: tests/TC01_indexByDate.spec.js:18:3
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: page.waitForLoadState: Test timeout of 30000ms exceeded.
+=========================== logs ===========================
+  "domcontentloaded" event fired
+  "load" event fired
+============================================================
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - list:
+          - listitem [ref=e7]:
+            - link "Sign in" [ref=e8] [cursor=pointer]:
+              - /url: /login
+          - listitem [ref=e9]:
+            - link "Register" [ref=e10] [cursor=pointer]:
+              - /url: /account/register
+      - list:
+        - listitem [ref=e11]:
+          - link "Home" [ref=e12] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=e13]:
+          - link "Projects" [ref=e14] [cursor=pointer]:
+            - /url: /projects
+        - listitem [ref=e15]:
+          - link "Help" [ref=e16] [cursor=pointer]:
+            - /url: https://www.redmine.org/guide
+    - generic [ref=e17]:
+      - generic [ref=e18]:
+        - generic [ref=e19]:
+          - generic [ref=e20]:
+            - link "Search" [ref=e21] [cursor=pointer]:
+              - /url: /projects/redmine/search?scope=subprojects
+            - text: ":"
+          - textbox "Search:" [ref=e22]
+        - generic [ref=e24] [cursor=pointer]: Redmine
+      - heading "Redmine" [level=1] [ref=e25]
+      - list [ref=e27]:
+        - listitem [ref=e28]:
+          - link "Overview" [ref=e29] [cursor=pointer]:
+            - /url: /projects/redmine
+        - listitem [ref=e30]:
+          - link "Download" [ref=e31] [cursor=pointer]:
+            - /url: /projects/redmine/wiki/Download
+        - listitem [ref=e32]:
+          - link "Activity" [ref=e33] [cursor=pointer]:
+            - /url: /projects/redmine/activity
+        - listitem [ref=e34]:
+          - link "Roadmap" [ref=e35] [cursor=pointer]:
+            - /url: /projects/redmine/roadmap
+        - listitem [ref=e36]:
+          - link "Issues" [ref=e37] [cursor=pointer]:
+            - /url: /projects/redmine/issues
+        - listitem [ref=e38]:
+          - link "News" [ref=e39] [cursor=pointer]:
+            - /url: /projects/redmine/news
+        - listitem [ref=e40]:
+          - link "Wiki" [ref=e41] [cursor=pointer]:
+            - /url: /projects/redmine/wiki
+        - listitem [ref=e42]:
+          - link "Forums" [ref=e43] [cursor=pointer]:
+            - /url: /projects/redmine/boards
+        - listitem [ref=e44]:
+          - link "Repository" [ref=e45] [cursor=pointer]:
+            - /url: /projects/redmine/repository
+    - generic [ref=e46]:
+      - generic [ref=e47]:
+        - generic [ref=e48]:
+          - heading "Latest releases" [level=3] [ref=e49]
+          - paragraph [ref=e50]:
+            - link "5.1.13 (2026-06-15)" [ref=e51] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Download
+            - link "6.0.10 (2026-06-15)" [ref=e52] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Download
+            - link "6.1.3 (2026-06-15)" [ref=e53] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Download
+            - link "7.0.0 (2026-06-30)" [ref=e54] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Download
+          - heading "Resources" [level=3] [ref=e55]
+          - paragraph [ref=e56]:
+            - link "User's Guide" [ref=e57] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Guide
+            - link "Developer's Guide" [ref=e58] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Developer_Guide
+            - link "Changelog" [ref=e59] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Changelog
+            - text: ","
+            - link "Security" [ref=e60] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Security_Advisories
+            - link "FAQ" [ref=e61] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FAQ
+            - text: ","
+            - link "HowTo's" [ref=e62] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTos
+            - link "Plugins" [ref=e63] [cursor=pointer]:
+              - /url: /plugins
+            - text: ","
+            - link "Themes" [ref=e64] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Theme_List
+            - link "Privacy Policy" [ref=e65] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PrivacyPolicy
+            - link "Networking" [ref=e66] [cursor=pointer]:
+              - generic [ref=e67]:
+                - img [ref=e69]
+                - text: Networking
+          - heading "Core Development" [level=3] [ref=e71]
+          - paragraph [ref=e72]:
+            - link "Official Subversion repository" [ref=e73] [cursor=pointer]:
+              - /url: https://svn.redmine.org/redmine/
+            - link "GitHub Mirror" [ref=e74] [cursor=pointer]:
+              - /url: https://github.com/redmine/redmine
+            - link "Continuous Integration" [ref=e75] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Continuous_Integration
+          - paragraph [ref=e76]:
+            - link [ref=e77] [cursor=pointer]:
+              - /url: https://github.com/redmine/redmine/actions/workflows/tests.yml
+            - link [ref=e78] [cursor=pointer]:
+              - /url: https://github.com/redmine/redmine/actions/workflows/linters.yml
+        - heading "Wiki" [level=3] [ref=e79]
+        - list [ref=e80]:
+          - listitem [ref=e81]:
+            - link "Start page" [ref=e82] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e83]:
+            - link "Index by title" [ref=e84] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/index
+          - listitem [ref=e85]:
+            - link "Index by date" [ref=e86] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/date_index
+        - insertion [ref=e87]:
+          - iframe [ref=e89]:
+            - generic [active] [ref=f13e1]:
+              - generic [ref=f13e7]:
+                - generic [ref=f13e9]:
+                  - link "Hosta Blanca" [ref=f13e12] [cursor=pointer]:
+                    - /url: https://googleads.g.doubleclick.net/aclk?sa=l&ai=C-4V-_fhuaveBOpCuodAPsrPG2AfBipLTiAH4t7Ok4hWB45z5BRABIMGX9AdgoQKgAZXQxc8DyAEBqQKVG4-62QdYPqgDAcgDywSqBPEBT9CvEsMPE2E6KBbEZFy5WRdqZ_-tT1vmhvoKWKdtIR588Z2xcJwUvLuAMSAukqLkvKye77SxajzjBP75jTE54UDNRBFSfOIsuggpy2Mp1ndw6sPQXho7mgjeKXoiPnOkF2vOBJXgdH_m2Mk-mrR6q2IDRqGOYANAk3c6CxqZh9xqglrsb2p8vrpeN5jGg11z2FJjyIo9N8e0PmQ-8N-M0QU2-XZ0GIO7LNIBXWP8TjQjEF906J4owFh6S2qjYZptkh1CiAgzxEznBxKW_j38mMlWov1YNYb3Moxi6ksrt4kXALSVFRHsSXx_kxdY6xaJkMAEu4Tb_-QFiAX4j7vXWYAH06-6MKgHp8yxAqgHpr4bqAfMzrECqAfz0RuoB5bYG6gHqpuxAqgH_uixAqgHjs4bqAeT2BuoB_DgG6gH7paxAqgH_p6xAqgHr76xAqgHn-GxAqgH1ckbqAfZtrECqAeaBqgH_56xAqgH35-xAqgH-MKxAqgH-8KxAtgHAdIIMwiAYRABGJ8DMgiKgoCAgICACDoPgECAwICAgICogAKog4AQSL39wTpYg9bD9ryBlgNgAbEJECMyWzpnW4OACgGYCwHICwGiDAwqCgoIjt-xApXisQKqDQJHSMgNAeoNEwjD-MP2vIGWAxUQVwgEHbKZEXvwDQKIDgXYEwOIFAHQFQHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRIC8FkYASIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMIt_TD9ryBlgMVEFcIBB2ymRF7EAEYASAAEgJ9bPD_BwE&num=1&cid=CAQS8wEAEQoqgX3UmFhQRiE7dN4Btg6A42RiOyEkwX2ayM_WNER65NvKtOr_kgDxHV7nQsfprBn-A4b2LMgxuj7IkarGawoANyx6nnikalcrV7_RnWE3Iz2PtNJ8F4xXlhX73J4LjE-MxiZ_kbE-lfEKkO0cbtznEAfoewzcS-ZxHfZKMa3BA9kEsKzdkYaqjW2uY1nTn5OuaHSkURG4f4KvI_DOIqhVYO_eyUCn2jgvzkWorj5xs3u-GTfh228Yjs03UJNdCtvxmjI23GiZjN2ZleAuRzfs8f3MxHF0L7I55tJMaKRpLbtHxAnMp4Xl6nJoM1g7L-IYAQ&sig=AOD64_3MZNzwi_-YngU1AMNsM39CpTZ6qg&client=ca-pub-0447284344517370&rf=1&nb=19&adurl=https://hostablanca.com/vps-hosting/%3Futm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3Dvps_europe_search%26utm_content%3D819032693947%26campaign_id%3D24074176504%26adgroup_id%3D198910067259%26target_id%3D%26match_type%3D%26network%3Dd%26device%3Dc%26creative_id%3D819032693947%26gad_source%3D5%26gad_campaignid%3D24074176504%26gclid%3DEAIaIQobChMIt_TD9ryBlgMVEFcIBB2ymRF7EAEYASAAEgJ9bPD_BwE
+                    - img "Hosta Blanca" [ref=f13e13]
+                  - generic "Hosta Blanca" [ref=f13e15]:
+                    - link "Spain & Germany VPS Servers" [ref=f13e16] [cursor=pointer]:
+                      - /url: https://googleads.g.doubleclick.net/aclk?sa=l&ai=C-4V-_fhuaveBOpCuodAPsrPG2AfBipLTiAH4t7Ok4hWB45z5BRABIMGX9AdgoQKgAZXQxc8DyAEBqQKVG4-62QdYPqgDAcgDywSqBPEBT9CvEsMPE2E6KBbEZFy5WRdqZ_-tT1vmhvoKWKdtIR588Z2xcJwUvLuAMSAukqLkvKye77SxajzjBP75jTE54UDNRBFSfOIsuggpy2Mp1ndw6sPQXho7mgjeKXoiPnOkF2vOBJXgdH_m2Mk-mrR6q2IDRqGOYANAk3c6CxqZh9xqglrsb2p8vrpeN5jGg11z2FJjyIo9N8e0PmQ-8N-M0QU2-XZ0GIO7LNIBXWP8TjQjEF906J4owFh6S2qjYZptkh1CiAgzxEznBxKW_j38mMlWov1YNYb3Moxi6ksrt4kXALSVFRHsSXx_kxdY6xaJkMAEu4Tb_-QFiAX4j7vXWYAH06-6MKgHp8yxAqgHpr4bqAfMzrECqAfz0RuoB5bYG6gHqpuxAqgH_uixAqgHjs4bqAeT2BuoB_DgG6gH7paxAqgH_p6xAqgHr76xAqgHn-GxAqgH1ckbqAfZtrECqAeaBqgH_56xAqgH35-xAqgH-MKxAqgH-8KxAtgHAdIIMwiAYRABGJ8DMgiKgoCAgICACDoPgECAwICAgICogAKog4AQSL39wTpYg9bD9ryBlgNgAbEJECMyWzpnW4OACgGYCwHICwGiDAwqCgoIjt-xApXisQKqDQJHSMgNAeoNEwjD-MP2vIGWAxUQVwgEHbKZEXvwDQKIDgXYEwOIFAHQFQHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRIC8FkYASIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMIt_TD9ryBlgMVEFcIBB2ymRF7EAEYASAAEgJ9bPD_BwE&num=1&cid=CAQS8wEAEQoqgX3UmFhQRiE7dN4Btg6A42RiOyEkwX2ayM_WNER65NvKtOr_kgDxHV7nQsfprBn-A4b2LMgxuj7IkarGawoANyx6nnikalcrV7_RnWE3Iz2PtNJ8F4xXlhX73J4LjE-MxiZ_kbE-lfEKkO0cbtznEAfoewzcS-ZxHfZKMa3BA9kEsKzdkYaqjW2uY1nTn5OuaHSkURG4f4KvI_DOIqhVYO_eyUCn2jgvzkWorj5xs3u-GTfh228Yjs03UJNdCtvxmjI23GiZjN2ZleAuRzfs8f3MxHF0L7I55tJMaKRpLbtHxAnMp4Xl6nJoM1g7L-IYAQ&sig=AOD64_3MZNzwi_-YngU1AMNsM39CpTZ6qg&client=ca-pub-0447284344517370&rf=1&nb=0&adurl=https://hostablanca.com/vps-hosting/%3Futm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3Dvps_europe_search%26utm_content%3D819032693947%26campaign_id%3D24074176504%26adgroup_id%3D198910067259%26target_id%3D%26match_type%3D%26network%3Dd%26device%3Dc%26creative_id%3D819032693947%26gad_source%3D5%26gad_campaignid%3D24074176504%26gclid%3DEAIaIQobChMIt_TD9ryBlgMVEFcIBB2ymRF7EAEYASAAEgJ9bPD_BwE
+                      - text: Spain &
+                      - text: Germany
+                      - text: VPS
+                      - text: Servers
+                  - link "Scalable Linux VDS with 1 dedicated IPv4, / 64 IPv6, and 99.5% uptime. Deploy today!" [ref=f13e19] [cursor=pointer]:
+                    - /url: https://googleads.g.doubleclick.net/aclk?sa=l&ai=C-4V-_fhuaveBOpCuodAPsrPG2AfBipLTiAH4t7Ok4hWB45z5BRABIMGX9AdgoQKgAZXQxc8DyAEBqQKVG4-62QdYPqgDAcgDywSqBPEBT9CvEsMPE2E6KBbEZFy5WRdqZ_-tT1vmhvoKWKdtIR588Z2xcJwUvLuAMSAukqLkvKye77SxajzjBP75jTE54UDNRBFSfOIsuggpy2Mp1ndw6sPQXho7mgjeKXoiPnOkF2vOBJXgdH_m2Mk-mrR6q2IDRqGOYANAk3c6CxqZh9xqglrsb2p8vrpeN5jGg11z2FJjyIo9N8e0PmQ-8N-M0QU2-XZ0GIO7LNIBXWP8TjQjEF906J4owFh6S2qjYZptkh1CiAgzxEznBxKW_j38mMlWov1YNYb3Moxi6ksrt4kXALSVFRHsSXx_kxdY6xaJkMAEu4Tb_-QFiAX4j7vXWYAH06-6MKgHp8yxAqgHpr4bqAfMzrECqAfz0RuoB5bYG6gHqpuxAqgH_uixAqgHjs4bqAeT2BuoB_DgG6gH7paxAqgH_p6xAqgHr76xAqgHn-GxAqgH1ckbqAfZtrECqAeaBqgH_56xAqgH35-xAqgH-MKxAqgH-8KxAtgHAdIIMwiAYRABGJ8DMgiKgoCAgICACDoPgECAwICAgICogAKog4AQSL39wTpYg9bD9ryBlgNgAbEJECMyWzpnW4OACgGYCwHICwGiDAwqCgoIjt-xApXisQKqDQJHSMgNAeoNEwjD-MP2vIGWAxUQVwgEHbKZEXvwDQKIDgXYEwOIFAHQFQHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRIC8FkYASIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMIt_TD9ryBlgMVEFcIBB2ymRF7EAEYASAAEgJ9bPD_BwE&num=1&cid=CAQS8wEAEQoqgX3UmFhQRiE7dN4Btg6A42RiOyEkwX2ayM_WNER65NvKtOr_kgDxHV7nQsfprBn-A4b2LMgxuj7IkarGawoANyx6nnikalcrV7_RnWE3Iz2PtNJ8F4xXlhX73J4LjE-MxiZ_kbE-lfEKkO0cbtznEAfoewzcS-ZxHfZKMa3BA9kEsKzdkYaqjW2uY1nTn5OuaHSkURG4f4KvI_DOIqhVYO_eyUCn2jgvzkWorj5xs3u-GTfh228Yjs03UJNdCtvxmjI23GiZjN2ZleAuRzfs8f3MxHF0L7I55tJMaKRpLbtHxAnMp4Xl6nJoM1g7L-IYAQ&sig=AOD64_3MZNzwi_-YngU1AMNsM39CpTZ6qg&client=ca-pub-0447284344517370&rf=1&nb=7&adurl=https://hostablanca.com/vps-hosting/%3Futm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3Dvps_europe_search%26utm_content%3D819032693947%26campaign_id%3D24074176504%26adgroup_id%3D198910067259%26target_id%3D%26match_type%3D%26network%3Dd%26device%3Dc%26creative_id%3D819032693947%26gad_source%3D5%26gad_campaignid%3D24074176504%26gclid%3DEAIaIQobChMIt_TD9ryBlgMVEFcIBB2ymRF7EAEYASAAEgJ9bPD_BwE
+                    - text: Scalable Linux
+                    - text: VDS with 1
+                    - text: dedicated IPv4, /
+                    - text: 64 IPv6, and
+                    - text: 99.5% uptime.
+                    - text: Deploy today!
+                  - generic "Hosta Blanca" [ref=f13e20]:
+                    - link "Hosta Blanca" [ref=f13e21] [cursor=pointer]:
+                      - /url: https://googleads.g.doubleclick.net/aclk?sa=l&ai=C-4V-_fhuaveBOpCuodAPsrPG2AfBipLTiAH4t7Ok4hWB45z5BRABIMGX9AdgoQKgAZXQxc8DyAEBqQKVG4-62QdYPqgDAcgDywSqBPEBT9CvEsMPE2E6KBbEZFy5WRdqZ_-tT1vmhvoKWKdtIR588Z2xcJwUvLuAMSAukqLkvKye77SxajzjBP75jTE54UDNRBFSfOIsuggpy2Mp1ndw6sPQXho7mgjeKXoiPnOkF2vOBJXgdH_m2Mk-mrR6q2IDRqGOYANAk3c6CxqZh9xqglrsb2p8vrpeN5jGg11z2FJjyIo9N8e0PmQ-8N-M0QU2-XZ0GIO7LNIBXWP8TjQjEF906J4owFh6S2qjYZptkh1CiAgzxEznBxKW_j38mMlWov1YNYb3Moxi6ksrt4kXALSVFRHsSXx_kxdY6xaJkMAEu4Tb_-QFiAX4j7vXWYAH06-6MKgHp8yxAqgHpr4bqAfMzrECqAfz0RuoB5bYG6gHqpuxAqgH_uixAqgHjs4bqAeT2BuoB_DgG6gH7paxAqgH_p6xAqgHr76xAqgHn-GxAqgH1ckbqAfZtrECqAeaBqgH_56xAqgH35-xAqgH-MKxAqgH-8KxAtgHAdIIMwiAYRABGJ8DMgiKgoCAgICACDoPgECAwICAgICogAKog4AQSL39wTpYg9bD9ryBlgNgAbEJECMyWzpnW4OACgGYCwHICwGiDAwqCgoIjt-xApXisQKqDQJHSMgNAeoNEwjD-MP2vIGWAxUQVwgEHbKZEXvwDQKIDgXYEwOIFAHQFQHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRIC8FkYASIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMIt_TD9ryBlgMVEFcIBB2ymRF7EAEYASAAEgJ9bPD_BwE&num=1&cid=CAQS8wEAEQoqgX3UmFhQRiE7dN4Btg6A42RiOyEkwX2ayM_WNER65NvKtOr_kgDxHV7nQsfprBn-A4b2LMgxuj7IkarGawoANyx6nnikalcrV7_RnWE3Iz2PtNJ8F4xXlhX73J4LjE-MxiZ_kbE-lfEKkO0cbtznEAfoewzcS-ZxHfZKMa3BA9kEsKzdkYaqjW2uY1nTn5OuaHSkURG4f4KvI_DOIqhVYO_eyUCn2jgvzkWorj5xs3u-GTfh228Yjs03UJNdCtvxmjI23GiZjN2ZleAuRzfs8f3MxHF0L7I55tJMaKRpLbtHxAnMp4Xl6nJoM1g7L-IYAQ&sig=AOD64_3MZNzwi_-YngU1AMNsM39CpTZ6qg&client=ca-pub-0447284344517370&rf=1&nb=1&adurl=https://hostablanca.com/vps-hosting/%3Futm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3Dvps_europe_search%26utm_content%3D819032693947%26campaign_id%3D24074176504%26adgroup_id%3D198910067259%26target_id%3D%26match_type%3D%26network%3Dd%26device%3Dc%26creative_id%3D819032693947%26gad_source%3D5%26gad_campaignid%3D24074176504%26gclid%3DEAIaIQobChMIt_TD9ryBlgMVEFcIBB2ymRF7EAEYASAAEgJ9bPD_BwE
+                - link "Open" [ref=f13e24] [cursor=pointer]:
+                  - /url: https://googleads.g.doubleclick.net/aclk?sa=l&ai=C-4V-_fhuaveBOpCuodAPsrPG2AfBipLTiAH4t7Ok4hWB45z5BRABIMGX9AdgoQKgAZXQxc8DyAEBqQKVG4-62QdYPqgDAcgDywSqBPEBT9CvEsMPE2E6KBbEZFy5WRdqZ_-tT1vmhvoKWKdtIR588Z2xcJwUvLuAMSAukqLkvKye77SxajzjBP75jTE54UDNRBFSfOIsuggpy2Mp1ndw6sPQXho7mgjeKXoiPnOkF2vOBJXgdH_m2Mk-mrR6q2IDRqGOYANAk3c6CxqZh9xqglrsb2p8vrpeN5jGg11z2FJjyIo9N8e0PmQ-8N-M0QU2-XZ0GIO7LNIBXWP8TjQjEF906J4owFh6S2qjYZptkh1CiAgzxEznBxKW_j38mMlWov1YNYb3Moxi6ksrt4kXALSVFRHsSXx_kxdY6xaJkMAEu4Tb_-QFiAX4j7vXWYAH06-6MKgHp8yxAqgHpr4bqAfMzrECqAfz0RuoB5bYG6gHqpuxAqgH_uixAqgHjs4bqAeT2BuoB_DgG6gH7paxAqgH_p6xAqgHr76xAqgHn-GxAqgH1ckbqAfZtrECqAeaBqgH_56xAqgH35-xAqgH-MKxAqgH-8KxAtgHAdIIMwiAYRABGJ8DMgiKgoCAgICACDoPgECAwICAgICogAKog4AQSL39wTpYg9bD9ryBlgNgAbEJECMyWzpnW4OACgGYCwHICwGiDAwqCgoIjt-xApXisQKqDQJHSMgNAeoNEwjD-MP2vIGWAxUQVwgEHbKZEXvwDQKIDgXYEwOIFAHQFQHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRIC8FkYASIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMIt_TD9ryBlgMVEFcIBB2ymRF7EAEYASAAEgJ9bPD_BwE&num=1&cid=CAQS8wEAEQoqgX3UmFhQRiE7dN4Btg6A42RiOyEkwX2ayM_WNER65NvKtOr_kgDxHV7nQsfprBn-A4b2LMgxuj7IkarGawoANyx6nnikalcrV7_RnWE3Iz2PtNJ8F4xXlhX73J4LjE-MxiZ_kbE-lfEKkO0cbtznEAfoewzcS-ZxHfZKMa3BA9kEsKzdkYaqjW2uY1nTn5OuaHSkURG4f4KvI_DOIqhVYO_eyUCn2jgvzkWorj5xs3u-GTfh228Yjs03UJNdCtvxmjI23GiZjN2ZleAuRzfs8f3MxHF0L7I55tJMaKRpLbtHxAnMp4Xl6nJoM1g7L-IYAQ&sig=AOD64_3MZNzwi_-YngU1AMNsM39CpTZ6qg&client=ca-pub-0447284344517370&rf=1&nb=8&adurl=https://hostablanca.com/vps-hosting/%3Futm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3Dvps_europe_search%26utm_content%3D819032693947%26campaign_id%3D24074176504%26adgroup_id%3D198910067259%26target_id%3D%26match_type%3D%26network%3Dd%26device%3Dc%26creative_id%3D819032693947%26gad_source%3D5%26gad_campaignid%3D24074176504%26gclid%3DEAIaIQobChMIt_TD9ryBlgMVEFcIBB2ymRF7EAEYASAAEgJ9bPD_BwE
+                  - generic [ref=f13e28]:
+                    - generic [ref=f13e29]: Open
+                    - img [ref=f13e30]
+              - img [ref=f13e35] [cursor=pointer]
+              - button [ref=f13e37] [cursor=pointer]:
+                - img [ref=f13e38]
+              - iframe
+      - generic [ref=e90]:
+        - heading "Index by date" [level=2] [ref=e91]
+        - heading "2026-07-29" [level=3] [ref=e92]
+        - list [ref=e93]:
+          - listitem [ref=e94]:
+            - link "Donors" [ref=e95] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Donors
+        - heading "2026-07-25" [level=3] [ref=e96]
+        - list [ref=e97]:
+          - listitem [ref=e98]:
+            - link "HowTo configure Redmine for advanced git integration" [ref=e99] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_configure_Redmine_for_advanced_git_integration
+        - heading "2026-07-20" [level=3] [ref=e100]
+        - list [ref=e101]:
+          - listitem [ref=e102]:
+            - link "Theme List" [ref=e103] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Theme_List
+        - heading "2026-07-14" [level=3] [ref=e104]
+        - list [ref=e105]:
+          - listitem [ref=e106]:
+            - link "ThirdPartyTools" [ref=e107] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/ThirdPartyTools
+        - heading "2026-07-09" [level=3] [ref=e108]
+        - list [ref=e109]:
+          - listitem [ref=e110]:
+            - link "Continuous integration" [ref=e111] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Continuous_integration
+          - listitem [ref=e112]:
+            - link "Sidebar" [ref=e113] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Sidebar
+        - heading "2026-07-07" [level=3] [ref=e114]
+        - list [ref=e115]:
+          - listitem [ref=e116]:
+            - link "RedmineInstall" [ref=e117] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineInstall
+          - listitem [ref=e118]:
+            - link "Themes" [ref=e119] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Themes
+        - heading "2026-06-30" [level=3] [ref=e120]
+        - list [ref=e121]:
+          - listitem [ref=e122]:
+            - link "Changelog" [ref=e123] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Changelog
+          - listitem [ref=e124]:
+            - link "Changelog 7 0" [ref=e125] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Changelog_7_0
+          - listitem [ref=e126]:
+            - link "Download" [ref=e127] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Download
+        - heading "2026-06-16" [level=3] [ref=e128]
+        - insertion [ref=e130]:
+          - iframe [ref=e132]:
+            - generic [active] [ref=f15e1]:
+              - generic [ref=f15e6]:
+                - generic [ref=f15e7]:
+                  - generic "Hosta Blanca" [ref=f15e9]:
+                    - link "Spain & Germany VPS Servers" [ref=f15e10] [cursor=pointer]:
+                      - /url: https://googleads.g.doubleclick.net/aclk?sa=l&ai=Cgnsx_vhuavfJH8-fodAPsJfzgATBipLTiAH4t7Ok4hWB45z5BRABIMGX9AdgoQKgAZXQxc8DyAEBqQKVG4-62QdYPqgDAcgDywSqBPQBT9AKe3sfvKaR9VK_4XJCJXi12zZc1ESoCqh8pzljj6UdsBnFe75-BBuh4vhrXoTbFyl7TgnU3nFkOxmjgHzB6j0LFhd1zDs2OTZsL_bN5PkbT7ok9od_EFizr_VIrVuVWl8LMU6g2R4du1UEWFhts2GjpyUW4jfxoQjBxW7JtNaLzRiCDKXgCaqZOXggACGVKTUibB8xbt15hqyMv31Z-P5Nbf47UKiEM-dMVktNaFsIvZ5Z9CNIiPsTUHWPy08UgjE2aiFm_m83eqIT4gFTkXZAII1NRAV8W_KW9uo_TUmpAH_xGTN4Irpg2zodEu8V0M1Qt8AEu4Tb_-QFiAX4j7vXWYAH06-6MKgHp8yxAqgHpr4bqAfMzrECqAfz0RuoB5bYG6gHqpuxAqgH_uixAqgHjs4bqAeT2BuoB_DgG6gH7paxAqgH_p6xAqgHr76xAqgHn-GxAqgH1ckbqAfZtrECqAeaBqgH_56xAqgH35-xAqgH-MKxAqgH-8KxAtgHAdIIMwiAYRABGJ8DMgiKgoCAgICACDoPgECAwICAgICogAKog4AQSL39wTpYytPg9ryBlgNgAbEJECMyWzpnW4OACgGYCwHICwGiDAwqCgoIjt-xApXisQKqDQJHSMgNAeoNEwiixeb2vIGWAxXPTwgEHbDLHEDwDQKIDgnYEwOIFAHQFQHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRIC8FkYASIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMI98Dm9ryBlgMVz08IBB2wyxxAEAEYASAAEgLq-PD_BwE&num=1&cid=CAQS8wEAEQoqgRV52XWDSey3WqncujyTieOs2Hjc_qfF-sf4itCuTfGfMz7_1rMYoNngdjPfsZOYSBIEF6rxJWs4fLBUglqt5sEbCirxSiBmIAizRhsuOKFwE-uQknVb5ZIFxURox7aVfKwlKAffC5-WadfmT4zjVfL2uT8uJF0WuZo8UjlU2PYsmGFx8hVja7uOQLftm2SqS8oG-PlY2j3NyDKOOSRLM2W17FQPiJT4oSy69ICw4rhZbP-dxsDu2eKNLiqD3-HWJpTZ5I2ZyB6Vonvk_ed1UmCj3go0GwxEDLNq6ozTI8r7nNdJ1VaYlaR19urv_jAYAQ&sig=AOD64_0aRYpf9r40ynRs5-6LZmintxAf8w&client=ca-pub-0447284344517370&rf=1&nb=0&adurl=https://hostablanca.com/vps-hosting/%3Futm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3Dvps_europe_search%26utm_content%3D819032693947%26campaign_id%3D24074176504%26adgroup_id%3D198910067259%26target_id%3D%26match_type%3D%26network%3Dd%26device%3Dc%26creative_id%3D819032693947%26gad_source%3D5%26gad_campaignid%3D24074176504%26gclid%3DEAIaIQobChMI98Dm9ryBlgMVz08IBB2wyxxAEAEYASAAEgLq-PD_BwE
+                  - generic [ref=f15e11]:
+                    - link "Scalable Linux VDS with 1 dedicated IPv4, /64 IPv6, and 99.5% uptime. Deploy today!" [ref=f15e13] [cursor=pointer]:
+                      - /url: https://googleads.g.doubleclick.net/aclk?sa=l&ai=Cgnsx_vhuavfJH8-fodAPsJfzgATBipLTiAH4t7Ok4hWB45z5BRABIMGX9AdgoQKgAZXQxc8DyAEBqQKVG4-62QdYPqgDAcgDywSqBPQBT9AKe3sfvKaR9VK_4XJCJXi12zZc1ESoCqh8pzljj6UdsBnFe75-BBuh4vhrXoTbFyl7TgnU3nFkOxmjgHzB6j0LFhd1zDs2OTZsL_bN5PkbT7ok9od_EFizr_VIrVuVWl8LMU6g2R4du1UEWFhts2GjpyUW4jfxoQjBxW7JtNaLzRiCDKXgCaqZOXggACGVKTUibB8xbt15hqyMv31Z-P5Nbf47UKiEM-dMVktNaFsIvZ5Z9CNIiPsTUHWPy08UgjE2aiFm_m83eqIT4gFTkXZAII1NRAV8W_KW9uo_TUmpAH_xGTN4Irpg2zodEu8V0M1Qt8AEu4Tb_-QFiAX4j7vXWYAH06-6MKgHp8yxAqgHpr4bqAfMzrECqAfz0RuoB5bYG6gHqpuxAqgH_uixAqgHjs4bqAeT2BuoB_DgG6gH7paxAqgH_p6xAqgHr76xAqgHn-GxAqgH1ckbqAfZtrECqAeaBqgH_56xAqgH35-xAqgH-MKxAqgH-8KxAtgHAdIIMwiAYRABGJ8DMgiKgoCAgICACDoPgECAwICAgICogAKog4AQSL39wTpYytPg9ryBlgNgAbEJECMyWzpnW4OACgGYCwHICwGiDAwqCgoIjt-xApXisQKqDQJHSMgNAeoNEwiixeb2vIGWAxXPTwgEHbDLHEDwDQKIDgnYEwOIFAHQFQHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRIC8FkYASIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMI98Dm9ryBlgMVz08IBB2wyxxAEAEYASAAEgLq-PD_BwE&num=1&cid=CAQS8wEAEQoqgRV52XWDSey3WqncujyTieOs2Hjc_qfF-sf4itCuTfGfMz7_1rMYoNngdjPfsZOYSBIEF6rxJWs4fLBUglqt5sEbCirxSiBmIAizRhsuOKFwE-uQknVb5ZIFxURox7aVfKwlKAffC5-WadfmT4zjVfL2uT8uJF0WuZo8UjlU2PYsmGFx8hVja7uOQLftm2SqS8oG-PlY2j3NyDKOOSRLM2W17FQPiJT4oSy69ICw4rhZbP-dxsDu2eKNLiqD3-HWJpTZ5I2ZyB6Vonvk_ed1UmCj3go0GwxEDLNq6ozTI8r7nNdJ1VaYlaR19urv_jAYAQ&sig=AOD64_0aRYpf9r40ynRs5-6LZmintxAf8w&client=ca-pub-0447284344517370&rf=1&nb=7&adurl=https://hostablanca.com/vps-hosting/%3Futm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3Dvps_europe_search%26utm_content%3D819032693947%26campaign_id%3D24074176504%26adgroup_id%3D198910067259%26target_id%3D%26match_type%3D%26network%3Dd%26device%3Dc%26creative_id%3D819032693947%26gad_source%3D5%26gad_campaignid%3D24074176504%26gclid%3DEAIaIQobChMI98Dm9ryBlgMVz08IBB2wyxxAEAEYASAAEgLq-PD_BwE
+                    - link [ref=f15e14] [cursor=pointer]:
+                      - /url: https://googleads.g.doubleclick.net/aclk?sa=l&ai=Cgnsx_vhuavfJH8-fodAPsJfzgATBipLTiAH4t7Ok4hWB45z5BRABIMGX9AdgoQKgAZXQxc8DyAEBqQKVG4-62QdYPqgDAcgDywSqBPQBT9AKe3sfvKaR9VK_4XJCJXi12zZc1ESoCqh8pzljj6UdsBnFe75-BBuh4vhrXoTbFyl7TgnU3nFkOxmjgHzB6j0LFhd1zDs2OTZsL_bN5PkbT7ok9od_EFizr_VIrVuVWl8LMU6g2R4du1UEWFhts2GjpyUW4jfxoQjBxW7JtNaLzRiCDKXgCaqZOXggACGVKTUibB8xbt15hqyMv31Z-P5Nbf47UKiEM-dMVktNaFsIvZ5Z9CNIiPsTUHWPy08UgjE2aiFm_m83eqIT4gFTkXZAII1NRAV8W_KW9uo_TUmpAH_xGTN4Irpg2zodEu8V0M1Qt8AEu4Tb_-QFiAX4j7vXWYAH06-6MKgHp8yxAqgHpr4bqAfMzrECqAfz0RuoB5bYG6gHqpuxAqgH_uixAqgHjs4bqAeT2BuoB_DgG6gH7paxAqgH_p6xAqgHr76xAqgHn-GxAqgH1ckbqAfZtrECqAeaBqgH_56xAqgH35-xAqgH-MKxAqgH-8KxAtgHAdIIMwiAYRABGJ8DMgiKgoCAgICACDoPgECAwICAgICogAKog4AQSL39wTpYytPg9ryBlgNgAbEJECMyWzpnW4OACgGYCwHICwGiDAwqCgoIjt-xApXisQKqDQJHSMgNAeoNEwiixeb2vIGWAxXPTwgEHbDLHEDwDQKIDgnYEwOIFAHQFQHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRIC8FkYASIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMI98Dm9ryBlgMVz08IBB2wyxxAEAEYASAAEgLq-PD_BwE&num=1&cid=CAQS8wEAEQoqgRV52XWDSey3WqncujyTieOs2Hjc_qfF-sf4itCuTfGfMz7_1rMYoNngdjPfsZOYSBIEF6rxJWs4fLBUglqt5sEbCirxSiBmIAizRhsuOKFwE-uQknVb5ZIFxURox7aVfKwlKAffC5-WadfmT4zjVfL2uT8uJF0WuZo8UjlU2PYsmGFx8hVja7uOQLftm2SqS8oG-PlY2j3NyDKOOSRLM2W17FQPiJT4oSy69ICw4rhZbP-dxsDu2eKNLiqD3-HWJpTZ5I2ZyB6Vonvk_ed1UmCj3go0GwxEDLNq6ozTI8r7nNdJ1VaYlaR19urv_jAYAQ&sig=AOD64_0aRYpf9r40ynRs5-6LZmintxAf8w&client=ca-pub-0447284344517370&rf=1&nb=8&adurl=https://hostablanca.com/vps-hosting/%3Futm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3Dvps_europe_search%26utm_content%3D819032693947%26campaign_id%3D24074176504%26adgroup_id%3D198910067259%26target_id%3D%26match_type%3D%26network%3Dd%26device%3Dc%26creative_id%3D819032693947%26gad_source%3D5%26gad_campaignid%3D24074176504%26gclid%3DEAIaIQobChMI98Dm9ryBlgMVz08IBB2wyxxAEAEYASAAEgLq-PD_BwE
+                      - img [ref=f15e15]
+                - generic "Hosta Blanca" [ref=f15e17]:
+                  - link "Hosta Blanca" [ref=f15e18] [cursor=pointer]:
+                    - /url: https://googleads.g.doubleclick.net/aclk?sa=l&ai=Cgnsx_vhuavfJH8-fodAPsJfzgATBipLTiAH4t7Ok4hWB45z5BRABIMGX9AdgoQKgAZXQxc8DyAEBqQKVG4-62QdYPqgDAcgDywSqBPQBT9AKe3sfvKaR9VK_4XJCJXi12zZc1ESoCqh8pzljj6UdsBnFe75-BBuh4vhrXoTbFyl7TgnU3nFkOxmjgHzB6j0LFhd1zDs2OTZsL_bN5PkbT7ok9od_EFizr_VIrVuVWl8LMU6g2R4du1UEWFhts2GjpyUW4jfxoQjBxW7JtNaLzRiCDKXgCaqZOXggACGVKTUibB8xbt15hqyMv31Z-P5Nbf47UKiEM-dMVktNaFsIvZ5Z9CNIiPsTUHWPy08UgjE2aiFm_m83eqIT4gFTkXZAII1NRAV8W_KW9uo_TUmpAH_xGTN4Irpg2zodEu8V0M1Qt8AEu4Tb_-QFiAX4j7vXWYAH06-6MKgHp8yxAqgHpr4bqAfMzrECqAfz0RuoB5bYG6gHqpuxAqgH_uixAqgHjs4bqAeT2BuoB_DgG6gH7paxAqgH_p6xAqgHr76xAqgHn-GxAqgH1ckbqAfZtrECqAeaBqgH_56xAqgH35-xAqgH-MKxAqgH-8KxAtgHAdIIMwiAYRABGJ8DMgiKgoCAgICACDoPgECAwICAgICogAKog4AQSL39wTpYytPg9ryBlgNgAbEJECMyWzpnW4OACgGYCwHICwGiDAwqCgoIjt-xApXisQKqDQJHSMgNAeoNEwiixeb2vIGWAxXPTwgEHbDLHEDwDQKIDgnYEwOIFAHQFQHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRIC8FkYASIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMI98Dm9ryBlgMVz08IBB2wyxxAEAEYASAAEgLq-PD_BwE&num=1&cid=CAQS8wEAEQoqgRV52XWDSey3WqncujyTieOs2Hjc_qfF-sf4itCuTfGfMz7_1rMYoNngdjPfsZOYSBIEF6rxJWs4fLBUglqt5sEbCirxSiBmIAizRhsuOKFwE-uQknVb5ZIFxURox7aVfKwlKAffC5-WadfmT4zjVfL2uT8uJF0WuZo8UjlU2PYsmGFx8hVja7uOQLftm2SqS8oG-PlY2j3NyDKOOSRLM2W17FQPiJT4oSy69ICw4rhZbP-dxsDu2eKNLiqD3-HWJpTZ5I2ZyB6Vonvk_ed1UmCj3go0GwxEDLNq6ozTI8r7nNdJ1VaYlaR19urv_jAYAQ&sig=AOD64_0aRYpf9r40ynRs5-6LZmintxAf8w&client=ca-pub-0447284344517370&rf=1&nb=1&adurl=https://hostablanca.com/vps-hosting/%3Futm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3Dvps_europe_search%26utm_content%3D819032693947%26campaign_id%3D24074176504%26adgroup_id%3D198910067259%26target_id%3D%26match_type%3D%26network%3Dd%26device%3Dc%26creative_id%3D819032693947%26gad_source%3D5%26gad_campaignid%3D24074176504%26gclid%3DEAIaIQobChMI98Dm9ryBlgMVz08IBB2wyxxAEAEYASAAEgLq-PD_BwE
+              - img [ref=f15e22] [cursor=pointer]
+              - button [ref=f15e24] [cursor=pointer]:
+                - img [ref=f15e25]
+              - iframe
+        - list [ref=e133]:
+          - listitem [ref=e134]:
+            - link "Security Advisories" [ref=e135] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Security_Advisories
+        - heading "2026-06-15" [level=3] [ref=e136]
+        - list [ref=e137]:
+          - listitem [ref=e138]:
+            - link "Changelog 5 1" [ref=e139] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Changelog_5_1
+          - listitem [ref=e140]:
+            - link "Changelog 6 0" [ref=e141] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Changelog_6_0
+          - listitem [ref=e142]:
+            - link "Changelog 6 1" [ref=e143] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Changelog_6_1
+        - heading "2026-06-12" [level=3] [ref=e144]
+        - list [ref=e145]:
+          - listitem [ref=e146]:
+            - link "HowTo install rmagick gem on Windows" [ref=e147] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_install_rmagick_gem_on_Windows
+        - heading "2026-06-10" [level=3] [ref=e148]
+        - list [ref=e149]:
+          - listitem [ref=e150]:
+            - link "Rest WikiPages" [ref=e151] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Rest_WikiPages
+        - heading "2026-06-09" [level=3] [ref=e152]
+        - list [ref=e153]:
+          - listitem [ref=e154]:
+            - link "Rest Projects" [ref=e155] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Rest_Projects
+        - heading "2026-06-08" [level=3] [ref=e156]
+        - list [ref=e157]:
+          - listitem [ref=e158]:
+            - link "Rest api" [ref=e159] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Rest_api
+        - heading "2026-06-06" [level=3] [ref=e160]
+        - list [ref=e161]:
+          - listitem [ref=e162]:
+            - link "Rest Journals" [ref=e163] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Rest_Journals
+          - listitem [ref=e164]:
+            - link "Rest News" [ref=e165] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Rest_News
+        - heading "2026-04-27" [level=3] [ref=e166]
+        - list [ref=e167]:
+          - listitem [ref=e168]:
+            - link "Rest Attachments" [ref=e169] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Rest_Attachments
+        - heading "2026-04-20" [level=3] [ref=e170]
+        - list [ref=e171]:
+          - listitem [ref=e172]:
+            - link "Rest api with csharp" [ref=e173] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Rest_api_with_csharp
+        - heading "2025-12-30" [level=3] [ref=e174]
+        - list [ref=e175]:
+          - listitem [ref=e176]:
+            - link "Daisy" [ref=e177] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Daisy_
+        - heading "2025-12-12" [level=3] [ref=e178]
+        - list [ref=e179]:
+          - listitem [ref=e180]:
+            - link "HowTos" [ref=e181] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTos
+        - heading "2025-12-04" [level=3] [ref=e182]
+        - list [ref=e183]:
+          - listitem [ref=e184]:
+            - link "RedmineAccounts" [ref=e185] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineAccounts
+        - heading "2025-10-30" [level=3] [ref=e186]
+        - insertion [ref=e188]:
+          - iframe [ref=e190]:
+            - generic [active] [ref=f16e1]:
+              - generic [ref=f16e6]:
+                - generic [ref=f16e7]:
+                  - generic "Hosta Blanca" [ref=f16e9]:
+                    - link "Spain & Germany VPS Servers" [ref=f16e10] [cursor=pointer]:
+                      - /url: https://googleads.g.doubleclick.net/aclk?sa=l&ai=C2kpK_vhuavHiH_iModAP4PCk-A7BipLTiAH4t7Ok4hWB45z5BRABIMGX9AdgoQKgAZXQxc8DyAEBqQKVG4-62QdYPqgDAcgDywSqBPQBT9D9iWPAV1zW5wfBb9BcPo7w8msvADw0rhn3LtE8K9DGGd6QqtLKpbRLAhY33cutH-4VMJyCyxe1sZrMurrQM1rAZM3GkzrImP6AhrKSxX2eNgXfhmbfKGKLH7OZpOcFEBuQudTuFH2-p7cGw5_3ASRkR0NXql-_M6EH9SEEpBuMvwoRKlXPREhJt4YE4eWl9-9enL4KdhJc66mdIkKN651_45PYlYNmkdDkLIP4iRMUiZ9JXHh6KIuiFq5bafyIji3F8rzBQ0Ak-YlIpJg8XQO-J2V7WogrWe6JoJ4RdAh2jOqUPy8zbp_ZmXPTzpun86QrScAEu4Tb_-QFiAX4j7vXWYAH06-6MKgHp8yxAqgHpr4bqAfMzrECqAfz0RuoB5bYG6gHqpuxAqgH_uixAqgHjs4bqAeT2BuoB_DgG6gH7paxAqgH_p6xAqgHr76xAqgHn-GxAqgH1ckbqAfZtrECqAeaBqgH_56xAqgH35-xAqgH-MKxAqgH-8KxAtgHAdIIMwiAYRABGJ8DMgiKgoCAgICACDoPgECAwICAgICogAKog4AQSL39wTpY5cDi9ryBlgNgAbEJECMyWzpnW4OACgGYCwHICwGiDAwqCgoIjt-xApXisQKqDQJHSMgNAeoNEwj93ub2vIGWAxV4RggEHWA4Ce_wDQKIDgnYEwOIFAHQFQHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRIC8FkYASIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMI8dnm9ryBlgMVeEYIBB1gOAnvEAEYASAAEgK64vD_BwE&num=1&cid=CAQS8wEAEQoqgRUiMslT_yFYnihp2jO3z0W2BEt_yOYYM56IJaig86zAJn6AjTP1AmVujzTRS8mXfrDspi7OdaTclH4vVwgCBTSefFq6NmBvVCDIu4Dt7KzAtuDb7XG7colFU7myvDvfZ4Z9yWCS5-IlqPTvwH4vUooy5eJV0dp1IGhBH1kjGLPQ_pQuc89fSAkKLWqVdrOSho3NH0aoSTwf_1sVXu1UliySK7oxhYuuRIpzsz15aml0Jg2eAgYlcRQPmfjK7nLkC86-BjhJ9er0dwodP3eSRdnlsjyOrGXuD77cKUdyX2Ok5nl9vZxbTOiVySNptdoYAQ&sig=AOD64_33614Qrar_yKlfJ7_baUX08Sa31Q&client=ca-pub-0447284344517370&rf=1&nb=0&adurl=https://hostablanca.com/vps-hosting/%3Futm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3Dvps_europe_search%26utm_content%3D819032693947%26campaign_id%3D24074176504%26adgroup_id%3D198910067259%26target_id%3D%26match_type%3D%26network%3Dd%26device%3Dc%26creative_id%3D819032693947%26gad_source%3D5%26gad_campaignid%3D24074176504%26gclid%3DEAIaIQobChMI8dnm9ryBlgMVeEYIBB1gOAnvEAEYASAAEgK64vD_BwE
+                  - generic [ref=f16e11]:
+                    - link "Scalable Linux VDS with 1 dedicated IPv4, /64 IPv6, and 99.5% uptime. Deploy today!" [ref=f16e13] [cursor=pointer]:
+                      - /url: https://googleads.g.doubleclick.net/aclk?sa=l&ai=C2kpK_vhuavHiH_iModAP4PCk-A7BipLTiAH4t7Ok4hWB45z5BRABIMGX9AdgoQKgAZXQxc8DyAEBqQKVG4-62QdYPqgDAcgDywSqBPQBT9D9iWPAV1zW5wfBb9BcPo7w8msvADw0rhn3LtE8K9DGGd6QqtLKpbRLAhY33cutH-4VMJyCyxe1sZrMurrQM1rAZM3GkzrImP6AhrKSxX2eNgXfhmbfKGKLH7OZpOcFEBuQudTuFH2-p7cGw5_3ASRkR0NXql-_M6EH9SEEpBuMvwoRKlXPREhJt4YE4eWl9-9enL4KdhJc66mdIkKN651_45PYlYNmkdDkLIP4iRMUiZ9JXHh6KIuiFq5bafyIji3F8rzBQ0Ak-YlIpJg8XQO-J2V7WogrWe6JoJ4RdAh2jOqUPy8zbp_ZmXPTzpun86QrScAEu4Tb_-QFiAX4j7vXWYAH06-6MKgHp8yxAqgHpr4bqAfMzrECqAfz0RuoB5bYG6gHqpuxAqgH_uixAqgHjs4bqAeT2BuoB_DgG6gH7paxAqgH_p6xAqgHr76xAqgHn-GxAqgH1ckbqAfZtrECqAeaBqgH_56xAqgH35-xAqgH-MKxAqgH-8KxAtgHAdIIMwiAYRABGJ8DMgiKgoCAgICACDoPgECAwICAgICogAKog4AQSL39wTpY5cDi9ryBlgNgAbEJECMyWzpnW4OACgGYCwHICwGiDAwqCgoIjt-xApXisQKqDQJHSMgNAeoNEwj93ub2vIGWAxV4RggEHWA4Ce_wDQKIDgnYEwOIFAHQFQHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRIC8FkYASIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMI8dnm9ryBlgMVeEYIBB1gOAnvEAEYASAAEgK64vD_BwE&num=1&cid=CAQS8wEAEQoqgRUiMslT_yFYnihp2jO3z0W2BEt_yOYYM56IJaig86zAJn6AjTP1AmVujzTRS8mXfrDspi7OdaTclH4vVwgCBTSefFq6NmBvVCDIu4Dt7KzAtuDb7XG7colFU7myvDvfZ4Z9yWCS5-IlqPTvwH4vUooy5eJV0dp1IGhBH1kjGLPQ_pQuc89fSAkKLWqVdrOSho3NH0aoSTwf_1sVXu1UliySK7oxhYuuRIpzsz15aml0Jg2eAgYlcRQPmfjK7nLkC86-BjhJ9er0dwodP3eSRdnlsjyOrGXuD77cKUdyX2Ok5nl9vZxbTOiVySNptdoYAQ&sig=AOD64_33614Qrar_yKlfJ7_baUX08Sa31Q&client=ca-pub-0447284344517370&rf=1&nb=7&adurl=https://hostablanca.com/vps-hosting/%3Futm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3Dvps_europe_search%26utm_content%3D819032693947%26campaign_id%3D24074176504%26adgroup_id%3D198910067259%26target_id%3D%26match_type%3D%26network%3Dd%26device%3Dc%26creative_id%3D819032693947%26gad_source%3D5%26gad_campaignid%3D24074176504%26gclid%3DEAIaIQobChMI8dnm9ryBlgMVeEYIBB1gOAnvEAEYASAAEgK64vD_BwE
+                    - link [ref=f16e14] [cursor=pointer]:
+                      - /url: https://googleads.g.doubleclick.net/aclk?sa=l&ai=C2kpK_vhuavHiH_iModAP4PCk-A7BipLTiAH4t7Ok4hWB45z5BRABIMGX9AdgoQKgAZXQxc8DyAEBqQKVG4-62QdYPqgDAcgDywSqBPQBT9D9iWPAV1zW5wfBb9BcPo7w8msvADw0rhn3LtE8K9DGGd6QqtLKpbRLAhY33cutH-4VMJyCyxe1sZrMurrQM1rAZM3GkzrImP6AhrKSxX2eNgXfhmbfKGKLH7OZpOcFEBuQudTuFH2-p7cGw5_3ASRkR0NXql-_M6EH9SEEpBuMvwoRKlXPREhJt4YE4eWl9-9enL4KdhJc66mdIkKN651_45PYlYNmkdDkLIP4iRMUiZ9JXHh6KIuiFq5bafyIji3F8rzBQ0Ak-YlIpJg8XQO-J2V7WogrWe6JoJ4RdAh2jOqUPy8zbp_ZmXPTzpun86QrScAEu4Tb_-QFiAX4j7vXWYAH06-6MKgHp8yxAqgHpr4bqAfMzrECqAfz0RuoB5bYG6gHqpuxAqgH_uixAqgHjs4bqAeT2BuoB_DgG6gH7paxAqgH_p6xAqgHr76xAqgHn-GxAqgH1ckbqAfZtrECqAeaBqgH_56xAqgH35-xAqgH-MKxAqgH-8KxAtgHAdIIMwiAYRABGJ8DMgiKgoCAgICACDoPgECAwICAgICogAKog4AQSL39wTpY5cDi9ryBlgNgAbEJECMyWzpnW4OACgGYCwHICwGiDAwqCgoIjt-xApXisQKqDQJHSMgNAeoNEwj93ub2vIGWAxV4RggEHWA4Ce_wDQKIDgnYEwOIFAHQFQHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRIC8FkYASIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMI8dnm9ryBlgMVeEYIBB1gOAnvEAEYASAAEgK64vD_BwE&num=1&cid=CAQS8wEAEQoqgRUiMslT_yFYnihp2jO3z0W2BEt_yOYYM56IJaig86zAJn6AjTP1AmVujzTRS8mXfrDspi7OdaTclH4vVwgCBTSefFq6NmBvVCDIu4Dt7KzAtuDb7XG7colFU7myvDvfZ4Z9yWCS5-IlqPTvwH4vUooy5eJV0dp1IGhBH1kjGLPQ_pQuc89fSAkKLWqVdrOSho3NH0aoSTwf_1sVXu1UliySK7oxhYuuRIpzsz15aml0Jg2eAgYlcRQPmfjK7nLkC86-BjhJ9er0dwodP3eSRdnlsjyOrGXuD77cKUdyX2Ok5nl9vZxbTOiVySNptdoYAQ&sig=AOD64_33614Qrar_yKlfJ7_baUX08Sa31Q&client=ca-pub-0447284344517370&rf=1&nb=8&adurl=https://hostablanca.com/vps-hosting/%3Futm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3Dvps_europe_search%26utm_content%3D819032693947%26campaign_id%3D24074176504%26adgroup_id%3D198910067259%26target_id%3D%26match_type%3D%26network%3Dd%26device%3Dc%26creative_id%3D819032693947%26gad_source%3D5%26gad_campaignid%3D24074176504%26gclid%3DEAIaIQobChMI8dnm9ryBlgMVeEYIBB1gOAnvEAEYASAAEgK64vD_BwE
+                      - img [ref=f16e15]
+                - generic "Hosta Blanca" [ref=f16e17]:
+                  - link "Hosta Blanca" [ref=f16e18] [cursor=pointer]:
+                    - /url: https://googleads.g.doubleclick.net/aclk?sa=l&ai=C2kpK_vhuavHiH_iModAP4PCk-A7BipLTiAH4t7Ok4hWB45z5BRABIMGX9AdgoQKgAZXQxc8DyAEBqQKVG4-62QdYPqgDAcgDywSqBPQBT9D9iWPAV1zW5wfBb9BcPo7w8msvADw0rhn3LtE8K9DGGd6QqtLKpbRLAhY33cutH-4VMJyCyxe1sZrMurrQM1rAZM3GkzrImP6AhrKSxX2eNgXfhmbfKGKLH7OZpOcFEBuQudTuFH2-p7cGw5_3ASRkR0NXql-_M6EH9SEEpBuMvwoRKlXPREhJt4YE4eWl9-9enL4KdhJc66mdIkKN651_45PYlYNmkdDkLIP4iRMUiZ9JXHh6KIuiFq5bafyIji3F8rzBQ0Ak-YlIpJg8XQO-J2V7WogrWe6JoJ4RdAh2jOqUPy8zbp_ZmXPTzpun86QrScAEu4Tb_-QFiAX4j7vXWYAH06-6MKgHp8yxAqgHpr4bqAfMzrECqAfz0RuoB5bYG6gHqpuxAqgH_uixAqgHjs4bqAeT2BuoB_DgG6gH7paxAqgH_p6xAqgHr76xAqgHn-GxAqgH1ckbqAfZtrECqAeaBqgH_56xAqgH35-xAqgH-MKxAqgH-8KxAtgHAdIIMwiAYRABGJ8DMgiKgoCAgICACDoPgECAwICAgICogAKog4AQSL39wTpY5cDi9ryBlgNgAbEJECMyWzpnW4OACgGYCwHICwGiDAwqCgoIjt-xApXisQKqDQJHSMgNAeoNEwj93ub2vIGWAxV4RggEHWA4Ce_wDQKIDgnYEwOIFAHQFQHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRIC8FkYASIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMI8dnm9ryBlgMVeEYIBB1gOAnvEAEYASAAEgK64vD_BwE&num=1&cid=CAQS8wEAEQoqgRUiMslT_yFYnihp2jO3z0W2BEt_yOYYM56IJaig86zAJn6AjTP1AmVujzTRS8mXfrDspi7OdaTclH4vVwgCBTSefFq6NmBvVCDIu4Dt7KzAtuDb7XG7colFU7myvDvfZ4Z9yWCS5-IlqPTvwH4vUooy5eJV0dp1IGhBH1kjGLPQ_pQuc89fSAkKLWqVdrOSho3NH0aoSTwf_1sVXu1UliySK7oxhYuuRIpzsz15aml0Jg2eAgYlcRQPmfjK7nLkC86-BjhJ9er0dwodP3eSRdnlsjyOrGXuD77cKUdyX2Ok5nl9vZxbTOiVySNptdoYAQ&sig=AOD64_33614Qrar_yKlfJ7_baUX08Sa31Q&client=ca-pub-0447284344517370&rf=1&nb=1&adurl=https://hostablanca.com/vps-hosting/%3Futm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3Dvps_europe_search%26utm_content%3D819032693947%26campaign_id%3D24074176504%26adgroup_id%3D198910067259%26target_id%3D%26match_type%3D%26network%3Dd%26device%3Dc%26creative_id%3D819032693947%26gad_source%3D5%26gad_campaignid%3D24074176504%26gclid%3DEAIaIQobChMI8dnm9ryBlgMVeEYIBB1gOAnvEAEYASAAEgK64vD_BwE
+              - img [ref=f16e22] [cursor=pointer]
+              - button [ref=f16e24] [cursor=pointer]:
+                - img [ref=f16e25]
+              - iframe
+        - list [ref=e191]:
+          - listitem [ref=e192]:
+            - link "RedmineTextFormattingTextile" [ref=e193] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineTextFormattingTextile
+        - heading "2025-10-25" [level=3] [ref=e194]
+        - list [ref=e195]:
+          - listitem [ref=e196]:
+            - link "RedmineRepositories" [ref=e197] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineRepositories
+        - heading "2025-09-29" [level=3] [ref=e198]
+        - list [ref=e199]:
+          - listitem [ref=e200]:
+            - link "HowTo create a custom Redmine theme" [ref=e201] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_create_a_custom_Redmine_theme
+        - heading "2025-09-23" [level=3] [ref=e202]
+        - list [ref=e203]:
+          - listitem [ref=e204]:
+            - link "CommercialOfferings" [ref=e205] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/CommercialOfferings
+        - heading "2025-09-21" [level=3] [ref=e206]
+        - list [ref=e207]:
+          - listitem [ref=e208]:
+            - link "Changelog 5 0" [ref=e209] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Changelog_5_0
+        - heading "2025-08-29" [level=3] [ref=e210]
+        - list [ref=e211]:
+          - listitem [ref=e212]:
+            - link "Overview" [ref=e213] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Overview
+        - heading "2025-07-24" [level=3] [ref=e214]
+        - list [ref=e215]:
+          - listitem [ref=e216]:
+            - link "SolidQueueConfiguration" [ref=e217] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/SolidQueueConfiguration
+        - heading "2025-06-25" [level=3] [ref=e218]
+        - list [ref=e219]:
+          - listitem [ref=e220]:
+            - link "RedmineTextFormattingRedmineLinks" [ref=e221] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineTextFormattingRedmineLinks
+        - heading "2025-04-09" [level=3] [ref=e222]
+        - list [ref=e223]:
+          - listitem [ref=e224]:
+            - link "DeRedmineCustomFields" [ref=e225] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeRedmineCustomFields
+        - heading "2025-03-20" [level=3] [ref=e226]
+        - list [ref=e227]:
+          - listitem [ref=e228]:
+            - link "HowTo import issues" [ref=e229] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_import_issues
+        - heading "2025-03-10" [level=3] [ref=e230]
+        - list [ref=e231]:
+          - listitem [ref=e232]:
+            - link "How to Install Redmine 603 on Debian 124 (MySQL)" [ref=e233] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/How_to_Install_Redmine_603_on_Debian_124_(MySQL)
+        - heading "2025-03-04" [level=3] [ref=e234]
+        - insertion [ref=e236]:
+          - iframe [ref=e238]:
+            - generic [active] [ref=f17e1]:
+              - generic [ref=f17e5]:
+                - generic [ref=f17e6]:
+                  - link [ref=f17e7] [cursor=pointer]:
+                    - /url: https://adclick.g.doubleclick.net/aclk?sa=l&ai=CVeZc_vhuat7gH7Li6tkPqIWOSMGKktOIAfi3s6TiFYHjnPkFEAEgwZf0B2ChAqABldDFzwPIAQmpApUbj7rZB1g-qAMByAPLBKoE9AFP0LsaOYKbigsemMMb9n6mu9JVHPQLj9tU4eMJvBVNtG9gU9GB70Gte20X9TiAIILcCskZqn_rWGkfa7II4--8uy0RMdvAZ2yZ1ZjZVILgZ3RWRkPF5MiHiKIJCQSlUaHP3gG9T5XU1klEIquc9fFBmri_hSnzPi-nvICCx8vFzcoWfSg8CMeY7GDdCCKNqQGlazwSQZdda9R1FR9iZnJxVmXiLo53ORCfQNCzVrS7DvLtLPoCO1-MGkK7GuWAGCTg32kGjXVn-IADDqGxKvT4dx15KUpElHgusLZAs_DFSgwrGffxgRbWWNWWHEwgI5HVOy3pwAS7hNv_5AWIBfiPu9dZoAYugAfTr7owqAenzLECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAf-6LECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAef4bECqAem67ECqAfVyRuoB9m2sQKoB5oGqAf_nrECqAffn7ECqAf4wrECqAf7wrEC2AcA0ggzCIBhEAEYnwMyCIqCgICAgIAIOg-AQIDAgICAgKiAAqiDgBBIvf3BOlj40OL2vIGWA2ABsQkQIzJbOmdbg4AKAZgLAcgLAYAMAaIMDCoKCgiO37ECleKxAqoNAkdIyA0B6g0TCP3c5va8gZYDFTKxOgUdqIIDCfANAogOCbgT5APYEwOIFAHQFQHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRIC8FkYLiIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMI3tfm9ryBlgMVMrE6BR2oggMJEAEYASAAEgLu5vD_BwE&num=1&cid=CAQS8wEAEQoqgbFHxNgBeUGKqN5M0WdZ4DJqYReW27fNusr5QnZOCtUmVgQ7sz1MOScfPh2G-XSU1-OYgOqYSM7s3TzolUQwE4IssSQtryf7-OWdXqCBKMFIzKUEQ_qpqjlrnXNXRhDkCRQNlTfUr3QuzAfL-JuczTdiNQlqCZpTwKsf1fFlVlTqtFYpHZ1kRPNp8tYnAkdS54Y0eGRMPl44SA8LbsbEdGBqDczqc3TfKwiQv2IwO9IOwNRVpk_F1noswgRwfv9oA-55tW1B-wzWEuTC1QCUHXVgPWBVUuhJ7MTjUYvy31BIplrks1YNX7sGLrtOo1kYAQ&sig=AOD64_3E-E7XBN2Nx15oMR7WG8ic-CSYag&client=ca-pub-0447284344517370&rf=1&nb=9&adurl=https://hostablanca.com/vps-hosting/%3Futm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3Dvps_europe_search%26utm_content%3D819032693947%26campaign_id%3D24074176504%26adgroup_id%3D198910067259%26target_id%3D%26match_type%3D%26network%3Dd%26device%3Dc%26creative_id%3D819032693947%26gad_source%3D5%26gad_campaignid%3D24074176504%26gclid%3DEAIaIQobChMI3tfm9ryBlgMVMrE6BR2oggMJEAEYASAAEgLu5vD_BwE
+                    - img [ref=f17e8]
+                  - link "Spain & Germany VPS Servers" [ref=f17e11] [cursor=pointer]:
+                    - /url: https://adclick.g.doubleclick.net/aclk?sa=l&ai=CVeZc_vhuat7gH7Li6tkPqIWOSMGKktOIAfi3s6TiFYHjnPkFEAEgwZf0B2ChAqABldDFzwPIAQmpApUbj7rZB1g-qAMByAPLBKoE9AFP0LsaOYKbigsemMMb9n6mu9JVHPQLj9tU4eMJvBVNtG9gU9GB70Gte20X9TiAIILcCskZqn_rWGkfa7II4--8uy0RMdvAZ2yZ1ZjZVILgZ3RWRkPF5MiHiKIJCQSlUaHP3gG9T5XU1klEIquc9fFBmri_hSnzPi-nvICCx8vFzcoWfSg8CMeY7GDdCCKNqQGlazwSQZdda9R1FR9iZnJxVmXiLo53ORCfQNCzVrS7DvLtLPoCO1-MGkK7GuWAGCTg32kGjXVn-IADDqGxKvT4dx15KUpElHgusLZAs_DFSgwrGffxgRbWWNWWHEwgI5HVOy3pwAS7hNv_5AWIBfiPu9dZoAYugAfTr7owqAenzLECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAf-6LECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAef4bECqAem67ECqAfVyRuoB9m2sQKoB5oGqAf_nrECqAffn7ECqAf4wrECqAf7wrEC2AcA0ggzCIBhEAEYnwMyCIqCgICAgIAIOg-AQIDAgICAgKiAAqiDgBBIvf3BOlj40OL2vIGWA2ABsQkQIzJbOmdbg4AKAZgLAcgLAYAMAaIMDCoKCgiO37ECleKxAqoNAkdIyA0B6g0TCP3c5va8gZYDFTKxOgUdqIIDCfANAogOCbgT5APYEwOIFAHQFQHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRIC8FkYLiIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMI3tfm9ryBlgMVMrE6BR2oggMJEAEYASAAEgLu5vD_BwE&num=1&cid=CAQS8wEAEQoqgbFHxNgBeUGKqN5M0WdZ4DJqYReW27fNusr5QnZOCtUmVgQ7sz1MOScfPh2G-XSU1-OYgOqYSM7s3TzolUQwE4IssSQtryf7-OWdXqCBKMFIzKUEQ_qpqjlrnXNXRhDkCRQNlTfUr3QuzAfL-JuczTdiNQlqCZpTwKsf1fFlVlTqtFYpHZ1kRPNp8tYnAkdS54Y0eGRMPl44SA8LbsbEdGBqDczqc3TfKwiQv2IwO9IOwNRVpk_F1noswgRwfv9oA-55tW1B-wzWEuTC1QCUHXVgPWBVUuhJ7MTjUYvy31BIplrks1YNX7sGLrtOo1kYAQ&sig=AOD64_3E-E7XBN2Nx15oMR7WG8ic-CSYag&client=ca-pub-0447284344517370&rf=1&nb=0&adurl=https://hostablanca.com/vps-hosting/%3Futm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3Dvps_europe_search%26utm_content%3D819032693947%26campaign_id%3D24074176504%26adgroup_id%3D198910067259%26target_id%3D%26match_type%3D%26network%3Dd%26device%3Dc%26creative_id%3D819032693947%26gad_source%3D5%26gad_campaignid%3D24074176504%26gclid%3DEAIaIQobChMI3tfm9ryBlgMVMrE6BR2oggMJEAEYASAAEgLu5vD_BwE
+                - generic [ref=f17e12]:
+                  - link [ref=f17e13] [cursor=pointer]:
+                    - /url: https://adclick.g.doubleclick.net/aclk?sa=l&ai=CVeZc_vhuat7gH7Li6tkPqIWOSMGKktOIAfi3s6TiFYHjnPkFEAEgwZf0B2ChAqABldDFzwPIAQmpApUbj7rZB1g-qAMByAPLBKoE9AFP0LsaOYKbigsemMMb9n6mu9JVHPQLj9tU4eMJvBVNtG9gU9GB70Gte20X9TiAIILcCskZqn_rWGkfa7II4--8uy0RMdvAZ2yZ1ZjZVILgZ3RWRkPF5MiHiKIJCQSlUaHP3gG9T5XU1klEIquc9fFBmri_hSnzPi-nvICCx8vFzcoWfSg8CMeY7GDdCCKNqQGlazwSQZdda9R1FR9iZnJxVmXiLo53ORCfQNCzVrS7DvLtLPoCO1-MGkK7GuWAGCTg32kGjXVn-IADDqGxKvT4dx15KUpElHgusLZAs_DFSgwrGffxgRbWWNWWHEwgI5HVOy3pwAS7hNv_5AWIBfiPu9dZoAYugAfTr7owqAenzLECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAf-6LECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAef4bECqAem67ECqAfVyRuoB9m2sQKoB5oGqAf_nrECqAffn7ECqAf4wrECqAf7wrEC2AcA0ggzCIBhEAEYnwMyCIqCgICAgIAIOg-AQIDAgICAgKiAAqiDgBBIvf3BOlj40OL2vIGWA2ABsQkQIzJbOmdbg4AKAZgLAcgLAYAMAaIMDCoKCgiO37ECleKxAqoNAkdIyA0B6g0TCP3c5va8gZYDFTKxOgUdqIIDCfANAogOCbgT5APYEwOIFAHQFQHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRIC8FkYLiIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMI3tfm9ryBlgMVMrE6BR2oggMJEAEYASAAEgLu5vD_BwE&num=1&cid=CAQS8wEAEQoqgbFHxNgBeUGKqN5M0WdZ4DJqYReW27fNusr5QnZOCtUmVgQ7sz1MOScfPh2G-XSU1-OYgOqYSM7s3TzolUQwE4IssSQtryf7-OWdXqCBKMFIzKUEQ_qpqjlrnXNXRhDkCRQNlTfUr3QuzAfL-JuczTdiNQlqCZpTwKsf1fFlVlTqtFYpHZ1kRPNp8tYnAkdS54Y0eGRMPl44SA8LbsbEdGBqDczqc3TfKwiQv2IwO9IOwNRVpk_F1noswgRwfv9oA-55tW1B-wzWEuTC1QCUHXVgPWBVUuhJ7MTjUYvy31BIplrks1YNX7sGLrtOo1kYAQ&sig=AOD64_3E-E7XBN2Nx15oMR7WG8ic-CSYag&client=ca-pub-0447284344517370&rf=1&nb=19&adurl=https://hostablanca.com/vps-hosting/%3Futm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3Dvps_europe_search%26utm_content%3D819032693947%26campaign_id%3D24074176504%26adgroup_id%3D198910067259%26target_id%3D%26match_type%3D%26network%3Dd%26device%3Dc%26creative_id%3D819032693947%26gad_source%3D5%26gad_campaignid%3D24074176504%26gclid%3DEAIaIQobChMI3tfm9ryBlgMVMrE6BR2oggMJEAEYASAAEgLu5vD_BwE
+                    - img [ref=f17e14]
+                  - link "Hosta Blanca" [ref=f17e16] [cursor=pointer]:
+                    - /url: https://adclick.g.doubleclick.net/aclk?sa=l&ai=CVeZc_vhuat7gH7Li6tkPqIWOSMGKktOIAfi3s6TiFYHjnPkFEAEgwZf0B2ChAqABldDFzwPIAQmpApUbj7rZB1g-qAMByAPLBKoE9AFP0LsaOYKbigsemMMb9n6mu9JVHPQLj9tU4eMJvBVNtG9gU9GB70Gte20X9TiAIILcCskZqn_rWGkfa7II4--8uy0RMdvAZ2yZ1ZjZVILgZ3RWRkPF5MiHiKIJCQSlUaHP3gG9T5XU1klEIquc9fFBmri_hSnzPi-nvICCx8vFzcoWfSg8CMeY7GDdCCKNqQGlazwSQZdda9R1FR9iZnJxVmXiLo53ORCfQNCzVrS7DvLtLPoCO1-MGkK7GuWAGCTg32kGjXVn-IADDqGxKvT4dx15KUpElHgusLZAs_DFSgwrGffxgRbWWNWWHEwgI5HVOy3pwAS7hNv_5AWIBfiPu9dZoAYugAfTr7owqAenzLECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAf-6LECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAef4bECqAem67ECqAfVyRuoB9m2sQKoB5oGqAf_nrECqAffn7ECqAf4wrECqAf7wrEC2AcA0ggzCIBhEAEYnwMyCIqCgICAgIAIOg-AQIDAgICAgKiAAqiDgBBIvf3BOlj40OL2vIGWA2ABsQkQIzJbOmdbg4AKAZgLAcgLAYAMAaIMDCoKCgiO37ECleKxAqoNAkdIyA0B6g0TCP3c5va8gZYDFTKxOgUdqIIDCfANAogOCbgT5APYEwOIFAHQFQHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRIC8FkYLiIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMI3tfm9ryBlgMVMrE6BR2oggMJEAEYASAAEgLu5vD_BwE&num=1&cid=CAQS8wEAEQoqgbFHxNgBeUGKqN5M0WdZ4DJqYReW27fNusr5QnZOCtUmVgQ7sz1MOScfPh2G-XSU1-OYgOqYSM7s3TzolUQwE4IssSQtryf7-OWdXqCBKMFIzKUEQ_qpqjlrnXNXRhDkCRQNlTfUr3QuzAfL-JuczTdiNQlqCZpTwKsf1fFlVlTqtFYpHZ1kRPNp8tYnAkdS54Y0eGRMPl44SA8LbsbEdGBqDczqc3TfKwiQv2IwO9IOwNRVpk_F1noswgRwfv9oA-55tW1B-wzWEuTC1QCUHXVgPWBVUuhJ7MTjUYvy31BIplrks1YNX7sGLrtOo1kYAQ&sig=AOD64_3E-E7XBN2Nx15oMR7WG8ic-CSYag&client=ca-pub-0447284344517370&rf=1&nb=1&adurl=https://hostablanca.com/vps-hosting/%3Futm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3Dvps_europe_search%26utm_content%3D819032693947%26campaign_id%3D24074176504%26adgroup_id%3D198910067259%26target_id%3D%26match_type%3D%26network%3Dd%26device%3Dc%26creative_id%3D819032693947%26gad_source%3D5%26gad_campaignid%3D24074176504%26gclid%3DEAIaIQobChMI3tfm9ryBlgMVMrE6BR2oggMJEAEYASAAEgLu5vD_BwE
+                  - link "Open" [ref=f17e17] [cursor=pointer]:
+                    - /url: https://adclick.g.doubleclick.net/aclk?sa=l&ai=CVeZc_vhuat7gH7Li6tkPqIWOSMGKktOIAfi3s6TiFYHjnPkFEAEgwZf0B2ChAqABldDFzwPIAQmpApUbj7rZB1g-qAMByAPLBKoE9AFP0LsaOYKbigsemMMb9n6mu9JVHPQLj9tU4eMJvBVNtG9gU9GB70Gte20X9TiAIILcCskZqn_rWGkfa7II4--8uy0RMdvAZ2yZ1ZjZVILgZ3RWRkPF5MiHiKIJCQSlUaHP3gG9T5XU1klEIquc9fFBmri_hSnzPi-nvICCx8vFzcoWfSg8CMeY7GDdCCKNqQGlazwSQZdda9R1FR9iZnJxVmXiLo53ORCfQNCzVrS7DvLtLPoCO1-MGkK7GuWAGCTg32kGjXVn-IADDqGxKvT4dx15KUpElHgusLZAs_DFSgwrGffxgRbWWNWWHEwgI5HVOy3pwAS7hNv_5AWIBfiPu9dZoAYugAfTr7owqAenzLECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAf-6LECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAef4bECqAem67ECqAfVyRuoB9m2sQKoB5oGqAf_nrECqAffn7ECqAf4wrECqAf7wrEC2AcA0ggzCIBhEAEYnwMyCIqCgICAgIAIOg-AQIDAgICAgKiAAqiDgBBIvf3BOlj40OL2vIGWA2ABsQkQIzJbOmdbg4AKAZgLAcgLAYAMAaIMDCoKCgiO37ECleKxAqoNAkdIyA0B6g0TCP3c5va8gZYDFTKxOgUdqIIDCfANAogOCbgT5APYEwOIFAHQFQHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRIC8FkYLiIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMI3tfm9ryBlgMVMrE6BR2oggMJEAEYASAAEgLu5vD_BwE&num=1&cid=CAQS8wEAEQoqgbFHxNgBeUGKqN5M0WdZ4DJqYReW27fNusr5QnZOCtUmVgQ7sz1MOScfPh2G-XSU1-OYgOqYSM7s3TzolUQwE4IssSQtryf7-OWdXqCBKMFIzKUEQ_qpqjlrnXNXRhDkCRQNlTfUr3QuzAfL-JuczTdiNQlqCZpTwKsf1fFlVlTqtFYpHZ1kRPNp8tYnAkdS54Y0eGRMPl44SA8LbsbEdGBqDczqc3TfKwiQv2IwO9IOwNRVpk_F1noswgRwfv9oA-55tW1B-wzWEuTC1QCUHXVgPWBVUuhJ7MTjUYvy31BIplrks1YNX7sGLrtOo1kYAQ&sig=AOD64_3E-E7XBN2Nx15oMR7WG8ic-CSYag&client=ca-pub-0447284344517370&rf=1&nb=8&adurl=https://hostablanca.com/vps-hosting/%3Futm_source%3Dgoogle%26utm_medium%3Dcpc%26utm_campaign%3Dvps_europe_search%26utm_content%3D819032693947%26campaign_id%3D24074176504%26adgroup_id%3D198910067259%26target_id%3D%26match_type%3D%26network%3Dd%26device%3Dc%26creative_id%3D819032693947%26gad_source%3D5%26gad_campaignid%3D24074176504%26gclid%3DEAIaIQobChMI3tfm9ryBlgMVMrE6BR2oggMJEAEYASAAEgLu5vD_BwE
+                    - generic [ref=f17e19]: Open
+              - img [ref=f17e23] [cursor=pointer]
+              - button [ref=f17e25] [cursor=pointer]:
+                - img [ref=f17e26]
+              - iframe
+        - list [ref=e239]:
+          - listitem [ref=e240]:
+            - link "HowTo translate Redmine in your own language" [ref=e241] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_translate_Redmine_in_your_own_language
+        - heading "2025-02-28" [level=3] [ref=e242]
+        - list [ref=e243]:
+          - listitem [ref=e244]:
+            - link "KoreanWikiFormatting" [ref=e245] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/KoreanWikiFormatting
+        - heading "2025-02-24" [level=3] [ref=e246]
+        - list [ref=e247]:
+          - listitem [ref=e248]:
+            - link "PtBRGetting Started" [ref=e249] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PtBRGetting_Started
+          - listitem [ref=e250]:
+            - link "PtBRRedmineFiles" [ref=e251] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PtBRRedmineFiles
+          - listitem [ref=e252]:
+            - link "PtBRRedmineKeyboardNavigation" [ref=e253] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PtBRRedmineKeyboardNavigation
+          - listitem [ref=e254]:
+            - link "Pt BRUser Guide" [ref=e255] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Pt_BRUser_Guide
+        - heading "2025-02-01" [level=3] [ref=e256]
+        - list [ref=e257]:
+          - listitem [ref=e258]:
+            - link "RedmineBackupRestore" [ref=e259] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineBackupRestore
+        - heading "2025-01-18" [level=3] [ref=e260]
+        - list [ref=e261]:
+          - listitem [ref=e262]:
+            - link "RedmineForums" [ref=e263] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineForums
+        - heading "2024-11-14" [level=3] [ref=e264]
+        - list [ref=e265]:
+          - listitem [ref=e266]:
+            - link "RedmineCodeHighlightingLanguages" [ref=e267] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineCodeHighlightingLanguages
+        - heading "2024-10-30" [level=3] [ref=e268]
+        - list [ref=e269]:
+          - listitem [ref=e270]:
+            - link "Nuno Zeta" [ref=e271] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Nuno_Zeta
+        - heading "2024-10-21" [level=3] [ref=e272]
+        - list [ref=e273]:
+          - listitem [ref=e274]:
+            - link "EmailConfiguration" [ref=e275] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/EmailConfiguration
+        - heading "2024-10-19" [level=3] [ref=e276]
+        - list [ref=e277]:
+          - listitem [ref=e278]:
+            - link "Patch" [ref=e279] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Patch
+        - heading "2024-10-03" [level=3] [ref=e280]
+        - insertion [ref=e282]
+        - list [ref=e284]:
+          - listitem [ref=e285]:
+            - link "RedmineLDAP" [ref=e286] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineLDAP
+          - listitem [ref=e287]:
+            - link "RedmineProjects" [ref=e288] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineProjects
+        - heading "2024-09-29" [level=3] [ref=e289]
+        - list [ref=e290]:
+          - listitem [ref=e291]:
+            - link "How to use encrypted database credentials" [ref=e292] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/How_to_use_encrypted_database_credentials
+        - heading "2024-09-19" [level=3] [ref=e293]
+        - list [ref=e294]:
+          - listitem [ref=e295]:
+            - link "RedmineWikis" [ref=e296] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineWikis
+        - heading "2024-09-03" [level=3] [ref=e297]
+        - list [ref=e298]:
+          - listitem [ref=e299]:
+            - link "MySQL configuration" [ref=e300] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/MySQL_configuration
+        - heading "2024-08-13" [level=3] [ref=e301]
+        - list [ref=e302]:
+          - listitem [ref=e303]:
+            - link "Guida Utente" [ref=e304] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Guida_Utente
+        - heading "2024-05-10" [level=3] [ref=e305]
+        - list [ref=e306]:
+          - listitem [ref=e307]:
+            - link "Rest api with powershell" [ref=e308] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Rest_api_with_powershell
+        - heading "2024-05-09" [level=3] [ref=e309]
+        - list [ref=e310]:
+          - listitem [ref=e311]:
+            - link "Daisy Theme" [ref=e312] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Daisy_Theme_
+        - heading "2024-04-02" [level=3] [ref=e313]
+        - list [ref=e314]:
+          - listitem [ref=e315]:
+            - link "Submissions" [ref=e316] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Submissions
+        - heading "2024-03-17" [level=3] [ref=e317]
+        - list [ref=e318]:
+          - listitem [ref=e319]:
+            - link "RedmineCalendar" [ref=e320] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineCalendar
+        - heading "2024-02-14" [level=3] [ref=e321]
+        - insertion [ref=e323]
+        - list [ref=e325]:
+          - listitem [ref=e326]:
+            - link "Generating demo data" [ref=e327] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Generating_demo_data
+        - heading "2024-02-04" [level=3] [ref=e328]
+        - list [ref=e329]:
+          - listitem [ref=e330]:
+            - link "Error parsing svn output" [ref=e331] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Error_parsing_svn_output
+        - heading "2024-01-29" [level=3] [ref=e332]
+        - list [ref=e333]:
+          - listitem [ref=e334]:
+            - link "SidekiqConfiguration" [ref=e335] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/SidekiqConfiguration
+        - heading "2024-01-02" [level=3] [ref=e336]
+        - list [ref=e337]:
+          - listitem [ref=e338]:
+            - link "DeRedmineInstall" [ref=e339] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeRedmineInstall
+        - heading "2023-12-19" [level=3] [ref=e340]
+        - list [ref=e341]:
+          - listitem [ref=e342]:
+            - link "RedmineUsers" [ref=e343] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineUsers
+        - heading "2023-12-08" [level=3] [ref=e344]
+        - list [ref=e345]:
+          - listitem [ref=e346]:
+            - link "Rest Users" [ref=e347] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Rest_Users
+        - heading "2023-12-01" [level=3] [ref=e348]
+        - list [ref=e349]:
+          - listitem [ref=e350]:
+            - link "Plugin Tutorial" [ref=e351] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Plugin_Tutorial
+        - heading "2023-11-30" [level=3] [ref=e352]
+        - list [ref=e353]:
+          - listitem [ref=e354]:
+            - link "DeInstallation Guide" [ref=e355] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeInstallation_Guide
+          - listitem [ref=e356]:
+            - link "DeMySQL configuration" [ref=e357] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeMySQL_configuration
+          - listitem [ref=e358]:
+            - link "Installation Guide" [ref=e359] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Installation_Guide
+        - heading "2023-11-20" [level=3] [ref=e360]
+        - list [ref=e361]:
+          - listitem [ref=e362]:
+            - link "HowTo convert a database from utf8 to utf8mb4" [ref=e363] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_convert_a_database_from_utf8_to_utf8mb4
+        - heading "2023-11-11" [level=3] [ref=e364]
+        - list [ref=e365]:
+          - listitem [ref=e366]:
+            - link "ItGuide" [ref=e367] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/ItGuide
+        - heading "2023-10-30" [level=3] [ref=e368]
+        - list [ref=e369]:
+          - listitem [ref=e370]:
+            - link "DeRedmineCodeHighlightingLanguages" [ref=e371] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeRedmineCodeHighlightingLanguages
+        - heading "2023-10-29" [level=3] [ref=e372]
+        - list [ref=e373]:
+          - listitem [ref=e374]:
+            - link "RedmineProjectSettings" [ref=e375] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineProjectSettings
+        - heading "2023-09-30" [level=3] [ref=e376]
+        - list [ref=e377]:
+          - listitem [ref=e378]:
+            - link "Changelog 4 2" [ref=e379] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Changelog_4_2
+        - heading "2023-09-29" [level=3] [ref=e380]
+        - list [ref=e381]:
+          - listitem [ref=e382]:
+            - link "DeRedmineTextFormattingMarkdown" [ref=e383] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeRedmineTextFormattingMarkdown
+          - listitem [ref=e384]:
+            - link "RedmineTextFormattingMarkdown" [ref=e385] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineTextFormattingMarkdown
+        - heading "2023-08-19" [level=3] [ref=e386]
+        - list [ref=e387]:
+          - listitem [ref=e388]:
+            - link "BrowserCaching" [ref=e389] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/BrowserCaching
+        - heading "2023-08-01" [level=3] [ref=e390]
+        - list [ref=e391]:
+          - listitem [ref=e392]:
+            - link "ItFAQ" [ref=e393] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/ItFAQ
+        - heading "2023-07-24" [level=3] [ref=e394]
+        - list [ref=e395]:
+          - listitem [ref=e396]:
+            - link "HowTo Install Redmine 50x on Ubuntu 2004 with Apache2" [ref=e397] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_Install_Redmine_50x_on_Ubuntu_2004_with_Apache2
+        - heading "2023-07-10" [level=3] [ref=e398]
+        - list [ref=e399]:
+          - listitem [ref=e400]:
+            - link "RedmineReceivingEmails" [ref=e401] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineReceivingEmails
+        - heading "2023-04-14" [level=3] [ref=e402]
+        - list [ref=e403]:
+          - listitem [ref=e404]:
+            - link "DeEmailConfiguration" [ref=e405] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeEmailConfiguration
+        - heading "2023-03-23" [level=3] [ref=e406]
+        - list [ref=e407]:
+          - listitem [ref=e408]:
+            - link "DeRedmineRake" [ref=e409] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeRedmineRake
+          - listitem [ref=e410]:
+            - link "DeRedmineReminderEmails" [ref=e411] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeRedmineReminderEmails
+          - listitem [ref=e412]:
+            - link "DeRedmineUpgrade" [ref=e413] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeRedmineUpgrade
+        - heading "2023-03-21" [level=3] [ref=e414]
+        - list [ref=e415]:
+          - listitem [ref=e416]:
+            - link "Archive" [ref=e417] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Archive
+        - heading "2023-02-28" [level=3] [ref=e418]
+        - list [ref=e419]:
+          - listitem [ref=e420]:
+            - link "PluginICalendarExport" [ref=e421] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginICalendarExport
+        - heading "2023-02-06" [level=3] [ref=e422]
+        - list [ref=e423]:
+          - listitem [ref=e424]:
+            - link "Developer Guide" [ref=e425] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Developer_Guide
+        - heading "2023-01-25" [level=3] [ref=e426]
+        - list [ref=e427]:
+          - listitem [ref=e428]:
+            - link "RedmineRoles" [ref=e429] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineRoles
+        - heading "2023-01-15" [level=3] [ref=e430]
+        - list [ref=e431]:
+          - listitem [ref=e432]:
+            - link "KoGuide" [ref=e433] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/KoGuide
+        - heading "2022-12-30" [level=3] [ref=e434]
+        - list [ref=e435]:
+          - listitem [ref=e436]:
+            - link "HowTo Install Redmine in Apache Tomcat" [ref=e437] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_Install_Redmine_in_Apache_Tomcat
+        - heading "2022-12-24" [level=3] [ref=e438]
+        - list [ref=e439]:
+          - listitem [ref=e440]:
+            - link "RedmineUpgrade" [ref=e441] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineUpgrade
+        - heading "2022-10-06" [level=3] [ref=e442]
+        - list [ref=e443]:
+          - listitem [ref=e444]:
+            - link "How to migrate old databases ie previous to redmine 420" [ref=e445] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/How_to_migrate_old_databases_ie_previous_to_redmine_420
+        - heading "2022-10-02" [level=3] [ref=e446]
+        - list [ref=e447]:
+          - listitem [ref=e448]:
+            - link "List of vendored third-party core components" [ref=e449] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/List_of_vendored_third-party_core_components
+        - heading "2022-09-16" [level=3] [ref=e450]
+        - list [ref=e451]:
+          - listitem [ref=e452]:
+            - link "Plugin Internals" [ref=e453] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Plugin_Internals
+        - heading "2022-09-12" [level=3] [ref=e454]
+        - list [ref=e455]:
+          - listitem [ref=e456]:
+            - link "RedmineSettings" [ref=e457] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineSettings
+        - heading "2022-08-26" [level=3] [ref=e458]
+        - list [ref=e459]:
+          - listitem [ref=e460]:
+            - link "User Guide" [ref=e461] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/User_Guide
+        - heading "2022-04-28" [level=3] [ref=e462]
+        - list [ref=e463]:
+          - listitem [ref=e464]:
+            - link "IRC" [ref=e465] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/IRC
+        - heading "2022-04-25" [level=3] [ref=e466]
+        - list [ref=e467]:
+          - listitem [ref=e468]:
+            - link "DeAdministrator Guide" [ref=e469] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeAdministrator_Guide
+          - listitem [ref=e470]:
+            - link "DeRedmineAdminInformation" [ref=e471] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeRedmineAdminInformation
+        - heading "2022-03-28" [level=3] [ref=e472]
+        - list [ref=e473]:
+          - listitem [ref=e474]:
+            - link "Changelog 4 1" [ref=e475] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Changelog_4_1
+        - heading "2022-02-25" [level=3] [ref=e476]
+        - list [ref=e477]:
+          - listitem [ref=e478]:
+            - link "HowTo Mylyn" [ref=e479] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_Mylyn
+        - heading "2022-01-21" [level=3] [ref=e480]
+        - list [ref=e481]:
+          - listitem [ref=e482]:
+            - link "DeRedmineProjects" [ref=e483] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeRedmineProjects
+        - heading "2022-01-14" [level=3] [ref=e484]
+        - list [ref=e485]:
+          - listitem [ref=e486]:
+            - link "DeRedmineTextFormattingTextile" [ref=e487] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeRedmineTextFormattingTextile
+        - heading "2021-12-30" [level=3] [ref=e488]
+        - list [ref=e489]:
+          - listitem [ref=e490]:
+            - link "DeRedmineDocuments" [ref=e491] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeRedmineDocuments
+          - listitem [ref=e492]:
+            - link "DeRedmineKeyboardNavigation" [ref=e493] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeRedmineKeyboardNavigation
+          - listitem [ref=e494]:
+            - link "RedmineKeyboardNavigation" [ref=e495] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineKeyboardNavigation
+        - heading "2021-12-29" [level=3] [ref=e496]
+        - list [ref=e497]:
+          - listitem [ref=e498]:
+            - link "DeRedmineCalendar" [ref=e499] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeRedmineCalendar
+          - listitem [ref=e500]:
+            - link "DeRedmineGantt" [ref=e501] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeRedmineGantt
+          - listitem [ref=e502]:
+            - link "DeRedmineIssueList" [ref=e503] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeRedmineIssueList
+          - listitem [ref=e504]:
+            - link "DeRedmineVersion" [ref=e505] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeRedmineVersion
+        - heading "2021-12-06" [level=3] [ref=e506]
+        - list [ref=e507]:
+          - listitem [ref=e508]:
+            - link "DeRedmineTextFormatting" [ref=e509] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeRedmineTextFormatting
+          - listitem [ref=e510]:
+            - link "DeReleaseManagement" [ref=e511] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeReleaseManagement
+          - listitem [ref=e512]:
+            - link "DeUser Guide" [ref=e513] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeUser_Guide
+        - heading "2021-11-21" [level=3] [ref=e514]
+        - list [ref=e515]:
+          - listitem [ref=e516]:
+            - link "PluginRate" [ref=e517] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginRate
+        - heading "2021-11-16" [level=3] [ref=e518]
+        - list [ref=e519]:
+          - listitem [ref=e520]:
+            - link "DeGuide" [ref=e521] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeGuide
+          - listitem [ref=e522]:
+            - link "DeRedmineProjectOverview" [ref=e523] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeRedmineProjectOverview
+        - heading "2021-11-11" [level=3] [ref=e524]
+        - list [ref=e525]:
+          - listitem [ref=e526]:
+            - link "DeRedmineAccounts" [ref=e527] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeRedmineAccounts
+        - heading "2021-09-30" [level=3] [ref=e528]
+        - list [ref=e529]:
+          - listitem [ref=e530]:
+            - link "RedmineCustomFields" [ref=e531] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineCustomFields
+        - heading "2021-09-28" [level=3] [ref=e532]
+        - list [ref=e533]:
+          - listitem [ref=e534]:
+            - link "DeRedmineIssues" [ref=e535] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeRedmineIssues
+          - listitem [ref=e536]:
+            - link "HowTo Configure Fail2ban For Redmine" [ref=e537] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_Configure_Fail2ban_For_Redmine
+        - heading "2021-09-24" [level=3] [ref=e538]
+        - list [ref=e539]:
+          - listitem [ref=e540]:
+            - link "DePatch" [ref=e541] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DePatch
+        - heading "2021-09-09" [level=3] [ref=e542]
+        - list [ref=e543]:
+          - listitem [ref=e544]:
+            - link "Rest Groups" [ref=e545] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Rest_Groups
+          - listitem [ref=e546]:
+            - link "Rest IssueRelations" [ref=e547] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Rest_IssueRelations
+          - listitem [ref=e548]:
+            - link "Rest Memberships" [ref=e549] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Rest_Memberships
+          - listitem [ref=e550]:
+            - link "Rest TimeEntries" [ref=e551] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Rest_TimeEntries
+          - listitem [ref=e552]:
+            - link "Rest Versions" [ref=e553] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Rest_Versions
+        - heading "2021-09-08" [level=3] [ref=e554]
+        - list [ref=e555]:
+          - listitem [ref=e556]:
+            - link "Rest IssueCategories" [ref=e557] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Rest_IssueCategories
+        - heading "2021-09-02" [level=3] [ref=e558]
+        - list [ref=e559]:
+          - listitem [ref=e560]:
+            - link "Rest CustomFields" [ref=e561] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Rest_CustomFields
+        - heading "2021-08-30" [level=3] [ref=e562]
+        - list [ref=e563]:
+          - listitem [ref=e564]:
+            - link "CustomNomenclature issues overview" [ref=e565] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/CustomNomenclature_issues_overview
+          - listitem [ref=e566]:
+            - link "DoneRatio issues overview" [ref=e567] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DoneRatio_issues_overview
+        - heading "2021-08-23" [level=3] [ref=e568]
+        - list [ref=e569]:
+          - listitem [ref=e570]:
+            - link "DeRedmineMigrate" [ref=e571] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeRedmineMigrate
+        - heading "2021-08-22" [level=3] [ref=e572]
+        - list [ref=e573]:
+          - listitem [ref=e574]:
+            - link "Plugin FAQ" [ref=e575] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Plugin_FAQ
+        - heading "2021-08-17" [level=3] [ref=e576]
+        - list [ref=e577]:
+          - listitem [ref=e578]:
+            - link "Install Redmine 421 on Centos 7" [ref=e579] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Install_Redmine_421_on_Centos_7
+        - heading "2021-08-10" [level=3] [ref=e580]
+        - list [ref=e581]:
+          - listitem [ref=e582]:
+            - link "BrRedmineWikiFormatting" [ref=e583] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/BrRedmineWikiFormatting
+        - heading "2021-08-05" [level=3] [ref=e584]
+        - list [ref=e585]:
+          - listitem [ref=e586]:
+            - link "DatabaseModel" [ref=e587] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DatabaseModel
+        - heading "2021-07-29" [level=3] [ref=e588]
+        - list [ref=e589]:
+          - listitem [ref=e590]:
+            - link "WeAreUsingRedmine" [ref=e591] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/WeAreUsingRedmine
+        - heading "2021-07-27" [level=3] [ref=e592]
+        - list [ref=e593]:
+          - listitem [ref=e594]:
+            - link "Rest Issues" [ref=e595] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Rest_Issues
+        - heading "2021-07-23" [level=3] [ref=e596]
+        - list [ref=e597]:
+          - listitem [ref=e598]:
+            - link "Rest IssueStatuses" [ref=e599] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Rest_IssueStatuses
+        - heading "2021-07-14" [level=3] [ref=e600]
+        - list [ref=e601]:
+          - listitem [ref=e602]:
+            - link "Rest Search" [ref=e603] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Rest_Search
+        - heading "2021-07-06" [level=3] [ref=e604]
+        - list [ref=e605]:
+          - listitem [ref=e606]:
+            - link "Rest Trackers" [ref=e607] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Rest_Trackers
+        - heading "2021-05-27" [level=3] [ref=e608]
+        - list [ref=e609]:
+          - listitem [ref=e610]:
+            - link "Hooks List" [ref=e611] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Hooks_List
+        - heading "2021-04-26" [level=3] [ref=e612]
+        - list [ref=e613]:
+          - listitem [ref=e614]:
+            - link "Changelog 4 0" [ref=e615] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Changelog_4_0
+        - heading "2021-04-17" [level=3] [ref=e616]
+        - list [ref=e617]:
+          - listitem [ref=e618]:
+            - link "PluginScreenshotPaste" [ref=e619] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginScreenshotPaste
+        - heading "2021-04-16" [level=3] [ref=e620]
+        - list [ref=e621]:
+          - listitem [ref=e622]:
+            - link "DeRedmineAttachedFiles" [ref=e623] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeRedmineAttachedFiles
+        - heading "2021-04-15" [level=3] [ref=e624]
+        - list [ref=e625]:
+          - listitem [ref=e626]:
+            - link "DeRedmineTextFormattingRedmineLinks" [ref=e627] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeRedmineTextFormattingRedmineLinks
+        - heading "2021-04-14" [level=3] [ref=e628]
+        - list [ref=e629]:
+          - listitem [ref=e630]:
+            - link "DeRedmineNews" [ref=e631] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeRedmineNews
+        - heading "2021-04-05" [level=3] [ref=e632]
+        - list [ref=e633]:
+          - listitem [ref=e634]:
+            - link "Rest api with java" [ref=e635] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Rest_api_with_java
+        - heading "2021-03-19" [level=3] [ref=e636]
+        - list [ref=e637]:
+          - listitem [ref=e638]:
+            - link "DeSubmissions" [ref=e639] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeSubmissions
+        - heading "2021-03-18" [level=3] [ref=e640]
+        - list [ref=e641]:
+          - listitem [ref=e642]:
+            - link "DeRedmineIssueSummary" [ref=e643] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeRedmineIssueSummary
+          - listitem [ref=e644]:
+            - link "DeRedmineRoadmap" [ref=e645] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeRedmineRoadmap
+        - heading "2021-03-17" [level=3] [ref=e646]
+        - list [ref=e647]:
+          - listitem [ref=e648]:
+            - link "DeRedmineProjectActivity" [ref=e649] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeRedmineProjectActivity
+          - listitem [ref=e650]:
+            - link "DeRedmineRegister" [ref=e651] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeRedmineRegister
+          - listitem [ref=e652]:
+            - link "DeRedmineSearch" [ref=e653] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeRedmineSearch
+        - heading "2021-03-12" [level=3] [ref=e654]
+        - list [ref=e655]:
+          - listitem [ref=e656]:
+            - link "DeRedmineLogin" [ref=e657] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeRedmineLogin
+        - heading "2021-03-09" [level=3] [ref=e658]
+        - list [ref=e659]:
+          - listitem [ref=e660]:
+            - link "DeRedmineMyPage" [ref=e661] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeRedmineMyPage
+        - heading "2021-02-08" [level=3] [ref=e662]
+        - list [ref=e663]:
+          - listitem [ref=e664]:
+            - link "DeGetting Started" [ref=e665] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeGetting_Started
+        - heading "2021-02-07" [level=3] [ref=e666]
+        - list [ref=e667]:
+          - listitem [ref=e668]:
+            - link "Administrator Guide" [ref=e669] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Administrator_Guide
+        - heading "2021-02-04" [level=3] [ref=e670]
+        - list [ref=e671]:
+          - listitem [ref=e672]:
+            - link "DeRedmineUsers" [ref=e673] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeRedmineUsers
+          - listitem [ref=e674]:
+            - link "RedmineFiles" [ref=e675] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineFiles
+        - heading "2021-01-26" [level=3] [ref=e676]
+        - list [ref=e677]:
+          - listitem [ref=e678]:
+            - link "DeRedmineBackupRestore" [ref=e679] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeRedmineBackupRestore
+        - heading "2021-01-18" [level=3] [ref=e680]
+        - list [ref=e681]:
+          - listitem [ref=e682]:
+            - link "DeContribute" [ref=e683] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeContribute
+        - heading "2020-10-26" [level=3] [ref=e684]
+        - list [ref=e685]:
+          - listitem [ref=e686]:
+            - link "How to install Redmine on IBM Cloud kubernetes cluster" [ref=e687] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/How_to_install_Redmine_on_IBM_Cloud_kubernetes_cluster
+        - heading "2020-08-05" [level=3] [ref=e688]
+        - list [ref=e689]:
+          - listitem [ref=e690]:
+            - link "Tutorials" [ref=e691] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Tutorials
+        - heading "2020-07-30" [level=3] [ref=e692]
+        - list [ref=e693]:
+          - listitem [ref=e694]:
+            - link "RedmineMigrate" [ref=e695] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineMigrate
+        - heading "2020-06-14" [level=3] [ref=e696]
+        - list [ref=e697]:
+          - listitem [ref=e698]:
+            - link "Rest MyAccount" [ref=e699] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Rest_MyAccount
+        - heading "2020-06-13" [level=3] [ref=e700]
+        - list [ref=e701]:
+          - listitem [ref=e702]:
+            - link "RedmineIssueTrackingSetup" [ref=e703] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineIssueTrackingSetup
+        - heading "2020-05-06" [level=3] [ref=e704]
+        - list [ref=e705]:
+          - listitem [ref=e706]:
+            - link "RedmineAdminInformation" [ref=e707] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineAdminInformation
+        - heading "2020-05-05" [level=3] [ref=e708]
+        - list [ref=e709]:
+          - listitem [ref=e710]:
+            - link "DeRedmineProjectSettings" [ref=e711] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeRedmineProjectSettings
+        - heading "2020-02-12" [level=3] [ref=e712]
+        - list [ref=e713]:
+          - listitem [ref=e714]:
+            - link "HowTo Easily integrate a (SSH secured) GIT repository into redmine" [ref=e715] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_Easily_integrate_a_(SSH_secured)_GIT_repository_into_redmine
+        - heading "2019-12-30" [level=3] [ref=e716]
+        - list [ref=e717]:
+          - listitem [ref=e718]:
+            - link "HowTo Install Redmine on Debian 9" [ref=e719] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_Install_Redmine_on_Debian_9
+        - heading "2019-12-20" [level=3] [ref=e720]
+        - list [ref=e721]:
+          - listitem [ref=e722]:
+            - link "Changelog 3 4" [ref=e723] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Changelog_3_4
+        - heading "2019-11-28" [level=3] [ref=e724]
+        - list [ref=e725]:
+          - listitem [ref=e726]:
+            - link "PrivacyPolicy" [ref=e727] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PrivacyPolicy
+        - heading "2019-11-18" [level=3] [ref=e728]
+        - list [ref=e729]:
+          - listitem [ref=e730]:
+            - link "Changelog 3 3" [ref=e731] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Changelog_3_3
+        - heading "2019-10-18" [level=3] [ref=e732]
+        - list [ref=e733]:
+          - listitem [ref=e734]:
+            - link "Rest api with curl" [ref=e735] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Rest_api_with_curl
+        - heading "2019-06-28" [level=3] [ref=e736]
+        - list [ref=e737]:
+          - listitem [ref=e738]:
+            - link "FrRedmineReceivingEmails" [ref=e739] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineReceivingEmails
+        - heading "2019-06-12" [level=3] [ref=e740]
+        - list [ref=e741]:
+          - listitem [ref=e742]:
+            - link "Repositories access control with apache mod dav svn and mod perl" [ref=e743] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Repositories_access_control_with_apache_mod_dav_svn_and_mod_perl
+        - heading "2019-05-19" [level=3] [ref=e744]
+        - list [ref=e745]:
+          - listitem [ref=e746]:
+            - link "HowTo Install Redmine in Ubuntu" [ref=e747] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_Install_Redmine_in_Ubuntu
+        - heading "2019-03-20" [level=3] [ref=e748]
+        - list [ref=e749]:
+          - listitem [ref=e750]:
+            - link "Redmine Appliance" [ref=e751] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Redmine_Appliance
+        - heading "2019-02-08" [level=3] [ref=e752]
+        - list [ref=e753]:
+          - listitem [ref=e754]:
+            - link "HowTo Install Redmine in a sub-URI" [ref=e755] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_Install_Redmine_in_a_sub-URI
+        - heading "2019-01-09" [level=3] [ref=e756]
+        - list [ref=e757]:
+          - listitem [ref=e758]:
+            - link "Install Redmine 346 on Centos 75" [ref=e759] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Install_Redmine_346_on_Centos_75
+        - heading "2019-01-07" [level=3] [ref=e760]
+        - list [ref=e761]:
+          - listitem [ref=e762]:
+            - link "RedmineRepositoryStatistics" [ref=e763] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineRepositoryStatistics
+        - heading "2019-01-04" [level=3] [ref=e764]
+        - list [ref=e765]:
+          - listitem [ref=e766]:
+            - link "F29Installation" [ref=e767] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/F29Installation
+          - listitem [ref=e768]:
+            - link "Install Redmine on Fedora" [ref=e769] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Install_Redmine_on_Fedora
+        - heading "2018-12-26" [level=3] [ref=e770]
+        - list [ref=e771]:
+          - listitem [ref=e772]:
+            - link "RedmineIssues" [ref=e773] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineIssues
+        - heading "2018-12-12" [level=3] [ref=e774]
+        - list [ref=e775]:
+          - listitem [ref=e776]:
+            - link "Rest Roles" [ref=e777] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Rest_Roles
+        - heading "2018-11-17" [level=3] [ref=e778]
+        - list [ref=e779]:
+          - listitem [ref=e780]:
+            - link "RusRedmineAttachedFiles" [ref=e781] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusRedmineAttachedFiles
+        - heading "2018-11-16" [level=3] [ref=e782]
+        - list [ref=e783]:
+          - listitem [ref=e784]:
+            - link "RusRedmineDocuments" [ref=e785] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusRedmineDocuments
+          - listitem [ref=e786]:
+            - link "RusRedmineRepositoryStatistics" [ref=e787] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusRedmineRepositoryStatistics
+        - heading "2018-11-14" [level=3] [ref=e788]
+        - list [ref=e789]:
+          - listitem [ref=e790]:
+            - link "Getting Started" [ref=e791] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Getting_Started
+        - heading "2018-10-31" [level=3] [ref=e792]
+        - list [ref=e793]:
+          - listitem [ref=e794]:
+            - link "HowTo keep Redmine in sync with Github without dedicated plugin (Apache CGI + Github Webhook)" [ref=e795] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_keep_Redmine_in_sync_with_Github_without_dedicated_plugin_(Apache_CGI_+_Github_Webhook)
+        - heading "2018-10-24" [level=3] [ref=e796]
+        - list [ref=e797]:
+          - listitem [ref=e798]:
+            - link "Plugins" [ref=e799] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Plugins
+        - heading "2018-09-30" [level=3] [ref=e800]
+        - list [ref=e801]:
+          - listitem [ref=e802]:
+            - link "RedmineTextFormatting" [ref=e803] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineTextFormatting
+        - heading "2018-09-19" [level=3] [ref=e804]
+        - list [ref=e805]:
+          - listitem [ref=e806]:
+            - link "RedmineIssueSummary" [ref=e807] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineIssueSummary
+        - heading "2018-09-18" [level=3] [ref=e808]
+        - list [ref=e809]:
+          - listitem [ref=e810]:
+            - link "Guide" [ref=e811] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Guide
+          - listitem [ref=e812]:
+            - link "RedmineTimeTracking" [ref=e813] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineTimeTracking
+        - heading "2018-09-17" [level=3] [ref=e814]
+        - list [ref=e815]:
+          - listitem [ref=e816]:
+            - link "JaGuide" [ref=e817] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/JaGuide
+        - heading "2018-09-09" [level=3] [ref=e818]
+        - list [ref=e819]:
+          - listitem [ref=e820]:
+            - link "RedmineGantt" [ref=e821] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineGantt
+        - heading "2018-07-24" [level=3] [ref=e822]
+        - list [ref=e823]:
+          - listitem [ref=e824]:
+            - link "PluginGithubHook" [ref=e825] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginGithubHook
+        - heading "2018-07-05" [level=3] [ref=e826]
+        - list [ref=e827]:
+          - listitem [ref=e828]:
+            - link "RusRedmineTimeTracking" [ref=e829] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusRedmineTimeTracking
+        - heading "2018-06-08" [level=3] [ref=e830]
+        - list [ref=e831]:
+          - listitem [ref=e832]:
+            - link "RedmineTextFormattingRedmineLinksSimplifiedChinese" [ref=e833] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineTextFormattingRedmineLinksSimplifiedChinese
+          - listitem [ref=e834]:
+            - link "SimplifiedChineseWikiFormatting" [ref=e835] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/SimplifiedChineseWikiFormatting
+        - heading "2018-04-12" [level=3] [ref=e836]
+        - list [ref=e837]:
+          - listitem [ref=e838]:
+            - link "Howto add a logo to your Redmine banner" [ref=e839] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Howto_add_a_logo_to_your_Redmine_banner
+        - heading "2018-02-17" [level=3] [ref=e840]
+        - list [ref=e841]:
+          - listitem [ref=e842]:
+            - link "Issue description edit UIUX issues overview" [ref=e843] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Issue_description_edit_UIUX_issues_overview
+        - heading "2018-02-07" [level=3] [ref=e844]
+        - list [ref=e845]:
+          - listitem [ref=e846]:
+            - link "Install Redmine 34 on RHEL74" [ref=e847] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Install_Redmine_34_on_RHEL74
+        - heading "2018-01-21" [level=3] [ref=e848]
+        - list [ref=e849]:
+          - listitem [ref=e850]:
+            - link "MailhandlerSubAddress" [ref=e851] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/MailhandlerSubAddress
+        - heading "2018-01-18" [level=3] [ref=e852]
+        - list [ref=e853]:
+          - listitem [ref=e854]:
+            - link "HowTo Install Redmine (3xx) on Heroku" [ref=e855] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_Install_Redmine_(3xx)_on_Heroku_
+        - heading "2018-01-16" [level=3] [ref=e856]
+        - list [ref=e857]:
+          - listitem [ref=e858]:
+            - link "Rest IssueJournals" [ref=e859] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Rest_IssueJournals
+        - heading "2018-01-08" [level=3] [ref=e860]
+        - list [ref=e861]:
+          - listitem [ref=e862]:
+            - link "Changelog 3 2" [ref=e863] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Changelog_3_2
+          - listitem [ref=e864]:
+            - link "RedmineRegister" [ref=e865] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineRegister
+        - heading "2018-01-07" [level=3] [ref=e866]
+        - list [ref=e867]:
+          - listitem [ref=e868]:
+            - link "RedmineMyPage" [ref=e869] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineMyPage
+        - heading "2017-12-24" [level=3] [ref=e870]
+        - list [ref=e871]:
+          - listitem [ref=e872]:
+            - link "RedmineIssueList" [ref=e873] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineIssueList
+        - heading "2017-12-17" [level=3] [ref=e874]
+        - list [ref=e875]:
+          - listitem [ref=e876]:
+            - link "Features" [ref=e877] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Features
+        - heading "2017-11-25" [level=3] [ref=e878]
+        - list [ref=e879]:
+          - listitem [ref=e880]:
+            - link "RedmineReminderEmails" [ref=e881] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineReminderEmails
+        - heading "2017-11-24" [level=3] [ref=e882]
+        - list [ref=e883]:
+          - listitem [ref=e884]:
+            - link "RedmineSearch" [ref=e885] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineSearch
+        - heading "2017-11-23" [level=3] [ref=e886]
+        - list [ref=e887]:
+          - listitem [ref=e888]:
+            - link "RedmineVersion" [ref=e889] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineVersion
+        - heading "2017-10-09" [level=3] [ref=e890]
+        - list [ref=e891]:
+          - listitem [ref=e892]:
+            - link "RedmineRoadmap" [ref=e893] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineRoadmap
+        - heading "2017-09-12" [level=3] [ref=e894]
+        - list [ref=e895]:
+          - listitem [ref=e896]:
+            - link "RedmineEnumerations" [ref=e897] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineEnumerations
+          - listitem [ref=e898]:
+            - link "RedmineRake" [ref=e899] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineRake
+        - heading "2017-09-11" [level=3] [ref=e900]
+        - list [ref=e901]:
+          - listitem [ref=e902]:
+            - link "RedmineLogin" [ref=e903] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineLogin
+        - heading "2017-09-09" [level=3] [ref=e904]
+        - list [ref=e905]:
+          - listitem [ref=e906]:
+            - link "Archived Debian How-Tos Redmine Version 060 - 2xx" [ref=e907] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Archived_Debian_How-Tos_Redmine_Version_060_-_2xx
+        - heading "2017-09-02" [level=3] [ref=e908]
+        - list [ref=e909]:
+          - listitem [ref=e910]:
+            - link "HowTo configure a single sign-on into Redmine from an other App on the same server" [ref=e911] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_configure_a_single_sign-on_into_Redmine_from_an_other_App_on_the_same_server
+        - heading "2017-06-19" [level=3] [ref=e912]
+        - list [ref=e913]:
+          - listitem [ref=e914]:
+            - link "Rest api with ruby" [ref=e915] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Rest_api_with_ruby
+        - heading "2017-04-11" [level=3] [ref=e916]
+        - list [ref=e917]:
+          - listitem [ref=e918]:
+            - link "FAQ" [ref=e919] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FAQ
+        - heading "2017-04-10" [level=3] [ref=e920]
+        - list [ref=e921]:
+          - listitem [ref=e922]:
+            - link "Rest api ẅith python" [ref=e923] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Rest_api_%E1%BA%85ith_python
+        - heading "2017-03-07" [level=3] [ref=e924]
+        - list [ref=e925]:
+          - listitem [ref=e926]:
+            - link "Rest Enumerations" [ref=e927] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Rest_Enumerations
+        - heading "2017-01-12" [level=3] [ref=e928]
+        - list [ref=e929]:
+          - listitem [ref=e930]:
+            - link "Rest Files" [ref=e931] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Rest_Files
+        - heading "2016-11-27" [level=3] [ref=e932]
+        - list [ref=e933]:
+          - listitem [ref=e934]:
+            - link "RusRedmineReceivingEmails" [ref=e935] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusRedmineReceivingEmails
+        - heading "2016-11-13" [level=3] [ref=e936]
+        - list [ref=e937]:
+          - listitem [ref=e938]:
+            - link "HowTo Install Redmine on Debian 8 with Apache2-Passenger" [ref=e939] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_Install_Redmine_on_Debian_8_with_Apache2-Passenger
+        - heading "2016-11-07" [level=3] [ref=e940]
+        - list [ref=e941]:
+          - listitem [ref=e942]:
+            - link "FrRedmineInstall" [ref=e943] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineInstall
+        - heading "2016-11-01" [level=3] [ref=e944]
+        - list [ref=e945]:
+          - listitem [ref=e946]:
+            - link "InstallRedmineOnDebianStableApacheMysqlPassenger" [ref=e947] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/InstallRedmineOnDebianStableApacheMysqlPassenger
+        - heading "2016-10-10" [level=3] [ref=e948]
+        - list [ref=e949]:
+          - listitem [ref=e950]:
+            - link "Changelog 3 1" [ref=e951] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Changelog_3_1
+        - heading "2016-08-18" [level=3] [ref=e952]
+        - list [ref=e953]:
+          - listitem [ref=e954]:
+            - link "PluginBudget" [ref=e955] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginBudget
+          - listitem [ref=e956]:
+            - link "PluginSidebarIssueControl" [ref=e957] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginSidebarIssueControl
+        - heading "2016-06-24" [level=3] [ref=e958]
+        - list [ref=e959]:
+          - listitem [ref=e960]:
+            - link "RedmineInstallOSXMavericksServer" [ref=e961] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineInstallOSXMavericksServer
+        - heading "2016-04-30" [level=3] [ref=e962]
+        - list [ref=e963]:
+          - listitem [ref=e964]:
+            - link "HowTo setup automatic refresh of repositories in Redmine on commit" [ref=e965] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_setup_automatic_refresh_of_repositories_in_Redmine_on_commit
+        - heading "2016-04-03" [level=3] [ref=e966]
+        - list [ref=e967]:
+          - listitem [ref=e968]:
+            - link "RusGuide" [ref=e969] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusGuide
+          - listitem [ref=e970]:
+            - link "RusRedmineCalendar" [ref=e971] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusRedmineCalendar
+          - listitem [ref=e972]:
+            - link "RusRedmineGantt" [ref=e973] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusRedmineGantt
+          - listitem [ref=e974]:
+            - link "RusRedmineTimelogDetails" [ref=e975] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusRedmineTimelogDetails
+          - listitem [ref=e976]:
+            - link "RusRedmineTimelogReport" [ref=e977] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusRedmineTimelogReport
+        - heading "2016-04-02" [level=3] [ref=e978]
+        - list [ref=e979]:
+          - listitem [ref=e980]:
+            - link "RusRedmineRoadmap" [ref=e981] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusRedmineRoadmap
+          - listitem [ref=e982]:
+            - link "RusRedmineVersion" [ref=e983] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusRedmineVersion
+        - heading "2016-04-01" [level=3] [ref=e984]
+        - list [ref=e985]:
+          - listitem [ref=e986]:
+            - link "RusRedmineProjectSettings" [ref=e987] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusRedmineProjectSettings
+        - heading "2016-03-31" [level=3] [ref=e988]
+        - list [ref=e989]:
+          - listitem [ref=e990]:
+            - link "RusRedmineIssueChangelog" [ref=e991] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusRedmineIssueChangelog
+          - listitem [ref=e992]:
+            - link "RusRedmineIssueSummary" [ref=e993] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusRedmineIssueSummary
+        - heading "2016-03-13" [level=3] [ref=e994]
+        - list [ref=e995]:
+          - listitem [ref=e996]:
+            - link "Changelog 2 6" [ref=e997] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Changelog_2_6
+        - heading "2016-03-12" [level=3] [ref=e998]
+        - list [ref=e999]:
+          - listitem [ref=e1000]:
+            - link "Rest api with perl" [ref=e1001] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Rest_api_with_perl
+        - heading "2016-03-06" [level=3] [ref=e1002]
+        - list [ref=e1003]:
+          - listitem [ref=e1004]:
+            - link "PluginScmExtensions" [ref=e1005] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginScmExtensions
+        - heading "2016-02-27" [level=3] [ref=e1006]
+        - list [ref=e1007]:
+          - listitem [ref=e1008]:
+            - link "EsRedmineSettings" [ref=e1009] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/EsRedmineSettings
+        - heading "2016-01-05" [level=3] [ref=e1010]
+        - list [ref=e1011]:
+          - listitem [ref=e1012]:
+            - link "HowTo Install Redmine 30x on Ubuntu 1404 with Apache2 Phusion Passenger MySQL Subversion and Git (Gitolite)" [ref=e1013] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_Install_Redmine_30x_on_Ubuntu_1404_with_Apache2_Phusion_Passenger_MySQL_Subversion_and_Git_(Gitolite)
+        - heading "2015-12-18" [level=3] [ref=e1014]
+        - list [ref=e1015]:
+          - listitem [ref=e1016]:
+            - link "Contribute" [ref=e1017] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Contribute
+        - heading "2015-12-15" [level=3] [ref=e1018]
+        - list [ref=e1019]:
+          - listitem [ref=e1020]:
+            - link "RusRedmineLDAP" [ref=e1021] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusRedmineLDAP
+        - heading "2015-12-05" [level=3] [ref=e1022]
+        - list [ref=e1023]:
+          - listitem [ref=e1024]:
+            - link "Changelog 3 0" [ref=e1025] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Changelog_3_0
+        - heading "2015-11-10" [level=3] [ref=e1026]
+        - list [ref=e1027]:
+          - listitem [ref=e1028]:
+            - link "HowTo Install Redmine on Ubuntu step by step" [ref=e1029] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_Install_Redmine_on_Ubuntu_step_by_step
+        - heading "2015-11-02" [level=3] [ref=e1030]
+        - list [ref=e1031]:
+          - listitem [ref=e1032]:
+            - link "FrRedmineWikiFormatting" [ref=e1033] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineWikiFormatting
+        - heading "2015-10-08" [level=3] [ref=e1034]
+        - list [ref=e1035]:
+          - listitem [ref=e1036]:
+            - link "RusRedmineTextFormatting" [ref=e1037] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusRedmineTextFormatting
+        - heading "2015-10-07" [level=3] [ref=e1038]
+        - list [ref=e1039]:
+          - listitem [ref=e1040]:
+            - link "PluginTimesheet" [ref=e1041] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginTimesheet
+        - heading "2015-09-18" [level=3] [ref=e1042]
+        - list [ref=e1043]:
+          - listitem [ref=e1044]:
+            - link "HowTo Install Redmine on openSUSE" [ref=e1045] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_Install_Redmine_on_openSUSE
+        - heading "2015-09-10" [level=3] [ref=e1046]
+        - list [ref=e1047]:
+          - listitem [ref=e1048]:
+            - link "HowTo Install Redmine using Debian package" [ref=e1049] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_Install_Redmine_using_Debian_package
+        - heading "2015-08-26" [level=3] [ref=e1050]
+        - list [ref=e1051]:
+          - listitem [ref=e1052]:
+            - link "RusRedmineInstall" [ref=e1053] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusRedmineInstall
+        - heading "2015-07-27" [level=3] [ref=e1054]
+        - list [ref=e1055]:
+          - listitem [ref=e1056]:
+            - link "PtBRRedmineCustomFields" [ref=e1057] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PtBRRedmineCustomFields
+          - listitem [ref=e1058]:
+            - link "PtBRRedmineEnumerations" [ref=e1059] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PtBRRedmineEnumerations
+          - listitem [ref=e1060]:
+            - link "PtBRRedmineGantt" [ref=e1061] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PtBRRedmineGantt
+          - listitem [ref=e1062]:
+            - link "PtBRRedmineIssueTrackingSetup" [ref=e1063] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PtBRRedmineIssueTrackingSetup
+          - listitem [ref=e1064]:
+            - link "PtBRRedmineLogin" [ref=e1065] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PtBRRedmineLogin
+          - listitem [ref=e1066]:
+            - link "PtBRRedmineRegister" [ref=e1067] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PtBRRedmineRegister
+        - heading "2015-07-23" [level=3] [ref=e1068]
+        - list [ref=e1069]:
+          - listitem [ref=e1070]:
+            - link "PtBRGuide" [ref=e1071] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PtBRGuide
+          - listitem [ref=e1072]:
+            - link "PtBRRedmineGroups" [ref=e1073] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PtBRRedmineGroups
+          - listitem [ref=e1074]:
+            - link "PtBRRedmineProjects" [ref=e1075] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PtBRRedmineProjects
+          - listitem [ref=e1076]:
+            - link "PtBRRedmineRoles" [ref=e1077] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PtBRRedmineRoles
+          - listitem [ref=e1078]:
+            - link "PtBRRedmineUsers" [ref=e1079] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PtBRRedmineUsers
+          - listitem [ref=e1080]:
+            - link "Pt BRAdministrator Guide" [ref=e1081] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Pt_BRAdministrator_Guide
+        - heading "2015-07-05" [level=3] [ref=e1082]
+        - list [ref=e1083]:
+          - listitem [ref=e1084]:
+            - link "AttachmentsContainer" [ref=e1085] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/AttachmentsContainer
+        - heading "2015-06-24" [level=3] [ref=e1086]
+        - list [ref=e1087]:
+          - listitem [ref=e1088]:
+            - link "Install Redmine 25x on Centos 65 complete" [ref=e1089] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Install_Redmine_25x_on_Centos_65_complete
+        - heading "2015-06-18" [level=3] [ref=e1090]
+        - list [ref=e1091]:
+          - listitem [ref=e1092]:
+            - link "DeDeveloper Guide" [ref=e1093] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/DeDeveloper_Guide
+        - heading "2015-06-09" [level=3] [ref=e1094]
+        - list [ref=e1095]:
+          - listitem [ref=e1096]:
+            - link "TraditionalChineseWikiFormatting" [ref=e1097] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/TraditionalChineseWikiFormatting
+        - heading "2015-05-20" [level=3] [ref=e1098]
+        - list [ref=e1099]:
+          - listitem [ref=e1100]:
+            - link "RusRedmineProjects" [ref=e1101] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusRedmineProjects
+        - heading "2015-04-09" [level=3] [ref=e1102]
+        - list [ref=e1103]:
+          - listitem [ref=e1104]:
+            - link "HowTo Install Redmine 2 integrated with Gitolite 2 on Debian Wheezy with Apache and Phusion Passenger" [ref=e1105] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_Install_Redmine_2_integrated_with_Gitolite_2_on_Debian_Wheezy_with_Apache_and_Phusion_Passenger
+        - heading "2015-04-07" [level=3] [ref=e1106]
+        - list [ref=e1107]:
+          - listitem [ref=e1108]:
+            - link "KoRedmineRegister" [ref=e1109] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/KoRedmineRegister
+        - heading "2015-03-08" [level=3] [ref=e1110]
+        - list [ref=e1111]:
+          - listitem [ref=e1112]:
+            - link "FrRedmineActivity" [ref=e1113] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineActivity
+        - heading "2015-03-07" [level=3] [ref=e1114]
+        - list [ref=e1115]:
+          - listitem [ref=e1116]:
+            - link "FrRedmineSettings" [ref=e1117] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineSettings
+        - heading "2015-03-04" [level=3] [ref=e1118]
+        - list [ref=e1119]:
+          - listitem [ref=e1120]:
+            - link "KoRedmineLogin" [ref=e1121] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/KoRedmineLogin
+        - heading "2015-02-23" [level=3] [ref=e1122]
+        - list [ref=e1123]:
+          - listitem [ref=e1124]:
+            - link "RedmineTimelogDetails" [ref=e1125] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineTimelogDetails
+          - listitem [ref=e1126]:
+            - link "RedmineTimelogReport" [ref=e1127] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineTimelogReport
+        - heading "2015-02-02" [level=3] [ref=e1128]
+        - list [ref=e1129]:
+          - listitem [ref=e1130]:
+            - link "Bugmash" [ref=e1131] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Bugmash
+          - listitem [ref=e1132]:
+            - link "BugMash-10" [ref=e1133] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/BugMash-10
+          - listitem [ref=e1134]:
+            - link "HowTo Install Redmine in a home directory on Debian" [ref=e1135] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_Install_Redmine_in_a_home_directory_on_Debian
+          - listitem [ref=e1136]:
+            - link "HowTo run Redmine with a Mongrel cluster" [ref=e1137] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_run_Redmine_with_a_Mongrel_cluster
+          - listitem [ref=e1138]:
+            - link "JdA" [ref=e1139] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/JdA
+          - listitem [ref=e1140]:
+            - link "RedmineCamp" [ref=e1141] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineCamp
+        - heading "2015-01-11" [level=3] [ref=e1142]
+        - list [ref=e1143]:
+          - listitem [ref=e1144]:
+            - link "FrRedmineProjectSettings" [ref=e1145] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineProjectSettings
+        - heading "2014-12-18" [level=3] [ref=e1146]
+        - list [ref=e1147]:
+          - listitem [ref=e1148]:
+            - link "RedmineProjectsList" [ref=e1149] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineProjectsList
+        - heading "2014-12-05" [level=3] [ref=e1150]
+        - list [ref=e1151]:
+          - listitem [ref=e1152]:
+            - link "RusRedmineRoles" [ref=e1153] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusRedmineRoles
+        - heading "2014-11-23" [level=3] [ref=e1154]
+        - list [ref=e1155]:
+          - listitem [ref=e1156]:
+            - link "Presentation" [ref=e1157] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Presentation
+        - heading "2014-11-16" [level=3] [ref=e1158]
+        - list [ref=e1159]:
+          - listitem [ref=e1160]:
+            - link "Rest Queries" [ref=e1161] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Rest_Queries
+        - heading "2014-11-15" [level=3] [ref=e1162]
+        - list [ref=e1163]:
+          - listitem [ref=e1164]:
+            - link "RusRedmineProjectActivity" [ref=e1165] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusRedmineProjectActivity
+        - heading "2014-11-13" [level=3] [ref=e1166]
+        - list [ref=e1167]:
+          - listitem [ref=e1168]:
+            - link "HowTo Install Redmine on Debian Wheezy Testing with MySQL and Apache2-Passenger" [ref=e1169] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_Install_Redmine_on_Debian_Wheezy_Testing_with_MySQL_and_Apache2-Passenger
+        - heading "2014-10-24" [level=3] [ref=e1170]
+        - list [ref=e1171]:
+          - listitem [ref=e1172]:
+            - link "ThemeArchLinux" [ref=e1173] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/ThemeArchLinux
+          - listitem [ref=e1174]:
+            - link "ThemeRedAndy" [ref=e1175] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/ThemeRedAndy
+        - heading "2014-10-21" [level=3] [ref=e1176]
+        - list [ref=e1177]:
+          - listitem [ref=e1178]:
+            - link "Changelog 2 4" [ref=e1179] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Changelog_2_4
+          - listitem [ref=e1180]:
+            - link "Changelog 2 5" [ref=e1181] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Changelog_2_5
+        - heading "2014-10-04" [level=3] [ref=e1182]
+        - list [ref=e1183]:
+          - listitem [ref=e1184]:
+            - link "Alternativecustom authentication HowTo" [ref=e1185] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Alternativecustom_authentication_HowTo
+        - heading "2014-10-02" [level=3] [ref=e1186]
+        - list [ref=e1187]:
+          - listitem [ref=e1188]:
+            - link "HowTo Install Redmine 25x on Ubuntu 1404 with Apache2 Phusion Passenger MySQL and Subversion" [ref=e1189] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_Install_Redmine_25x_on_Ubuntu_1404_with_Apache2_Phusion_Passenger_MySQL_and_Subversion
+        - heading "2014-09-13" [level=3] [ref=e1190]
+        - list [ref=e1191]:
+          - listitem [ref=e1192]:
+            - link "KoGetting Started" [ref=e1193] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/KoGetting_Started
+        - heading "2014-09-12" [level=3] [ref=e1194]
+        - list [ref=e1195]:
+          - listitem [ref=e1196]:
+            - link "PluginBugcloud" [ref=e1197] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginBugcloud
+        - heading "2014-09-04" [level=3] [ref=e1198]
+        - list [ref=e1199]:
+          - listitem [ref=e1200]:
+            - link "KoRedmineAccounts" [ref=e1201] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/KoRedmineAccounts
+        - heading "2014-08-25" [level=3] [ref=e1202]
+        - list [ref=e1203]:
+          - listitem [ref=e1204]:
+            - link "TurkishWikiFormatting" [ref=e1205] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/TurkishWikiFormatting
+        - heading "2014-08-19" [level=3] [ref=e1206]
+        - list [ref=e1207]:
+          - listitem [ref=e1208]:
+            - link "RusRedmineWikis" [ref=e1209] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusRedmineWikis
+        - heading "2014-08-16" [level=3] [ref=e1210]
+        - list [ref=e1211]:
+          - listitem [ref=e1212]:
+            - link "FedoraInstallation" [ref=e1213] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FedoraInstallation
+        - heading "2014-08-12" [level=3] [ref=e1214]
+        - list [ref=e1215]:
+          - listitem [ref=e1216]:
+            - link "PMO" [ref=e1217] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PMO
+        - heading "2014-08-11" [level=3] [ref=e1218]
+        - list [ref=e1219]:
+          - listitem [ref=e1220]:
+            - link "Fedora installation prerequisites" [ref=e1221] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Fedora_installation_prerequisites
+        - heading "2014-06-11" [level=3] [ref=e1222]
+        - list [ref=e1223]:
+          - listitem [ref=e1224]:
+            - link "Install Redmine with git and svn support over https on Debian wheezy using the Debian repository" [ref=e1225] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Install_Redmine_with_git_and_svn_support_over_https_on_Debian_wheezy_using_the_Debian_repository
+        - heading "2014-06-04" [level=3] [ref=e1226]
+        - list [ref=e1227]:
+          - listitem [ref=e1228]:
+            - link "ThemeBootstrap" [ref=e1229] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/ThemeBootstrap
+          - listitem [ref=e1230]:
+            - link "ThemeRedjourn" [ref=e1231] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/ThemeRedjourn
+          - listitem [ref=e1232]:
+            - link "ThemeSP" [ref=e1233] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/ThemeSP
+          - listitem [ref=e1234]:
+            - link "ThemeSqueejee" [ref=e1235] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/ThemeSqueejee
+        - heading "2014-06-02" [level=3] [ref=e1236]
+        - list [ref=e1237]:
+          - listitem [ref=e1238]:
+            - link "Teams" [ref=e1239] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Teams
+        - heading "2014-06-01" [level=3] [ref=e1240]
+        - list [ref=e1241]:
+          - listitem [ref=e1242]:
+            - link "HowTo Install Redmine 231 On Ubuntu 1204 with git and Redmine Git Hosting plugin" [ref=e1243] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_Install_Redmine_231_On_Ubuntu_1204_with_git_and_Redmine_Git_Hosting_plugin
+        - heading "2014-05-30" [level=3] [ref=e1244]
+        - list [ref=e1245]:
+          - listitem [ref=e1246]:
+            - link "HowTo find out the redmine version number you are using" [ref=e1247] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_find_out_the_redmine_version_number_you_are_using
+        - heading "2014-05-26" [level=3] [ref=e1248]
+        - list [ref=e1249]:
+          - listitem [ref=e1250]:
+            - link "PluginTab" [ref=e1251] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginTab
+        - heading "2014-05-23" [level=3] [ref=e1252]
+        - list [ref=e1253]:
+          - listitem [ref=e1254]:
+            - link "HowTo simply keep Redmine in sync with GitHub" [ref=e1255] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_simply_keep_Redmine_in_sync_with_GitHub
+        - heading "2014-05-21" [level=3] [ref=e1256]
+        - list [ref=e1257]:
+          - listitem [ref=e1258]:
+            - link "HowTo configure Apache to run Redmine" [ref=e1259] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_configure_Apache_to_run_Redmine
+        - heading "2014-05-14" [level=3] [ref=e1260]
+        - list [ref=e1261]:
+          - listitem [ref=e1262]:
+            - link "UpgradeRemineDebianSqueeze6" [ref=e1263] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/UpgradeRemineDebianSqueeze6
+        - heading "2014-05-05" [level=3] [ref=e1264]
+        - list [ref=e1265]:
+          - listitem [ref=e1266]:
+            - link "HowTo Install Redmine (> 25x) on Heroku" [ref=e1267] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_Install_Redmine_(%3E_25x)_on_Heroku
+        - heading "2014-05-01" [level=3] [ref=e1268]
+        - list [ref=e1269]:
+          - listitem [ref=e1270]:
+            - link "RedmineInstallOSXLionServer" [ref=e1271] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineInstallOSXLionServer
+        - heading "2014-04-08" [level=3] [ref=e1272]
+        - list [ref=e1273]:
+          - listitem [ref=e1274]:
+            - link "HowTo Install Redmine 210 on Debian Squeeze with Apache Passenger" [ref=e1275] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_Install_Redmine_210_on_Debian_Squeeze_with_Apache_Passenger
+        - heading "2014-03-25" [level=3] [ref=e1276]
+        - list [ref=e1277]:
+          - listitem [ref=e1278]:
+            - link "HowTo keep in sync your git repository for redmine" [ref=e1279] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_keep_in_sync_your_git_repository_for_redmine
+        - heading "2014-03-14" [level=3] [ref=e1280]
+        - list [ref=e1281]:
+          - listitem [ref=e1282]:
+            - link "RusGetting Started" [ref=e1283] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusGetting_Started
+        - heading "2014-02-25" [level=3] [ref=e1284]
+        - list [ref=e1285]:
+          - listitem [ref=e1286]:
+            - link "RusRedmineRepository" [ref=e1287] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusRedmineRepository
+        - heading "2014-02-19" [level=3] [ref=e1288]
+        - list [ref=e1289]:
+          - listitem [ref=e1290]:
+            - link "RusRedmineAccounts" [ref=e1291] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusRedmineAccounts
+        - heading "2014-02-11" [level=3] [ref=e1292]
+        - list [ref=e1293]:
+          - listitem [ref=e1294]:
+            - link "Macro Conflict" [ref=e1295] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Macro_Conflict
+        - heading "2013-12-09" [level=3] [ref=e1296]
+        - list [ref=e1297]:
+          - listitem [ref=e1298]:
+            - link "FrRedmineUpgrade" [ref=e1299] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineUpgrade
+        - heading "2013-11-26" [level=3] [ref=e1300]
+        - list [ref=e1301]:
+          - listitem [ref=e1302]:
+            - link "Hooks" [ref=e1303] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Hooks
+        - heading "2013-11-17" [level=3] [ref=e1304]
+        - list [ref=e1305]:
+          - listitem [ref=e1306]:
+            - link "Changelog 2 3" [ref=e1307] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Changelog_2_3
+          - listitem [ref=e1308]:
+            - link "RedmineAttachedFiles" [ref=e1309] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineAttachedFiles
+        - heading "2013-09-27" [level=3] [ref=e1310]
+        - list [ref=e1311]:
+          - listitem [ref=e1312]:
+            - link "0 9" [ref=e1313] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/0_9
+        - heading "2013-09-05" [level=3] [ref=e1314]
+        - list [ref=e1315]:
+          - listitem [ref=e1316]:
+            - link "FrRedmineLogin" [ref=e1317] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineLogin
+        - heading "2013-08-17" [level=3] [ref=e1318]
+        - list [ref=e1319]:
+          - listitem [ref=e1320]:
+            - link "PluginTaskjuggler" [ref=e1321] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginTaskjuggler
+        - heading "2013-07-25" [level=3] [ref=e1322]
+        - list [ref=e1323]:
+          - listitem [ref=e1324]:
+            - link "FrHowTo create a custom Redmine theme" [ref=e1325] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrHowTo_create_a_custom_Redmine_theme
+        - heading "2013-07-13" [level=3] [ref=e1326]
+        - list [ref=e1327]:
+          - listitem [ref=e1328]:
+            - link "HowTo Install Redmine 212 in Ubuntu 1210 and Apache Passenger" [ref=e1329] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_Install_Redmine_212_in_Ubuntu_1210_and_Apache_Passenger
+        - heading "2013-06-20" [level=3] [ref=e1330]
+        - list [ref=e1331]:
+          - listitem [ref=e1332]:
+            - link "Rest api with php" [ref=e1333] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Rest_api_with_php
+        - heading "2013-05-28" [level=3] [ref=e1334]
+        - list [ref=e1335]:
+          - listitem [ref=e1336]:
+            - link "CheckingoutRedmine" [ref=e1337] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/CheckingoutRedmine
+        - heading "2013-05-12" [level=3] [ref=e1338]
+        - list [ref=e1339]:
+          - listitem [ref=e1340]:
+            - link "RedmineProjectActivity" [ref=e1341] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineProjectActivity
+        - heading "2013-05-01" [level=3] [ref=e1342]
+        - list [ref=e1343]:
+          - listitem [ref=e1344]:
+            - link "Changelog 2 2" [ref=e1345] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Changelog_2_2
+        - heading "2013-04-30" [level=3] [ref=e1346]
+        - list [ref=e1347]:
+          - listitem [ref=e1348]:
+            - link "HowToInstallRedmineOnUbuntuServer" [ref=e1349] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowToInstallRedmineOnUbuntuServer
+        - heading "2013-04-26" [level=3] [ref=e1350]
+        - list [ref=e1351]:
+          - listitem [ref=e1352]:
+            - link "PluginCharts" [ref=e1353] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginCharts
+        - heading "2013-04-23" [level=3] [ref=e1354]
+        - list [ref=e1355]:
+          - listitem [ref=e1356]:
+            - link "BugdayIntegrationList" [ref=e1357] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/BugdayIntegrationList
+        - heading "2013-04-05" [level=3] [ref=e1358]
+        - list [ref=e1359]:
+          - listitem [ref=e1360]:
+            - link "PluginSchedules" [ref=e1361] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginSchedules
+        - heading "2013-03-21" [level=3] [ref=e1362]
+        - list [ref=e1363]:
+          - listitem [ref=e1364]:
+            - link "FrPlugin Tutorial" [ref=e1365] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrPlugin_Tutorial
+        - heading "2013-03-17" [level=3] [ref=e1366]
+        - list [ref=e1367]:
+          - listitem [ref=e1368]:
+            - link "RusRedmineProjectOverview" [ref=e1369] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusRedmineProjectOverview
+          - listitem [ref=e1370]:
+            - link "RusRedmineUpgrade" [ref=e1371] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusRedmineUpgrade
+          - listitem [ref=e1372]:
+            - link "RusUser Guide" [ref=e1373] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusUser_Guide
+        - heading "2013-03-16" [level=3] [ref=e1374]
+        - list [ref=e1375]:
+          - listitem [ref=e1376]:
+            - link "RusEmailConfiguration" [ref=e1377] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusEmailConfiguration
+          - listitem [ref=e1378]:
+            - link "RusRedmineCustomFields" [ref=e1379] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusRedmineCustomFields
+          - listitem [ref=e1380]:
+            - link "RusRedmineGroups" [ref=e1381] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusRedmineGroups
+          - listitem [ref=e1382]:
+            - link "RusRedmineIssueList" [ref=e1383] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusRedmineIssueList
+          - listitem [ref=e1384]:
+            - link "RusRedmineIssueTrackingSetup" [ref=e1385] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusRedmineIssueTrackingSetup
+          - listitem [ref=e1386]:
+            - link "RusRedmineSettings" [ref=e1387] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusRedmineSettings
+          - listitem [ref=e1388]:
+            - link "RusRedmineUsers" [ref=e1389] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusRedmineUsers
+        - heading "2013-02-28" [level=3] [ref=e1390]
+        - list [ref=e1391]:
+          - listitem [ref=e1392]:
+            - link "Redmine on CentOS installation HOWTO" [ref=e1393] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Redmine_on_CentOS_installation_HOWTO
+        - heading "2013-02-14" [level=3] [ref=e1394]
+        - list [ref=e1395]:
+          - listitem [ref=e1396]:
+            - link "RusRedmineUserProfiles" [ref=e1397] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusRedmineUserProfiles
+        - heading "2013-02-11" [level=3] [ref=e1398]
+        - list [ref=e1399]:
+          - listitem [ref=e1400]:
+            - link "FrGuide" [ref=e1401] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrGuide
+        - heading "2013-02-03" [level=3] [ref=e1402]
+        - list [ref=e1403]:
+          - listitem [ref=e1404]:
+            - link "RusInstallation guide" [ref=e1405] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusInstallation_guide
+        - heading "2013-02-02" [level=3] [ref=e1406]
+        - list [ref=e1407]:
+          - listitem [ref=e1408]:
+            - link "Plugin List" [ref=e1409] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Plugin_List
+          - listitem [ref=e1410]:
+            - link "RedmineIssueChangelog" [ref=e1411] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineIssueChangelog
+        - heading "2013-01-20" [level=3] [ref=e1412]
+        - list [ref=e1413]:
+          - listitem [ref=e1414]:
+            - link "Changelog 1 4" [ref=e1415] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Changelog_1_4
+        - heading "2013-01-15" [level=3] [ref=e1416]
+        - list [ref=e1417]:
+          - listitem [ref=e1418]:
+            - link "Coding Standards" [ref=e1419] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Coding_Standards
+        - heading "2013-01-11" [level=3] [ref=e1420]
+        - list [ref=e1421]:
+          - listitem [ref=e1422]:
+            - link "Changelog 0 6" [ref=e1423] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Changelog_0_6
+          - listitem [ref=e1424]:
+            - link "HowTo to handle SVN repositories creation and access control with Redmine" [ref=e1425] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_to_handle_SVN_repositories_creation_and_access_control_with_Redmine
+        - heading "2013-01-09" [level=3] [ref=e1426]
+        - list [ref=e1427]:
+          - listitem [ref=e1428]:
+            - link "Changelog 2 1" [ref=e1429] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Changelog_2_1
+        - heading "2012-12-21" [level=3] [ref=e1430]
+        - list [ref=e1431]:
+          - listitem [ref=e1432]:
+            - link "PluginBotsFilter" [ref=e1433] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginBotsFilter
+        - heading "2012-12-19" [level=3] [ref=e1434]
+        - list [ref=e1435]:
+          - listitem [ref=e1436]:
+            - link "ReleaseManagement" [ref=e1437] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/ReleaseManagement
+        - heading "2012-12-11" [level=3] [ref=e1438]
+        - list [ref=e1439]:
+          - listitem [ref=e1440]:
+            - link "HowTo Automate repository creation" [ref=e1441] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_Automate_repository_creation
+        - heading "2012-12-08" [level=3] [ref=e1442]
+        - list [ref=e1443]:
+          - listitem [ref=e1444]:
+            - link "RedmineGroups" [ref=e1445] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineGroups
+        - heading "2012-11-02" [level=3] [ref=e1446]
+        - list [ref=e1447]:
+          - listitem [ref=e1448]:
+            - link "FrRedmineRoadmap" [ref=e1449] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineRoadmap
+          - listitem [ref=e1450]:
+            - link "PluginBitbucketHook" [ref=e1451] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginBitbucketHook
+        - heading "2012-10-26" [level=3] [ref=e1452]
+        - list [ref=e1453]:
+          - listitem [ref=e1454]:
+            - link "HowTo Install Redmine on Heroku" [ref=e1455] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_Install_Redmine_on_Heroku
+        - heading "2012-10-17" [level=3] [ref=e1456]
+        - list [ref=e1457]:
+          - listitem [ref=e1458]:
+            - link "RedmineMacros" [ref=e1459] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineMacros
+        - heading "2012-10-10" [level=3] [ref=e1460]
+        - list [ref=e1461]:
+          - listitem [ref=e1462]:
+            - link "FrRedmineReminder" [ref=e1463] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineReminder
+        - heading "2012-10-07" [level=3] [ref=e1464]
+        - list [ref=e1465]:
+          - listitem [ref=e1466]:
+            - link "PluginRedmineStealth" [ref=e1467] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginRedmineStealth
+        - heading "2012-10-02" [level=3] [ref=e1468]
+        - list [ref=e1469]:
+          - listitem [ref=e1470]:
+            - link "HowTo make Wiki history working with Postgres 90" [ref=e1471] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_make_Wiki_history_working_with_Postgres_90
+          - listitem [ref=e1472]:
+            - link "HowTo Migrate Redmine to a new server to a new Redmine version" [ref=e1473] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_Migrate_Redmine_to_a_new_server_to_a_new_Redmine_version
+          - listitem [ref=e1474]:
+            - link "PluginBulkTimeEntry" [ref=e1475] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginBulkTimeEntry
+        - heading "2012-09-28" [level=3] [ref=e1476]
+        - list [ref=e1477]:
+          - listitem [ref=e1478]:
+            - link "FrRedmineIssues" [ref=e1479] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineIssues
+        - heading "2012-09-26" [level=3] [ref=e1480]
+        - list [ref=e1481]:
+          - listitem [ref=e1482]:
+            - link "HowTo Install Redmine 210 on Debian Squeeze with Apache Passanger" [ref=e1483] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_Install_Redmine_210_on_Debian_Squeeze_with_Apache_Passanger
+        - heading "2012-09-16" [level=3] [ref=e1484]
+        - list [ref=e1485]:
+          - listitem [ref=e1486]:
+            - link "Changelog 2 0" [ref=e1487] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Changelog_2_0
+        - heading "2012-08-31" [level=3] [ref=e1488]
+        - list [ref=e1489]:
+          - listitem [ref=e1490]:
+            - link "Redmine 203 with Subversion and LDAP Authentication (for Redmine and Subversion through Redmine) on Centos 6 i386 - detailed" [ref=e1491] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Redmine_203_with_Subversion_and_LDAP_Authentication_(for_Redmine_and_Subversion_through_Redmine)_on_Centos_6_i386_-_detailed
+        - heading "2012-08-22" [level=3] [ref=e1492]
+        - list [ref=e1493]:
+          - listitem [ref=e1494]:
+            - link "RedmineUserProfiles" [ref=e1495] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineUserProfiles
+        - heading "2012-08-16" [level=3] [ref=e1496]
+        - list [ref=e1497]:
+          - listitem [ref=e1498]:
+            - link "RusRedmineIssues" [ref=e1499] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusRedmineIssues
+        - heading "2012-07-12" [level=3] [ref=e1500]
+        - list [ref=e1501]:
+          - listitem [ref=e1502]:
+            - link "FrRedmineConfigurationEmail" [ref=e1503] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineConfigurationEmail
+        - heading "2012-06-29" [level=3] [ref=e1504]
+        - list [ref=e1505]:
+          - listitem [ref=e1506]:
+            - link "HowTo run Redmine as a Windows service (win32-service + taskill approach)" [ref=e1507] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_run_Redmine_as_a_Windows_service_(win32-service_+_taskill_approach)
+          - listitem [ref=e1508]:
+            - link "RedmineInstallOSXServer" [ref=e1509] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineInstallOSXServer
+        - heading "2012-06-20" [level=3] [ref=e1510]
+        - list [ref=e1511]:
+          - listitem [ref=e1512]:
+            - link "EsGuide" [ref=e1513] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/EsGuide
+          - listitem [ref=e1514]:
+            - link "EsRedmineAccounts" [ref=e1515] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/EsRedmineAccounts
+          - listitem [ref=e1516]:
+            - link "EsRedmineLogin" [ref=e1517] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/EsRedmineLogin
+          - listitem [ref=e1518]:
+            - link "EsRedmineProjectActivity" [ref=e1519] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/EsRedmineProjectActivity
+          - listitem [ref=e1520]:
+            - link "EsRedmineProjectOverview" [ref=e1521] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/EsRedmineProjectOverview
+          - listitem [ref=e1522]:
+            - link "EsRedmineRegister" [ref=e1523] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/EsRedmineRegister
+          - listitem [ref=e1524]:
+            - link "EsRedmineSearch" [ref=e1525] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/EsRedmineSearch
+          - listitem [ref=e1526]:
+            - link "EsUser Guide" [ref=e1527] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/EsUser_Guide
+        - heading "2012-06-10" [level=3] [ref=e1528]
+        - list [ref=e1529]:
+          - listitem [ref=e1530]:
+            - link "PluginIssueDueDate" [ref=e1531] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginIssueDueDate
+        - heading "2012-06-08" [level=3] [ref=e1532]
+        - list [ref=e1533]:
+          - listitem [ref=e1534]:
+            - link "HowTo FixUpImportedUsers" [ref=e1535] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_FixUpImportedUsers
+        - heading "2012-06-03" [level=3] [ref=e1536]
+        - list [ref=e1537]:
+          - listitem [ref=e1538]:
+            - link "HowTo configure Redmine for advanced Subversion integration" [ref=e1539] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_configure_Redmine_for_advanced_Subversion_integration
+        - heading "2012-05-23" [level=3] [ref=e1540]
+        - list [ref=e1541]:
+          - listitem [ref=e1542]:
+            - link "Translation Team" [ref=e1543] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Translation_Team
+        - heading "2012-05-07" [level=3] [ref=e1544]
+        - list [ref=e1545]:
+          - listitem [ref=e1546]:
+            - link "200" [ref=e1547] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/200
+        - heading "2012-05-01" [level=3] [ref=e1548]
+        - list [ref=e1549]:
+          - listitem [ref=e1550]:
+            - link "RedmineGitTracking" [ref=e1551] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineGitTracking
+        - heading "2012-04-25" [level=3] [ref=e1552]
+        - list [ref=e1553]:
+          - listitem [ref=e1554]:
+            - link "HowTo Install Redmine in a sub-URI on Windows with Apache" [ref=e1555] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_Install_Redmine_in_a_sub-URI_on_Windows_with_Apache
+        - heading "2012-04-20" [level=3] [ref=e1556]
+        - list [ref=e1557]:
+          - listitem [ref=e1558]:
+            - link "Changelog 1 3" [ref=e1559] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Changelog_1_3
+        - heading "2012-04-12" [level=3] [ref=e1560]
+        - list [ref=e1561]:
+          - listitem [ref=e1562]:
+            - link "GitHub clone based on Debian Squeeze Gitolite Git Git-Daemon MySQL Nginx and Mongrel Cluster" [ref=e1563] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/GitHub_clone_based_on_Debian_Squeeze_Gitolite_Git_Git-Daemon_MySQL_Nginx_and_Mongrel_Cluster
+        - heading "2012-04-08" [level=3] [ref=e1564]
+        - list [ref=e1565]:
+          - listitem [ref=e1566]:
+            - link "HowTo configure Redmine to mail to MS Exchange server" [ref=e1567] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_configure_Redmine_to_mail_to_MS_Exchange_server
+        - heading "2012-04-03" [level=3] [ref=e1568]
+        - list [ref=e1569]:
+          - listitem [ref=e1570]:
+            - link "HowTo Install Redmine on subdirectory (sub-URI) on Apache" [ref=e1571] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_Install_Redmine_on_subdirectory_(sub-URI)_on_Apache
+        - heading "2012-03-27" [level=3] [ref=e1572]
+        - list [ref=e1573]:
+          - listitem [ref=e1574]:
+            - link "HowTo install Redmine on CentOS 5" [ref=e1575] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_install_Redmine_on_CentOS_5
+        - heading "2012-03-25" [level=3] [ref=e1576]
+        - list [ref=e1577]:
+          - listitem [ref=e1578]:
+            - link "Logo" [ref=e1579] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Logo
+        - heading "2012-03-16" [level=3] [ref=e1580]
+        - list [ref=e1581]:
+          - listitem [ref=e1582]:
+            - link "How to create patch series on Mercurial and Git" [ref=e1583] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/How_to_create_patch_series_on_Mercurial_and_Git
+        - heading "2012-03-11" [level=3] [ref=e1584]
+        - list [ref=e1585]:
+          - listitem [ref=e1586]:
+            - link "RusRedmineProjectsList" [ref=e1587] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusRedmineProjectsList
+        - heading "2012-03-05" [level=3] [ref=e1588]
+        - list [ref=e1589]:
+          - listitem [ref=e1590]:
+            - link "HowTo install Redmine on CentOS Detailed" [ref=e1591] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_install_Redmine_on_CentOS_Detailed
+          - listitem [ref=e1592]:
+            - link "How to Install Redmine on CentOS (Detailed)" [ref=e1593] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/How_to_Install_Redmine_on_CentOS_(Detailed)
+        - heading "2012-02-06" [level=3] [ref=e1594]
+        - list [ref=e1595]:
+          - listitem [ref=e1596]:
+            - link "Changelog 1 2" [ref=e1597] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Changelog_1_2
+        - heading "2012-01-22" [level=3] [ref=e1598]
+        - list [ref=e1599]:
+          - listitem [ref=e1600]:
+            - link "HowTo configure Redmine for advanced Bazaar integration" [ref=e1601] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_configure_Redmine_for_advanced_Bazaar_integration
+        - heading "2012-01-21" [level=3] [ref=e1602]
+        - list [ref=e1603]:
+          - listitem [ref=e1604]:
+            - link "PluginGraphs" [ref=e1605] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginGraphs
+        - heading "2011-12-12" [level=3] [ref=e1606]
+        - list [ref=e1607]:
+          - listitem [ref=e1608]:
+            - link "FrRedmineChangelog" [ref=e1609] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineChangelog
+          - listitem [ref=e1610]:
+            - link "FrRedmineDocuments" [ref=e1611] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineDocuments
+          - listitem [ref=e1612]:
+            - link "FrRedmineFiles" [ref=e1613] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineFiles
+          - listitem [ref=e1614]:
+            - link "FrRedmineTime" [ref=e1615] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineTime
+          - listitem [ref=e1616]:
+            - link "FrRedmineVersionDetails" [ref=e1617] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineVersionDetails
+          - listitem [ref=e1618]:
+            - link "FrRedmineVersionRapport" [ref=e1619] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineVersionRapport
+        - heading "2011-12-10" [level=3] [ref=e1620]
+        - list [ref=e1621]:
+          - listitem [ref=e1622]:
+            - link "130" [ref=e1623] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/130
+        - heading "2011-12-08" [level=3] [ref=e1624]
+        - list [ref=e1625]:
+          - listitem [ref=e1626]:
+            - link "HowTo Install Redmine 12x with Mercurial and Subversion on Ubuntu Server 1004" [ref=e1627] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_Install_Redmine_12x_with_Mercurial_and_Subversion_on_Ubuntu_Server_1004
+        - heading "2011-12-05" [level=3] [ref=e1628]
+        - list [ref=e1629]:
+          - listitem [ref=e1630]:
+            - link "RedmineAndSELinuxOnCentOS" [ref=e1631] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineAndSELinuxOnCentOS
+        - heading "2011-11-27" [level=3] [ref=e1632]
+        - list [ref=e1633]:
+          - listitem [ref=e1634]:
+            - link "PluginBasicPolls" [ref=e1635] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginBasicPolls
+        - heading "2011-11-24" [level=3] [ref=e1636]
+        - list [ref=e1637]:
+          - listitem [ref=e1638]:
+            - link "ReleaseProcess" [ref=e1639] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/ReleaseProcess
+        - heading "2011-11-11" [level=3] [ref=e1640]
+        - list [ref=e1641]:
+          - listitem [ref=e1642]:
+            - link "Changelog 1 1" [ref=e1643] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Changelog_1_1
+        - heading "2011-10-26" [level=3] [ref=e1644]
+        - list [ref=e1645]:
+          - listitem [ref=e1646]:
+            - link "Rest api with delphi" [ref=e1647] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Rest_api_with_delphi
+        - heading "2011-09-23" [level=3] [ref=e1648]
+        - list [ref=e1649]:
+          - listitem [ref=e1650]:
+            - link "RedmineInstallUbuntuLucid" [ref=e1651] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineInstallUbuntuLucid
+        - heading "2011-09-21" [level=3] [ref=e1652]
+        - list [ref=e1653]:
+          - listitem [ref=e1654]:
+            - link "PluginStuffToDo" [ref=e1655] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginStuffToDo
+        - heading "2011-09-18" [level=3] [ref=e1656]
+        - list [ref=e1657]:
+          - listitem [ref=e1658]:
+            - link "HowTo Install Redmine 12x + Mercurial on Ubuntu lucid server" [ref=e1659] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_Install_Redmine_12x_+_Mercurial_on_Ubuntu_lucid_server
+        - heading "2011-09-05" [level=3] [ref=e1660]
+        - list [ref=e1661]:
+          - listitem [ref=e1662]:
+            - link "RedmineTextFormattingRus" [ref=e1663] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineTextFormattingRus
+        - heading "2011-08-05" [level=3] [ref=e1664]
+        - list [ref=e1665]:
+          - listitem [ref=e1666]:
+            - link "RusRedmineEnumerations" [ref=e1667] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusRedmineEnumerations
+        - heading "2011-08-04" [level=3] [ref=e1668]
+        - list [ref=e1669]:
+          - listitem [ref=e1670]:
+            - link "How to install Redmine in Linux Windows and OS X using BitNami Redmine Stack" [ref=e1671] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/How_to_install_Redmine_in_Linux_Windows_and_OS_X_using_BitNami_Redmine_Stack
+          - listitem [ref=e1672]:
+            - link "RedmineInstallOSX" [ref=e1673] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineInstallOSX
+        - heading "2011-07-27" [level=3] [ref=e1674]
+        - list [ref=e1675]:
+          - listitem [ref=e1676]:
+            - link "RusRedmineReminderEmails" [ref=e1677] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusRedmineReminderEmails
+        - heading "2011-07-08" [level=3] [ref=e1678]
+        - list [ref=e1679]:
+          - listitem [ref=e1680]:
+            - link "RusRedmineRepositories" [ref=e1681] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusRedmineRepositories
+        - heading "2011-07-07" [level=3] [ref=e1682]
+        - list [ref=e1683]:
+          - listitem [ref=e1684]:
+            - link "PluginGitosis" [ref=e1685] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginGitosis
+        - heading "2011-06-10" [level=3] [ref=e1686]
+        - list [ref=e1687]:
+          - listitem [ref=e1688]:
+            - link "FrRedmineForums" [ref=e1689] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineForums
+          - listitem [ref=e1690]:
+            - link "FrRedmineNews" [ref=e1691] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineNews
+          - listitem [ref=e1692]:
+            - link "FrRedmineWikis" [ref=e1693] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineWikis
+        - heading "2011-06-01" [level=3] [ref=e1694]
+        - list [ref=e1695]:
+          - listitem [ref=e1696]:
+            - link "Como instalar Redmine" [ref=e1697] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Como_instalar_Redmine
+          - listitem [ref=e1698]:
+            - link "Hacer redmine accesible via web" [ref=e1699] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Hacer_redmine_accesible_via_web
+          - listitem [ref=e1700]:
+            - link "PluginEzfaq" [ref=e1701] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginEzfaq
+        - heading "2011-05-19" [level=3] [ref=e1702]
+        - list [ref=e1703]:
+          - listitem [ref=e1704]:
+            - link "HowTo Install Redmine on Debian Squeeze with Postgresql Ruby-on-Rails and Apache2-Passenger" [ref=e1705] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_Install_Redmine_on_Debian_Squeeze_with_Postgresql_Ruby-on-Rails_and_Apache2-Passenger
+        - heading "2011-04-26" [level=3] [ref=e1706]
+        - list [ref=e1707]:
+          - listitem [ref=e1708]:
+            - link "RusRedmineRegister" [ref=e1709] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusRedmineRegister
+          - listitem [ref=e1710]:
+            - link "RusRedmineSearch" [ref=e1711] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusRedmineSearch
+        - heading "2011-04-25" [level=3] [ref=e1712]
+        - list [ref=e1713]:
+          - listitem [ref=e1714]:
+            - link "RusRedmineLogin" [ref=e1715] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusRedmineLogin
+        - heading "2011-04-19" [level=3] [ref=e1716]
+        - list [ref=e1717]:
+          - listitem [ref=e1718]:
+            - link "120" [ref=e1719] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/120
+        - heading "2011-04-17" [level=3] [ref=e1720]
+        - list [ref=e1721]:
+          - listitem [ref=e1722]:
+            - link "RusAdministrator Guide" [ref=e1723] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RusAdministrator_Guide
+        - heading "2011-03-18" [level=3] [ref=e1724]
+        - list [ref=e1725]:
+          - listitem [ref=e1726]:
+            - link "PluginBlocksLayout" [ref=e1727] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginBlocksLayout
+        - heading "2011-02-22" [level=3] [ref=e1728]
+        - list [ref=e1729]:
+          - listitem [ref=e1730]:
+            - link "PluginKanban" [ref=e1731] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginKanban
+        - heading "2011-02-18" [level=3] [ref=e1732]
+        - list [ref=e1733]:
+          - listitem [ref=e1734]:
+            - link "PluginLatestForumMessages" [ref=e1735] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginLatestForumMessages
+          - listitem [ref=e1736]:
+            - link "PluginShowIssueDescriptions" [ref=e1737] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginShowIssueDescriptions
+        - heading "2011-02-04" [level=3] [ref=e1738]
+        - list [ref=e1739]:
+          - listitem [ref=e1740]:
+            - link "HowTo have both development and production environment available from Apache with VirtualHost" [ref=e1741] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_have_both_development_and_production_environment_available_from_Apache_with_VirtualHost
+        - heading "2011-01-27" [level=3] [ref=e1742]
+        - list [ref=e1743]:
+          - listitem [ref=e1744]:
+            - link "Redmine+Apache+Passenger InstallOnRedHat" [ref=e1745] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Redmine+Apache+Passenger_InstallOnRedHat
+        - heading "2011-01-15" [level=3] [ref=e1746]
+        - list [ref=e1747]:
+          - listitem [ref=e1748]:
+            - link "Changelog 0 9" [ref=e1749] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Changelog_0_9
+          - listitem [ref=e1750]:
+            - link "Changelog 1 0" [ref=e1751] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Changelog_1_0
+        - heading "2010-12-10" [level=3] [ref=e1752]
+        - list [ref=e1753]:
+          - listitem [ref=e1754]:
+            - link "110" [ref=e1755] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/110
+        - heading "2010-12-09" [level=3] [ref=e1756]
+        - list [ref=e1757]:
+          - listitem [ref=e1758]:
+            - link "PluginBBB" [ref=e1759] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginBBB
+        - heading "2010-11-28" [level=3] [ref=e1760]
+        - list [ref=e1761]:
+          - listitem [ref=e1762]:
+            - link "Documentation Team" [ref=e1763] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Documentation_Team
+          - listitem [ref=e1764]:
+            - link "HowTo configure Nginx to run Redmine" [ref=e1765] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_configure_Nginx_to_run_Redmine
+        - heading "2010-11-25" [level=3] [ref=e1766]
+        - list [ref=e1767]:
+          - listitem [ref=e1768]:
+            - link "RedmineAndApacheAuthMySQL" [ref=e1769] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineAndApacheAuthMySQL
+        - heading "2010-11-14" [level=3] [ref=e1770]
+        - list [ref=e1771]:
+          - listitem [ref=e1772]:
+            - link "HowTo Install Redmine on Solaris" [ref=e1773] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_Install_Redmine_on_Solaris
+        - heading "2010-11-03" [level=3] [ref=e1774]
+        - list [ref=e1775]:
+          - listitem [ref=e1776]:
+            - link "UX Team" [ref=e1777] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/UX_Team
+        - heading "2010-10-31" [level=3] [ref=e1778]
+        - list [ref=e1779]:
+          - listitem [ref=e1780]:
+            - link "PatchReview" [ref=e1781] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PatchReview
+        - heading "2010-10-20" [level=3] [ref=e1782]
+        - list [ref=e1783]:
+          - listitem [ref=e1784]:
+            - link "TeamLeadMeeting3" [ref=e1785] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/TeamLeadMeeting3
+        - heading "2010-10-17" [level=3] [ref=e1786]
+        - list [ref=e1787]:
+          - listitem [ref=e1788]:
+            - link "PluginWebDav" [ref=e1789] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginWebDav
+          - listitem [ref=e1790]:
+            - link "RedmineDocuments" [ref=e1791] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineDocuments
+        - heading "2010-10-14" [level=3] [ref=e1792]
+        - list [ref=e1793]:
+          - listitem [ref=e1794]:
+            - link "FrRedmineRepository" [ref=e1795] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineRepository
+          - listitem [ref=e1796]:
+            - link "Sub URI for multisites at one domain" [ref=e1797] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Sub_URI_for_multisites_at_one_domain
+        - heading "2010-09-25" [level=3] [ref=e1798]
+        - list [ref=e1799]:
+          - listitem [ref=e1800]:
+            - link "ExtensionListInfo" [ref=e1801] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/ExtensionListInfo
+          - listitem [ref=e1802]:
+            - link "PluginCollapse" [ref=e1803] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginCollapse
+        - heading "2010-09-22" [level=3] [ref=e1804]
+        - list [ref=e1805]:
+          - listitem [ref=e1806]:
+            - link "FrRedmineIssueList" [ref=e1807] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineIssueList
+        - heading "2010-09-20" [level=3] [ref=e1808]
+        - list [ref=e1809]:
+          - listitem [ref=e1810]:
+            - link "PluginMyEffort" [ref=e1811] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginMyEffort
+        - heading "2010-08-08" [level=3] [ref=e1812]
+        - list [ref=e1813]:
+          - listitem [ref=e1814]:
+            - link "PluginCodeBook" [ref=e1815] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginCodeBook
+        - heading "2010-07-21" [level=3] [ref=e1816]
+        - list [ref=e1817]:
+          - listitem [ref=e1818]:
+            - link "ForumCodeOfConduct" [ref=e1819] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/ForumCodeOfConduct
+        - heading "2010-07-18" [level=3] [ref=e1820]
+        - list [ref=e1821]:
+          - listitem [ref=e1822]:
+            - link "HowTo install Redmine on Debian with Passenger" [ref=e1823] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_install_Redmine_on_Debian_with_Passenger
+        - heading "2010-07-01" [level=3] [ref=e1824]
+        - list [ref=e1825]:
+          - listitem [ref=e1826]:
+            - link "PluginSimpleSupport" [ref=e1827] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginSimpleSupport
+        - heading "2010-06-26" [level=3] [ref=e1828]
+        - list [ref=e1829]:
+          - listitem [ref=e1830]:
+            - link "HowTo configure Redmine for advanced Mercurial integration" [ref=e1831] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_configure_Redmine_for_advanced_Mercurial_integration
+          - listitem [ref=e1832]:
+            - link "HowTo Install Redmine on Debian with Ruby-on-Rails and Apache2-Passenger" [ref=e1833] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_Install_Redmine_on_Debian_with_Ruby-on-Rails_and_Apache2-Passenger
+        - heading "2010-06-22" [level=3] [ref=e1834]
+        - list [ref=e1835]:
+          - listitem [ref=e1836]:
+            - link "UXTeamMeeting1" [ref=e1837] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/UXTeamMeeting1
+        - heading "2010-06-21" [level=3] [ref=e1838]
+        - list [ref=e1839]:
+          - listitem [ref=e1840]:
+            - link "HowTo TreeQuery" [ref=e1841] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_TreeQuery
+        - heading "2010-06-20" [level=3] [ref=e1842]
+        - list [ref=e1843]:
+          - listitem [ref=e1844]:
+            - link "PreTag" [ref=e1845] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PreTag
+        - heading "2010-06-19" [level=3] [ref=e1846]
+        - list [ref=e1847]:
+          - listitem [ref=e1848]:
+            - link "TeamLeadMeeting2" [ref=e1849] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/TeamLeadMeeting2
+        - heading "2010-06-15" [level=3] [ref=e1850]
+        - list [ref=e1851]:
+          - listitem [ref=e1852]:
+            - link "FrRedmineAccounts" [ref=e1853] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineAccounts
+        - heading "2010-06-14" [level=3] [ref=e1854]
+        - list [ref=e1855]:
+          - listitem [ref=e1856]:
+            - link "TeamLeadMeetings" [ref=e1857] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/TeamLeadMeetings
+        - heading "2010-06-10" [level=3] [ref=e1858]
+        - list [ref=e1859]:
+          - listitem [ref=e1860]:
+            - link "FrRedmineIssueTrackingSetup" [ref=e1861] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineIssueTrackingSetup
+          - listitem [ref=e1862]:
+            - link "FrRedmineStatistic" [ref=e1863] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineStatistic
+          - listitem [ref=e1864]:
+            - link "FrRedmineSummary" [ref=e1865] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineSummary
+          - listitem [ref=e1866]:
+            - link "FrRedmineVersion" [ref=e1867] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineVersion
+        - heading "2010-06-09" [level=3] [ref=e1868]
+        - list [ref=e1869]:
+          - listitem [ref=e1870]:
+            - link "FrRedmineRoles" [ref=e1871] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineRoles
+          - listitem [ref=e1872]:
+            - link "FrRedmineSubProject" [ref=e1873] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineSubProject
+          - listitem [ref=e1874]:
+            - link "PluginWhining" [ref=e1875] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginWhining
+        - heading "2010-06-08" [level=3] [ref=e1876]
+        - list [ref=e1877]:
+          - listitem [ref=e1878]:
+            - link "PluginMessenger" [ref=e1879] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginMessenger
+          - listitem [ref=e1880]:
+            - link "UXTeamMeeting2" [ref=e1881] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/UXTeamMeeting2
+        - heading "2010-06-04" [level=3] [ref=e1882]
+        - list [ref=e1883]:
+          - listitem [ref=e1884]:
+            - link "PluginMenuLink" [ref=e1885] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginMenuLink
+        - heading "2010-05-29" [level=3] [ref=e1886]
+        - list [ref=e1887]:
+          - listitem [ref=e1888]:
+            - link "FrRedmineCalendar" [ref=e1889] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineCalendar
+          - listitem [ref=e1890]:
+            - link "FrRedmineGantt" [ref=e1891] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineGantt
+          - listitem [ref=e1892]:
+            - link "FrRedmineOverview" [ref=e1893] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineOverview
+          - listitem [ref=e1894]:
+            - link "FrRedmineRegister" [ref=e1895] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineRegister
+        - heading "2010-05-24" [level=3] [ref=e1896]
+        - list [ref=e1897]:
+          - listitem [ref=e1898]:
+            - link "FrRedmineWiki" [ref=e1899] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineWiki
+        - heading "2010-05-20" [level=3] [ref=e1900]
+        - list [ref=e1901]:
+          - listitem [ref=e1902]:
+            - link "PluginQuestion" [ref=e1903] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginQuestion
+        - heading "2010-05-18" [level=3] [ref=e1904]
+        - list [ref=e1905]:
+          - listitem [ref=e1906]:
+            - link "FrRedmineCustomFields" [ref=e1907] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineCustomFields
+          - listitem [ref=e1908]:
+            - link "FrRedmineEnumerations" [ref=e1909] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineEnumerations
+          - listitem [ref=e1910]:
+            - link "FrRedmineGroups" [ref=e1911] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineGroups
+        - heading "2010-05-17" [level=3] [ref=e1912]
+        - list [ref=e1913]:
+          - listitem [ref=e1914]:
+            - link "NewDocsPlanning" [ref=e1915] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/NewDocsPlanning
+        - heading "2010-05-16" [level=3] [ref=e1916]
+        - list [ref=e1917]:
+          - listitem [ref=e1918]:
+            - link "TeamLeadMeeting1" [ref=e1919] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/TeamLeadMeeting1
+        - heading "2010-05-15" [level=3] [ref=e1920]
+        - list [ref=e1921]:
+          - listitem [ref=e1922]:
+            - link "FrRedmineProjects" [ref=e1923] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineProjects
+          - listitem [ref=e1924]:
+            - link "PluginChat" [ref=e1925] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginChat
+        - heading "2010-05-14" [level=3] [ref=e1926]
+        - list [ref=e1927]:
+          - listitem [ref=e1928]:
+            - link "PluginEmbedded" [ref=e1929] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginEmbedded
+        - heading "2010-05-11" [level=3] [ref=e1930]
+        - list [ref=e1931]:
+          - listitem [ref=e1932]:
+            - link "UXTeamMeeting0" [ref=e1933] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/UXTeamMeeting0
+        - heading "2010-05-03" [level=3] [ref=e1934]
+        - list [ref=e1935]:
+          - listitem [ref=e1936]:
+            - link "TeamLeadMeeting0" [ref=e1937] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/TeamLeadMeeting0
+        - heading "2010-04-20" [level=3] [ref=e1938]
+        - list [ref=e1939]:
+          - listitem [ref=e1940]:
+            - link "PluginGoogleAnalytics" [ref=e1941] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginGoogleAnalytics
+        - heading "2010-04-06" [level=3] [ref=e1942]
+        - list [ref=e1943]:
+          - listitem [ref=e1944]:
+            - link "PluginWikiGraphviz" [ref=e1945] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginWikiGraphviz
+        - heading "2010-03-30" [level=3] [ref=e1946]
+        - list [ref=e1947]:
+          - listitem [ref=e1948]:
+            - link "PluginReStructuredTextFormatter" [ref=e1949] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginReStructuredTextFormatter
+        - heading "2010-03-25" [level=3] [ref=e1950]
+        - list [ref=e1951]:
+          - listitem [ref=e1952]:
+            - link "PluginMarkdownFormatter" [ref=e1953] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginMarkdownFormatter
+        - heading "2010-03-22" [level=3] [ref=e1954]
+        - list [ref=e1955]:
+          - listitem [ref=e1956]:
+            - link "PluginMyWidgets" [ref=e1957] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginMyWidgets
+        - heading "2010-03-20" [level=3] [ref=e1958]
+        - list [ref=e1959]:
+          - listitem [ref=e1960]:
+            - link "PluginImporter" [ref=e1961] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginImporter
+        - heading "2010-03-18" [level=3] [ref=e1962]
+        - list [ref=e1963]:
+          - listitem [ref=e1964]:
+            - link "PluginCustomer" [ref=e1965] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginCustomer
+        - heading "2010-03-01" [level=3] [ref=e1966]
+        - list [ref=e1967]:
+          - listitem [ref=e1968]:
+            - link "PluginArchDecisions" [ref=e1969] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginArchDecisions
+        - heading "2010-02-19" [level=3] [ref=e1970]
+        - list [ref=e1971]:
+          - listitem [ref=e1972]:
+            - link "PluginWikiIndexCollapsable" [ref=e1973] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginWikiIndexCollapsable
+        - heading "2010-02-14" [level=3] [ref=e1974]
+        - list [ref=e1975]:
+          - listitem [ref=e1976]:
+            - link "ThemeDefault" [ref=e1977] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/ThemeDefault
+        - heading "2010-02-04" [level=3] [ref=e1978]
+        - list [ref=e1979]:
+          - listitem [ref=e1980]:
+            - link "ThemeBasecamp" [ref=e1981] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/ThemeBasecamp
+        - heading "2010-01-30" [level=3] [ref=e1982]
+        - list [ref=e1983]:
+          - listitem [ref=e1984]:
+            - link "Changelog 0 8" [ref=e1985] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Changelog_0_8
+        - heading "2010-01-11" [level=3] [ref=e1986]
+        - list [ref=e1987]:
+          - listitem [ref=e1988]:
+            - link "RedmineNews" [ref=e1989] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineNews
+          - listitem [ref=e1990]:
+            - link "RedmineProjectOverview" [ref=e1991] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineProjectOverview
+        - heading "2010-01-09" [level=3] [ref=e1992]
+        - list [ref=e1993]:
+          - listitem [ref=e1994]:
+            - link "RedmineRepository" [ref=e1995] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/RedmineRepository
+        - heading "2009-12-11" [level=3] [ref=e1996]
+        - list [ref=e1997]:
+          - listitem [ref=e1998]:
+            - link "PluginGems" [ref=e1999] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginGems
+        - heading "2009-12-05" [level=3] [ref=e2000]
+        - list [ref=e2001]:
+          - listitem [ref=e2002]:
+            - link "PluginWikiIssueDetails" [ref=e2003] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginWikiIssueDetails
+        - heading "2009-11-17" [level=3] [ref=e2004]
+        - list [ref=e2005]:
+          - listitem [ref=e2006]:
+            - link "PluginRedmine2mite" [ref=e2007] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginRedmine2mite
+        - heading "2009-09-21" [level=3] [ref=e2008]
+        - list [ref=e2009]:
+          - listitem [ref=e2010]:
+            - link "PluginIssuesGroup" [ref=e2011] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginIssuesGroup
+        - heading "2009-09-12" [level=3] [ref=e2012]
+        - list [ref=e2013]:
+          - listitem [ref=e2014]:
+            - link "PluginSubtasks" [ref=e2015] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginSubtasks
+        - heading "2009-08-26" [level=3] [ref=e2016]
+        - list [ref=e2017]:
+          - listitem [ref=e2018]:
+            - link "PluginEzlibrarian" [ref=e2019] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginEzlibrarian
+        - heading "2009-08-05" [level=3] [ref=e2020]
+        - list [ref=e2021]:
+          - listitem [ref=e2022]:
+            - link "PluginGlobalFilter" [ref=e2023] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginGlobalFilter
+        - heading "2009-07-30" [level=3] [ref=e2024]
+        - list [ref=e2025]:
+          - listitem [ref=e2026]:
+            - link "PluginNewIssueAlerts" [ref=e2027] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginNewIssueAlerts
+        - heading "2009-07-28" [level=3] [ref=e2028]
+        - list [ref=e2029]:
+          - listitem [ref=e2030]:
+            - link "PluginGoogleCalendar" [ref=e2031] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginGoogleCalendar
+        - heading "2009-07-05" [level=3] [ref=e2032]
+        - list [ref=e2033]:
+          - listitem [ref=e2034]:
+            - link "PluginHoptoadServer" [ref=e2035] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginHoptoadServer
+        - heading "2009-06-23" [level=3] [ref=e2036]
+        - list [ref=e2037]:
+          - listitem [ref=e2038]:
+            - link "PluginEzsidebar" [ref=e2039] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginEzsidebar
+          - listitem [ref=e2040]:
+            - link "ThemeWatersky" [ref=e2041] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/ThemeWatersky
+        - heading "2009-06-17" [level=3] [ref=e2042]
+        - list [ref=e2043]:
+          - listitem [ref=e2044]:
+            - link "PluginEzftpsearch" [ref=e2045] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginEzftpsearch
+        - heading "2009-06-13" [level=3] [ref=e2046]
+        - list [ref=e2047]:
+          - listitem [ref=e2048]:
+            - link "Changelog 0 7" [ref=e2049] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/Changelog_0_7
+        - heading "2009-06-05" [level=3] [ref=e2050]
+        - list [ref=e2051]:
+          - listitem [ref=e2052]:
+            - link "PluginEzSummary" [ref=e2053] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginEzSummary
+        - heading "2009-03-31" [level=3] [ref=e2054]
+        - list [ref=e2055]:
+          - listitem [ref=e2056]:
+            - link "PluginSystemNotification" [ref=e2057] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginSystemNotification
+        - heading "2009-03-23" [level=3] [ref=e2058]
+        - list [ref=e2059]:
+          - listitem [ref=e2060]:
+            - link "ThemeAlternate" [ref=e2061] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/ThemeAlternate
+          - listitem [ref=e2062]:
+            - link "ThemeClassic" [ref=e2063] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/ThemeClassic
+        - heading "2008-11-21" [level=3] [ref=e2064]
+        - list [ref=e2065]:
+          - listitem [ref=e2066]:
+            - link "PluginExceptionHandler" [ref=e2067] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginExceptionHandler
+        - heading "2008-11-11" [level=3] [ref=e2068]
+        - list [ref=e2069]:
+          - listitem [ref=e2070]:
+            - link "0 8" [ref=e2071] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/0_8
+        - heading "2008-05-03" [level=3] [ref=e2072]
+        - list [ref=e2073]:
+          - listitem [ref=e2074]:
+            - link "FrRedmineMigrate" [ref=e2075] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineMigrate
+        - heading "2008-05-02" [level=3] [ref=e2076]
+        - list [ref=e2077]:
+          - listitem [ref=e2078]:
+            - link "FrRedmineLDAP" [ref=e2079] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineLDAP
+          - listitem [ref=e2080]:
+            - link "FrRedmineRepositories" [ref=e2081] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineRepositories
+          - listitem [ref=e2082]:
+            - link "FrRedmineUsers" [ref=e2083] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/FrRedmineUsers
+        - heading "2008-03-09" [level=3] [ref=e2084]
+        - list [ref=e2085]:
+          - listitem [ref=e2086]:
+            - link "0 7" [ref=e2087] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/0_7
+        - heading "2008-02-03" [level=3] [ref=e2088]
+        - list [ref=e2089]:
+          - listitem [ref=e2090]:
+            - link "PluginProjectScores" [ref=e2091] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginProjectScores
+        - heading "2007-10-21" [level=3] [ref=e2092]
+        - list [ref=e2093]:
+          - listitem [ref=e2094]:
+            - link "HowTo to handle SVN repositories creation and access control with Redmine (part 2)" [ref=e2095] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/HowTo_to_handle_SVN_repositories_creation_and_access_control_with_Redmine_(part_2)
+        - heading "2007-10-13" [level=3] [ref=e2096]
+        - list [ref=e2097]:
+          - listitem [ref=e2098]:
+            - link "PluginSimpleCI" [ref=e2099] [cursor=pointer]:
+              - /url: /projects/redmine/wiki/PluginSimpleCI
+        - paragraph [ref=e2100]:
+          - text: "Also available in:"
+          - link "Atom" [ref=e2102] [cursor=pointer]:
+            - /url: /projects/redmine/activity.atom?show_wiki_edits=1
+    - generic [ref=e2103]:
+      - text: Powered by
+      - link "Redmine" [ref=e2104] [cursor=pointer]:
+        - /url: https://www.redmine.org/
+      - text: © 2006-2023 Jean-Philippe Lang
+  - log [ref=e2105]
+  - insertion [ref=e2106]:
+    - iframe [ref=e2109]:
+      - iframe [ref=f20e1]:
+        - generic [active] [ref=f21e1]:
+          - link "Advertisement" [ref=f21e6] [cursor=pointer]:
+            - /url: https://adclick.g.doubleclick.net/aclk?sa=l&ai=C6ZN2_vhuavXsAYHi6tkP846N6AO-8cDGdqf6qJDWEbSLz_uLDhABIMGX9AdgoQKgAdLG74gDyAEJqAMByANIqgT2AU_QsjQv-zpiKNhNzIa4sFmgC_ZwVsqffmMG3x0p2gPzkuzJwOtqA4k6MK9KkfOBQVVSO-En4TL1x4mQeLAryUA23Yx0LMoSxP5pUgJ6LahCYc3dNP-WDi5DB_pYqJMH1LT4SUXys9kqZCJKtRYKIqBRh3XbK-XGa7wyfDQPKijwskhebm9dYNEXZ28cKPAUotv9Z4PSUPPUePaHDdIB_oMiXY1qPEnJcAyClxVGtm90sKKTXJCSvWa8Qs4KUNsN5_JN1k1rDOYA0x3utNsvuYTe4uvXdj-o5ZJwVSEDRSOFsPWDHafJUoPDEsI_VTHGMxbjb5PUJMAE1s24oKoEiAW_uM2-S6AGLoAHlrmQd6gHp8yxAqgH4tixAqgHpr4bqAfMzrECqAfz0RuoB5bYG6gHqpuxAqgH_uixAqgHjs4bqAeT2BuoB_DgG6gH7paxAqgH_p6xAqgHr76xAqgHn-GxAqgH1ckbqAfZtrECqAeaBqgH_56xAqgH35-xAqgH-MKxAqgH-8KxAtgHANIIMwiAYRABGJ8DMgiKgoCAgICACDoPgECAwICAgICogAKog4AQSL39wTpYsMPI9ryBlgNgAbEJMPM407jw0x2ACgGYCwHICwGADAGiDA8qCgoIjt-xApXisQKQAQGqDQJHSMgNAeoNEwjt6cj2vIGWAxUBsToFHXNHAz3wDQKIDgnYEwPQFQGYFgHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRICpGYYLiIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMI9ePI9ryBlgMVAbE6BR1zRwM9EAEYASAAEgLhr_D_BwE&num=1&cid=CAQS8wEAEQoqgbVI67hZACke9xWjm5HfxpHvdbJwJ0qVlQZf0yBn2XYjRStlw9ZVrOhfxLP_dI05UZhf0gxdLJcbeTNqPJVDPikqzZgUB2u5nocvxslT19s8RK6rFpyRlgaGYb1g2_MxQ5MVzzXljTAtEoPiyF9oi2-q1l8irsUOBXQES9abRpM2j57y13fttapMN0K28ECukMNYhg_KaIa5vr1E0S3jC0h9KiVkZbxYopPoomcpyXWcWCDFXPOxz0FeWihvNVPXyggM4iMe0zguyrS5kjXPL5O5XYAyv4_WMVZpD9xPtSU29xl6KVxainLdDMNMqsoYAQ&sig=AOD64_1C9-OvJMVZUtw9lqdxZsXGOOyu3A&client=ca-pub-0447284344517370&rf=1&nb=25&adurl=https://labs.apnic.net%3Fgad_source%3D5%26gad_campaignid%3D20263951423%26gclid%3DEAIaIQobChMI9ePI9ryBlgMVAbE6BR1zRwM9EAEYASAAEgLhr_D_BwE
+            - iframe [ref=f21e9]:
+              - generic [active] [ref=f22e1] [cursor=pointer]:
+                - img [ref=f22e2]
+                - text: Thank you for helping us measure the Internet.
+          - img [ref=f21e13] [cursor=pointer]
+          - button [ref=f21e15] [cursor=pointer]:
+            - img [ref=f21e16]
+          - iframe
+  - generic [ref=e2111]:
+    - generic [ref=e2112] [cursor=pointer]:
+      - img [ref=e2114]
+      - link "Go to shopping options for Computer Science" [ref=e2116]: Computer Science
+    - button "Close shopping anchor" [ref=e2117]
+```
+
+# Test source
+
+```ts
+  1  | export class BasePage {
+  2  |   constructor(page) {
+  3  |     this.page = page
+  4  |   }
+  5  | 
+  6  |   async navigate(path = '') {
+  7  |     await this.page.goto(path)
+  8  |     await this.page.waitForLoadState('networkidle')
+  9  |   }
+  10 | 
+  11 |   async waitForLoad() {
+  12 |     await this.page.waitForLoadState()
+  13 |   }
+  14 | 
+  15 |   async getTitle() {
+  16 |     return await this.page.title()
+  17 |   }
+  18 | 
+  19 |   async takeScreenshot(name) {
+  20 |     await this.page.screenshot({ path: `screenshots/${name}.png` })
+  21 |   }
+  22 | 
+  23 |   async click(selector) {
+  24 |     await this.page.click(selector)
+  25 |   }
+  26 | 
+  27 |   async clickAndNavigate(selector) {
+  28 |     await this.page.click(selector)
+> 29 |     await this.page.waitForLoadState('networkidle')
+     |                     ^ Error: page.waitForLoadState: Test timeout of 30000ms exceeded.
+  30 |   }
+  31 | 
+  32 |   async fill(selector, text) {
+  33 |     await this.page.fill(selector, text)
+  34 |   }
+  35 | 
+  36 |   async getText(selector) {
+  37 |     return await this.page.textContent(selector)
+  38 |   }
+  39 | }
+  40 | 
+```
