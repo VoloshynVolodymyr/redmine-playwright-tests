@@ -1,0 +1,7 @@
+HTTP Status: 200
+Response body is valid JSON
+Found 25 issues
+First issue ID: 44330, Subject: Convert three CRLF files to LF
+Total issues: 4803
+Offset: 0
+Limit: 25
