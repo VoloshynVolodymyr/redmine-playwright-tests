@@ -1,0 +1,7 @@
+HTTP Status: 200
+Response body is valid JSON
+Found 25 issues
+First issue ID: 44353, Subject: Add project to wiki API response of endpoint /projects/{identifier}/wiki/index.{format}
+Total issues: 4800
+Offset: 0
+Limit: 25
