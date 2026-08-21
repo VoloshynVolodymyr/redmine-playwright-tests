@@ -1,0 +1,7 @@
+HTTP Status: 200
+Response body is valid JSON
+Found 25 issues
+First issue ID: 44363, Subject: Activity view: several activity providers are missing preload, causing N+1 queries
+Total issues: 4802
+Offset: 0
+Limit: 25
