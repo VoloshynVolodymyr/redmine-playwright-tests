@@ -1,0 +1,7 @@
+HTTP Status: 200
+Response body is valid JSON
+Found 25 issues
+First issue ID: 44402, Subject: CONFIGURACION E INSTALACION MAILS Y TECLADO DE MESA
+Total issues: 4803
+Offset: 0
+Limit: 25
