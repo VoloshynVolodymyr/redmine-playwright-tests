@@ -1,0 +1,1739 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: TC04_roadmapFilter.spec.js >> Roadmap Filter Tests >> TC04 - Filtering roadmap by tracker type "Defect" only
+- Location: tests/TC04_roadmapFilter.spec.js:18:3
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: page.waitForLoadState: Test timeout of 30000ms exceeded.
+=========================== logs ===========================
+  "domcontentloaded" event fired
+  "load" event fired
+============================================================
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - list:
+          - listitem [ref=e7]:
+            - link "Sign in" [ref=e8] [cursor=pointer]:
+              - /url: /login
+          - listitem [ref=e9]:
+            - link "Register" [ref=e10] [cursor=pointer]:
+              - /url: /account/register
+      - list:
+        - listitem [ref=e11]:
+          - link "Home" [ref=e12] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=e13]:
+          - link "Projects" [ref=e14] [cursor=pointer]:
+            - /url: /projects
+        - listitem [ref=e15]:
+          - link "Help" [ref=e16] [cursor=pointer]:
+            - /url: https://www.redmine.org/guide
+    - generic [ref=e17]:
+      - generic [ref=e18]:
+        - generic [ref=e19]:
+          - generic [ref=e20]:
+            - link "Search" [ref=e21] [cursor=pointer]:
+              - /url: /projects/redmine/search?scope=subprojects
+            - text: ":"
+          - textbox "Search:" [ref=e22]
+        - generic [ref=e24] [cursor=pointer]: Redmine
+      - heading "Redmine" [level=1] [ref=e25]
+      - list [ref=e27]:
+        - listitem [ref=e28]:
+          - link "Overview" [ref=e29] [cursor=pointer]:
+            - /url: /projects/redmine
+        - listitem [ref=e30]:
+          - link "Download" [ref=e31] [cursor=pointer]:
+            - /url: /projects/redmine/wiki/Download
+        - listitem [ref=e32]:
+          - link "Activity" [ref=e33] [cursor=pointer]:
+            - /url: /projects/redmine/activity
+        - listitem [ref=e34]:
+          - link "Roadmap" [ref=e35] [cursor=pointer]:
+            - /url: /projects/redmine/roadmap
+        - listitem [ref=e36]:
+          - link "Issues" [ref=e37] [cursor=pointer]:
+            - /url: /projects/redmine/issues
+        - listitem [ref=e38]:
+          - link "News" [ref=e39] [cursor=pointer]:
+            - /url: /projects/redmine/news
+        - listitem [ref=e40]:
+          - link "Wiki" [ref=e41] [cursor=pointer]:
+            - /url: /projects/redmine/wiki
+        - listitem [ref=e42]:
+          - link "Forums" [ref=e43] [cursor=pointer]:
+            - /url: /projects/redmine/boards
+        - listitem [ref=e44]:
+          - link "Repository" [ref=e45] [cursor=pointer]:
+            - /url: /projects/redmine/repository
+    - generic [ref=e46]:
+      - generic [ref=e47]:
+        - generic [ref=e48]:
+          - heading "Roadmap" [level=3] [ref=e49]
+          - list [ref=e50]:
+            - listitem [ref=e51]:
+              - generic [ref=e52]:
+                - checkbox "Defect" [checked] [ref=e53]
+                - text: Defect
+            - listitem [ref=e54]:
+              - generic [ref=e55]:
+                - checkbox "Feature" [ref=e56]
+                - text: Feature
+            - listitem [ref=e57]:
+              - generic [ref=e58]:
+                - checkbox "Patch" [ref=e59]
+                - text: Patch
+          - paragraph
+          - list [ref=e60]:
+            - listitem [ref=e61]:
+              - generic [ref=e62]:
+                - checkbox "Show completed versions" [ref=e63]
+                - text: Show completed versions
+            - listitem [ref=e64]:
+              - generic [ref=e65]:
+                - checkbox "Subprojects" [checked] [ref=e66]
+                - text: Subprojects
+          - paragraph [ref=e67]:
+            - button "Apply" [ref=e68] [cursor=pointer]
+        - heading "Versions" [level=3] [ref=e69]
+        - list [ref=e70]:
+          - listitem [ref=e71]:
+            - link "6.1.5" [ref=e72] [cursor=pointer]:
+              - /url: "#6.1.5"
+          - listitem [ref=e73]:
+            - link "7.0.2" [ref=e74] [cursor=pointer]:
+              - /url: "#7.0.2"
+          - listitem [ref=e75]:
+            - link "7.1.0" [ref=e76] [cursor=pointer]:
+              - /url: "#7.1.0"
+          - listitem [ref=e77]:
+            - link "Candidate for next major release" [ref=e78] [cursor=pointer]:
+              - /url: "#Candidate_for_next_major_release"
+          - listitem [ref=e79]:
+            - link "Candidate for next minor release" [ref=e80] [cursor=pointer]:
+              - /url: "#Candidate_for_next_minor_release"
+          - listitem [ref=e81]:
+            - link "Unplanned backlogs" [ref=e82] [cursor=pointer]:
+              - /url: "#Unplanned_backlogs"
+        - paragraph [ref=e83]:
+          - link "Completed versions" [ref=e84] [cursor=pointer]:
+            - /url: "#"
+        - paragraph
+        - insertion [ref=e85]:
+          - iframe [ref=e87]:
+            - generic [active] [ref=f33e1]:
+              - generic [ref=f33e7]:
+                - generic [ref=f33e8]:
+                  - generic [ref=f33e10]:
+                    - text: Samsung
+                    - text: Ghana
+                  - generic [ref=f33e11]: Samsung Ghana
+                - generic [ref=f33e14]:
+                  - generic "Samsung Ghana" [ref=f33e15]:
+                    - link "Get the new Galaxy S26 FE" [ref=f33e16] [cursor=pointer]:
+                      - /url: https://googleads.g.doubleclick.net/aclk?sa=l&ai=CtCdcoYGiauO3DMnXru0Pu4S9iA6M7te0iQGe1Ya5hRa4566SpRQQASDBl_QHYKECoAGApa6_A8gBAagDAcgDywSqBKUCT9AWOFszHrjSNDQ-pJrbykAEbJFt9ZiGS_lsCqVD1o1VBiwXxaNbZzXzhRHuV4oB-a6NbfnhZIzuo05M4brRwMpsBIpB3NhXTufXryKKQzh0TqO_irDX3F-47dfYfFBXcNBLVSSc5Sux9XTaETkuIGErGjVZQGIM2EfEVuPXYBpPwE05PxoajHxGUMD1kNoW1KCkEBOqC1AhT803wwUf4jRkFgA5Tr9W-9Yo6U08NgU5HDcrQILDKtTQriYQuwkHbi5xJU2tbnWPDooAz4RNGIttU4lmzw4IO0ZqSQ3_b3Y5IJ7bfUbM-NPFEFpCSzTebMNcWnm7hRyy2lQnGDXZDlvxqv-SfkjIer6auge-qcN94OQvsjNmEfR_NtAmjIfgtalLXlXABL3YysfoBYgFkOjylFqAB-ja0UCoB6fMsQKoB-LYsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB_7osQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB5_hsQKoB6brsQKoB9XJG6gH2baxAqgHmgaoB_-esQKoB9-fsQKoB_jCsQKoB_vCsQLYBwHSCDMIgGEQARifAzIIioKAgICAgAg6D4BAgMCAgICAqIACqIOAEEi9_cE6WN-M9rPi45YDYAGxCamzBrXTMa50gAoBmAsByAsBogwxKgoKCI7fsQKV4rECYgIKAGoXChVjb20uZXh0ZW5zaW9uLnBlZHd1bWF4AYgBAZABAaoNAkdIyA0B6g0TCP2Q-LPi45YDFcmrqwcdO0IP4fANAogOBdgTA9AVAZgWAcoWAgoA-BYBgBcBshcEGAFQBroXAjgBshgJEgLFaBgBIgEA0BgBwhkCCAE&ae=1&gclid=EAIaIQobChMIo4z4s-LjlgMVyaurBx07Qg_hEAEYASAAEgIWL_D_BwE&num=1&cid=CAQS9AEAQM4h3OFRmCoiNnJtbq54TnZft2UgbD8eJxAzEmAP1zCUAJIetjSCyikL359HJOP6NkCIQ6ZlM9KAqhKKwGvrH1CfrBsGURkGK2UxQIr2ymxb3zlNRmzxav462V7EVhHlP6jf28FJQ4mDJ5RpEfYO8yfpywzXJU5PgGXdspSiKNra3BnoCi82grRdIc-OULA57RaWvAuK4TtM22OhKOg7PeZFBGhxK4epD6Akq9HWSSre6m922PYt5gJ7MmeBIUWCAL7xHtbty8XM4D1Qok9LuL7ctZkInw3l4vwuvB4DodHsB-_6sycjZUL58SpCKq2wXZOMGAE&sig=AOD64_2ZY6w8uXtdHhYHBdefA_M0BFSQ1A&rf=1&nb=0&adurl=https://www.samsung.com/africa_en/smartphones/galaxy-s/galaxy-s26-fe-pistachio-128gb-sm-s741blguafb/%3Fcid%3Dafrica_ow_social_meta_galaxy-s26-fe_sustain_none_video_available-now_none%26gad_source%3D5%26gad_campaignid%3D24203015184%26gclid%3DEAIaIQobChMIo4z4s-LjlgMVyaurBx07Qg_hEAEYASAAEgIWL_D_BwE
+                      - text: Get
+                      - text: the
+                      - text: new
+                      - text: Galaxy
+                      - text: S26 FE
+                  - generic [ref=f33e17]:
+                    - link:
+                      - /url: https://googleads.g.doubleclick.net/aclk?sa=l&ai=CtCdcoYGiauO3DMnXru0Pu4S9iA6M7te0iQGe1Ya5hRa4566SpRQQASDBl_QHYKECoAGApa6_A8gBAagDAcgDywSqBKUCT9AWOFszHrjSNDQ-pJrbykAEbJFt9ZiGS_lsCqVD1o1VBiwXxaNbZzXzhRHuV4oB-a6NbfnhZIzuo05M4brRwMpsBIpB3NhXTufXryKKQzh0TqO_irDX3F-47dfYfFBXcNBLVSSc5Sux9XTaETkuIGErGjVZQGIM2EfEVuPXYBpPwE05PxoajHxGUMD1kNoW1KCkEBOqC1AhT803wwUf4jRkFgA5Tr9W-9Yo6U08NgU5HDcrQILDKtTQriYQuwkHbi5xJU2tbnWPDooAz4RNGIttU4lmzw4IO0ZqSQ3_b3Y5IJ7bfUbM-NPFEFpCSzTebMNcWnm7hRyy2lQnGDXZDlvxqv-SfkjIer6auge-qcN94OQvsjNmEfR_NtAmjIfgtalLXlXABL3YysfoBYgFkOjylFqAB-ja0UCoB6fMsQKoB-LYsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB_7osQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB5_hsQKoB6brsQKoB9XJG6gH2baxAqgHmgaoB_-esQKoB9-fsQKoB_jCsQKoB_vCsQLYBwHSCDMIgGEQARifAzIIioKAgICAgAg6D4BAgMCAgICAqIACqIOAEEi9_cE6WN-M9rPi45YDYAGxCamzBrXTMa50gAoBmAsByAsBogwxKgoKCI7fsQKV4rECYgIKAGoXChVjb20uZXh0ZW5zaW9uLnBlZHd1bWF4AYgBAZABAaoNAkdIyA0B6g0TCP2Q-LPi45YDFcmrqwcdO0IP4fANAogOBdgTA9AVAZgWAcoWAgoA-BYBgBcBshcEGAFQBroXAjgBshgJEgLFaBgBIgEA0BgBwhkCCAE&ae=1&gclid=EAIaIQobChMIo4z4s-LjlgMVyaurBx07Qg_hEAEYASAAEgIWL_D_BwE&num=1&cid=CAQS9AEAQM4h3OFRmCoiNnJtbq54TnZft2UgbD8eJxAzEmAP1zCUAJIetjSCyikL359HJOP6NkCIQ6ZlM9KAqhKKwGvrH1CfrBsGURkGK2UxQIr2ymxb3zlNRmzxav462V7EVhHlP6jf28FJQ4mDJ5RpEfYO8yfpywzXJU5PgGXdspSiKNra3BnoCi82grRdIc-OULA57RaWvAuK4TtM22OhKOg7PeZFBGhxK4epD6Akq9HWSSre6m922PYt5gJ7MmeBIUWCAL7xHtbty8XM4D1Qok9LuL7ctZkInw3l4vwuvB4DodHsB-_6sycjZUL58SpCKq2wXZOMGAE&sig=AOD64_2ZY6w8uXtdHhYHBdefA_M0BFSQ1A&rf=1&nb=7&adurl=https://www.samsung.com/africa_en/smartphones/galaxy-s/galaxy-s26-fe-pistachio-128gb-sm-s741blguafb/%3Fcid%3Dafrica_ow_social_meta_galaxy-s26-fe_sustain_none_video_available-now_none%26gad_source%3D5%26gad_campaignid%3D24203015184%26gclid%3DEAIaIQobChMIo4z4s-LjlgMVyaurBx07Qg_hEAEYASAAEgIWL_D_BwE
+                  - generic "Samsung Ghana" [ref=f33e19]:
+                    - link "Samsung Ghana" [ref=f33e21] [cursor=pointer]:
+                      - /url: https://googleads.g.doubleclick.net/aclk?sa=l&ai=CtCdcoYGiauO3DMnXru0Pu4S9iA6M7te0iQGe1Ya5hRa4566SpRQQASDBl_QHYKECoAGApa6_A8gBAagDAcgDywSqBKUCT9AWOFszHrjSNDQ-pJrbykAEbJFt9ZiGS_lsCqVD1o1VBiwXxaNbZzXzhRHuV4oB-a6NbfnhZIzuo05M4brRwMpsBIpB3NhXTufXryKKQzh0TqO_irDX3F-47dfYfFBXcNBLVSSc5Sux9XTaETkuIGErGjVZQGIM2EfEVuPXYBpPwE05PxoajHxGUMD1kNoW1KCkEBOqC1AhT803wwUf4jRkFgA5Tr9W-9Yo6U08NgU5HDcrQILDKtTQriYQuwkHbi5xJU2tbnWPDooAz4RNGIttU4lmzw4IO0ZqSQ3_b3Y5IJ7bfUbM-NPFEFpCSzTebMNcWnm7hRyy2lQnGDXZDlvxqv-SfkjIer6auge-qcN94OQvsjNmEfR_NtAmjIfgtalLXlXABL3YysfoBYgFkOjylFqAB-ja0UCoB6fMsQKoB-LYsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB_7osQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB5_hsQKoB6brsQKoB9XJG6gH2baxAqgHmgaoB_-esQKoB9-fsQKoB_jCsQKoB_vCsQLYBwHSCDMIgGEQARifAzIIioKAgICAgAg6D4BAgMCAgICAqIACqIOAEEi9_cE6WN-M9rPi45YDYAGxCamzBrXTMa50gAoBmAsByAsBogwxKgoKCI7fsQKV4rECYgIKAGoXChVjb20uZXh0ZW5zaW9uLnBlZHd1bWF4AYgBAZABAaoNAkdIyA0B6g0TCP2Q-LPi45YDFcmrqwcdO0IP4fANAogOBdgTA9AVAZgWAcoWAgoA-BYBgBcBshcEGAFQBroXAjgBshgJEgLFaBgBIgEA0BgBwhkCCAE&ae=1&gclid=EAIaIQobChMIo4z4s-LjlgMVyaurBx07Qg_hEAEYASAAEgIWL_D_BwE&num=1&cid=CAQS9AEAQM4h3OFRmCoiNnJtbq54TnZft2UgbD8eJxAzEmAP1zCUAJIetjSCyikL359HJOP6NkCIQ6ZlM9KAqhKKwGvrH1CfrBsGURkGK2UxQIr2ymxb3zlNRmzxav462V7EVhHlP6jf28FJQ4mDJ5RpEfYO8yfpywzXJU5PgGXdspSiKNra3BnoCi82grRdIc-OULA57RaWvAuK4TtM22OhKOg7PeZFBGhxK4epD6Akq9HWSSre6m922PYt5gJ7MmeBIUWCAL7xHtbty8XM4D1Qok9LuL7ctZkInw3l4vwuvB4DodHsB-_6sycjZUL58SpCKq2wXZOMGAE&sig=AOD64_2ZY6w8uXtdHhYHBdefA_M0BFSQ1A&rf=1&nb=1&adurl=https://www.samsung.com/africa_en/smartphones/galaxy-s/galaxy-s26-fe-pistachio-128gb-sm-s741blguafb/%3Fcid%3Dafrica_ow_social_meta_galaxy-s26-fe_sustain_none_video_available-now_none%26gad_source%3D5%26gad_campaignid%3D24203015184%26gclid%3DEAIaIQobChMIo4z4s-LjlgMVyaurBx07Qg_hEAEYASAAEgIWL_D_BwE
+                - generic [ref=f33e25]:
+                  - link "Open" [ref=f33e27] [cursor=pointer]:
+                    - /url: https://googleads.g.doubleclick.net/aclk?sa=l&ai=CtCdcoYGiauO3DMnXru0Pu4S9iA6M7te0iQGe1Ya5hRa4566SpRQQASDBl_QHYKECoAGApa6_A8gBAagDAcgDywSqBKUCT9AWOFszHrjSNDQ-pJrbykAEbJFt9ZiGS_lsCqVD1o1VBiwXxaNbZzXzhRHuV4oB-a6NbfnhZIzuo05M4brRwMpsBIpB3NhXTufXryKKQzh0TqO_irDX3F-47dfYfFBXcNBLVSSc5Sux9XTaETkuIGErGjVZQGIM2EfEVuPXYBpPwE05PxoajHxGUMD1kNoW1KCkEBOqC1AhT803wwUf4jRkFgA5Tr9W-9Yo6U08NgU5HDcrQILDKtTQriYQuwkHbi5xJU2tbnWPDooAz4RNGIttU4lmzw4IO0ZqSQ3_b3Y5IJ7bfUbM-NPFEFpCSzTebMNcWnm7hRyy2lQnGDXZDlvxqv-SfkjIer6auge-qcN94OQvsjNmEfR_NtAmjIfgtalLXlXABL3YysfoBYgFkOjylFqAB-ja0UCoB6fMsQKoB-LYsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB_7osQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB5_hsQKoB6brsQKoB9XJG6gH2baxAqgHmgaoB_-esQKoB9-fsQKoB_jCsQKoB_vCsQLYBwHSCDMIgGEQARifAzIIioKAgICAgAg6D4BAgMCAgICAqIACqIOAEEi9_cE6WN-M9rPi45YDYAGxCamzBrXTMa50gAoBmAsByAsBogwxKgoKCI7fsQKV4rECYgIKAGoXChVjb20uZXh0ZW5zaW9uLnBlZHd1bWF4AYgBAZABAaoNAkdIyA0B6g0TCP2Q-LPi45YDFcmrqwcdO0IP4fANAogOBdgTA9AVAZgWAcoWAgoA-BYBgBcBshcEGAFQBroXAjgBshgJEgLFaBgBIgEA0BgBwhkCCAE&ae=1&gclid=EAIaIQobChMIo4z4s-LjlgMVyaurBx07Qg_hEAEYASAAEgIWL_D_BwE&num=1&cid=CAQS9AEAQM4h3OFRmCoiNnJtbq54TnZft2UgbD8eJxAzEmAP1zCUAJIetjSCyikL359HJOP6NkCIQ6ZlM9KAqhKKwGvrH1CfrBsGURkGK2UxQIr2ymxb3zlNRmzxav462V7EVhHlP6jf28FJQ4mDJ5RpEfYO8yfpywzXJU5PgGXdspSiKNra3BnoCi82grRdIc-OULA57RaWvAuK4TtM22OhKOg7PeZFBGhxK4epD6Akq9HWSSre6m922PYt5gJ7MmeBIUWCAL7xHtbty8XM4D1Qok9LuL7ctZkInw3l4vwuvB4DodHsB-_6sycjZUL58SpCKq2wXZOMGAE&sig=AOD64_2ZY6w8uXtdHhYHBdefA_M0BFSQ1A&rf=1&nb=8&adurl=https://www.samsung.com/africa_en/smartphones/galaxy-s/galaxy-s26-fe-pistachio-128gb-sm-s741blguafb/%3Fcid%3Dafrica_ow_social_meta_galaxy-s26-fe_sustain_none_video_available-now_none%26gad_source%3D5%26gad_campaignid%3D24203015184%26gclid%3DEAIaIQobChMIo4z4s-LjlgMVyaurBx07Qg_hEAEYASAAEgIWL_D_BwE
+                  - link [ref=f33e28] [cursor=pointer]:
+                    - /url: https://googleads.g.doubleclick.net/aclk?sa=l&ai=CtCdcoYGiauO3DMnXru0Pu4S9iA6M7te0iQGe1Ya5hRa4566SpRQQASDBl_QHYKECoAGApa6_A8gBAagDAcgDywSqBKUCT9AWOFszHrjSNDQ-pJrbykAEbJFt9ZiGS_lsCqVD1o1VBiwXxaNbZzXzhRHuV4oB-a6NbfnhZIzuo05M4brRwMpsBIpB3NhXTufXryKKQzh0TqO_irDX3F-47dfYfFBXcNBLVSSc5Sux9XTaETkuIGErGjVZQGIM2EfEVuPXYBpPwE05PxoajHxGUMD1kNoW1KCkEBOqC1AhT803wwUf4jRkFgA5Tr9W-9Yo6U08NgU5HDcrQILDKtTQriYQuwkHbi5xJU2tbnWPDooAz4RNGIttU4lmzw4IO0ZqSQ3_b3Y5IJ7bfUbM-NPFEFpCSzTebMNcWnm7hRyy2lQnGDXZDlvxqv-SfkjIer6auge-qcN94OQvsjNmEfR_NtAmjIfgtalLXlXABL3YysfoBYgFkOjylFqAB-ja0UCoB6fMsQKoB-LYsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB_7osQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB5_hsQKoB6brsQKoB9XJG6gH2baxAqgHmgaoB_-esQKoB9-fsQKoB_jCsQKoB_vCsQLYBwHSCDMIgGEQARifAzIIioKAgICAgAg6D4BAgMCAgICAqIACqIOAEEi9_cE6WN-M9rPi45YDYAGxCamzBrXTMa50gAoBmAsByAsBogwxKgoKCI7fsQKV4rECYgIKAGoXChVjb20uZXh0ZW5zaW9uLnBlZHd1bWF4AYgBAZABAaoNAkdIyA0B6g0TCP2Q-LPi45YDFcmrqwcdO0IP4fANAogOBdgTA9AVAZgWAcoWAgoA-BYBgBcBshcEGAFQBroXAjgBshgJEgLFaBgBIgEA0BgBwhkCCAE&ae=1&gclid=EAIaIQobChMIo4z4s-LjlgMVyaurBx07Qg_hEAEYASAAEgIWL_D_BwE&num=1&cid=CAQS9AEAQM4h3OFRmCoiNnJtbq54TnZft2UgbD8eJxAzEmAP1zCUAJIetjSCyikL359HJOP6NkCIQ6ZlM9KAqhKKwGvrH1CfrBsGURkGK2UxQIr2ymxb3zlNRmzxav462V7EVhHlP6jf28FJQ4mDJ5RpEfYO8yfpywzXJU5PgGXdspSiKNra3BnoCi82grRdIc-OULA57RaWvAuK4TtM22OhKOg7PeZFBGhxK4epD6Akq9HWSSre6m922PYt5gJ7MmeBIUWCAL7xHtbty8XM4D1Qok9LuL7ctZkInw3l4vwuvB4DodHsB-_6sycjZUL58SpCKq2wXZOMGAE&sig=AOD64_2ZY6w8uXtdHhYHBdefA_M0BFSQ1A&rf=1&nb=8&adurl=https://www.samsung.com/africa_en/smartphones/galaxy-s/galaxy-s26-fe-pistachio-128gb-sm-s741blguafb/%3Fcid%3Dafrica_ow_social_meta_galaxy-s26-fe_sustain_none_video_available-now_none%26gad_source%3D5%26gad_campaignid%3D24203015184%26gclid%3DEAIaIQobChMIo4z4s-LjlgMVyaurBx07Qg_hEAEYASAAEgIWL_D_BwE
+                    - img [ref=f33e29]
+                  - link [ref=f33e31] [cursor=pointer]:
+                    - /url: https://googleads.g.doubleclick.net/aclk?sa=l&ai=CtCdcoYGiauO3DMnXru0Pu4S9iA6M7te0iQGe1Ya5hRa4566SpRQQASDBl_QHYKECoAGApa6_A8gBAagDAcgDywSqBKUCT9AWOFszHrjSNDQ-pJrbykAEbJFt9ZiGS_lsCqVD1o1VBiwXxaNbZzXzhRHuV4oB-a6NbfnhZIzuo05M4brRwMpsBIpB3NhXTufXryKKQzh0TqO_irDX3F-47dfYfFBXcNBLVSSc5Sux9XTaETkuIGErGjVZQGIM2EfEVuPXYBpPwE05PxoajHxGUMD1kNoW1KCkEBOqC1AhT803wwUf4jRkFgA5Tr9W-9Yo6U08NgU5HDcrQILDKtTQriYQuwkHbi5xJU2tbnWPDooAz4RNGIttU4lmzw4IO0ZqSQ3_b3Y5IJ7bfUbM-NPFEFpCSzTebMNcWnm7hRyy2lQnGDXZDlvxqv-SfkjIer6auge-qcN94OQvsjNmEfR_NtAmjIfgtalLXlXABL3YysfoBYgFkOjylFqAB-ja0UCoB6fMsQKoB-LYsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB_7osQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB5_hsQKoB6brsQKoB9XJG6gH2baxAqgHmgaoB_-esQKoB9-fsQKoB_jCsQKoB_vCsQLYBwHSCDMIgGEQARifAzIIioKAgICAgAg6D4BAgMCAgICAqIACqIOAEEi9_cE6WN-M9rPi45YDYAGxCamzBrXTMa50gAoBmAsByAsBogwxKgoKCI7fsQKV4rECYgIKAGoXChVjb20uZXh0ZW5zaW9uLnBlZHd1bWF4AYgBAZABAaoNAkdIyA0B6g0TCP2Q-LPi45YDFcmrqwcdO0IP4fANAogOBdgTA9AVAZgWAcoWAgoA-BYBgBcBshcEGAFQBroXAjgBshgJEgLFaBgBIgEA0BgBwhkCCAE&ae=1&gclid=EAIaIQobChMIo4z4s-LjlgMVyaurBx07Qg_hEAEYASAAEgIWL_D_BwE&num=1&cid=CAQS9AEAQM4h3OFRmCoiNnJtbq54TnZft2UgbD8eJxAzEmAP1zCUAJIetjSCyikL359HJOP6NkCIQ6ZlM9KAqhKKwGvrH1CfrBsGURkGK2UxQIr2ymxb3zlNRmzxav462V7EVhHlP6jf28FJQ4mDJ5RpEfYO8yfpywzXJU5PgGXdspSiKNra3BnoCi82grRdIc-OULA57RaWvAuK4TtM22OhKOg7PeZFBGhxK4epD6Akq9HWSSre6m922PYt5gJ7MmeBIUWCAL7xHtbty8XM4D1Qok9LuL7ctZkInw3l4vwuvB4DodHsB-_6sycjZUL58SpCKq2wXZOMGAE&sig=AOD64_2ZY6w8uXtdHhYHBdefA_M0BFSQ1A&rf=1&nb=8&adurl=https://www.samsung.com/africa_en/smartphones/galaxy-s/galaxy-s26-fe-pistachio-128gb-sm-s741blguafb/%3Fcid%3Dafrica_ow_social_meta_galaxy-s26-fe_sustain_none_video_available-now_none%26gad_source%3D5%26gad_campaignid%3D24203015184%26gclid%3DEAIaIQobChMIo4z4s-LjlgMVyaurBx07Qg_hEAEYASAAEgIWL_D_BwE
+              - img [ref=f33e35] [cursor=pointer]
+              - button [ref=f33e37] [cursor=pointer]:
+                - img [ref=f33e38]
+              - iframe
+      - generic [ref=e88]:
+        - heading "Roadmap" [level=2] [ref=e89]
+        - generic [ref=e90]:
+          - article [ref=e91]:
+            - generic [ref=e92]:
+              - heading "6.1.5" [level=3] [ref=e93]:
+                - link "6.1.5" [ref=e94] [cursor=pointer]:
+                  - /url: /versions/231
+              - text: open
+            - generic [ref=e95]:
+              - paragraph
+              - table [ref=e96]:
+                - rowgroup [ref=e97]:
+                  - 'row "closed: 66%" [ref=e98]':
+                    - 'cell "closed: 66%" [ref=e99]'
+                    - cell [ref=e100]
+              - paragraph [ref=e101]: 66%
+              - paragraph [ref=e102]:
+                - link "6 issues" [ref=e103] [cursor=pointer]:
+                  - /url: /projects/redmine/issues?fixed_version_id=231&set_filter=1&status_id=%2A
+                - text: (
+                - link "4 closed" [ref=e104] [cursor=pointer]:
+                  - /url: /projects/redmine/issues?fixed_version_id=231&set_filter=1&status_id=c
+                - text: —
+                - link "2 open" [ref=e105] [cursor=pointer]:
+                  - /url: /projects/redmine/issues?fixed_version_id=231&set_filter=1&status_id=o
+                - text: )
+            - table "Related issues" [ref=e107]:
+              - caption [ref=e108]: Related issues
+              - rowgroup [ref=e109]:
+                - 'row "Assignee: Go MAEDA Defect #44418: Fix typo in Japanese translation of mail_body_account_information_external Actions" [ref=e110]':
+                  - 'cell "Assignee: Go MAEDA" [ref=e111]':
+                    - 'img "Assignee: Go MAEDA" [ref=e112]'
+                  - 'cell "Defect #44418: Fix typo in Japanese translation of mail_body_account_information_external" [ref=e113]':
+                    - 'link "Defect #44418" [ref=e114] [cursor=pointer]':
+                      - /url: /issues/44418
+                    - text: ": Fix typo in Japanese translation of mail_body_account_information_external"
+                  - cell "Actions" [ref=e115]:
+                    - link "Actions" [ref=e116] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Go MAEDA Defect #44428: JSON API requests fail with JSON gem 3.0.0 Actions" [ref=e117]':
+                  - 'cell "Assignee: Go MAEDA" [ref=e118]':
+                    - 'img "Assignee: Go MAEDA" [ref=e119]'
+                  - 'cell "Defect #44428: JSON API requests fail with JSON gem 3.0.0" [ref=e120]':
+                    - 'link "Defect #44428" [ref=e121] [cursor=pointer]':
+                      - /url: /issues/44428
+                    - text: ": JSON API requests fail with JSON gem 3.0.0"
+                  - cell "Actions" [ref=e122]:
+                    - link "Actions" [ref=e123] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Go MAEDA Defect #44438: DateCalculationTest is not run by `rails test` Actions" [ref=e124]':
+                  - 'cell "Assignee: Go MAEDA" [ref=e125]':
+                    - 'img "Assignee: Go MAEDA" [ref=e126]'
+                  - 'cell "Defect #44438: DateCalculationTest is not run by `rails test`" [ref=e127]':
+                    - 'link "Defect #44438" [ref=e128] [cursor=pointer]':
+                      - /url: /issues/44438
+                    - text: ": DateCalculationTest is not run by `rails test`"
+                  - cell "Actions" [ref=e129]:
+                    - link "Actions" [ref=e130] [cursor=pointer]:
+                      - /url: "#"
+          - article [ref=e131]:
+            - generic [ref=e132]:
+              - heading "7.0.2" [level=3] [ref=e133]:
+                - link "7.0.2" [ref=e134] [cursor=pointer]:
+                  - /url: /versions/230
+              - text: open
+            - generic [ref=e135]:
+              - paragraph
+              - table [ref=e136]:
+                - rowgroup [ref=e137]:
+                  - 'row "closed: 80%" [ref=e138]':
+                    - 'cell "closed: 80%" [ref=e139]'
+                    - cell [ref=e140]
+              - paragraph [ref=e141]: 80%
+              - paragraph [ref=e142]:
+                - link "5 issues" [ref=e143] [cursor=pointer]:
+                  - /url: /projects/redmine/issues?fixed_version_id=230&set_filter=1&status_id=%2A
+                - text: (
+                - link "4 closed" [ref=e144] [cursor=pointer]:
+                  - /url: /projects/redmine/issues?fixed_version_id=230&set_filter=1&status_id=c
+                - text: —
+                - link "1 open" [ref=e145] [cursor=pointer]:
+                  - /url: /projects/redmine/issues?fixed_version_id=230&set_filter=1&status_id=o
+                - text: )
+            - table "Related issues" [ref=e147]:
+              - caption [ref=e148]: Related issues
+              - rowgroup [ref=e149]:
+                - 'row "Assignee: Go MAEDA Defect #44372: Chrome freezes for several minutes when opening the possible values page of a key/value list custom field with thousands of values Actions" [ref=e150]':
+                  - 'cell "Assignee: Go MAEDA" [ref=e151]':
+                    - 'img "Assignee: Go MAEDA" [ref=e152]'
+                  - 'cell "Defect #44372: Chrome freezes for several minutes when opening the possible values page of a key/value list custom field with thousands of values" [ref=e153]':
+                    - 'link "Defect #44372" [ref=e154] [cursor=pointer]':
+                      - /url: /issues/44372
+                    - text: ": Chrome freezes for several minutes when opening the possible values page of a key/value list custom field with thousands of values"
+                  - cell "Actions" [ref=e155]:
+                    - link "Actions" [ref=e156] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Go MAEDA Defect #44378: Ghostscript process is left running when PDF thumbnail generation times out Actions" [ref=e157]':
+                  - 'cell "Assignee: Go MAEDA" [ref=e158]':
+                    - 'img "Assignee: Go MAEDA" [ref=e159]'
+                  - 'cell "Defect #44378: Ghostscript process is left running when PDF thumbnail generation times out" [ref=e160]':
+                    - 'link "Defect #44378" [ref=e161] [cursor=pointer]':
+                      - /url: /issues/44378
+                    - text: ": Ghostscript process is left running when PDF thumbnail generation times out"
+                  - cell "Actions" [ref=e162]:
+                    - link "Actions" [ref=e163] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Go MAEDA Defect #44408: Autocomplete popup appears off-screen when the caret is near the bottom of the viewport Actions" [ref=e164]':
+                  - 'cell "Assignee: Go MAEDA" [ref=e165]':
+                    - 'img "Assignee: Go MAEDA" [ref=e166]'
+                  - 'cell "Defect #44408: Autocomplete popup appears off-screen when the caret is near the bottom of the viewport" [ref=e167]':
+                    - 'link "Defect #44408" [ref=e168] [cursor=pointer]':
+                      - /url: /issues/44408
+                    - text: ": Autocomplete popup appears off-screen when the caret is near the bottom of the viewport"
+                  - cell "Actions" [ref=e169]:
+                    - link "Actions" [ref=e170] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Marius BĂLTEANU Defect #44412: Themes with custom icons.svg slow down page rendering Actions" [ref=e171]':
+                  - 'cell "Assignee: Marius BĂLTEANU" [ref=e172]':
+                    - 'img "Assignee: Marius BĂLTEANU" [ref=e173]'
+                  - 'cell "Defect #44412: Themes with custom icons.svg slow down page rendering" [ref=e174]':
+                    - 'link "Defect #44412" [ref=e175] [cursor=pointer]':
+                      - /url: /issues/44412
+                    - text: ": Themes with custom icons.svg slow down page rendering"
+                  - cell "Actions" [ref=e176]:
+                    - link "Actions" [ref=e177] [cursor=pointer]:
+                      - /url: "#"
+          - article [ref=e178]:
+            - generic [ref=e179]:
+              - heading "7.1.0" [level=3] [ref=e180]:
+                - link "7.1.0" [ref=e181] [cursor=pointer]:
+                  - /url: /versions/228
+              - text: open
+            - generic [ref=e182]:
+              - paragraph
+              - table [ref=e183]:
+                - rowgroup [ref=e184]:
+                  - 'row "closed: 61%" [ref=e185]':
+                    - 'cell "closed: 61%" [ref=e186]'
+                    - cell [ref=e187]
+              - paragraph [ref=e188]: 61%
+              - paragraph [ref=e189]:
+                - link "52 issues" [ref=e190] [cursor=pointer]:
+                  - /url: /projects/redmine/issues?fixed_version_id=228&set_filter=1&status_id=%2A
+                - text: (
+                - link "32 closed" [ref=e191] [cursor=pointer]:
+                  - /url: /projects/redmine/issues?fixed_version_id=228&set_filter=1&status_id=c
+                - text: —
+                - link "20 open" [ref=e192] [cursor=pointer]:
+                  - /url: /projects/redmine/issues?fixed_version_id=228&set_filter=1&status_id=o
+                - text: )
+            - table "Related issues" [ref=e194]:
+              - caption [ref=e195]: Related issues
+              - rowgroup [ref=e196]:
+                - 'row "Assignee: Marius BĂLTEANU Defect #35248: Hard-coded error messages in IssueStatus Actions" [ref=e197]':
+                  - 'cell "Assignee: Marius BĂLTEANU" [ref=e198]':
+                    - 'img "Assignee: Marius BĂLTEANU" [ref=e199]'
+                  - 'cell "Defect #35248: Hard-coded error messages in IssueStatus" [ref=e200]':
+                    - 'link "Defect #35248" [ref=e201] [cursor=pointer]':
+                      - /url: /issues/35248
+                    - text: ": Hard-coded error messages in IssueStatus"
+                  - cell "Actions" [ref=e202]:
+                    - link "Actions" [ref=e203] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Go MAEDA Defect #37581: Incorrect number and CSV separators in several locales Actions" [ref=e204]':
+                  - 'cell "Assignee: Go MAEDA" [ref=e205]':
+                    - 'img "Assignee: Go MAEDA" [ref=e206]'
+                  - 'cell "Defect #37581: Incorrect number and CSV separators in several locales" [ref=e207]':
+                    - 'link "Defect #37581" [ref=e208] [cursor=pointer]':
+                      - /url: /issues/37581
+                    - text: ": Incorrect number and CSV separators in several locales"
+                  - cell "Actions" [ref=e209]:
+                    - link "Actions" [ref=e210] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Marius BĂLTEANU Defect #43904: Activities of TimeEntries are not updated when moving the TimeEntry to a different project Actions" [ref=e211]':
+                  - 'cell "Assignee: Marius BĂLTEANU" [ref=e212]':
+                    - 'img "Assignee: Marius BĂLTEANU" [ref=e213]'
+                  - 'cell "Defect #43904: Activities of TimeEntries are not updated when moving the TimeEntry to a different project" [ref=e214]':
+                    - 'link "Defect #43904" [ref=e215] [cursor=pointer]':
+                      - /url: /issues/43904
+                    - text: ": Activities of TimeEntries are not updated when moving the TimeEntry to a different project"
+                  - cell "Actions" [ref=e216]:
+                    - link "Actions" [ref=e217] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Go MAEDA Defect #44366: Deleting an issue custom field does not delete its workflow field permissions Actions" [ref=e218]':
+                  - 'cell "Assignee: Go MAEDA" [ref=e219]':
+                    - 'img "Assignee: Go MAEDA" [ref=e220]'
+                  - 'cell "Defect #44366: Deleting an issue custom field does not delete its workflow field permissions" [ref=e221]':
+                    - 'link "Defect #44366" [ref=e222] [cursor=pointer]':
+                      - /url: /issues/44366
+                    - text: ": Deleting an issue custom field does not delete its workflow field permissions"
+                  - cell "Actions" [ref=e223]:
+                    - link "Actions" [ref=e224] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Go MAEDA Defect #44376: Cannot deselect current user in multi-select user custom field without also deselecting \"<< me >>\" Actions" [ref=e225]':
+                  - 'cell "Assignee: Go MAEDA" [ref=e226]':
+                    - 'img "Assignee: Go MAEDA" [ref=e227]'
+                  - 'cell "Defect #44376: Cannot deselect current user in multi-select user custom field without also deselecting \"<< me >>\"" [ref=e228]':
+                    - 'link "Defect #44376" [ref=e229] [cursor=pointer]':
+                      - /url: /issues/44376
+                    - text: ": Cannot deselect current user in multi-select user custom field without also deselecting \"<< me >>\""
+                  - cell "Actions" [ref=e230]:
+                    - link "Actions" [ref=e231] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Go MAEDA Defect #44398: Fix typo in log messages: \"occured\" should be \"occurred\" Actions" [ref=e232]':
+                  - 'cell "Assignee: Go MAEDA" [ref=e233]':
+                    - 'img "Assignee: Go MAEDA" [ref=e234]'
+                  - 'cell "Defect #44398: Fix typo in log messages: \"occured\" should be \"occurred\"" [ref=e235]':
+                    - 'link "Defect #44398" [ref=e236] [cursor=pointer]':
+                      - /url: /issues/44398
+                    - text: ": Fix typo in log messages: \"occured\" should be \"occurred\""
+                  - cell "Actions" [ref=e237]:
+                    - link "Actions" [ref=e238] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Go MAEDA Defect #44411: Fix typo in log messages: \"nonexistant\" should be \"nonexistent\" Actions" [ref=e239]':
+                  - 'cell "Assignee: Go MAEDA" [ref=e240]':
+                    - 'img "Assignee: Go MAEDA" [ref=e241]'
+                  - 'cell "Defect #44411: Fix typo in log messages: \"nonexistant\" should be \"nonexistent\"" [ref=e242]':
+                    - 'link "Defect #44411" [ref=e243] [cursor=pointer]':
+                      - /url: /issues/44411
+                    - text: ": Fix typo in log messages: \"nonexistant\" should be \"nonexistent\""
+                  - cell "Actions" [ref=e244]:
+                    - link "Actions" [ref=e245] [cursor=pointer]:
+                      - /url: "#"
+          - article [ref=e246]:
+            - generic [ref=e247]:
+              - heading "Candidate for next major release" [level=3] [ref=e248]:
+                - link "Candidate for next major release" [ref=e249] [cursor=pointer]:
+                  - /url: /versions/32
+              - text: open
+            - generic [ref=e250]:
+              - paragraph [ref=e251]: Features that the contributors would like to add in the next major version
+              - table [ref=e252]:
+                - rowgroup [ref=e253]:
+                  - row [ref=e254]:
+                    - cell [ref=e255]
+              - paragraph [ref=e256]: 0%
+              - insertion [ref=e258]:
+                - iframe [ref=e260]:
+                  - generic [active] [ref=f38e1]:
+                    - generic [ref=f38e6]:
+                      - generic [ref=f38e7]:
+                        - link [ref=f38e8] [cursor=pointer]:
+                          - /url: https://adclick.g.doubleclick.net/aclk?sa=l&ai=C8O6GoYGiaramK5Hbru0PlbnjgQqi1oauhgHbquTe_BDAjbcBEAEgwZf0B2ChAqAB0cDysALIAQmpAly31GSAA4Q-qAMByAPLBKoEqQJP0LXdDtLs9-xSDmINE8YMqOqUlOVf_-U5o6C30aslIa0q46JaLwMBPnh8uhe1rHWFJCA-g4kCqm7Vm1ek96PMiakIEoEGNc84AVm4GVsywFHqam4XMZYWLDRhfvdMDA-AGoOB4qaFkbRd2Qwtmpdk9NJNjnQjuIF_ag_pXPFWW13vFSGQZq1wfwbkx3y_0YGU45xArv-kXHLOAH9hY7iT15YJD_y7YKBPDRXH-Q1Sk2NeFB2aNFsiJz1_noZsZNIso_dd1RJww9V--OtjSQ0yOK2-WCqT2t7h_aGAr-lPv24U1mTAgiadQiZIlpiv6SKmW5LjQLn-fqbBwWEu9YacUYa38eAKseddic0Okuk38tcexwPQmB_WnwVUasc-H8a57-IvlCMjqbjABM74haX3AogFj_md6iagBi6AB5e_jc8BqAenzLECqAfi2LECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAf-6LECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAef4bECqAem67ECqAfVyRuoB9m2sQKoB5oGqAf_nrECqAffn7ECqAf4wrECqAf7wrECqAfCyLEC2AcA0ggzCIBhEAEYnwMyCIqCgICAgIAIOg-AQIDAgICAgKiAAqiDgBBIvf3BOlis9pS04uOWA2ABsQmduc4msxixyIAKAYoKWGh0dHBzOi8vd3d3LmFhcGFuZWwuY29tL2luZGV4X3R1aWd1YW5nMnZpZXcuaHRtbD9nYWRfc291cmNlPTUmZ2FkX2NhbXBhaWduaWQ9MTA0MjMzMzYwNzmYCwHICwHgCwGADAGiDA8qCgoIjt-xApXisQKQAQGqDQJHSMgNAeoNEwjF_5a04uOWAxWRrasHHZXcOKDwDQKIDgnYEwqIFA7QFQGYFgHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRIC8FkYLiIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMI9vqWtOLjlgMVka2rBx2V3DigEAEYASAAEgIk1vD_BwE&num=1&cid=CAQS9AEAQM4h3LINW_RYEl8Il5zITHQTbd7u1_OFblXXhdkczpwE3liEHfaO1Z4AsZ2P_4jiRHdvLcIAOHTFu2wgzOD-oE0DxoW60Qa2MbVjXfce9F1DDo5tDEEOaJb3tfwi2MvK9ueQn7at9rY7hyG07ipKztn_EmHsIF7xfLTwisGyk8zVxrgjLvm9FNITAzWS4rA6o2QFvNmh-SnUpwJQvgdLjmeX67r7QSS7YIACCEn5p6uYXz7EL6Gj113JgPK0JYh3hTYdfDrmsvlCmX5tha4OzJ7f0w2uIKZ87Qqz7mtZSQdJ8td4zRzIYW2L7No1HUem6INXGAE&sig=AOD64_3_uH6IyzeV0JcybfdEXkj56LJ0Zw&rf=1&nb=9&adurl=https://www.aapanel.com/index-sub-view.html%3Fhttps://www.aapanel.com/index_tuiguang2view.html%26gad_source%3D5%26gad_campaignid%3D10423336079%26gclid%3DEAIaIQobChMI9vqWtOLjlgMVka2rBx2V3DigEAEYASAAEgIk1vD_BwE
+                          - img [ref=f38e9]
+                        - generic [ref=f38e10]:
+                          - link "aaPanel - Free hosting panel" [ref=f38e14] [cursor=pointer]:
+                            - /url: https://adclick.g.doubleclick.net/aclk?sa=l&ai=C8O6GoYGiaramK5Hbru0PlbnjgQqi1oauhgHbquTe_BDAjbcBEAEgwZf0B2ChAqAB0cDysALIAQmpAly31GSAA4Q-qAMByAPLBKoEqQJP0LXdDtLs9-xSDmINE8YMqOqUlOVf_-U5o6C30aslIa0q46JaLwMBPnh8uhe1rHWFJCA-g4kCqm7Vm1ek96PMiakIEoEGNc84AVm4GVsywFHqam4XMZYWLDRhfvdMDA-AGoOB4qaFkbRd2Qwtmpdk9NJNjnQjuIF_ag_pXPFWW13vFSGQZq1wfwbkx3y_0YGU45xArv-kXHLOAH9hY7iT15YJD_y7YKBPDRXH-Q1Sk2NeFB2aNFsiJz1_noZsZNIso_dd1RJww9V--OtjSQ0yOK2-WCqT2t7h_aGAr-lPv24U1mTAgiadQiZIlpiv6SKmW5LjQLn-fqbBwWEu9YacUYa38eAKseddic0Okuk38tcexwPQmB_WnwVUasc-H8a57-IvlCMjqbjABM74haX3AogFj_md6iagBi6AB5e_jc8BqAenzLECqAfi2LECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAf-6LECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAef4bECqAem67ECqAfVyRuoB9m2sQKoB5oGqAf_nrECqAffn7ECqAf4wrECqAf7wrECqAfCyLEC2AcA0ggzCIBhEAEYnwMyCIqCgICAgIAIOg-AQIDAgICAgKiAAqiDgBBIvf3BOlis9pS04uOWA2ABsQmduc4msxixyIAKAYoKWGh0dHBzOi8vd3d3LmFhcGFuZWwuY29tL2luZGV4X3R1aWd1YW5nMnZpZXcuaHRtbD9nYWRfc291cmNlPTUmZ2FkX2NhbXBhaWduaWQ9MTA0MjMzMzYwNzmYCwHICwHgCwGADAGiDA8qCgoIjt-xApXisQKQAQGqDQJHSMgNAeoNEwjF_5a04uOWAxWRrasHHZXcOKDwDQKIDgnYEwqIFA7QFQGYFgHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRIC8FkYLiIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMI9vqWtOLjlgMVka2rBx2V3DigEAEYASAAEgIk1vD_BwE&num=1&cid=CAQS9AEAQM4h3LINW_RYEl8Il5zITHQTbd7u1_OFblXXhdkczpwE3liEHfaO1Z4AsZ2P_4jiRHdvLcIAOHTFu2wgzOD-oE0DxoW60Qa2MbVjXfce9F1DDo5tDEEOaJb3tfwi2MvK9ueQn7at9rY7hyG07ipKztn_EmHsIF7xfLTwisGyk8zVxrgjLvm9FNITAzWS4rA6o2QFvNmh-SnUpwJQvgdLjmeX67r7QSS7YIACCEn5p6uYXz7EL6Gj113JgPK0JYh3hTYdfDrmsvlCmX5tha4OzJ7f0w2uIKZ87Qqz7mtZSQdJ8td4zRzIYW2L7No1HUem6INXGAE&sig=AOD64_3_uH6IyzeV0JcybfdEXkj56LJ0Zw&rf=1&nb=0&adurl=https://www.aapanel.com/index-sub-view.html%3Fhttps://www.aapanel.com/index_tuiguang2view.html%26gad_source%3D5%26gad_campaignid%3D10423336079%26gclid%3DEAIaIQobChMI9vqWtOLjlgMVka2rBx2V3DigEAEYASAAEgIk1vD_BwE
+                          - link "Manage your server with a simple mouse movement. One-click install LAMP/LEMP/SSL" [ref=f38e17] [cursor=pointer]:
+                            - /url: https://adclick.g.doubleclick.net/aclk?sa=l&ai=C8O6GoYGiaramK5Hbru0PlbnjgQqi1oauhgHbquTe_BDAjbcBEAEgwZf0B2ChAqAB0cDysALIAQmpAly31GSAA4Q-qAMByAPLBKoEqQJP0LXdDtLs9-xSDmINE8YMqOqUlOVf_-U5o6C30aslIa0q46JaLwMBPnh8uhe1rHWFJCA-g4kCqm7Vm1ek96PMiakIEoEGNc84AVm4GVsywFHqam4XMZYWLDRhfvdMDA-AGoOB4qaFkbRd2Qwtmpdk9NJNjnQjuIF_ag_pXPFWW13vFSGQZq1wfwbkx3y_0YGU45xArv-kXHLOAH9hY7iT15YJD_y7YKBPDRXH-Q1Sk2NeFB2aNFsiJz1_noZsZNIso_dd1RJww9V--OtjSQ0yOK2-WCqT2t7h_aGAr-lPv24U1mTAgiadQiZIlpiv6SKmW5LjQLn-fqbBwWEu9YacUYa38eAKseddic0Okuk38tcexwPQmB_WnwVUasc-H8a57-IvlCMjqbjABM74haX3AogFj_md6iagBi6AB5e_jc8BqAenzLECqAfi2LECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAf-6LECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAef4bECqAem67ECqAfVyRuoB9m2sQKoB5oGqAf_nrECqAffn7ECqAf4wrECqAf7wrECqAfCyLEC2AcA0ggzCIBhEAEYnwMyCIqCgICAgIAIOg-AQIDAgICAgKiAAqiDgBBIvf3BOlis9pS04uOWA2ABsQmduc4msxixyIAKAYoKWGh0dHBzOi8vd3d3LmFhcGFuZWwuY29tL2luZGV4X3R1aWd1YW5nMnZpZXcuaHRtbD9nYWRfc291cmNlPTUmZ2FkX2NhbXBhaWduaWQ9MTA0MjMzMzYwNzmYCwHICwHgCwGADAGiDA8qCgoIjt-xApXisQKQAQGqDQJHSMgNAeoNEwjF_5a04uOWAxWRrasHHZXcOKDwDQKIDgnYEwqIFA7QFQGYFgHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRIC8FkYLiIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMI9vqWtOLjlgMVka2rBx2V3DigEAEYASAAEgIk1vD_BwE&num=1&cid=CAQS9AEAQM4h3LINW_RYEl8Il5zITHQTbd7u1_OFblXXhdkczpwE3liEHfaO1Z4AsZ2P_4jiRHdvLcIAOHTFu2wgzOD-oE0DxoW60Qa2MbVjXfce9F1DDo5tDEEOaJb3tfwi2MvK9ueQn7at9rY7hyG07ipKztn_EmHsIF7xfLTwisGyk8zVxrgjLvm9FNITAzWS4rA6o2QFvNmh-SnUpwJQvgdLjmeX67r7QSS7YIACCEn5p6uYXz7EL6Gj113JgPK0JYh3hTYdfDrmsvlCmX5tha4OzJ7f0w2uIKZ87Qqz7mtZSQdJ8td4zRzIYW2L7No1HUem6INXGAE&sig=AOD64_3_uH6IyzeV0JcybfdEXkj56LJ0Zw&rf=1&nb=7&adurl=https://www.aapanel.com/index-sub-view.html%3Fhttps://www.aapanel.com/index_tuiguang2view.html%26gad_source%3D5%26gad_campaignid%3D10423336079%26gclid%3DEAIaIQobChMI9vqWtOLjlgMVka2rBx2V3DigEAEYASAAEgIk1vD_BwE
+                      - generic [ref=f38e20]:
+                        - link:
+                          - /url: https://adclick.g.doubleclick.net/aclk?sa=l&ai=C8O6GoYGiaramK5Hbru0PlbnjgQqi1oauhgHbquTe_BDAjbcBEAEgwZf0B2ChAqAB0cDysALIAQmpAly31GSAA4Q-qAMByAPLBKoEqQJP0LXdDtLs9-xSDmINE8YMqOqUlOVf_-U5o6C30aslIa0q46JaLwMBPnh8uhe1rHWFJCA-g4kCqm7Vm1ek96PMiakIEoEGNc84AVm4GVsywFHqam4XMZYWLDRhfvdMDA-AGoOB4qaFkbRd2Qwtmpdk9NJNjnQjuIF_ag_pXPFWW13vFSGQZq1wfwbkx3y_0YGU45xArv-kXHLOAH9hY7iT15YJD_y7YKBPDRXH-Q1Sk2NeFB2aNFsiJz1_noZsZNIso_dd1RJww9V--OtjSQ0yOK2-WCqT2t7h_aGAr-lPv24U1mTAgiadQiZIlpiv6SKmW5LjQLn-fqbBwWEu9YacUYa38eAKseddic0Okuk38tcexwPQmB_WnwVUasc-H8a57-IvlCMjqbjABM74haX3AogFj_md6iagBi6AB5e_jc8BqAenzLECqAfi2LECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAf-6LECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAef4bECqAem67ECqAfVyRuoB9m2sQKoB5oGqAf_nrECqAffn7ECqAf4wrECqAf7wrECqAfCyLEC2AcA0ggzCIBhEAEYnwMyCIqCgICAgIAIOg-AQIDAgICAgKiAAqiDgBBIvf3BOlis9pS04uOWA2ABsQmduc4msxixyIAKAYoKWGh0dHBzOi8vd3d3LmFhcGFuZWwuY29tL2luZGV4X3R1aWd1YW5nMnZpZXcuaHRtbD9nYWRfc291cmNlPTUmZ2FkX2NhbXBhaWduaWQ9MTA0MjMzMzYwNzmYCwHICwHgCwGADAGiDA8qCgoIjt-xApXisQKQAQGqDQJHSMgNAeoNEwjF_5a04uOWAxWRrasHHZXcOKDwDQKIDgnYEwqIFA7QFQGYFgHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRIC8FkYLiIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMI9vqWtOLjlgMVka2rBx2V3DigEAEYASAAEgIk1vD_BwE&num=1&cid=CAQS9AEAQM4h3LINW_RYEl8Il5zITHQTbd7u1_OFblXXhdkczpwE3liEHfaO1Z4AsZ2P_4jiRHdvLcIAOHTFu2wgzOD-oE0DxoW60Qa2MbVjXfce9F1DDo5tDEEOaJb3tfwi2MvK9ueQn7at9rY7hyG07ipKztn_EmHsIF7xfLTwisGyk8zVxrgjLvm9FNITAzWS4rA6o2QFvNmh-SnUpwJQvgdLjmeX67r7QSS7YIACCEn5p6uYXz7EL6Gj113JgPK0JYh3hTYdfDrmsvlCmX5tha4OzJ7f0w2uIKZ87Qqz7mtZSQdJ8td4zRzIYW2L7No1HUem6INXGAE&sig=AOD64_3_uH6IyzeV0JcybfdEXkj56LJ0Zw&rf=1&nb=8&adurl=https://www.aapanel.com/index-sub-view.html%3Fhttps://www.aapanel.com/index_tuiguang2view.html%26gad_source%3D5%26gad_campaignid%3D10423336079%26gclid%3DEAIaIQobChMI9vqWtOLjlgMVka2rBx2V3DigEAEYASAAEgIk1vD_BwE
+                        - link "aaPanel" [ref=f38e22] [cursor=pointer]:
+                          - /url: https://adclick.g.doubleclick.net/aclk?sa=l&ai=C8O6GoYGiaramK5Hbru0PlbnjgQqi1oauhgHbquTe_BDAjbcBEAEgwZf0B2ChAqAB0cDysALIAQmpAly31GSAA4Q-qAMByAPLBKoEqQJP0LXdDtLs9-xSDmINE8YMqOqUlOVf_-U5o6C30aslIa0q46JaLwMBPnh8uhe1rHWFJCA-g4kCqm7Vm1ek96PMiakIEoEGNc84AVm4GVsywFHqam4XMZYWLDRhfvdMDA-AGoOB4qaFkbRd2Qwtmpdk9NJNjnQjuIF_ag_pXPFWW13vFSGQZq1wfwbkx3y_0YGU45xArv-kXHLOAH9hY7iT15YJD_y7YKBPDRXH-Q1Sk2NeFB2aNFsiJz1_noZsZNIso_dd1RJww9V--OtjSQ0yOK2-WCqT2t7h_aGAr-lPv24U1mTAgiadQiZIlpiv6SKmW5LjQLn-fqbBwWEu9YacUYa38eAKseddic0Okuk38tcexwPQmB_WnwVUasc-H8a57-IvlCMjqbjABM74haX3AogFj_md6iagBi6AB5e_jc8BqAenzLECqAfi2LECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAf-6LECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAef4bECqAem67ECqAfVyRuoB9m2sQKoB5oGqAf_nrECqAffn7ECqAf4wrECqAf7wrECqAfCyLEC2AcA0ggzCIBhEAEYnwMyCIqCgICAgIAIOg-AQIDAgICAgKiAAqiDgBBIvf3BOlis9pS04uOWA2ABsQmduc4msxixyIAKAYoKWGh0dHBzOi8vd3d3LmFhcGFuZWwuY29tL2luZGV4X3R1aWd1YW5nMnZpZXcuaHRtbD9nYWRfc291cmNlPTUmZ2FkX2NhbXBhaWduaWQ9MTA0MjMzMzYwNzmYCwHICwHgCwGADAGiDA8qCgoIjt-xApXisQKQAQGqDQJHSMgNAeoNEwjF_5a04uOWAxWRrasHHZXcOKDwDQKIDgnYEwqIFA7QFQGYFgHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRIC8FkYLiIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMI9vqWtOLjlgMVka2rBx2V3DigEAEYASAAEgIk1vD_BwE&num=1&cid=CAQS9AEAQM4h3LINW_RYEl8Il5zITHQTbd7u1_OFblXXhdkczpwE3liEHfaO1Z4AsZ2P_4jiRHdvLcIAOHTFu2wgzOD-oE0DxoW60Qa2MbVjXfce9F1DDo5tDEEOaJb3tfwi2MvK9ueQn7at9rY7hyG07ipKztn_EmHsIF7xfLTwisGyk8zVxrgjLvm9FNITAzWS4rA6o2QFvNmh-SnUpwJQvgdLjmeX67r7QSS7YIACCEn5p6uYXz7EL6Gj113JgPK0JYh3hTYdfDrmsvlCmX5tha4OzJ7f0w2uIKZ87Qqz7mtZSQdJ8td4zRzIYW2L7No1HUem6INXGAE&sig=AOD64_3_uH6IyzeV0JcybfdEXkj56LJ0Zw&rf=1&nb=1&adurl=https://www.aapanel.com/index-sub-view.html%3Fhttps://www.aapanel.com/index_tuiguang2view.html%26gad_source%3D5%26gad_campaignid%3D10423336079%26gclid%3DEAIaIQobChMI9vqWtOLjlgMVka2rBx2V3DigEAEYASAAEgIk1vD_BwE
+                        - link "Install" [ref=f38e24] [cursor=pointer]:
+                          - /url: https://adclick.g.doubleclick.net/aclk?sa=l&ai=C8O6GoYGiaramK5Hbru0PlbnjgQqi1oauhgHbquTe_BDAjbcBEAEgwZf0B2ChAqAB0cDysALIAQmpAly31GSAA4Q-qAMByAPLBKoEqQJP0LXdDtLs9-xSDmINE8YMqOqUlOVf_-U5o6C30aslIa0q46JaLwMBPnh8uhe1rHWFJCA-g4kCqm7Vm1ek96PMiakIEoEGNc84AVm4GVsywFHqam4XMZYWLDRhfvdMDA-AGoOB4qaFkbRd2Qwtmpdk9NJNjnQjuIF_ag_pXPFWW13vFSGQZq1wfwbkx3y_0YGU45xArv-kXHLOAH9hY7iT15YJD_y7YKBPDRXH-Q1Sk2NeFB2aNFsiJz1_noZsZNIso_dd1RJww9V--OtjSQ0yOK2-WCqT2t7h_aGAr-lPv24U1mTAgiadQiZIlpiv6SKmW5LjQLn-fqbBwWEu9YacUYa38eAKseddic0Okuk38tcexwPQmB_WnwVUasc-H8a57-IvlCMjqbjABM74haX3AogFj_md6iagBi6AB5e_jc8BqAenzLECqAfi2LECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAf-6LECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAef4bECqAem67ECqAfVyRuoB9m2sQKoB5oGqAf_nrECqAffn7ECqAf4wrECqAf7wrECqAfCyLEC2AcA0ggzCIBhEAEYnwMyCIqCgICAgIAIOg-AQIDAgICAgKiAAqiDgBBIvf3BOlis9pS04uOWA2ABsQmduc4msxixyIAKAYoKWGh0dHBzOi8vd3d3LmFhcGFuZWwuY29tL2luZGV4X3R1aWd1YW5nMnZpZXcuaHRtbD9nYWRfc291cmNlPTUmZ2FkX2NhbXBhaWduaWQ9MTA0MjMzMzYwNzmYCwHICwHgCwGADAGiDA8qCgoIjt-xApXisQKQAQGqDQJHSMgNAeoNEwjF_5a04uOWAxWRrasHHZXcOKDwDQKIDgnYEwqIFA7QFQGYFgHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRIC8FkYLiIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMI9vqWtOLjlgMVka2rBx2V3DigEAEYASAAEgIk1vD_BwE&num=1&cid=CAQS9AEAQM4h3LINW_RYEl8Il5zITHQTbd7u1_OFblXXhdkczpwE3liEHfaO1Z4AsZ2P_4jiRHdvLcIAOHTFu2wgzOD-oE0DxoW60Qa2MbVjXfce9F1DDo5tDEEOaJb3tfwi2MvK9ueQn7at9rY7hyG07ipKztn_EmHsIF7xfLTwisGyk8zVxrgjLvm9FNITAzWS4rA6o2QFvNmh-SnUpwJQvgdLjmeX67r7QSS7YIACCEn5p6uYXz7EL6Gj113JgPK0JYh3hTYdfDrmsvlCmX5tha4OzJ7f0w2uIKZ87Qqz7mtZSQdJ8td4zRzIYW2L7No1HUem6INXGAE&sig=AOD64_3_uH6IyzeV0JcybfdEXkj56LJ0Zw&rf=1&nb=8&adurl=https://www.aapanel.com/index-sub-view.html%3Fhttps://www.aapanel.com/index_tuiguang2view.html%26gad_source%3D5%26gad_campaignid%3D10423336079%26gclid%3DEAIaIQobChMI9vqWtOLjlgMVka2rBx2V3DigEAEYASAAEgIk1vD_BwE
+                        - link [ref=f38e25] [cursor=pointer]:
+                          - /url: https://adclick.g.doubleclick.net/aclk?sa=l&ai=C8O6GoYGiaramK5Hbru0PlbnjgQqi1oauhgHbquTe_BDAjbcBEAEgwZf0B2ChAqAB0cDysALIAQmpAly31GSAA4Q-qAMByAPLBKoEqQJP0LXdDtLs9-xSDmINE8YMqOqUlOVf_-U5o6C30aslIa0q46JaLwMBPnh8uhe1rHWFJCA-g4kCqm7Vm1ek96PMiakIEoEGNc84AVm4GVsywFHqam4XMZYWLDRhfvdMDA-AGoOB4qaFkbRd2Qwtmpdk9NJNjnQjuIF_ag_pXPFWW13vFSGQZq1wfwbkx3y_0YGU45xArv-kXHLOAH9hY7iT15YJD_y7YKBPDRXH-Q1Sk2NeFB2aNFsiJz1_noZsZNIso_dd1RJww9V--OtjSQ0yOK2-WCqT2t7h_aGAr-lPv24U1mTAgiadQiZIlpiv6SKmW5LjQLn-fqbBwWEu9YacUYa38eAKseddic0Okuk38tcexwPQmB_WnwVUasc-H8a57-IvlCMjqbjABM74haX3AogFj_md6iagBi6AB5e_jc8BqAenzLECqAfi2LECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAf-6LECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAef4bECqAem67ECqAfVyRuoB9m2sQKoB5oGqAf_nrECqAffn7ECqAf4wrECqAf7wrECqAfCyLEC2AcA0ggzCIBhEAEYnwMyCIqCgICAgIAIOg-AQIDAgICAgKiAAqiDgBBIvf3BOlis9pS04uOWA2ABsQmduc4msxixyIAKAYoKWGh0dHBzOi8vd3d3LmFhcGFuZWwuY29tL2luZGV4X3R1aWd1YW5nMnZpZXcuaHRtbD9nYWRfc291cmNlPTUmZ2FkX2NhbXBhaWduaWQ9MTA0MjMzMzYwNzmYCwHICwHgCwGADAGiDA8qCgoIjt-xApXisQKQAQGqDQJHSMgNAeoNEwjF_5a04uOWAxWRrasHHZXcOKDwDQKIDgnYEwqIFA7QFQGYFgHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRIC8FkYLiIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMI9vqWtOLjlgMVka2rBx2V3DigEAEYASAAEgIk1vD_BwE&num=1&cid=CAQS9AEAQM4h3LINW_RYEl8Il5zITHQTbd7u1_OFblXXhdkczpwE3liEHfaO1Z4AsZ2P_4jiRHdvLcIAOHTFu2wgzOD-oE0DxoW60Qa2MbVjXfce9F1DDo5tDEEOaJb3tfwi2MvK9ueQn7at9rY7hyG07ipKztn_EmHsIF7xfLTwisGyk8zVxrgjLvm9FNITAzWS4rA6o2QFvNmh-SnUpwJQvgdLjmeX67r7QSS7YIACCEn5p6uYXz7EL6Gj113JgPK0JYh3hTYdfDrmsvlCmX5tha4OzJ7f0w2uIKZ87Qqz7mtZSQdJ8td4zRzIYW2L7No1HUem6INXGAE&sig=AOD64_3_uH6IyzeV0JcybfdEXkj56LJ0Zw&rf=1&nb=8&adurl=https://www.aapanel.com/index-sub-view.html%3Fhttps://www.aapanel.com/index_tuiguang2view.html%26gad_source%3D5%26gad_campaignid%3D10423336079%26gclid%3DEAIaIQobChMI9vqWtOLjlgMVka2rBx2V3DigEAEYASAAEgIk1vD_BwE
+                          - generic [ref=f38e27]:
+                            - img [ref=f38e28]
+                            - img [ref=f38e30]
+                    - img [ref=f38e35] [cursor=pointer]
+                    - button [ref=f38e37] [cursor=pointer]:
+                      - img [ref=f38e38]
+                    - iframe
+              - paragraph [ref=e261]:
+                - link "237 issues" [ref=e262] [cursor=pointer]:
+                  - /url: /projects/redmine/issues?fixed_version_id=32&set_filter=1&status_id=%2A
+                - text: (0 closed —
+                - link "237 open" [ref=e263] [cursor=pointer]:
+                  - /url: /projects/redmine/issues?fixed_version_id=32&set_filter=1&status_id=o
+                - text: )
+            - table "Related issues" [ref=e265]:
+              - caption [ref=e266]: Related issues
+              - rowgroup [ref=e267]:
+                - 'row "Assignee: Jean-Philippe Lang Defect #668: Date input fields don''t respect date format settings Actions" [ref=e268]':
+                  - 'cell "Assignee: Jean-Philippe Lang" [ref=e269]':
+                    - 'img "Assignee: Jean-Philippe Lang" [ref=e270]'
+                  - 'cell "Defect #668: Date input fields don''t respect date format settings" [ref=e271]':
+                    - 'link "Defect #668" [ref=e272] [cursor=pointer]':
+                      - /url: /issues/668
+                    - text: ": Date input fields don't respect date format settings"
+                  - cell "Actions" [ref=e273]:
+                    - link "Actions" [ref=e274] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #1420: LDAP authentication extremely flaky Actions" [ref=e275]':
+                  - cell [ref=e276]
+                  - 'cell "Defect #1420: LDAP authentication extremely flaky" [ref=e277]':
+                    - 'link "Defect #1420" [ref=e278] [cursor=pointer]':
+                      - /url: /issues/1420
+                    - text: ": LDAP authentication extremely flaky"
+                  - cell "Actions" [ref=e279]:
+                    - link "Actions" [ref=e280] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #5933: News don''t appear in the parent project Actions" [ref=e281]':
+                  - cell [ref=e282]
+                  - 'cell "Defect #5933: News don''t appear in the parent project" [ref=e283]':
+                    - 'link "Defect #5933" [ref=e284] [cursor=pointer]':
+                      - /url: /issues/5933
+                    - text: ": News don't appear in the parent project"
+                  - cell "Actions" [ref=e285]:
+                    - link "Actions" [ref=e286] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #5976: Uniqueness of User model fields is not checked sufficiently Actions" [ref=e287]':
+                  - cell [ref=e288]
+                  - 'cell "Defect #5976: Uniqueness of User model fields is not checked sufficiently" [ref=e289]':
+                    - 'link "Defect #5976" [ref=e290] [cursor=pointer]':
+                      - /url: /issues/5976
+                    - text: ": Uniqueness of User model fields is not checked sufficiently"
+                  - cell "Actions" [ref=e291]:
+                    - link "Actions" [ref=e292] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #6023: All members are displayed in issue summaries, even if they cannot be assigned Actions" [ref=e293]':
+                  - cell [ref=e294]
+                  - 'cell "Defect #6023: All members are displayed in issue summaries, even if they cannot be assigned" [ref=e295]':
+                    - 'link "Defect #6023" [ref=e296] [cursor=pointer]':
+                      - /url: /issues/6023
+                    - text: ": All members are displayed in issue summaries, even if they cannot be assigned"
+                  - cell "Actions" [ref=e297]:
+                    - link "Actions" [ref=e298] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Jean-Baptiste Barth Defect #6324: requires_redmine_plugin should defer loading plugins if not all dependencies are met Actions" [ref=e299]':
+                  - 'cell "Assignee: Jean-Baptiste Barth" [ref=e300]':
+                    - 'img "Assignee: Jean-Baptiste Barth" [ref=e301]'
+                  - 'cell "Defect #6324: requires_redmine_plugin should defer loading plugins if not all dependencies are met" [ref=e302]':
+                    - 'link "Defect #6324" [ref=e303] [cursor=pointer]':
+                      - /url: /issues/6324
+                    - text: ": requires_redmine_plugin should defer loading plugins if not all dependencies are met"
+                  - cell "Actions" [ref=e304]:
+                    - link "Actions" [ref=e305] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #6523: Sort order doesn''t treat german \"umlaute\" correct in user listing Actions" [ref=e306]':
+                  - cell [ref=e307]
+                  - 'cell "Defect #6523: Sort order doesn''t treat german \"umlaute\" correct in user listing" [ref=e308]':
+                    - 'link "Defect #6523" [ref=e309] [cursor=pointer]':
+                      - /url: /issues/6523
+                    - text: ": Sort order doesn't treat german \"umlaute\" correct in user listing"
+                  - cell "Actions" [ref=e310]:
+                    - link "Actions" [ref=e311] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Jean-Philippe Lang Defect #6969: Less-than sign in issue description and comments are not escaped Actions" [ref=e312]':
+                  - 'cell "Assignee: Jean-Philippe Lang" [ref=e313]':
+                    - 'img "Assignee: Jean-Philippe Lang" [ref=e314]'
+                  - 'cell "Defect #6969: Less-than sign in issue description and comments are not escaped" [ref=e315]':
+                    - 'link "Defect #6969" [ref=e316] [cursor=pointer]':
+                      - /url: /issues/6969
+                    - text: ": Less-than sign in issue description and comments are not escaped"
+                  - cell "Actions" [ref=e317]:
+                    - link "Actions" [ref=e318] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #7768: improve consistency of terms / language Actions" [ref=e319]':
+                  - cell [ref=e320]
+                  - 'cell "Defect #7768: improve consistency of terms / language" [ref=e321]':
+                    - 'link "Defect #7768" [ref=e322] [cursor=pointer]':
+                      - /url: /issues/7768
+                    - text: ": improve consistency of terms / language"
+                  - cell "Actions" [ref=e323]:
+                    - link "Actions" [ref=e324] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #7819: REST API Populating issue field enumerations + Issue list filters Actions" [ref=e325]':
+                  - cell [ref=e326]
+                  - 'cell "Defect #7819: REST API Populating issue field enumerations + Issue list filters" [ref=e327]':
+                    - 'link "Defect #7819" [ref=e328] [cursor=pointer]':
+                      - /url: /issues/7819
+                    - text: ": REST API Populating issue field enumerations + Issue list filters"
+                  - cell "Actions" [ref=e329]:
+                    - link "Actions" [ref=e330] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #7845: Pre environment and brackets breaks automatic issue linking Actions" [ref=e331]':
+                  - cell [ref=e332]
+                  - 'cell "Defect #7845: Pre environment and brackets breaks automatic issue linking" [ref=e333]':
+                    - 'link "Defect #7845" [ref=e334] [cursor=pointer]':
+                      - /url: /issues/7845
+                    - text: ": Pre environment and brackets breaks automatic issue linking"
+                  - cell "Actions" [ref=e335]:
+                    - link "Actions" [ref=e336] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Azamat Hackimov Defect #8056: Some fields should be shown LTR even in RTL locales Actions" [ref=e337]':
+                  - 'cell "Assignee: Azamat Hackimov" [ref=e338]':
+                    - 'img "Assignee: Azamat Hackimov" [ref=e339]'
+                  - 'cell "Defect #8056: Some fields should be shown LTR even in RTL locales" [ref=e340]':
+                    - 'link "Defect #8056" [ref=e341] [cursor=pointer]':
+                      - /url: /issues/8056
+                    - text: ": Some fields should be shown LTR even in RTL locales"
+                  - cell "Actions" [ref=e342]:
+                    - link "Actions" [ref=e343] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #10721: Loss of attachments while fetching emails from IMAP (GMail) Actions" [ref=e344]':
+                  - cell [ref=e345]
+                  - 'cell "Defect #10721: Loss of attachments while fetching emails from IMAP (GMail)" [ref=e346]':
+                    - 'link "Defect #10721" [ref=e347] [cursor=pointer]':
+                      - /url: /issues/10721
+                    - text: ": Loss of attachments while fetching emails from IMAP (GMail)"
+                  - cell "Actions" [ref=e348]:
+                    - link "Actions" [ref=e349] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Jean-Philippe Lang Defect #13522: Private field is shown as required Actions" [ref=e350]':
+                  - 'cell "Assignee: Jean-Philippe Lang" [ref=e351]':
+                    - 'img "Assignee: Jean-Philippe Lang" [ref=e352]'
+                  - 'cell "Defect #13522: Private field is shown as required" [ref=e353]':
+                    - 'link "Defect #13522" [ref=e354] [cursor=pointer]':
+                      - /url: /issues/13522
+                    - text: ": Private field is shown as required"
+                  - cell "Actions" [ref=e355]:
+                    - link "Actions" [ref=e356] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #13762: SCM auto status change bypassses roles and permissions Actions" [ref=e357]':
+                  - cell [ref=e358]
+                  - 'cell "Defect #13762: SCM auto status change bypassses roles and permissions" [ref=e359]':
+                    - 'link "Defect #13762" [ref=e360] [cursor=pointer]':
+                      - /url: /issues/13762
+                    - text: ": SCM auto status change bypassses roles and permissions"
+                  - cell "Actions" [ref=e361]:
+                    - link "Actions" [ref=e362] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Jean-Philippe Lang Defect #14038: Ordered/unordered lists inside table cell are mangled Actions" [ref=e363]':
+                  - 'cell "Assignee: Jean-Philippe Lang" [ref=e364]':
+                    - 'img "Assignee: Jean-Philippe Lang" [ref=e365]'
+                  - 'cell "Defect #14038: Ordered/unordered lists inside table cell are mangled" [ref=e366]':
+                    - 'link "Defect #14038" [ref=e367] [cursor=pointer]':
+                      - /url: /issues/14038
+                    - text: ": Ordered/unordered lists inside table cell are mangled"
+                  - cell "Actions" [ref=e368]:
+                    - link "Actions" [ref=e369] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #15676: \"Latest\" revisions on repository view is confused Actions" [ref=e370]':
+                  - cell [ref=e371]
+                  - 'cell "Defect #15676: \"Latest\" revisions on repository view is confused" [ref=e372]':
+                    - 'link "Defect #15676" [ref=e373] [cursor=pointer]':
+                      - /url: /issues/15676
+                    - text: ": \"Latest\" revisions on repository view is confused"
+                  - cell "Actions" [ref=e374]:
+                    - link "Actions" [ref=e375] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #17071: Adding Watchers UX Is Not Clean Actions" [ref=e376]':
+                  - cell [ref=e377]
+                  - 'cell "Defect #17071: Adding Watchers UX Is Not Clean" [ref=e378]':
+                    - 'link "Defect #17071" [ref=e379] [cursor=pointer]':
+                      - /url: /issues/17071
+                    - text: ": Adding Watchers UX Is Not Clean"
+                  - cell "Actions" [ref=e380]:
+                    - link "Actions" [ref=e381] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Jean-Baptiste Barth Defect #17830: User creation: clear/plaintext password sent via unencrypted email Actions" [ref=e382]':
+                  - 'cell "Assignee: Jean-Baptiste Barth" [ref=e383]':
+                    - 'img "Assignee: Jean-Baptiste Barth" [ref=e384]'
+                  - 'cell "Defect #17830: User creation: clear/plaintext password sent via unencrypted email" [ref=e385]':
+                    - 'link "Defect #17830" [ref=e386] [cursor=pointer]':
+                      - /url: /issues/17830
+                    - text: ": User creation: clear/plaintext password sent via unencrypted email"
+                  - cell "Actions" [ref=e387]:
+                    - link "Actions" [ref=e388] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #19861: Activities \"save\" and \"reset\"of project setting have no effect if required \"activities\" custom filed exist Actions" [ref=e389]':
+                  - cell [ref=e390]
+                  - 'cell "Defect #19861: Activities \"save\" and \"reset\"of project setting have no effect if required \"activities\" custom filed exist" [ref=e391]':
+                    - 'link "Defect #19861" [ref=e392] [cursor=pointer]':
+                      - /url: /issues/19861
+                    - text: ": Activities \"save\" and \"reset\"of project setting have no effect if required \"activities\" custom filed exist"
+                  - cell "Actions" [ref=e393]:
+                    - link "Actions" [ref=e394] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #24979: Email \"keyword\" lines deleted even if the sender doesn''t have permission to edit that field Actions" [ref=e395]':
+                  - cell [ref=e396]
+                  - 'cell "Defect #24979: Email \"keyword\" lines deleted even if the sender doesn''t have permission to edit that field" [ref=e397]':
+                    - 'link "Defect #24979" [ref=e398] [cursor=pointer]':
+                      - /url: /issues/24979
+                    - text: ": Email \"keyword\" lines deleted even if the sender doesn't have permission to edit that field"
+                  - cell "Actions" [ref=e399]:
+                    - link "Actions" [ref=e400] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #25130: support of agglutinative languages like Hungarian/Magyar Actions" [ref=e401]':
+                  - cell [ref=e402]
+                  - 'cell "Defect #25130: support of agglutinative languages like Hungarian/Magyar" [ref=e403]':
+                    - 'link "Defect #25130" [ref=e404] [cursor=pointer]':
+                      - /url: /issues/25130
+                    - text: ": support of agglutinative languages like Hungarian/Magyar"
+                  - cell "Actions" [ref=e405]:
+                    - link "Actions" [ref=e406] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #25867: Assignable users should respect database collation Actions" [ref=e407]':
+                  - cell [ref=e408]
+                  - 'cell "Defect #25867: Assignable users should respect database collation" [ref=e409]':
+                    - 'link "Defect #25867" [ref=e410] [cursor=pointer]':
+                      - /url: /issues/25867
+                    - text: ": Assignable users should respect database collation"
+                  - cell "Actions" [ref=e411]:
+                    - link "Actions" [ref=e412] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #26023: Category filter only shows categories of current project Actions" [ref=e413]':
+                  - cell [ref=e414]
+                  - 'cell "Defect #26023: Category filter only shows categories of current project" [ref=e415]':
+                    - 'link "Defect #26023" [ref=e416] [cursor=pointer]':
+                      - /url: /issues/26023
+                    - text: ": Category filter only shows categories of current project"
+                  - cell "Actions" [ref=e417]:
+                    - link "Actions" [ref=e418] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #28033: Unable to turn off \"For all projects\" flag of custom queries Actions" [ref=e419]':
+                  - cell [ref=e420]
+                  - 'cell "Defect #28033: Unable to turn off \"For all projects\" flag of custom queries" [ref=e421]':
+                    - 'link "Defect #28033" [ref=e422] [cursor=pointer]':
+                      - /url: /issues/28033
+                    - text: ": Unable to turn off \"For all projects\" flag of custom queries"
+                  - cell "Actions" [ref=e423]:
+                    - link "Actions" [ref=e424] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #28409: Total estimated time value not visible when tracker has estimate time field disabled Actions" [ref=e425]':
+                  - cell [ref=e426]
+                  - 'cell "Defect #28409: Total estimated time value not visible when tracker has estimate time field disabled" [ref=e427]':
+                    - 'link "Defect #28409" [ref=e428] [cursor=pointer]':
+                      - /url: /issues/28409
+                    - text: ": Total estimated time value not visible when tracker has estimate time field disabled"
+                  - cell "Actions" [ref=e429]:
+                    - link "Actions" [ref=e430] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Go MAEDA Defect #30099: Multiple blank lines in pre tags are not preserved in Textile Actions" [ref=e431]':
+                  - 'cell "Assignee: Go MAEDA" [ref=e432]':
+                    - 'img "Assignee: Go MAEDA" [ref=e433]'
+                  - 'cell "Defect #30099: Multiple blank lines in pre tags are not preserved in Textile" [ref=e434]':
+                    - 'link "Defect #30099" [ref=e435] [cursor=pointer]':
+                      - /url: /issues/30099
+                    - text: ": Multiple blank lines in pre tags are not preserved in Textile"
+                  - cell "Actions" [ref=e436]:
+                    - link "Actions" [ref=e437] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #31010: The query visibility option \"To me only\" actually behaves as \"To the owner only\" Actions" [ref=e438]':
+                  - cell [ref=e439]
+                  - 'cell "Defect #31010: The query visibility option \"To me only\" actually behaves as \"To the owner only\"" [ref=e440]':
+                    - 'link "Defect #31010" [ref=e441] [cursor=pointer]':
+                      - /url: /issues/31010
+                    - text: ": The query visibility option \"To me only\" actually behaves as \"To the owner only\""
+                  - cell "Actions" [ref=e442]:
+                    - link "Actions" [ref=e443] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #31550: Project \"Version\" view''s \"Wiki page\" field is still shown, although \"Wiki\" module is disabled on the project Actions" [ref=e444]':
+                  - cell [ref=e445]
+                  - 'cell "Defect #31550: Project \"Version\" view''s \"Wiki page\" field is still shown, although \"Wiki\" module is disabled on the project" [ref=e446]':
+                    - 'link "Defect #31550" [ref=e447] [cursor=pointer]':
+                      - /url: /issues/31550
+                    - text: ": Project \"Version\" view's \"Wiki page\" field is still shown, although \"Wiki\" module is disabled on the project"
+                  - cell "Actions" [ref=e448]:
+                    - link "Actions" [ref=e449] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #31637: CSV and PDF export don''t respect Time span format Actions" [ref=e450]':
+                  - cell [ref=e451]
+                  - 'cell "Defect #31637: CSV and PDF export don''t respect Time span format" [ref=e452]':
+                    - 'link "Defect #31637" [ref=e453] [cursor=pointer]':
+                      - /url: /issues/31637
+                    - text: ": CSV and PDF export don't respect Time span format"
+                  - cell "Actions" [ref=e454]:
+                    - link "Actions" [ref=e455] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #32168: Allow issue id with \"#\" prefix for the value of issue ids filter Actions" [ref=e456]':
+                  - cell [ref=e457]
+                  - 'cell "Defect #32168: Allow issue id with \"#\" prefix for the value of issue ids filter" [ref=e458]':
+                    - 'link "Defect #32168" [ref=e459] [cursor=pointer]':
+                      - /url: /issues/32168
+                    - text: ": Allow issue id with \"#\" prefix for the value of issue ids filter"
+                  - cell "Actions" [ref=e460]:
+                    - link "Actions" [ref=e461] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #32183: Notification sub-events for \"Issue updated\" does not cover all events which consist its parent Actions" [ref=e462]':
+                  - cell [ref=e463]
+                  - 'cell "Defect #32183: Notification sub-events for \"Issue updated\" does not cover all events which consist its parent" [ref=e464]':
+                    - 'link "Defect #32183" [ref=e465] [cursor=pointer]':
+                      - /url: /issues/32183
+                    - text: ": Notification sub-events for \"Issue updated\" does not cover all events which consist its parent"
+                  - cell "Actions" [ref=e466]:
+                    - link "Actions" [ref=e467] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #32664: Adding an empty reply to a forum message does not show any error Actions" [ref=e468]':
+                  - cell [ref=e469]
+                  - 'cell "Defect #32664: Adding an empty reply to a forum message does not show any error" [ref=e470]':
+                    - 'link "Defect #32664" [ref=e471] [cursor=pointer]':
+                      - /url: /issues/32664
+                    - text: ": Adding an empty reply to a forum message does not show any error"
+                  - cell "Actions" [ref=e472]:
+                    - link "Actions" [ref=e473] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Marius BĂLTEANU Defect #33257: Bulk edit for time entries does not support User filed Actions" [ref=e474]':
+                  - 'cell "Assignee: Marius BĂLTEANU" [ref=e475]':
+                    - 'img "Assignee: Marius BĂLTEANU" [ref=e476]'
+                  - 'cell "Defect #33257: Bulk edit for time entries does not support User filed" [ref=e477]':
+                    - 'link "Defect #33257" [ref=e478] [cursor=pointer]':
+                      - /url: /issues/33257
+                    - text: ": Bulk edit for time entries does not support User filed"
+                  - cell "Actions" [ref=e479]:
+                    - link "Actions" [ref=e480] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #33415: Issue#closable? doesn''t handle the case of issues with open subtask(s) ánd being blocked by other open issue(s) Actions" [ref=e481]':
+                  - cell [ref=e482]
+                  - 'cell "Defect #33415: Issue#closable? doesn''t handle the case of issues with open subtask(s) ánd being blocked by other open issue(s)" [ref=e483]':
+                    - 'link "Defect #33415" [ref=e484] [cursor=pointer]':
+                      - /url: /issues/33415
+                    - text: ": Issue#closable? doesn't handle the case of issues with open subtask(s) ánd being blocked by other open issue(s)"
+                  - cell "Actions" [ref=e485]:
+                    - link "Actions" [ref=e486] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #33458: The display of Forums tab of the project settings is broken Actions" [ref=e487]':
+                  - cell [ref=e488]
+                  - 'cell "Defect #33458: The display of Forums tab of the project settings is broken" [ref=e489]':
+                    - 'link "Defect #33458" [ref=e490] [cursor=pointer]':
+                      - /url: /issues/33458
+                    - text: ": The display of Forums tab of the project settings is broken"
+                  - cell "Actions" [ref=e491]:
+                    - link "Actions" [ref=e492] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Go MAEDA Defect #33829: Fix Atom feed for issues to correctly use the updated time for \"updated\" element instead of the created time Actions" [ref=e493]':
+                  - 'cell "Assignee: Go MAEDA" [ref=e494]':
+                    - 'img "Assignee: Go MAEDA" [ref=e495]'
+                  - 'cell "Defect #33829: Fix Atom feed for issues to correctly use the updated time for \"updated\" element instead of the created time" [ref=e496]':
+                    - 'link "Defect #33829" [ref=e497] [cursor=pointer]':
+                      - /url: /issues/33829
+                    - text: ": Fix Atom feed for issues to correctly use the updated time for \"updated\" element instead of the created time"
+                  - cell "Actions" [ref=e498]:
+                    - link "Actions" [ref=e499] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #33912: Sorting of multiple columns including Date column does not work Actions" [ref=e500]':
+                  - cell [ref=e501]
+                  - 'cell "Defect #33912: Sorting of multiple columns including Date column does not work" [ref=e502]':
+                    - 'link "Defect #33912" [ref=e503] [cursor=pointer]':
+                      - /url: /issues/33912
+                    - text: ": Sorting of multiple columns including Date column does not work"
+                  - cell "Actions" [ref=e504]:
+                    - link "Actions" [ref=e505] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #34068: Missing blank option on persisted records Actions" [ref=e506]':
+                  - cell [ref=e507]
+                  - 'cell "Defect #34068: Missing blank option on persisted records" [ref=e508]':
+                    - 'link "Defect #34068" [ref=e509] [cursor=pointer]':
+                      - /url: /issues/34068
+                    - text: ": Missing blank option on persisted records"
+                  - cell "Actions" [ref=e510]:
+                    - link "Actions" [ref=e511] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #34922: Reload whole time entries form on project change Actions" [ref=e512]':
+                  - cell [ref=e513]
+                  - 'cell "Defect #34922: Reload whole time entries form on project change" [ref=e514]':
+                    - 'link "Defect #34922" [ref=e515] [cursor=pointer]':
+                      - /url: /issues/34922
+                    - text: ": Reload whole time entries form on project change"
+                  - cell "Actions" [ref=e516]:
+                    - link "Actions" [ref=e517] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #35557: Fix position when rendering custom field enumerations Actions" [ref=e518]':
+                  - cell [ref=e519]
+                  - 'cell "Defect #35557: Fix position when rendering custom field enumerations" [ref=e520]':
+                    - 'link "Defect #35557" [ref=e521] [cursor=pointer]':
+                      - /url: /issues/35557
+                    - text: ": Fix position when rendering custom field enumerations"
+                  - cell "Actions" [ref=e522]:
+                    - link "Actions" [ref=e523] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #35726: Time Formatting does not apply to CSV exports Actions" [ref=e524]':
+                  - cell [ref=e525]
+                  - 'cell "Defect #35726: Time Formatting does not apply to CSV exports" [ref=e526]':
+                    - 'link "Defect #35726" [ref=e527] [cursor=pointer]':
+                      - /url: /issues/35726
+                    - text: ": Time Formatting does not apply to CSV exports"
+                  - cell "Actions" [ref=e528]:
+                    - link "Actions" [ref=e529] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #36059: Fulltext search in timelog comments Actions" [ref=e530]':
+                  - cell [ref=e531]
+                  - 'cell "Defect #36059: Fulltext search in timelog comments" [ref=e532]':
+                    - 'link "Defect #36059" [ref=e533] [cursor=pointer]':
+                      - /url: /issues/36059
+                    - text: ": Fulltext search in timelog comments"
+                  - cell "Actions" [ref=e534]:
+                    - link "Actions" [ref=e535] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #36444: Validation error message when no trackers are assigned to a project is confusing Actions" [ref=e536]':
+                  - cell [ref=e537]
+                  - 'cell "Defect #36444: Validation error message when no trackers are assigned to a project is confusing" [ref=e538]':
+                    - 'link "Defect #36444" [ref=e539] [cursor=pointer]':
+                      - /url: /issues/36444
+                    - text: ": Validation error message when no trackers are assigned to a project is confusing"
+                  - cell "Actions" [ref=e540]:
+                    - link "Actions" [ref=e541] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #37962: Missing where cause for allowed_to_condition Actions" [ref=e542]':
+                  - cell [ref=e543]
+                  - 'cell "Defect #37962: Missing where cause for allowed_to_condition" [ref=e544]':
+                    - 'link "Defect #37962" [ref=e545] [cursor=pointer]':
+                      - /url: /issues/37962
+                    - text: ": Missing where cause for allowed_to_condition"
+                  - cell "Actions" [ref=e546]:
+                    - link "Actions" [ref=e547] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #40100: User ordering by name is incorrect for french language Actions" [ref=e548]':
+                  - cell [ref=e549]
+                  - 'cell "Defect #40100: User ordering by name is incorrect for french language" [ref=e550]':
+                    - 'link "Defect #40100" [ref=e551] [cursor=pointer]':
+                      - /url: /issues/40100
+                    - text: ": User ordering by name is incorrect for french language"
+                  - cell "Actions" [ref=e552]:
+                    - link "Actions" [ref=e553] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #42517: Add tooltip using stimulus Actions" [ref=e554]':
+                  - cell [ref=e555]
+                  - 'cell "Defect #42517: Add tooltip using stimulus" [ref=e556]':
+                    - 'link "Defect #42517" [ref=e557] [cursor=pointer]':
+                      - /url: /issues/42517
+                    - text: ": Add tooltip using stimulus"
+                  - cell "Actions" [ref=e558]:
+                    - link "Actions" [ref=e559] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Marius BĂLTEANU Defect #44244: Spent time tab on issue page does not render commit references as links Actions" [ref=e560]':
+                  - 'cell "Assignee: Marius BĂLTEANU" [ref=e561]':
+                    - 'img "Assignee: Marius BĂLTEANU" [ref=e562]'
+                  - 'cell "Defect #44244: Spent time tab on issue page does not render commit references as links" [ref=e563]':
+                    - 'link "Defect #44244" [ref=e564] [cursor=pointer]':
+                      - /url: /issues/44244
+                    - text: ": Spent time tab on issue page does not render commit references as links"
+                  - cell "Actions" [ref=e565]:
+                    - link "Actions" [ref=e566] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #44336: Automatic list marker insertion discards the textarea undo history and does not scroll the caret into view Actions" [ref=e567]':
+                  - cell [ref=e568]
+                  - 'cell "Defect #44336: Automatic list marker insertion discards the textarea undo history and does not scroll the caret into view" [ref=e569]':
+                    - 'link "Defect #44336" [ref=e570] [cursor=pointer]':
+                      - /url: /issues/44336
+                    - text: ": Automatic list marker insertion discards the textarea undo history and does not scroll the caret into view"
+                  - cell "Actions" [ref=e571]:
+                    - link "Actions" [ref=e572] [cursor=pointer]:
+                      - /url: "#"
+          - article [ref=e573]:
+            - generic [ref=e574]:
+              - heading "Candidate for next minor release" [level=3] [ref=e575]:
+                - link "Candidate for next minor release" [ref=e576] [cursor=pointer]:
+                  - /url: /versions/33
+              - text: open
+            - generic [ref=e577]:
+              - paragraph [ref=e578]: Fixes that the contributors would like to add in the next minor version
+              - table [ref=e579]:
+                - rowgroup [ref=e580]:
+                  - row [ref=e581]:
+                    - cell [ref=e582]
+              - paragraph [ref=e583]: 0%
+              - insertion [ref=e585]:
+                - iframe [ref=e587]:
+                  - generic [active] [ref=f39e1]:
+                    - generic [ref=f39e6]:
+                      - generic [ref=f39e7]:
+                        - link [ref=f39e8] [cursor=pointer]:
+                          - /url: https://adclick.g.doubleclick.net/aclk?sa=l&ai=CHJU0oYGiapvBK_38ru0PhY6hgAai1oauhgHbquTe_BDAjbcBEAEgwZf0B2ChAqAB0cDysALIAQmpAly31GSAA4Q-qAMByAPLBKoEqQJP0EITeV_xtdd0_DY0TDlNFCuYv4UkAo842QUNM30kC-_e8TbI2fNHIGwSBi97VkumpUsMVFC9T-OGXldqgTMzdcS0yFi6GGSv2VdOq3PsrDQlD-UaawOwlNgj83Fl4CqVOjsfmwa-JSZfgRIODkIsZcVFx7Du-RMjsQFl-tOZH0QFU7RRBKWPmTZ84BZNk1nFlwhzcQTBvbgTZbSe-zV2mf5BI1VqDNZDmd3zFAM3rEgMXFIA0ukhxTL-5DPFTop8hF_QJfErc-Q-5KEOPG7IUcdDnBcOzBw93d_jrqJsU19jYi1D_znYw6XGTHf40uObTiyA3ClrZJpgw-H82co0F4F2-r2zt4mEt-1l7tjXjioEEb4jT3syy3nCXVTJW9H3Ub2U-UHoK7LABM74haX3AogFj_md6iagBi6AB5e_jc8BqAenzLECqAfi2LECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAf-6LECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAef4bECqAem67ECqAfVyRuoB9m2sQKoB5oGqAf_nrECqAffn7ECqAf4wrECqAf7wrECqAfCyLEC2AcA0ggzCIBhEAEYnwMyCIqCgICAgIAIOg-AQIDAgICAgKiAAqiDgBBIvf3BOljJ9ZS04uOWA2ABsQmduc4msxixyIAKAYoKWGh0dHBzOi8vd3d3LmFhcGFuZWwuY29tL2luZGV4X3R1aWd1YW5nMnZpZXcuaHRtbD9nYWRfc291cmNlPTUmZ2FkX2NhbXBhaWduaWQ9MTA0MjMzMzYwNzmYCwHICwHgCwGADAGiDA8qCgoIjt-xApXisQKQAQGqDQJHSMgNAeoNEwjTm5e04uOWAxV9vqsHHQVHCGDwDQKIDgnYEwqIFA7QFQGYFgHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRIC8FkYLiIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMI25WXtOLjlgMVfb6rBx0FRwhgEAEYASAAEgL2aPD_BwE&num=1&cid=CAQS9AEAQM4h3D66FI8BYB1ssxdTuGLoLE9xaXyQN2v37LAPdCwqjnl64g1d1MgX09flutTqqIYmf_gc1fz1-i-9b-eatexUo--u9RbilXHVESlOxP5AXI7k64fwG0-t0ejonpfsPA175MGLc2gqrG-twRKIJl452OLEfl1NkWWjxa6iDVtE0c23-KT1YFydK5quesy4ellqHYwpzHAkqHT3Cq9nZFKH09D1yFUT_7OIY776l-9KWgzGCzZgoO031BnaviRuoL23XvD7nzNUw5k8Y_audsr8Kw-m2jHQPuWvB8WcTrFHHM_NyNNn7mNPrqs3RYpgKH1pGAE&sig=AOD64_0o5lEyNV7Nh0WokLplLBxIeiux5A&rf=1&nb=9&adurl=https://www.aapanel.com/index-sub-view.html%3Fhttps://www.aapanel.com/index_tuiguang2view.html%26gad_source%3D5%26gad_campaignid%3D10423336079%26gclid%3DEAIaIQobChMI25WXtOLjlgMVfb6rBx0FRwhgEAEYASAAEgL2aPD_BwE
+                          - img [ref=f39e9]
+                        - generic [ref=f39e10]:
+                          - link "aaPanel - Free hosting panel" [ref=f39e14] [cursor=pointer]:
+                            - /url: https://adclick.g.doubleclick.net/aclk?sa=l&ai=CHJU0oYGiapvBK_38ru0PhY6hgAai1oauhgHbquTe_BDAjbcBEAEgwZf0B2ChAqAB0cDysALIAQmpAly31GSAA4Q-qAMByAPLBKoEqQJP0EITeV_xtdd0_DY0TDlNFCuYv4UkAo842QUNM30kC-_e8TbI2fNHIGwSBi97VkumpUsMVFC9T-OGXldqgTMzdcS0yFi6GGSv2VdOq3PsrDQlD-UaawOwlNgj83Fl4CqVOjsfmwa-JSZfgRIODkIsZcVFx7Du-RMjsQFl-tOZH0QFU7RRBKWPmTZ84BZNk1nFlwhzcQTBvbgTZbSe-zV2mf5BI1VqDNZDmd3zFAM3rEgMXFIA0ukhxTL-5DPFTop8hF_QJfErc-Q-5KEOPG7IUcdDnBcOzBw93d_jrqJsU19jYi1D_znYw6XGTHf40uObTiyA3ClrZJpgw-H82co0F4F2-r2zt4mEt-1l7tjXjioEEb4jT3syy3nCXVTJW9H3Ub2U-UHoK7LABM74haX3AogFj_md6iagBi6AB5e_jc8BqAenzLECqAfi2LECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAf-6LECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAef4bECqAem67ECqAfVyRuoB9m2sQKoB5oGqAf_nrECqAffn7ECqAf4wrECqAf7wrECqAfCyLEC2AcA0ggzCIBhEAEYnwMyCIqCgICAgIAIOg-AQIDAgICAgKiAAqiDgBBIvf3BOljJ9ZS04uOWA2ABsQmduc4msxixyIAKAYoKWGh0dHBzOi8vd3d3LmFhcGFuZWwuY29tL2luZGV4X3R1aWd1YW5nMnZpZXcuaHRtbD9nYWRfc291cmNlPTUmZ2FkX2NhbXBhaWduaWQ9MTA0MjMzMzYwNzmYCwHICwHgCwGADAGiDA8qCgoIjt-xApXisQKQAQGqDQJHSMgNAeoNEwjTm5e04uOWAxV9vqsHHQVHCGDwDQKIDgnYEwqIFA7QFQGYFgHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRIC8FkYLiIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMI25WXtOLjlgMVfb6rBx0FRwhgEAEYASAAEgL2aPD_BwE&num=1&cid=CAQS9AEAQM4h3D66FI8BYB1ssxdTuGLoLE9xaXyQN2v37LAPdCwqjnl64g1d1MgX09flutTqqIYmf_gc1fz1-i-9b-eatexUo--u9RbilXHVESlOxP5AXI7k64fwG0-t0ejonpfsPA175MGLc2gqrG-twRKIJl452OLEfl1NkWWjxa6iDVtE0c23-KT1YFydK5quesy4ellqHYwpzHAkqHT3Cq9nZFKH09D1yFUT_7OIY776l-9KWgzGCzZgoO031BnaviRuoL23XvD7nzNUw5k8Y_audsr8Kw-m2jHQPuWvB8WcTrFHHM_NyNNn7mNPrqs3RYpgKH1pGAE&sig=AOD64_0o5lEyNV7Nh0WokLplLBxIeiux5A&rf=1&nb=0&adurl=https://www.aapanel.com/index-sub-view.html%3Fhttps://www.aapanel.com/index_tuiguang2view.html%26gad_source%3D5%26gad_campaignid%3D10423336079%26gclid%3DEAIaIQobChMI25WXtOLjlgMVfb6rBx0FRwhgEAEYASAAEgL2aPD_BwE
+                          - link "Manage your server with a simple mouse movement. One-click install LAMP/LEMP/SSL" [ref=f39e17] [cursor=pointer]:
+                            - /url: https://adclick.g.doubleclick.net/aclk?sa=l&ai=CHJU0oYGiapvBK_38ru0PhY6hgAai1oauhgHbquTe_BDAjbcBEAEgwZf0B2ChAqAB0cDysALIAQmpAly31GSAA4Q-qAMByAPLBKoEqQJP0EITeV_xtdd0_DY0TDlNFCuYv4UkAo842QUNM30kC-_e8TbI2fNHIGwSBi97VkumpUsMVFC9T-OGXldqgTMzdcS0yFi6GGSv2VdOq3PsrDQlD-UaawOwlNgj83Fl4CqVOjsfmwa-JSZfgRIODkIsZcVFx7Du-RMjsQFl-tOZH0QFU7RRBKWPmTZ84BZNk1nFlwhzcQTBvbgTZbSe-zV2mf5BI1VqDNZDmd3zFAM3rEgMXFIA0ukhxTL-5DPFTop8hF_QJfErc-Q-5KEOPG7IUcdDnBcOzBw93d_jrqJsU19jYi1D_znYw6XGTHf40uObTiyA3ClrZJpgw-H82co0F4F2-r2zt4mEt-1l7tjXjioEEb4jT3syy3nCXVTJW9H3Ub2U-UHoK7LABM74haX3AogFj_md6iagBi6AB5e_jc8BqAenzLECqAfi2LECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAf-6LECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAef4bECqAem67ECqAfVyRuoB9m2sQKoB5oGqAf_nrECqAffn7ECqAf4wrECqAf7wrECqAfCyLEC2AcA0ggzCIBhEAEYnwMyCIqCgICAgIAIOg-AQIDAgICAgKiAAqiDgBBIvf3BOljJ9ZS04uOWA2ABsQmduc4msxixyIAKAYoKWGh0dHBzOi8vd3d3LmFhcGFuZWwuY29tL2luZGV4X3R1aWd1YW5nMnZpZXcuaHRtbD9nYWRfc291cmNlPTUmZ2FkX2NhbXBhaWduaWQ9MTA0MjMzMzYwNzmYCwHICwHgCwGADAGiDA8qCgoIjt-xApXisQKQAQGqDQJHSMgNAeoNEwjTm5e04uOWAxV9vqsHHQVHCGDwDQKIDgnYEwqIFA7QFQGYFgHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRIC8FkYLiIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMI25WXtOLjlgMVfb6rBx0FRwhgEAEYASAAEgL2aPD_BwE&num=1&cid=CAQS9AEAQM4h3D66FI8BYB1ssxdTuGLoLE9xaXyQN2v37LAPdCwqjnl64g1d1MgX09flutTqqIYmf_gc1fz1-i-9b-eatexUo--u9RbilXHVESlOxP5AXI7k64fwG0-t0ejonpfsPA175MGLc2gqrG-twRKIJl452OLEfl1NkWWjxa6iDVtE0c23-KT1YFydK5quesy4ellqHYwpzHAkqHT3Cq9nZFKH09D1yFUT_7OIY776l-9KWgzGCzZgoO031BnaviRuoL23XvD7nzNUw5k8Y_audsr8Kw-m2jHQPuWvB8WcTrFHHM_NyNNn7mNPrqs3RYpgKH1pGAE&sig=AOD64_0o5lEyNV7Nh0WokLplLBxIeiux5A&rf=1&nb=7&adurl=https://www.aapanel.com/index-sub-view.html%3Fhttps://www.aapanel.com/index_tuiguang2view.html%26gad_source%3D5%26gad_campaignid%3D10423336079%26gclid%3DEAIaIQobChMI25WXtOLjlgMVfb6rBx0FRwhgEAEYASAAEgL2aPD_BwE
+                      - generic [ref=f39e20]:
+                        - link:
+                          - /url: https://adclick.g.doubleclick.net/aclk?sa=l&ai=CHJU0oYGiapvBK_38ru0PhY6hgAai1oauhgHbquTe_BDAjbcBEAEgwZf0B2ChAqAB0cDysALIAQmpAly31GSAA4Q-qAMByAPLBKoEqQJP0EITeV_xtdd0_DY0TDlNFCuYv4UkAo842QUNM30kC-_e8TbI2fNHIGwSBi97VkumpUsMVFC9T-OGXldqgTMzdcS0yFi6GGSv2VdOq3PsrDQlD-UaawOwlNgj83Fl4CqVOjsfmwa-JSZfgRIODkIsZcVFx7Du-RMjsQFl-tOZH0QFU7RRBKWPmTZ84BZNk1nFlwhzcQTBvbgTZbSe-zV2mf5BI1VqDNZDmd3zFAM3rEgMXFIA0ukhxTL-5DPFTop8hF_QJfErc-Q-5KEOPG7IUcdDnBcOzBw93d_jrqJsU19jYi1D_znYw6XGTHf40uObTiyA3ClrZJpgw-H82co0F4F2-r2zt4mEt-1l7tjXjioEEb4jT3syy3nCXVTJW9H3Ub2U-UHoK7LABM74haX3AogFj_md6iagBi6AB5e_jc8BqAenzLECqAfi2LECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAf-6LECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAef4bECqAem67ECqAfVyRuoB9m2sQKoB5oGqAf_nrECqAffn7ECqAf4wrECqAf7wrECqAfCyLEC2AcA0ggzCIBhEAEYnwMyCIqCgICAgIAIOg-AQIDAgICAgKiAAqiDgBBIvf3BOljJ9ZS04uOWA2ABsQmduc4msxixyIAKAYoKWGh0dHBzOi8vd3d3LmFhcGFuZWwuY29tL2luZGV4X3R1aWd1YW5nMnZpZXcuaHRtbD9nYWRfc291cmNlPTUmZ2FkX2NhbXBhaWduaWQ9MTA0MjMzMzYwNzmYCwHICwHgCwGADAGiDA8qCgoIjt-xApXisQKQAQGqDQJHSMgNAeoNEwjTm5e04uOWAxV9vqsHHQVHCGDwDQKIDgnYEwqIFA7QFQGYFgHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRIC8FkYLiIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMI25WXtOLjlgMVfb6rBx0FRwhgEAEYASAAEgL2aPD_BwE&num=1&cid=CAQS9AEAQM4h3D66FI8BYB1ssxdTuGLoLE9xaXyQN2v37LAPdCwqjnl64g1d1MgX09flutTqqIYmf_gc1fz1-i-9b-eatexUo--u9RbilXHVESlOxP5AXI7k64fwG0-t0ejonpfsPA175MGLc2gqrG-twRKIJl452OLEfl1NkWWjxa6iDVtE0c23-KT1YFydK5quesy4ellqHYwpzHAkqHT3Cq9nZFKH09D1yFUT_7OIY776l-9KWgzGCzZgoO031BnaviRuoL23XvD7nzNUw5k8Y_audsr8Kw-m2jHQPuWvB8WcTrFHHM_NyNNn7mNPrqs3RYpgKH1pGAE&sig=AOD64_0o5lEyNV7Nh0WokLplLBxIeiux5A&rf=1&nb=8&adurl=https://www.aapanel.com/index-sub-view.html%3Fhttps://www.aapanel.com/index_tuiguang2view.html%26gad_source%3D5%26gad_campaignid%3D10423336079%26gclid%3DEAIaIQobChMI25WXtOLjlgMVfb6rBx0FRwhgEAEYASAAEgL2aPD_BwE
+                        - link "aaPanel" [ref=f39e22] [cursor=pointer]:
+                          - /url: https://adclick.g.doubleclick.net/aclk?sa=l&ai=CHJU0oYGiapvBK_38ru0PhY6hgAai1oauhgHbquTe_BDAjbcBEAEgwZf0B2ChAqAB0cDysALIAQmpAly31GSAA4Q-qAMByAPLBKoEqQJP0EITeV_xtdd0_DY0TDlNFCuYv4UkAo842QUNM30kC-_e8TbI2fNHIGwSBi97VkumpUsMVFC9T-OGXldqgTMzdcS0yFi6GGSv2VdOq3PsrDQlD-UaawOwlNgj83Fl4CqVOjsfmwa-JSZfgRIODkIsZcVFx7Du-RMjsQFl-tOZH0QFU7RRBKWPmTZ84BZNk1nFlwhzcQTBvbgTZbSe-zV2mf5BI1VqDNZDmd3zFAM3rEgMXFIA0ukhxTL-5DPFTop8hF_QJfErc-Q-5KEOPG7IUcdDnBcOzBw93d_jrqJsU19jYi1D_znYw6XGTHf40uObTiyA3ClrZJpgw-H82co0F4F2-r2zt4mEt-1l7tjXjioEEb4jT3syy3nCXVTJW9H3Ub2U-UHoK7LABM74haX3AogFj_md6iagBi6AB5e_jc8BqAenzLECqAfi2LECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAf-6LECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAef4bECqAem67ECqAfVyRuoB9m2sQKoB5oGqAf_nrECqAffn7ECqAf4wrECqAf7wrECqAfCyLEC2AcA0ggzCIBhEAEYnwMyCIqCgICAgIAIOg-AQIDAgICAgKiAAqiDgBBIvf3BOljJ9ZS04uOWA2ABsQmduc4msxixyIAKAYoKWGh0dHBzOi8vd3d3LmFhcGFuZWwuY29tL2luZGV4X3R1aWd1YW5nMnZpZXcuaHRtbD9nYWRfc291cmNlPTUmZ2FkX2NhbXBhaWduaWQ9MTA0MjMzMzYwNzmYCwHICwHgCwGADAGiDA8qCgoIjt-xApXisQKQAQGqDQJHSMgNAeoNEwjTm5e04uOWAxV9vqsHHQVHCGDwDQKIDgnYEwqIFA7QFQGYFgHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRIC8FkYLiIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMI25WXtOLjlgMVfb6rBx0FRwhgEAEYASAAEgL2aPD_BwE&num=1&cid=CAQS9AEAQM4h3D66FI8BYB1ssxdTuGLoLE9xaXyQN2v37LAPdCwqjnl64g1d1MgX09flutTqqIYmf_gc1fz1-i-9b-eatexUo--u9RbilXHVESlOxP5AXI7k64fwG0-t0ejonpfsPA175MGLc2gqrG-twRKIJl452OLEfl1NkWWjxa6iDVtE0c23-KT1YFydK5quesy4ellqHYwpzHAkqHT3Cq9nZFKH09D1yFUT_7OIY776l-9KWgzGCzZgoO031BnaviRuoL23XvD7nzNUw5k8Y_audsr8Kw-m2jHQPuWvB8WcTrFHHM_NyNNn7mNPrqs3RYpgKH1pGAE&sig=AOD64_0o5lEyNV7Nh0WokLplLBxIeiux5A&rf=1&nb=1&adurl=https://www.aapanel.com/index-sub-view.html%3Fhttps://www.aapanel.com/index_tuiguang2view.html%26gad_source%3D5%26gad_campaignid%3D10423336079%26gclid%3DEAIaIQobChMI25WXtOLjlgMVfb6rBx0FRwhgEAEYASAAEgL2aPD_BwE
+                        - link "Install" [ref=f39e24] [cursor=pointer]:
+                          - /url: https://adclick.g.doubleclick.net/aclk?sa=l&ai=CHJU0oYGiapvBK_38ru0PhY6hgAai1oauhgHbquTe_BDAjbcBEAEgwZf0B2ChAqAB0cDysALIAQmpAly31GSAA4Q-qAMByAPLBKoEqQJP0EITeV_xtdd0_DY0TDlNFCuYv4UkAo842QUNM30kC-_e8TbI2fNHIGwSBi97VkumpUsMVFC9T-OGXldqgTMzdcS0yFi6GGSv2VdOq3PsrDQlD-UaawOwlNgj83Fl4CqVOjsfmwa-JSZfgRIODkIsZcVFx7Du-RMjsQFl-tOZH0QFU7RRBKWPmTZ84BZNk1nFlwhzcQTBvbgTZbSe-zV2mf5BI1VqDNZDmd3zFAM3rEgMXFIA0ukhxTL-5DPFTop8hF_QJfErc-Q-5KEOPG7IUcdDnBcOzBw93d_jrqJsU19jYi1D_znYw6XGTHf40uObTiyA3ClrZJpgw-H82co0F4F2-r2zt4mEt-1l7tjXjioEEb4jT3syy3nCXVTJW9H3Ub2U-UHoK7LABM74haX3AogFj_md6iagBi6AB5e_jc8BqAenzLECqAfi2LECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAf-6LECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAef4bECqAem67ECqAfVyRuoB9m2sQKoB5oGqAf_nrECqAffn7ECqAf4wrECqAf7wrECqAfCyLEC2AcA0ggzCIBhEAEYnwMyCIqCgICAgIAIOg-AQIDAgICAgKiAAqiDgBBIvf3BOljJ9ZS04uOWA2ABsQmduc4msxixyIAKAYoKWGh0dHBzOi8vd3d3LmFhcGFuZWwuY29tL2luZGV4X3R1aWd1YW5nMnZpZXcuaHRtbD9nYWRfc291cmNlPTUmZ2FkX2NhbXBhaWduaWQ9MTA0MjMzMzYwNzmYCwHICwHgCwGADAGiDA8qCgoIjt-xApXisQKQAQGqDQJHSMgNAeoNEwjTm5e04uOWAxV9vqsHHQVHCGDwDQKIDgnYEwqIFA7QFQGYFgHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRIC8FkYLiIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMI25WXtOLjlgMVfb6rBx0FRwhgEAEYASAAEgL2aPD_BwE&num=1&cid=CAQS9AEAQM4h3D66FI8BYB1ssxdTuGLoLE9xaXyQN2v37LAPdCwqjnl64g1d1MgX09flutTqqIYmf_gc1fz1-i-9b-eatexUo--u9RbilXHVESlOxP5AXI7k64fwG0-t0ejonpfsPA175MGLc2gqrG-twRKIJl452OLEfl1NkWWjxa6iDVtE0c23-KT1YFydK5quesy4ellqHYwpzHAkqHT3Cq9nZFKH09D1yFUT_7OIY776l-9KWgzGCzZgoO031BnaviRuoL23XvD7nzNUw5k8Y_audsr8Kw-m2jHQPuWvB8WcTrFHHM_NyNNn7mNPrqs3RYpgKH1pGAE&sig=AOD64_0o5lEyNV7Nh0WokLplLBxIeiux5A&rf=1&nb=8&adurl=https://www.aapanel.com/index-sub-view.html%3Fhttps://www.aapanel.com/index_tuiguang2view.html%26gad_source%3D5%26gad_campaignid%3D10423336079%26gclid%3DEAIaIQobChMI25WXtOLjlgMVfb6rBx0FRwhgEAEYASAAEgL2aPD_BwE
+                        - link [ref=f39e25] [cursor=pointer]:
+                          - /url: https://adclick.g.doubleclick.net/aclk?sa=l&ai=CHJU0oYGiapvBK_38ru0PhY6hgAai1oauhgHbquTe_BDAjbcBEAEgwZf0B2ChAqAB0cDysALIAQmpAly31GSAA4Q-qAMByAPLBKoEqQJP0EITeV_xtdd0_DY0TDlNFCuYv4UkAo842QUNM30kC-_e8TbI2fNHIGwSBi97VkumpUsMVFC9T-OGXldqgTMzdcS0yFi6GGSv2VdOq3PsrDQlD-UaawOwlNgj83Fl4CqVOjsfmwa-JSZfgRIODkIsZcVFx7Du-RMjsQFl-tOZH0QFU7RRBKWPmTZ84BZNk1nFlwhzcQTBvbgTZbSe-zV2mf5BI1VqDNZDmd3zFAM3rEgMXFIA0ukhxTL-5DPFTop8hF_QJfErc-Q-5KEOPG7IUcdDnBcOzBw93d_jrqJsU19jYi1D_znYw6XGTHf40uObTiyA3ClrZJpgw-H82co0F4F2-r2zt4mEt-1l7tjXjioEEb4jT3syy3nCXVTJW9H3Ub2U-UHoK7LABM74haX3AogFj_md6iagBi6AB5e_jc8BqAenzLECqAfi2LECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAf-6LECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAef4bECqAem67ECqAfVyRuoB9m2sQKoB5oGqAf_nrECqAffn7ECqAf4wrECqAf7wrECqAfCyLEC2AcA0ggzCIBhEAEYnwMyCIqCgICAgIAIOg-AQIDAgICAgKiAAqiDgBBIvf3BOljJ9ZS04uOWA2ABsQmduc4msxixyIAKAYoKWGh0dHBzOi8vd3d3LmFhcGFuZWwuY29tL2luZGV4X3R1aWd1YW5nMnZpZXcuaHRtbD9nYWRfc291cmNlPTUmZ2FkX2NhbXBhaWduaWQ9MTA0MjMzMzYwNzmYCwHICwHgCwGADAGiDA8qCgoIjt-xApXisQKQAQGqDQJHSMgNAeoNEwjTm5e04uOWAxV9vqsHHQVHCGDwDQKIDgnYEwqIFA7QFQGYFgHKFgIKAPgWAYAXAbIXBBgBUAa6FwI4AbIYCRIC8FkYLiIBANAYAcIZAggB&ae=1&gclid=EAIaIQobChMI25WXtOLjlgMVfb6rBx0FRwhgEAEYASAAEgL2aPD_BwE&num=1&cid=CAQS9AEAQM4h3D66FI8BYB1ssxdTuGLoLE9xaXyQN2v37LAPdCwqjnl64g1d1MgX09flutTqqIYmf_gc1fz1-i-9b-eatexUo--u9RbilXHVESlOxP5AXI7k64fwG0-t0ejonpfsPA175MGLc2gqrG-twRKIJl452OLEfl1NkWWjxa6iDVtE0c23-KT1YFydK5quesy4ellqHYwpzHAkqHT3Cq9nZFKH09D1yFUT_7OIY776l-9KWgzGCzZgoO031BnaviRuoL23XvD7nzNUw5k8Y_audsr8Kw-m2jHQPuWvB8WcTrFHHM_NyNNn7mNPrqs3RYpgKH1pGAE&sig=AOD64_0o5lEyNV7Nh0WokLplLBxIeiux5A&rf=1&nb=8&adurl=https://www.aapanel.com/index-sub-view.html%3Fhttps://www.aapanel.com/index_tuiguang2view.html%26gad_source%3D5%26gad_campaignid%3D10423336079%26gclid%3DEAIaIQobChMI25WXtOLjlgMVfb6rBx0FRwhgEAEYASAAEgL2aPD_BwE
+                          - generic [ref=f39e27]:
+                            - img [ref=f39e28]
+                            - img [ref=f39e30]
+                    - img [ref=f39e35] [cursor=pointer]
+                    - button [ref=f39e37] [cursor=pointer]:
+                      - img [ref=f39e38]
+                    - iframe
+              - paragraph [ref=e588]:
+                - link "56 issues" [ref=e589] [cursor=pointer]:
+                  - /url: /projects/redmine/issues?fixed_version_id=33&set_filter=1&status_id=%2A
+                - text: (0 closed —
+                - link "56 open" [ref=e590] [cursor=pointer]:
+                  - /url: /projects/redmine/issues?fixed_version_id=33&set_filter=1&status_id=o
+                - text: )
+            - table "Related issues" [ref=e592]:
+              - caption [ref=e593]: Related issues
+              - rowgroup [ref=e594]:
+                - 'row "Defect #1013: Custom queries can be saved under same name Actions" [ref=e595]':
+                  - cell [ref=e596]
+                  - 'cell "Defect #1013: Custom queries can be saved under same name" [ref=e597]':
+                    - 'link "Defect #1013" [ref=e598] [cursor=pointer]':
+                      - /url: /issues/1013
+                    - text: ": Custom queries can be saved under same name"
+                  - cell "Actions" [ref=e599]:
+                    - link "Actions" [ref=e600] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #2493: Subversion: Error message for some of view differences Actions" [ref=e601]':
+                  - cell [ref=e602]
+                  - 'cell "Defect #2493: Subversion: Error message for some of view differences" [ref=e603]':
+                    - 'link "Defect #2493" [ref=e604] [cursor=pointer]':
+                      - /url: /issues/2493
+                    - text: ": Subversion: Error message for some of view differences"
+                  - cell "Actions" [ref=e605]:
+                    - link "Actions" [ref=e606] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #2638: LDAP authentication should allow username to contain space(s) Actions" [ref=e607]':
+                  - cell [ref=e608]
+                  - 'cell "Defect #2638: LDAP authentication should allow username to contain space(s)" [ref=e609]':
+                    - 'link "Defect #2638" [ref=e610] [cursor=pointer]':
+                      - /url: /issues/2638
+                    - text: ": LDAP authentication should allow username to contain space(s)"
+                  - cell "Actions" [ref=e611]:
+                    - link "Actions" [ref=e612] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #4472: Escape <code> tag Actions" [ref=e613]':
+                  - cell [ref=e614]
+                  - 'cell "Defect #4472: Escape <code> tag" [ref=e615]':
+                    - 'link "Defect #4472" [ref=e616] [cursor=pointer]':
+                      - /url: /issues/4472
+                    - text: ": Escape <code> tag"
+                  - cell "Actions" [ref=e617]:
+                    - link "Actions" [ref=e618] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #5994: Creating new issue via email submission strips attached emails Actions" [ref=e619]':
+                  - cell [ref=e620]
+                  - 'cell "Defect #5994: Creating new issue via email submission strips attached emails" [ref=e621]':
+                    - 'link "Defect #5994" [ref=e622] [cursor=pointer]':
+                      - /url: /issues/5994
+                    - text: ": Creating new issue via email submission strips attached emails"
+                  - cell "Actions" [ref=e623]:
+                    - link "Actions" [ref=e624] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #6857: git references leaking from subproject to project Actions" [ref=e625]':
+                  - cell [ref=e626]
+                  - 'cell "Defect #6857: git references leaking from subproject to project" [ref=e627]':
+                    - 'link "Defect #6857" [ref=e628] [cursor=pointer]':
+                      - /url: /issues/6857
+                    - text: ": git references leaking from subproject to project"
+                  - cell "Actions" [ref=e629]:
+                    - link "Actions" [ref=e630] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #6868: migrate_from_trac and trac 0.12 Actions" [ref=e631]':
+                  - cell [ref=e632]
+                  - 'cell "Defect #6868: migrate_from_trac and trac 0.12" [ref=e633]':
+                    - 'link "Defect #6868" [ref=e634] [cursor=pointer]':
+                      - /url: /issues/6868
+                    - text: ": migrate_from_trac and trac 0.12"
+                  - cell "Actions" [ref=e635]:
+                    - link "Actions" [ref=e636] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #7293: Activity page displays wrong status of modified issues Actions" [ref=e637]':
+                  - cell [ref=e638]
+                  - 'cell "Defect #7293: Activity page displays wrong status of modified issues" [ref=e639]':
+                    - 'link "Defect #7293" [ref=e640] [cursor=pointer]':
+                      - /url: /issues/7293
+                    - text: ": Activity page displays wrong status of modified issues"
+                  - cell "Actions" [ref=e641]:
+                    - link "Actions" [ref=e642] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #8055: Links ending with curly brackets are not correctly interpreted Actions" [ref=e643]':
+                  - cell [ref=e644]
+                  - 'cell "Defect #8055: Links ending with curly brackets are not correctly interpreted" [ref=e645]':
+                    - 'link "Defect #8055" [ref=e646] [cursor=pointer]':
+                      - /url: /issues/8055
+                    - text: ": Links ending with curly brackets are not correctly interpreted"
+                  - cell "Actions" [ref=e647]:
+                    - link "Actions" [ref=e648] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #8603: Query ''without subprojects'' cannot be created Actions" [ref=e649]':
+                  - cell [ref=e650]
+                  - 'cell "Defect #8603: Query ''without subprojects'' cannot be created" [ref=e651]':
+                    - 'link "Defect #8603" [ref=e652] [cursor=pointer]':
+                      - /url: /issues/8603
+                    - text: ": Query 'without subprojects' cannot be created"
+                  - cell "Actions" [ref=e653]:
+                    - link "Actions" [ref=e654] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #9080: Shared versions not shown when upload a file Actions" [ref=e655]':
+                  - cell [ref=e656]
+                  - 'cell "Defect #9080: Shared versions not shown when upload a file" [ref=e657]':
+                    - 'link "Defect #9080" [ref=e658] [cursor=pointer]':
+                      - /url: /issues/9080
+                    - text: ": Shared versions not shown when upload a file"
+                  - cell "Actions" [ref=e659]:
+                    - link "Actions" [ref=e660] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #10528: Error with rake redmine:email:receive_imap and cram-md5 Actions" [ref=e661]':
+                  - cell [ref=e662]
+                  - 'cell "Defect #10528: Error with rake redmine:email:receive_imap and cram-md5" [ref=e663]':
+                    - 'link "Defect #10528" [ref=e664] [cursor=pointer]':
+                      - /url: /issues/10528
+                    - text: ": Error with rake redmine:email:receive_imap and cram-md5"
+                  - cell "Actions" [ref=e665]:
+                    - link "Actions" [ref=e666] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Alan Chandler Defect #10532: migrate_from_mantis script fails with missing table name Actions" [ref=e667]':
+                  - 'cell "Assignee: Alan Chandler" [ref=e668]':
+                    - 'img "Assignee: Alan Chandler" [ref=e669]'
+                  - 'cell "Defect #10532: migrate_from_mantis script fails with missing table name" [ref=e670]':
+                    - 'link "Defect #10532" [ref=e671] [cursor=pointer]':
+                      - /url: /issues/10532
+                    - text: ": migrate_from_mantis script fails with missing table name"
+                  - cell "Actions" [ref=e672]:
+                    - link "Actions" [ref=e673] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Jean-Baptiste Barth Defect #12146: Required (list-, user- or version) custom field \"fixed version\" with Multiple values allows nil value during status transition Actions" [ref=e674]':
+                  - 'cell "Assignee: Jean-Baptiste Barth" [ref=e675]':
+                    - 'img "Assignee: Jean-Baptiste Barth" [ref=e676]'
+                  - 'cell "Defect #12146: Required (list-, user- or version) custom field \"fixed version\" with Multiple values allows nil value during status transition" [ref=e677]':
+                    - 'link "Defect #12146" [ref=e678] [cursor=pointer]':
+                      - /url: /issues/12146
+                    - text: ": Required (list-, user- or version) custom field \"fixed version\" with Multiple values allows nil value during status transition"
+                  - cell "Actions" [ref=e679]:
+                    - link "Actions" [ref=e680] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #18914: Slow rendering pages with many small macros Actions" [ref=e681]':
+                  - cell [ref=e682]
+                  - 'cell "Defect #18914: Slow rendering pages with many small macros" [ref=e683]':
+                    - 'link "Defect #18914" [ref=e684] [cursor=pointer]':
+                      - /url: /issues/18914
+                    - text: ": Slow rendering pages with many small macros"
+                  - cell "Actions" [ref=e685]:
+                    - link "Actions" [ref=e686] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Jean-Philippe Lang Defect #19174: db migrate error from old version to 2.6 Actions" [ref=e687]':
+                  - 'cell "Assignee: Jean-Philippe Lang" [ref=e688]':
+                    - 'img "Assignee: Jean-Philippe Lang" [ref=e689]'
+                  - 'cell "Defect #19174: db migrate error from old version to 2.6" [ref=e690]':
+                    - 'link "Defect #19174" [ref=e691] [cursor=pointer]':
+                      - /url: /issues/19174
+                    - text: ": db migrate error from old version to 2.6"
+                  - cell "Actions" [ref=e692]:
+                    - link "Actions" [ref=e693] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #23341: Markdown Table formatting breaks with redmine wiki links Actions" [ref=e694]':
+                  - cell [ref=e695]
+                  - 'cell "Defect #23341: Markdown Table formatting breaks with redmine wiki links" [ref=e696]':
+                    - 'link "Defect #23341" [ref=e697] [cursor=pointer]':
+                      - /url: /issues/23341
+                    - text: ": Markdown Table formatting breaks with redmine wiki links"
+                  - cell "Actions" [ref=e698]:
+                    - link "Actions" [ref=e699] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Mischa The Evil Defect #26090: Dutch (NL) translation: some small issues found during review of r16029 for #24407 Actions" [ref=e700]':
+                  - 'cell "Assignee: Mischa The Evil" [ref=e701]':
+                    - 'img "Assignee: Mischa The Evil" [ref=e702]'
+                  - 'cell "Defect #26090: Dutch (NL) translation: some small issues found during review of r16029 for #24407" [ref=e703]':
+                    - 'link "Defect #26090" [ref=e704] [cursor=pointer]':
+                      - /url: /issues/26090
+                    - text: ": Dutch (NL) translation: some small issues found during review of r16029 for #24407"
+                  - cell "Actions" [ref=e705]:
+                    - link "Actions" [ref=e706] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #28322: Commit messages referencing issues should stop at line breaks Actions" [ref=e707]':
+                  - cell [ref=e708]
+                  - 'cell "Defect #28322: Commit messages referencing issues should stop at line breaks" [ref=e709]':
+                    - 'link "Defect #28322" [ref=e710] [cursor=pointer]':
+                      - /url: /issues/28322
+                    - text: ": Commit messages referencing issues should stop at line breaks"
+                  - cell "Actions" [ref=e711]:
+                    - link "Actions" [ref=e712] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Marius BĂLTEANU Defect #29694: Some buttons in wiki toolbar are hidden in responsive layout Actions" [ref=e713]':
+                  - 'cell "Assignee: Marius BĂLTEANU" [ref=e714]':
+                    - 'img "Assignee: Marius BĂLTEANU" [ref=e715]'
+                  - 'cell "Defect #29694: Some buttons in wiki toolbar are hidden in responsive layout" [ref=e716]':
+                    - 'link "Defect #29694" [ref=e717] [cursor=pointer]':
+                      - /url: /issues/29694
+                    - text: ": Some buttons in wiki toolbar are hidden in responsive layout"
+                  - cell "Actions" [ref=e718]:
+                    - link "Actions" [ref=e719] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #29695: Duplicated assignee option when selecting a category with default assignee Actions" [ref=e720]':
+                  - cell [ref=e721]
+                  - 'cell "Defect #29695: Duplicated assignee option when selecting a category with default assignee" [ref=e722]':
+                    - 'link "Defect #29695" [ref=e723] [cursor=pointer]':
+                      - /url: /issues/29695
+                    - text: ": Duplicated assignee option when selecting a category with default assignee"
+                  - cell "Actions" [ref=e724]:
+                    - link "Actions" [ref=e725] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Go MAEDA Defect #29855: add_working_days returns wrong date Actions" [ref=e726]':
+                  - 'cell "Assignee: Go MAEDA" [ref=e727]':
+                    - 'img "Assignee: Go MAEDA" [ref=e728]'
+                  - 'cell "Defect #29855: add_working_days returns wrong date" [ref=e729]':
+                    - 'link "Defect #29855" [ref=e730] [cursor=pointer]':
+                      - /url: /issues/29855
+                    - text: ": add_working_days returns wrong date"
+                  - cell "Actions" [ref=e731]:
+                    - link "Actions" [ref=e732] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #30371: Textile formatter generates broken link if a URL is followed by a tag Actions" [ref=e733]':
+                  - cell [ref=e734]
+                  - 'cell "Defect #30371: Textile formatter generates broken link if a URL is followed by a tag" [ref=e735]':
+                    - 'link "Defect #30371" [ref=e736] [cursor=pointer]':
+                      - /url: /issues/30371
+                    - text: ": Textile formatter generates broken link if a URL is followed by a tag"
+                  - cell "Actions" [ref=e737]:
+                    - link "Actions" [ref=e738] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #33432: Rendering of Macros with (empty) text parameter different in preview and non preview mode Actions" [ref=e739]':
+                  - cell [ref=e740]
+                  - 'cell "Defect #33432: Rendering of Macros with (empty) text parameter different in preview and non preview mode" [ref=e741]':
+                    - 'link "Defect #33432" [ref=e742] [cursor=pointer]':
+                      - /url: /issues/33432
+                    - text: ": Rendering of Macros with (empty) text parameter different in preview and non preview mode"
+                  - cell "Actions" [ref=e743]:
+                    - link "Actions" [ref=e744] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #33673: Calendar View / The right side of the tooltip is cut off Actions" [ref=e745]':
+                  - cell [ref=e746]
+                  - 'cell "Defect #33673: Calendar View / The right side of the tooltip is cut off" [ref=e747]':
+                    - 'link "Defect #33673" [ref=e748] [cursor=pointer]':
+                      - /url: /issues/33673
+                    - text: ": Calendar View / The right side of the tooltip is cut off"
+                  - cell "Actions" [ref=e749]:
+                    - link "Actions" [ref=e750] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #34046: Escaping symbols in task subject can broke export to Gantt (PNG) Actions" [ref=e751]':
+                  - cell [ref=e752]
+                  - 'cell "Defect #34046: Escaping symbols in task subject can broke export to Gantt (PNG)" [ref=e753]':
+                    - 'link "Defect #34046" [ref=e754] [cursor=pointer]':
+                      - /url: /issues/34046
+                    - text: ": Escaping symbols in task subject can broke export to Gantt (PNG)"
+                  - cell "Actions" [ref=e755]:
+                    - link "Actions" [ref=e756] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #34108: \"Is duplicate of\" and \"Has duplicate\" issue relations can be a circular reference Actions" [ref=e757]':
+                  - cell [ref=e758]
+                  - 'cell "Defect #34108: \"Is duplicate of\" and \"Has duplicate\" issue relations can be a circular reference" [ref=e759]':
+                    - 'link "Defect #34108" [ref=e760] [cursor=pointer]':
+                      - /url: /issues/34108
+                    - text: ": \"Is duplicate of\" and \"Has duplicate\" issue relations can be a circular reference"
+                  - cell "Actions" [ref=e761]:
+                    - link "Actions" [ref=e762] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #40856: random failing integration test for plugin routes in 5.1.3 Actions" [ref=e763]':
+                  - cell [ref=e764]
+                  - 'cell "Defect #40856: random failing integration test for plugin routes in 5.1.3" [ref=e765]':
+                    - 'link "Defect #40856" [ref=e766] [cursor=pointer]':
+                      - /url: /issues/40856
+                    - text: ": random failing integration test for plugin routes in 5.1.3"
+                  - cell "Actions" [ref=e767]:
+                    - link "Actions" [ref=e768] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #41502: Custom field values for versions are not copied when copying a project that includes versions Actions" [ref=e769]':
+                  - cell [ref=e770]
+                  - 'cell "Defect #41502: Custom field values for versions are not copied when copying a project that includes versions" [ref=e771]':
+                    - 'link "Defect #41502" [ref=e772] [cursor=pointer]':
+                      - /url: /issues/41502
+                    - text: ": Custom field values for versions are not copied when copying a project that includes versions"
+                  - cell "Actions" [ref=e773]:
+                    - link "Actions" [ref=e774] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Marius BĂLTEANU Defect #41726: Allow plugin assets to be loaded from app/assets Actions" [ref=e775]':
+                  - 'cell "Assignee: Marius BĂLTEANU" [ref=e776]':
+                    - 'img "Assignee: Marius BĂLTEANU" [ref=e777]'
+                  - 'cell "Defect #41726: Allow plugin assets to be loaded from app/assets" [ref=e778]':
+                    - 'link "Defect #41726" [ref=e779] [cursor=pointer]':
+                      - /url: /issues/41726
+                    - text: ": Allow plugin assets to be loaded from app/assets"
+                  - cell "Actions" [ref=e780]:
+                    - link "Actions" [ref=e781] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Marius BĂLTEANU Defect #43730: Redmine generates invalid HTML when there are multiple `collapse` macros in one paragraph in Textile Actions" [ref=e782]':
+                  - 'cell "Assignee: Marius BĂLTEANU" [ref=e783]':
+                    - 'img "Assignee: Marius BĂLTEANU" [ref=e784]'
+                  - 'cell "Defect #43730: Redmine generates invalid HTML when there are multiple `collapse` macros in one paragraph in Textile" [ref=e785]':
+                    - 'link "Defect #43730" [ref=e786] [cursor=pointer]':
+                      - /url: /issues/43730
+                    - text: ": Redmine generates invalid HTML when there are multiple `collapse` macros in one paragraph in Textile"
+                  - cell "Actions" [ref=e787]:
+                    - link "Actions" [ref=e788] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #44300: Mailer.with_deliveries(false) does not prevent emails from being sent Actions" [ref=e789]':
+                  - cell [ref=e790]
+                  - 'cell "Defect #44300: Mailer.with_deliveries(false) does not prevent emails from being sent" [ref=e791]':
+                    - 'link "Defect #44300" [ref=e792] [cursor=pointer]':
+                      - /url: /issues/44300
+                    - text: ": Mailer.with_deliveries(false) does not prevent emails from being sent"
+                  - cell "Actions" [ref=e793]:
+                    - link "Actions" [ref=e794] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #44361: Preview returns a 404 error on the cross-project news form Actions" [ref=e795]':
+                  - cell [ref=e796]
+                  - 'cell "Defect #44361: Preview returns a 404 error on the cross-project news form" [ref=e797]':
+                    - 'link "Defect #44361" [ref=e798] [cursor=pointer]':
+                      - /url: /issues/44361
+                    - text: ": Preview returns a 404 error on the cross-project news form"
+                  - cell "Actions" [ref=e799]:
+                    - link "Actions" [ref=e800] [cursor=pointer]:
+                      - /url: "#"
+          - article [ref=e801]:
+            - generic [ref=e802]:
+              - heading "Unplanned backlogs" [level=3] [ref=e803]:
+                - link "Unplanned backlogs" [ref=e804] [cursor=pointer]:
+                  - /url: /versions/23
+              - text: open
+            - generic [ref=e805]:
+              - paragraph [ref=e806]:
+                - text: Features that the core contributors of Redmine would like to add in a future version
+                - link "Redmine plugins" [ref=e807] [cursor=pointer]:
+                  - generic [ref=e808]:
+                    - img [ref=e810]
+                    - text: Redmine
+                  - text: plugins
+              - table [ref=e812]:
+                - rowgroup [ref=e813]:
+                  - 'row "% Done: 5%" [ref=e814]':
+                    - 'cell "% Done: 5%" [ref=e815]'
+                    - cell [ref=e816]
+              - paragraph [ref=e817]: 5%
+              - paragraph [ref=e818]:
+                - link "18 issues" [ref=e819] [cursor=pointer]:
+                  - /url: /projects/redmine/issues?fixed_version_id=23&set_filter=1&status_id=%2A
+                - text: (0 closed —
+                - link "18 open" [ref=e820] [cursor=pointer]:
+                  - /url: /projects/redmine/issues?fixed_version_id=23&set_filter=1&status_id=o
+                - text: )
+            - table "Related issues" [ref=e822]:
+              - caption [ref=e823]: Related issues
+              - rowgroup [ref=e824]:
+                - 'row "Assignee: Toshi MARUYAMA Defect #5357: Git: SCM revisions ordered by date/time (should be reverse commit order) Actions" [ref=e825]':
+                  - 'cell "Assignee: Toshi MARUYAMA" [ref=e826]':
+                    - 'img "Assignee: Toshi MARUYAMA" [ref=e827]'
+                  - 'cell "Defect #5357: Git: SCM revisions ordered by date/time (should be reverse commit order)" [ref=e828]':
+                    - 'link "Defect #5357" [ref=e829] [cursor=pointer]':
+                      - /url: /issues/5357
+                    - text: ": Git: SCM revisions ordered by date/time (should be reverse commit order)"
+                  - cell "Actions" [ref=e830]:
+                    - link "Actions" [ref=e831] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #6609: % Done for Parent Tasks [2] Actions" [ref=e832]':
+                  - cell [ref=e833]
+                  - 'cell "Defect #6609: % Done for Parent Tasks [2]" [ref=e834]':
+                    - 'link "Defect #6609" [ref=e835] [cursor=pointer]':
+                      - /url: /issues/6609
+                    - text: ": % Done for Parent Tasks [2]"
+                  - cell "Actions" [ref=e836]:
+                    - link "Actions" [ref=e837] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #6662: JavaScript is not minified for production use Actions" [ref=e838]':
+                  - cell [ref=e839]
+                  - 'cell "Defect #6662: JavaScript is not minified for production use" [ref=e840]':
+                    - 'link "Defect #6662" [ref=e841] [cursor=pointer]':
+                      - /url: /issues/6662
+                    - text: ": JavaScript is not minified for production use"
+                  - cell "Actions" [ref=e842]:
+                    - link "Actions" [ref=e843] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #6725: Acronyms don''t work for Russian language Actions" [ref=e844]':
+                  - cell [ref=e845]
+                  - 'cell "Defect #6725: Acronyms don''t work for Russian language" [ref=e846]':
+                    - 'link "Defect #6725" [ref=e847] [cursor=pointer]':
+                      - /url: /issues/6725
+                    - text: ": Acronyms don't work for Russian language"
+                  - cell "Actions" [ref=e848]:
+                    - link "Actions" [ref=e849] [cursor=pointer]:
+                      - /url: "#"
+    - generic [ref=e850]:
+      - text: Powered by
+      - link "Redmine" [ref=e851] [cursor=pointer]:
+        - /url: https://www.redmine.org/
+      - text: © 2006-2023 Jean-Philippe Lang
+  - log [ref=e852]
+  - log [ref=e853]
+  - log [ref=e854]
+  - log [ref=e855]
+  - log [ref=e856]
+  - log [ref=e857]
+  - log [ref=e858]
+  - log [ref=e859]
+  - log [ref=e860]
+  - log [ref=e861]
+  - log [ref=e862]
+  - log [ref=e863]
+  - log [ref=e864]
+  - log [ref=e865]
+  - log [ref=e866]
+  - log [ref=e867]
+  - log [ref=e868]
+  - log [ref=e869]
+  - log [ref=e870]
+  - log [ref=e871]
+  - log [ref=e872]
+  - log [ref=e873]
+  - log [ref=e874]
+  - log [ref=e875]
+  - log [ref=e876]
+  - log [ref=e877]
+  - log [ref=e878]
+  - log [ref=e879]
+  - log [ref=e880]
+  - log [ref=e881]
+  - log [ref=e882]
+  - log [ref=e883]
+  - log [ref=e884]
+  - log [ref=e885]
+  - log [ref=e886]
+  - log [ref=e887]
+  - log [ref=e888]
+  - log [ref=e889]
+  - log [ref=e890]
+  - log [ref=e891]
+  - log [ref=e892]
+  - log [ref=e893]
+  - log [ref=e894]
+  - log [ref=e895]
+  - log [ref=e896]
+  - log [ref=e897]
+  - log [ref=e898]
+  - log [ref=e899]
+  - log [ref=e900]
+  - log [ref=e901]
+  - log [ref=e902]
+  - log [ref=e903]
+  - log [ref=e904]
+  - log [ref=e905]
+  - log [ref=e906]
+  - log [ref=e907]
+  - log [ref=e908]
+  - log [ref=e909]
+  - log [ref=e910]
+  - log [ref=e911]
+  - log [ref=e912]
+  - log [ref=e913]
+  - log [ref=e914]
+  - log [ref=e915]
+  - log [ref=e916]
+  - log [ref=e917]
+  - log [ref=e918]
+  - log [ref=e919]
+  - log [ref=e920]
+  - log [ref=e921]
+  - log [ref=e922]
+  - log [ref=e923]
+  - log [ref=e924]
+  - log [ref=e925]
+  - log [ref=e926]
+  - log [ref=e927]
+  - log [ref=e928]
+  - log [ref=e929]
+  - log [ref=e930]
+  - log [ref=e931]
+  - log [ref=e932]
+  - log [ref=e933]
+  - log [ref=e934]
+  - log [ref=e935]
+  - log [ref=e936]
+  - log [ref=e937]
+  - log [ref=e938]
+  - log [ref=e939]
+  - log [ref=e940]
+  - log [ref=e941]
+  - log [ref=e942]
+  - log [ref=e943]
+  - log [ref=e944]
+  - log [ref=e945]
+  - log [ref=e946]
+  - log [ref=e947]
+  - log [ref=e948]
+  - log [ref=e949]
+  - log [ref=e950]
+  - log [ref=e951]
+  - log [ref=e952]
+  - log [ref=e953]
+  - log [ref=e954]
+  - log [ref=e955]
+  - log [ref=e956]
+  - log [ref=e957]
+  - log [ref=e958]
+  - log [ref=e959]
+  - log [ref=e960]
+  - log [ref=e961]
+  - log [ref=e962]
+  - log [ref=e963]
+  - log [ref=e964]
+  - log [ref=e965]
+  - log [ref=e966]
+  - log [ref=e967]
+  - log [ref=e968]
+  - log [ref=e969]
+  - log [ref=e970]
+  - log [ref=e971]
+  - log [ref=e972]
+  - log [ref=e973]
+  - log [ref=e974]
+  - log [ref=e975]
+  - log [ref=e976]
+  - log [ref=e977]
+  - log [ref=e978]
+  - log [ref=e979]
+  - log [ref=e980]
+  - log [ref=e981]
+  - log [ref=e982]
+  - log [ref=e983]
+  - log [ref=e984]
+  - log [ref=e985]
+  - log [ref=e986]
+  - log [ref=e987]
+  - log [ref=e988]
+  - log [ref=e989]
+  - log [ref=e990]
+  - log [ref=e991]
+  - log [ref=e992]
+  - log [ref=e993]
+  - log [ref=e994]
+  - log [ref=e995]
+  - log [ref=e996]
+  - log [ref=e997]
+  - log [ref=e998]
+  - log [ref=e999]
+  - log [ref=e1000]
+  - log [ref=e1001]
+  - log [ref=e1002]
+  - log [ref=e1003]
+  - log [ref=e1004]
+  - log [ref=e1005]
+  - log [ref=e1006]
+  - log [ref=e1007]
+  - log [ref=e1008]
+  - log [ref=e1009]
+  - log [ref=e1010]
+  - log [ref=e1011]
+  - log [ref=e1012]
+  - log [ref=e1013]
+  - log [ref=e1014]
+  - log [ref=e1015]
+  - log [ref=e1016]
+  - log [ref=e1017]
+  - log [ref=e1018]
+  - log [ref=e1019]
+  - log [ref=e1020]
+  - log [ref=e1021]
+  - log [ref=e1022]
+  - log [ref=e1023]
+  - log [ref=e1024]
+  - log [ref=e1025]
+  - log [ref=e1026]
+  - log [ref=e1027]
+  - log [ref=e1028]
+  - log [ref=e1029]
+  - log [ref=e1030]
+  - log [ref=e1031]
+  - log [ref=e1032]
+  - log [ref=e1033]
+  - log [ref=e1034]
+  - log [ref=e1035]
+  - log [ref=e1036]
+  - log [ref=e1037]
+  - log [ref=e1038]
+  - log [ref=e1039]
+  - log [ref=e1040]
+  - log [ref=e1041]
+  - log [ref=e1042]
+  - log [ref=e1043]
+  - log [ref=e1044]
+  - log [ref=e1045]
+  - log [ref=e1046]
+  - log [ref=e1047]
+  - log [ref=e1048]
+  - log [ref=e1049]
+  - log [ref=e1050]
+  - log [ref=e1051]
+  - log [ref=e1052]
+  - log [ref=e1053]
+  - log [ref=e1054]
+  - log [ref=e1055]
+  - log [ref=e1056]
+  - log [ref=e1057]
+  - log [ref=e1058]
+  - log [ref=e1059]
+  - log [ref=e1060]
+  - log [ref=e1061]
+  - log [ref=e1062]
+  - log [ref=e1063]
+  - log [ref=e1064]
+  - log [ref=e1065]
+  - log [ref=e1066]
+  - log [ref=e1067]
+  - log [ref=e1068]
+  - log [ref=e1069]
+  - log [ref=e1070]
+  - log [ref=e1071]
+  - log [ref=e1072]
+  - log [ref=e1073]
+  - log [ref=e1074]
+  - log [ref=e1075]
+  - log [ref=e1076]
+  - log [ref=e1077]
+  - log [ref=e1078]
+  - log [ref=e1079]
+  - log [ref=e1080]
+  - log [ref=e1081]
+  - log [ref=e1082]
+  - log [ref=e1083]
+  - log [ref=e1084]
+  - log [ref=e1085]
+  - log [ref=e1086]
+  - log [ref=e1087]
+  - log [ref=e1088]
+  - log [ref=e1089]
+  - log [ref=e1090]
+  - log [ref=e1091]
+  - log [ref=e1092]
+  - log [ref=e1093]
+  - log [ref=e1094]
+  - log [ref=e1095]
+  - log [ref=e1096]
+  - log [ref=e1097]
+  - log [ref=e1098]
+  - log [ref=e1099]
+  - log [ref=e1100]
+  - log [ref=e1101]
+  - log [ref=e1102]
+  - log [ref=e1103]
+  - log [ref=e1104]
+  - log [ref=e1105]
+  - log [ref=e1106]
+  - log [ref=e1107]
+  - log [ref=e1108]
+  - log [ref=e1109]
+  - log [ref=e1110]
+  - log [ref=e1111]
+  - log [ref=e1112]
+  - log [ref=e1113]
+  - log [ref=e1114]
+  - log [ref=e1115]
+  - log [ref=e1116]
+  - log [ref=e1117]
+  - log [ref=e1118]
+  - log [ref=e1119]
+  - log [ref=e1120]
+  - log [ref=e1121]
+  - log [ref=e1122]
+  - log [ref=e1123]
+  - log [ref=e1124]
+  - log [ref=e1125]
+  - log [ref=e1126]
+  - log [ref=e1127]
+  - log [ref=e1128]
+  - log [ref=e1129]
+  - log [ref=e1130]
+  - log [ref=e1131]
+  - log [ref=e1132]
+  - log [ref=e1133]
+  - log [ref=e1134]
+  - log [ref=e1135]
+  - log [ref=e1136]
+  - log [ref=e1137]
+  - log [ref=e1138]
+  - log [ref=e1139]
+  - log [ref=e1140]
+  - log [ref=e1141]
+  - log [ref=e1142]
+  - log [ref=e1143]
+  - log [ref=e1144]
+  - log [ref=e1145]
+  - log [ref=e1146]
+  - log [ref=e1147]
+  - log [ref=e1148]
+  - log [ref=e1149]
+  - log [ref=e1150]
+  - log [ref=e1151]
+  - log [ref=e1152]
+  - log [ref=e1153]
+  - log [ref=e1154]
+  - log [ref=e1155]
+  - log [ref=e1156]
+  - log [ref=e1157]
+  - log [ref=e1158]
+  - log [ref=e1159]
+  - log [ref=e1160]
+  - log [ref=e1161]
+  - log [ref=e1162]
+  - log [ref=e1163]
+  - log [ref=e1164]
+  - log [ref=e1165]
+  - log [ref=e1166]
+  - log [ref=e1167]
+  - log [ref=e1168]
+  - log [ref=e1169]
+  - log [ref=e1170]
+  - log [ref=e1171]
+  - log [ref=e1172]
+  - log [ref=e1173]
+  - log [ref=e1174]
+  - log [ref=e1175]
+  - log [ref=e1176]
+  - log [ref=e1177]
+  - log [ref=e1178]
+  - log [ref=e1179]
+  - log [ref=e1180]
+  - log [ref=e1181]
+  - log [ref=e1182]
+  - log [ref=e1183]
+  - log [ref=e1184]
+  - log [ref=e1185]
+  - log [ref=e1186]
+  - log [ref=e1187]
+  - log [ref=e1188]
+  - log [ref=e1189]
+  - log [ref=e1190]
+  - log [ref=e1191]
+  - log [ref=e1192]
+  - log [ref=e1193]
+  - log [ref=e1194]
+  - log [ref=e1195]
+  - log [ref=e1196]
+  - log [ref=e1197]
+  - log [ref=e1198]
+  - log [ref=e1199]
+  - log [ref=e1200]
+  - log [ref=e1201]
+  - log [ref=e1202]
+  - log [ref=e1203]
+  - log [ref=e1204]
+  - log [ref=e1205]
+  - log [ref=e1206]
+  - log [ref=e1207]
+  - log [ref=e1208]
+  - log [ref=e1209]
+  - insertion [ref=e1211]
+```
+
+# Test source
+
+```ts
+  1  | export class BasePage {
+  2  |   constructor(page) {
+  3  |     this.page = page
+  4  |   }
+  5  | 
+  6  |   async navigate(path = '') {
+  7  |     await this.page.goto(path)
+  8  |     await this.page.waitForLoadState('networkidle')
+  9  |   }
+  10 | 
+  11 |   async waitForLoad() {
+  12 |     await this.page.waitForLoadState()
+  13 |   }
+  14 | 
+  15 |   async getTitle() {
+  16 |     return await this.page.title()
+  17 |   }
+  18 | 
+  19 |   async takeScreenshot(name) {
+  20 |     await this.page.screenshot({ path: `screenshots/${name}.png` })
+  21 |   }
+  22 | 
+  23 |   async click(selector) {
+  24 |     await this.page.click(selector)
+  25 |   }
+  26 | 
+  27 |   async clickAndNavigate(selector) {
+  28 |     await this.page.click(selector)
+> 29 |     await this.page.waitForLoadState('networkidle')
+     |                     ^ Error: page.waitForLoadState: Test timeout of 30000ms exceeded.
+  30 |   }
+  31 | 
+  32 |   async fill(selector, text) {
+  33 |     await this.page.fill(selector, text)
+  34 |   }
+  35 | 
+  36 |   async getText(selector) {
+  37 |     return await this.page.textContent(selector)
+  38 |   }
+  39 | }
+  40 | 
+```

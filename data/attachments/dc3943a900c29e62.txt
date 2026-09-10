@@ -1,0 +1,7 @@
+HTTP Status: 200
+Response body is valid JSON
+Found 25 issues
+First issue ID: 44438, Subject: DateCalculationTest is not run by `rails test`
+Total issues: 4809
+Offset: 0
+Limit: 25
