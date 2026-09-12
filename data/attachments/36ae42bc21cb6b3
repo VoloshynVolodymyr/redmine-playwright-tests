@@ -1,0 +1,1714 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: TC04_roadmapFilter.spec.js >> Roadmap Filter Tests >> TC04 - Filtering roadmap by tracker type "Defect" only
+- Location: tests/TC04_roadmapFilter.spec.js:18:3
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+```
+Error: page.waitForLoadState: Test timeout of 30000ms exceeded.
+=========================== logs ===========================
+  "domcontentloaded" event fired
+  "load" event fired
+============================================================
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - list:
+          - listitem [ref=e7]:
+            - link "Sign in" [ref=e8] [cursor=pointer]:
+              - /url: /login
+          - listitem [ref=e9]:
+            - link "Register" [ref=e10] [cursor=pointer]:
+              - /url: /account/register
+      - list:
+        - listitem [ref=e11]:
+          - link "Home" [ref=e12] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=e13]:
+          - link "Projects" [ref=e14] [cursor=pointer]:
+            - /url: /projects
+        - listitem [ref=e15]:
+          - link "Help" [ref=e16] [cursor=pointer]:
+            - /url: https://www.redmine.org/guide
+    - generic [ref=e17]:
+      - generic [ref=e18]:
+        - generic [ref=e19]:
+          - generic [ref=e20]:
+            - link "Search" [ref=e21] [cursor=pointer]:
+              - /url: /projects/redmine/search?scope=subprojects
+            - text: ":"
+          - textbox "Search:" [ref=e22]
+        - generic [ref=e24] [cursor=pointer]: Redmine
+      - heading "Redmine" [level=1] [ref=e25]
+      - list [ref=e27]:
+        - listitem [ref=e28]:
+          - link "Overview" [ref=e29] [cursor=pointer]:
+            - /url: /projects/redmine
+        - listitem [ref=e30]:
+          - link "Download" [ref=e31] [cursor=pointer]:
+            - /url: /projects/redmine/wiki/Download
+        - listitem [ref=e32]:
+          - link "Activity" [ref=e33] [cursor=pointer]:
+            - /url: /projects/redmine/activity
+        - listitem [ref=e34]:
+          - link "Roadmap" [ref=e35] [cursor=pointer]:
+            - /url: /projects/redmine/roadmap
+        - listitem [ref=e36]:
+          - link "Issues" [ref=e37] [cursor=pointer]:
+            - /url: /projects/redmine/issues
+        - listitem [ref=e38]:
+          - link "News" [ref=e39] [cursor=pointer]:
+            - /url: /projects/redmine/news
+        - listitem [ref=e40]:
+          - link "Wiki" [ref=e41] [cursor=pointer]:
+            - /url: /projects/redmine/wiki
+        - listitem [ref=e42]:
+          - link "Forums" [ref=e43] [cursor=pointer]:
+            - /url: /projects/redmine/boards
+        - listitem [ref=e44]:
+          - link "Repository" [ref=e45] [cursor=pointer]:
+            - /url: /projects/redmine/repository
+    - generic [ref=e46]:
+      - generic [ref=e47]:
+        - generic [ref=e48]:
+          - heading "Roadmap" [level=3] [ref=e49]
+          - list [ref=e50]:
+            - listitem [ref=e51]:
+              - generic [ref=e52]:
+                - checkbox "Defect" [checked] [ref=e53]
+                - text: Defect
+            - listitem [ref=e54]:
+              - generic [ref=e55]:
+                - checkbox "Feature" [ref=e56]
+                - text: Feature
+            - listitem [ref=e57]:
+              - generic [ref=e58]:
+                - checkbox "Patch" [ref=e59]
+                - text: Patch
+          - paragraph
+          - list [ref=e60]:
+            - listitem [ref=e61]:
+              - generic [ref=e62]:
+                - checkbox "Show completed versions" [ref=e63]
+                - text: Show completed versions
+            - listitem [ref=e64]:
+              - generic [ref=e65]:
+                - checkbox "Subprojects" [checked] [ref=e66]
+                - text: Subprojects
+          - paragraph [ref=e67]:
+            - button "Apply" [ref=e68] [cursor=pointer]
+        - heading "Versions" [level=3] [ref=e69]
+        - list [ref=e70]:
+          - listitem [ref=e71]:
+            - link "6.1.5" [ref=e72] [cursor=pointer]:
+              - /url: "#6.1.5"
+          - listitem [ref=e73]:
+            - link "7.0.2" [ref=e74] [cursor=pointer]:
+              - /url: "#7.0.2"
+          - listitem [ref=e75]:
+            - link "7.1.0" [ref=e76] [cursor=pointer]:
+              - /url: "#7.1.0"
+          - listitem [ref=e77]:
+            - link "Candidate for next major release" [ref=e78] [cursor=pointer]:
+              - /url: "#Candidate_for_next_major_release"
+          - listitem [ref=e79]:
+            - link "Candidate for next minor release" [ref=e80] [cursor=pointer]:
+              - /url: "#Candidate_for_next_minor_release"
+          - listitem [ref=e81]:
+            - link "Unplanned backlogs" [ref=e82] [cursor=pointer]:
+              - /url: "#Unplanned_backlogs"
+        - paragraph [ref=e83]:
+          - link "Completed versions" [ref=e84] [cursor=pointer]:
+            - /url: "#"
+        - paragraph
+        - insertion [ref=e85]:
+          - generic [ref=e88]:
+            - heading "These are topics related to the article that might interest you" [level=2] [ref=e90]: Discover more
+            - link "Project collaboration tools" [ref=e91] [cursor=pointer]:
+              - generic "Project collaboration tools" [ref=e92]
+              - img [ref=e94]
+            - link "API integration services" [ref=e96] [cursor=pointer]:
+              - generic "API integration services" [ref=e97]
+              - img [ref=e99]
+            - link "Authentication system integration" [ref=e101] [cursor=pointer]:
+              - generic "Authentication system integration" [ref=e102]
+              - img [ref=e104]
+            - link "OAuth provider setup" [ref=e106] [cursor=pointer]:
+              - generic "OAuth provider setup" [ref=e107]
+              - img [ref=e109]
+            - link "API testing tools" [ref=e111] [cursor=pointer]:
+              - generic "API testing tools" [ref=e112]
+              - img [ref=e114]
+            - link "projects" [ref=e116] [cursor=pointer]:
+              - generic "projects" [ref=e117]
+              - img [ref=e119]
+            - link "Custom plugin development" [ref=e121] [cursor=pointer]:
+              - generic "Custom plugin development" [ref=e122]
+              - img [ref=e124]
+            - link "Project management software" [ref=e126] [cursor=pointer]:
+              - generic "Project management software" [ref=e127]
+              - img [ref=e129]
+        - generic:
+          - insertion:
+            - iframe [ref=e132]:
+              
+      - generic [ref=e133]:
+        - heading "Roadmap" [level=2] [ref=e134]
+        - generic [ref=e135]:
+          - article [ref=e136]:
+            - generic [ref=e137]:
+              - heading "6.1.5" [level=3] [ref=e138]:
+                - link "6.1.5" [ref=e139] [cursor=pointer]:
+                  - /url: /versions/231
+              - text: open
+            - generic [ref=e140]:
+              - paragraph
+              - table [ref=e141]:
+                - rowgroup [ref=e142]:
+                  - 'row "closed: 83%" [ref=e143]':
+                    - 'cell "closed: 83%" [ref=e144]'
+                    - cell [ref=e145]
+              - paragraph [ref=e146]: 83%
+              - paragraph [ref=e147]:
+                - link "6 issues" [ref=e148] [cursor=pointer]:
+                  - /url: /projects/redmine/issues?fixed_version_id=231&set_filter=1&status_id=%2A
+                - text: (
+                - link "5 closed" [ref=e149] [cursor=pointer]:
+                  - /url: /projects/redmine/issues?fixed_version_id=231&set_filter=1&status_id=c
+                - text: —
+                - link "1 open" [ref=e150] [cursor=pointer]:
+                  - /url: /projects/redmine/issues?fixed_version_id=231&set_filter=1&status_id=o
+                - text: )
+            - table "Related issues" [ref=e152]:
+              - caption [ref=e153]: Related issues
+              - rowgroup [ref=e154]:
+                - 'row "Assignee: Go MAEDA Defect #44418: Fix typo in Japanese translation of mail_body_account_information_external Actions" [ref=e155]':
+                  - 'cell "Assignee: Go MAEDA" [ref=e156]':
+                    - 'img "Assignee: Go MAEDA" [ref=e157]'
+                  - 'cell "Defect #44418: Fix typo in Japanese translation of mail_body_account_information_external" [ref=e158]':
+                    - 'link "Defect #44418" [ref=e159] [cursor=pointer]':
+                      - /url: /issues/44418
+                    - text: ": Fix typo in Japanese translation of mail_body_account_information_external"
+                  - cell "Actions" [ref=e160]:
+                    - link "Actions" [ref=e161] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Go MAEDA Defect #44428: JSON API requests fail with JSON gem 3.0.0 Actions" [ref=e162]':
+                  - 'cell "Assignee: Go MAEDA" [ref=e163]':
+                    - 'img "Assignee: Go MAEDA" [ref=e164]'
+                  - 'cell "Defect #44428: JSON API requests fail with JSON gem 3.0.0" [ref=e165]':
+                    - 'link "Defect #44428" [ref=e166] [cursor=pointer]':
+                      - /url: /issues/44428
+                    - text: ": JSON API requests fail with JSON gem 3.0.0"
+                  - cell "Actions" [ref=e167]:
+                    - link "Actions" [ref=e168] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Go MAEDA Defect #44438: DateCalculationTest is not run by `rails test` Actions" [ref=e169]':
+                  - 'cell "Assignee: Go MAEDA" [ref=e170]':
+                    - 'img "Assignee: Go MAEDA" [ref=e171]'
+                  - 'cell "Defect #44438: DateCalculationTest is not run by `rails test`" [ref=e172]':
+                    - 'link "Defect #44438" [ref=e173] [cursor=pointer]':
+                      - /url: /issues/44438
+                    - text: ": DateCalculationTest is not run by `rails test`"
+                  - cell "Actions" [ref=e174]:
+                    - link "Actions" [ref=e175] [cursor=pointer]:
+                      - /url: "#"
+          - article [ref=e176]:
+            - generic [ref=e177]:
+              - heading "7.0.2" [level=3] [ref=e178]:
+                - link "7.0.2" [ref=e179] [cursor=pointer]:
+                  - /url: /versions/230
+              - text: open
+            - generic [ref=e180]:
+              - paragraph
+              - table [ref=e181]:
+                - rowgroup [ref=e182]:
+                  - 'row "closed: 83%" [ref=e183]':
+                    - 'cell "closed: 83%" [ref=e184]'
+                    - cell [ref=e185]
+              - paragraph [ref=e186]: 83%
+              - paragraph [ref=e187]:
+                - link "6 issues" [ref=e188] [cursor=pointer]:
+                  - /url: /projects/redmine/issues?fixed_version_id=230&set_filter=1&status_id=%2A
+                - text: (
+                - link "5 closed" [ref=e189] [cursor=pointer]:
+                  - /url: /projects/redmine/issues?fixed_version_id=230&set_filter=1&status_id=c
+                - text: —
+                - link "1 open" [ref=e190] [cursor=pointer]:
+                  - /url: /projects/redmine/issues?fixed_version_id=230&set_filter=1&status_id=o
+                - text: )
+            - table "Related issues" [ref=e192]:
+              - caption [ref=e193]: Related issues
+              - rowgroup [ref=e194]:
+                - 'row "Assignee: Go MAEDA Defect #44372: Chrome freezes for several minutes when opening the possible values page of a key/value list custom field with thousands of values Actions" [ref=e195]':
+                  - 'cell "Assignee: Go MAEDA" [ref=e196]':
+                    - 'img "Assignee: Go MAEDA" [ref=e197]'
+                  - 'cell "Defect #44372: Chrome freezes for several minutes when opening the possible values page of a key/value list custom field with thousands of values" [ref=e198]':
+                    - 'link "Defect #44372" [ref=e199] [cursor=pointer]':
+                      - /url: /issues/44372
+                    - text: ": Chrome freezes for several minutes when opening the possible values page of a key/value list custom field with thousands of values"
+                  - cell "Actions" [ref=e200]:
+                    - link "Actions" [ref=e201] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Go MAEDA Defect #44378: Ghostscript process is left running when PDF thumbnail generation times out Actions" [ref=e202]':
+                  - 'cell "Assignee: Go MAEDA" [ref=e203]':
+                    - 'img "Assignee: Go MAEDA" [ref=e204]'
+                  - 'cell "Defect #44378: Ghostscript process is left running when PDF thumbnail generation times out" [ref=e205]':
+                    - 'link "Defect #44378" [ref=e206] [cursor=pointer]':
+                      - /url: /issues/44378
+                    - text: ": Ghostscript process is left running when PDF thumbnail generation times out"
+                  - cell "Actions" [ref=e207]:
+                    - link "Actions" [ref=e208] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Go MAEDA Defect #44408: Autocomplete popup appears off-screen when the caret is near the bottom of the viewport Actions" [ref=e209]':
+                  - 'cell "Assignee: Go MAEDA" [ref=e210]':
+                    - 'img "Assignee: Go MAEDA" [ref=e211]'
+                  - 'cell "Defect #44408: Autocomplete popup appears off-screen when the caret is near the bottom of the viewport" [ref=e212]':
+                    - 'link "Defect #44408" [ref=e213] [cursor=pointer]':
+                      - /url: /issues/44408
+                    - text: ": Autocomplete popup appears off-screen when the caret is near the bottom of the viewport"
+                  - cell "Actions" [ref=e214]:
+                    - link "Actions" [ref=e215] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Marius BĂLTEANU Defect #44412: Themes with custom icons.svg slow down page rendering Actions" [ref=e216]':
+                  - 'cell "Assignee: Marius BĂLTEANU" [ref=e217]':
+                    - 'img "Assignee: Marius BĂLTEANU" [ref=e218]'
+                  - 'cell "Defect #44412: Themes with custom icons.svg slow down page rendering" [ref=e219]':
+                    - 'link "Defect #44412" [ref=e220] [cursor=pointer]':
+                      - /url: /issues/44412
+                    - text: ": Themes with custom icons.svg slow down page rendering"
+                  - cell "Actions" [ref=e221]:
+                    - link "Actions" [ref=e222] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #44442: Large blank space before pre blocks in HTML email notifications Actions" [ref=e223]':
+                  - cell [ref=e224]
+                  - 'cell "Defect #44442: Large blank space before pre blocks in HTML email notifications" [ref=e225]':
+                    - 'link "Defect #44442" [ref=e226] [cursor=pointer]':
+                      - /url: /issues/44442
+                    - text: ": Large blank space before pre blocks in HTML email notifications"
+                  - cell "Actions" [ref=e227]:
+                    - link "Actions" [ref=e228] [cursor=pointer]:
+                      - /url: "#"
+          - article [ref=e229]:
+            - generic [ref=e230]:
+              - heading "7.1.0" [level=3] [ref=e231]:
+                - link "7.1.0" [ref=e232] [cursor=pointer]:
+                  - /url: /versions/228
+              - text: open
+            - generic [ref=e233]:
+              - paragraph
+              - table [ref=e234]:
+                - rowgroup [ref=e235]:
+                  - 'row "closed: 62%" [ref=e236]':
+                    - 'cell "closed: 62%" [ref=e237]'
+                    - cell [ref=e238]
+              - paragraph [ref=e239]: 62%
+              - paragraph [ref=e240]:
+                - link "54 issues" [ref=e241] [cursor=pointer]:
+                  - /url: /projects/redmine/issues?fixed_version_id=228&set_filter=1&status_id=%2A
+                - text: (
+                - link "34 closed" [ref=e242] [cursor=pointer]:
+                  - /url: /projects/redmine/issues?fixed_version_id=228&set_filter=1&status_id=c
+                - text: —
+                - link "20 open" [ref=e243] [cursor=pointer]:
+                  - /url: /projects/redmine/issues?fixed_version_id=228&set_filter=1&status_id=o
+                - text: )
+            - table "Related issues" [ref=e245]:
+              - caption [ref=e246]: Related issues
+              - rowgroup [ref=e247]:
+                - 'row "Assignee: Marius BĂLTEANU Defect #35248: Hard-coded error messages in IssueStatus Actions" [ref=e248]':
+                  - 'cell "Assignee: Marius BĂLTEANU" [ref=e249]':
+                    - 'img "Assignee: Marius BĂLTEANU" [ref=e250]'
+                  - 'cell "Defect #35248: Hard-coded error messages in IssueStatus" [ref=e251]':
+                    - 'link "Defect #35248" [ref=e252] [cursor=pointer]':
+                      - /url: /issues/35248
+                    - text: ": Hard-coded error messages in IssueStatus"
+                  - cell "Actions" [ref=e253]:
+                    - link "Actions" [ref=e254] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Go MAEDA Defect #37581: Incorrect number and CSV separators in several locales Actions" [ref=e255]':
+                  - 'cell "Assignee: Go MAEDA" [ref=e256]':
+                    - 'img "Assignee: Go MAEDA" [ref=e257]'
+                  - 'cell "Defect #37581: Incorrect number and CSV separators in several locales" [ref=e258]':
+                    - 'link "Defect #37581" [ref=e259] [cursor=pointer]':
+                      - /url: /issues/37581
+                    - text: ": Incorrect number and CSV separators in several locales"
+                  - cell "Actions" [ref=e260]:
+                    - link "Actions" [ref=e261] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Marius BĂLTEANU Defect #43904: Activities of TimeEntries are not updated when moving the TimeEntry to a different project Actions" [ref=e262]':
+                  - 'cell "Assignee: Marius BĂLTEANU" [ref=e263]':
+                    - 'img "Assignee: Marius BĂLTEANU" [ref=e264]'
+                  - 'cell "Defect #43904: Activities of TimeEntries are not updated when moving the TimeEntry to a different project" [ref=e265]':
+                    - 'link "Defect #43904" [ref=e266] [cursor=pointer]':
+                      - /url: /issues/43904
+                    - text: ": Activities of TimeEntries are not updated when moving the TimeEntry to a different project"
+                  - cell "Actions" [ref=e267]:
+                    - link "Actions" [ref=e268] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Go MAEDA Defect #44366: Deleting an issue custom field does not delete its workflow field permissions Actions" [ref=e269]':
+                  - 'cell "Assignee: Go MAEDA" [ref=e270]':
+                    - 'img "Assignee: Go MAEDA" [ref=e271]'
+                  - 'cell "Defect #44366: Deleting an issue custom field does not delete its workflow field permissions" [ref=e272]':
+                    - 'link "Defect #44366" [ref=e273] [cursor=pointer]':
+                      - /url: /issues/44366
+                    - text: ": Deleting an issue custom field does not delete its workflow field permissions"
+                  - cell "Actions" [ref=e274]:
+                    - link "Actions" [ref=e275] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Go MAEDA Defect #44376: Cannot deselect current user in multi-select user custom field without also deselecting \"<< me >>\" Actions" [ref=e276]':
+                  - 'cell "Assignee: Go MAEDA" [ref=e277]':
+                    - 'img "Assignee: Go MAEDA" [ref=e278]'
+                  - 'cell "Defect #44376: Cannot deselect current user in multi-select user custom field without also deselecting \"<< me >>\"" [ref=e279]':
+                    - 'link "Defect #44376" [ref=e280] [cursor=pointer]':
+                      - /url: /issues/44376
+                    - text: ": Cannot deselect current user in multi-select user custom field without also deselecting \"<< me >>\""
+                  - cell "Actions" [ref=e281]:
+                    - link "Actions" [ref=e282] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Go MAEDA Defect #44398: Fix typo in log messages: \"occured\" should be \"occurred\" Actions" [ref=e283]':
+                  - 'cell "Assignee: Go MAEDA" [ref=e284]':
+                    - 'img "Assignee: Go MAEDA" [ref=e285]'
+                  - 'cell "Defect #44398: Fix typo in log messages: \"occured\" should be \"occurred\"" [ref=e286]':
+                    - 'link "Defect #44398" [ref=e287] [cursor=pointer]':
+                      - /url: /issues/44398
+                    - text: ": Fix typo in log messages: \"occured\" should be \"occurred\""
+                  - cell "Actions" [ref=e288]:
+                    - link "Actions" [ref=e289] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Go MAEDA Defect #44411: Fix typo in log messages: \"nonexistant\" should be \"nonexistent\" Actions" [ref=e290]':
+                  - 'cell "Assignee: Go MAEDA" [ref=e291]':
+                    - 'img "Assignee: Go MAEDA" [ref=e292]'
+                  - 'cell "Defect #44411: Fix typo in log messages: \"nonexistant\" should be \"nonexistent\"" [ref=e293]':
+                    - 'link "Defect #44411" [ref=e294] [cursor=pointer]':
+                      - /url: /issues/44411
+                    - text: ": Fix typo in log messages: \"nonexistant\" should be \"nonexistent\""
+                  - cell "Actions" [ref=e295]:
+                    - link "Actions" [ref=e296] [cursor=pointer]:
+                      - /url: "#"
+          - article [ref=e297]:
+            - generic [ref=e298]:
+              - heading "Candidate for next major release" [level=3] [ref=e299]:
+                - link "Candidate for next major release" [ref=e300] [cursor=pointer]:
+                  - /url: /versions/32
+              - text: open
+            - generic [ref=e301]:
+              - paragraph [ref=e302]: Features that the contributors would like to add in the next major version
+              - table [ref=e303]:
+                - rowgroup [ref=e304]:
+                  - row [ref=e305]:
+                    - cell [ref=e306]
+              - paragraph [ref=e307]: 0%
+              - insertion [ref=e309]:
+                - generic [ref=e312]:
+                  - heading "These are topics related to the article that might interest you" [level=2] [ref=e314]: Discover more
+                  - link "Dictionaries & Encyclopedias" [ref=e315] [cursor=pointer]:
+                    - generic "Dictionaries & Encyclopedias" [ref=e316]
+                    - img [ref=e318]
+                  - link "Project roadmap planning" [ref=e320] [cursor=pointer]:
+                    - generic "Project roadmap planning" [ref=e321]
+                    - img [ref=e323]
+                  - link "Redmine plugin marketplace" [ref=e325] [cursor=pointer]:
+                    - generic "Redmine plugin marketplace" [ref=e326]
+                    - img [ref=e328]
+              - paragraph [ref=e330]:
+                - link "236 issues" [ref=e331] [cursor=pointer]:
+                  - /url: /projects/redmine/issues?fixed_version_id=32&set_filter=1&status_id=%2A
+                - text: (0 closed —
+                - link "236 open" [ref=e332] [cursor=pointer]:
+                  - /url: /projects/redmine/issues?fixed_version_id=32&set_filter=1&status_id=o
+                - text: )
+            - table "Related issues" [ref=e334]:
+              - caption [ref=e335]: Related issues
+              - rowgroup [ref=e336]:
+                - 'row "Assignee: Jean-Philippe Lang Defect #668: Date input fields don''t respect date format settings Actions" [ref=e337]':
+                  - 'cell "Assignee: Jean-Philippe Lang" [ref=e338]':
+                    - 'img "Assignee: Jean-Philippe Lang" [ref=e339]'
+                  - 'cell "Defect #668: Date input fields don''t respect date format settings" [ref=e340]':
+                    - 'link "Defect #668" [ref=e341] [cursor=pointer]':
+                      - /url: /issues/668
+                    - text: ": Date input fields don't respect date format settings"
+                  - cell "Actions" [ref=e342]:
+                    - link "Actions" [ref=e343] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #1420: LDAP authentication extremely flaky Actions" [ref=e344]':
+                  - cell [ref=e345]
+                  - 'cell "Defect #1420: LDAP authentication extremely flaky" [ref=e346]':
+                    - 'link "Defect #1420" [ref=e347] [cursor=pointer]':
+                      - /url: /issues/1420
+                    - text: ": LDAP authentication extremely flaky"
+                  - cell "Actions" [ref=e348]:
+                    - link "Actions" [ref=e349] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #5933: News don''t appear in the parent project Actions" [ref=e350]':
+                  - cell [ref=e351]
+                  - 'cell "Defect #5933: News don''t appear in the parent project" [ref=e352]':
+                    - 'link "Defect #5933" [ref=e353] [cursor=pointer]':
+                      - /url: /issues/5933
+                    - text: ": News don't appear in the parent project"
+                  - cell "Actions" [ref=e354]:
+                    - link "Actions" [ref=e355] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #5976: Uniqueness of User model fields is not checked sufficiently Actions" [ref=e356]':
+                  - cell [ref=e357]
+                  - 'cell "Defect #5976: Uniqueness of User model fields is not checked sufficiently" [ref=e358]':
+                    - 'link "Defect #5976" [ref=e359] [cursor=pointer]':
+                      - /url: /issues/5976
+                    - text: ": Uniqueness of User model fields is not checked sufficiently"
+                  - cell "Actions" [ref=e360]:
+                    - link "Actions" [ref=e361] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #6023: All members are displayed in issue summaries, even if they cannot be assigned Actions" [ref=e362]':
+                  - cell [ref=e363]
+                  - 'cell "Defect #6023: All members are displayed in issue summaries, even if they cannot be assigned" [ref=e364]':
+                    - 'link "Defect #6023" [ref=e365] [cursor=pointer]':
+                      - /url: /issues/6023
+                    - text: ": All members are displayed in issue summaries, even if they cannot be assigned"
+                  - cell "Actions" [ref=e366]:
+                    - link "Actions" [ref=e367] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Jean-Baptiste Barth Defect #6324: requires_redmine_plugin should defer loading plugins if not all dependencies are met Actions" [ref=e368]':
+                  - 'cell "Assignee: Jean-Baptiste Barth" [ref=e369]':
+                    - 'img "Assignee: Jean-Baptiste Barth" [ref=e370]'
+                  - 'cell "Defect #6324: requires_redmine_plugin should defer loading plugins if not all dependencies are met" [ref=e371]':
+                    - 'link "Defect #6324" [ref=e372] [cursor=pointer]':
+                      - /url: /issues/6324
+                    - text: ": requires_redmine_plugin should defer loading plugins if not all dependencies are met"
+                  - cell "Actions" [ref=e373]:
+                    - link "Actions" [ref=e374] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #6523: Sort order doesn''t treat german \"umlaute\" correct in user listing Actions" [ref=e375]':
+                  - cell [ref=e376]
+                  - 'cell "Defect #6523: Sort order doesn''t treat german \"umlaute\" correct in user listing" [ref=e377]':
+                    - 'link "Defect #6523" [ref=e378] [cursor=pointer]':
+                      - /url: /issues/6523
+                    - text: ": Sort order doesn't treat german \"umlaute\" correct in user listing"
+                  - cell "Actions" [ref=e379]:
+                    - link "Actions" [ref=e380] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Jean-Philippe Lang Defect #6969: Less-than sign in issue description and comments are not escaped Actions" [ref=e381]':
+                  - 'cell "Assignee: Jean-Philippe Lang" [ref=e382]':
+                    - 'img "Assignee: Jean-Philippe Lang" [ref=e383]'
+                  - 'cell "Defect #6969: Less-than sign in issue description and comments are not escaped" [ref=e384]':
+                    - 'link "Defect #6969" [ref=e385] [cursor=pointer]':
+                      - /url: /issues/6969
+                    - text: ": Less-than sign in issue description and comments are not escaped"
+                  - cell "Actions" [ref=e386]:
+                    - link "Actions" [ref=e387] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #7768: improve consistency of terms / language Actions" [ref=e388]':
+                  - cell [ref=e389]
+                  - 'cell "Defect #7768: improve consistency of terms / language" [ref=e390]':
+                    - 'link "Defect #7768" [ref=e391] [cursor=pointer]':
+                      - /url: /issues/7768
+                    - text: ": improve consistency of terms / language"
+                  - cell "Actions" [ref=e392]:
+                    - link "Actions" [ref=e393] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #7819: REST API Populating issue field enumerations + Issue list filters Actions" [ref=e394]':
+                  - cell [ref=e395]
+                  - 'cell "Defect #7819: REST API Populating issue field enumerations + Issue list filters" [ref=e396]':
+                    - 'link "Defect #7819" [ref=e397] [cursor=pointer]':
+                      - /url: /issues/7819
+                    - text: ": REST API Populating issue field enumerations + Issue list filters"
+                  - cell "Actions" [ref=e398]:
+                    - link "Actions" [ref=e399] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #7845: Pre environment and brackets breaks automatic issue linking Actions" [ref=e400]':
+                  - cell [ref=e401]
+                  - 'cell "Defect #7845: Pre environment and brackets breaks automatic issue linking" [ref=e402]':
+                    - 'link "Defect #7845" [ref=e403] [cursor=pointer]':
+                      - /url: /issues/7845
+                    - text: ": Pre environment and brackets breaks automatic issue linking"
+                  - cell "Actions" [ref=e404]:
+                    - link "Actions" [ref=e405] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Azamat Hackimov Defect #8056: Some fields should be shown LTR even in RTL locales Actions" [ref=e406]':
+                  - 'cell "Assignee: Azamat Hackimov" [ref=e407]':
+                    - 'img "Assignee: Azamat Hackimov" [ref=e408]'
+                  - 'cell "Defect #8056: Some fields should be shown LTR even in RTL locales" [ref=e409]':
+                    - 'link "Defect #8056" [ref=e410] [cursor=pointer]':
+                      - /url: /issues/8056
+                    - text: ": Some fields should be shown LTR even in RTL locales"
+                  - cell "Actions" [ref=e411]:
+                    - link "Actions" [ref=e412] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #10721: Loss of attachments while fetching emails from IMAP (GMail) Actions" [ref=e413]':
+                  - cell [ref=e414]
+                  - 'cell "Defect #10721: Loss of attachments while fetching emails from IMAP (GMail)" [ref=e415]':
+                    - 'link "Defect #10721" [ref=e416] [cursor=pointer]':
+                      - /url: /issues/10721
+                    - text: ": Loss of attachments while fetching emails from IMAP (GMail)"
+                  - cell "Actions" [ref=e417]:
+                    - link "Actions" [ref=e418] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Jean-Philippe Lang Defect #13522: Private field is shown as required Actions" [ref=e419]':
+                  - 'cell "Assignee: Jean-Philippe Lang" [ref=e420]':
+                    - 'img "Assignee: Jean-Philippe Lang" [ref=e421]'
+                  - 'cell "Defect #13522: Private field is shown as required" [ref=e422]':
+                    - 'link "Defect #13522" [ref=e423] [cursor=pointer]':
+                      - /url: /issues/13522
+                    - text: ": Private field is shown as required"
+                  - cell "Actions" [ref=e424]:
+                    - link "Actions" [ref=e425] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #13762: SCM auto status change bypassses roles and permissions Actions" [ref=e426]':
+                  - cell [ref=e427]
+                  - 'cell "Defect #13762: SCM auto status change bypassses roles and permissions" [ref=e428]':
+                    - 'link "Defect #13762" [ref=e429] [cursor=pointer]':
+                      - /url: /issues/13762
+                    - text: ": SCM auto status change bypassses roles and permissions"
+                  - cell "Actions" [ref=e430]:
+                    - link "Actions" [ref=e431] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Jean-Philippe Lang Defect #14038: Ordered/unordered lists inside table cell are mangled Actions" [ref=e432]':
+                  - 'cell "Assignee: Jean-Philippe Lang" [ref=e433]':
+                    - 'img "Assignee: Jean-Philippe Lang" [ref=e434]'
+                  - 'cell "Defect #14038: Ordered/unordered lists inside table cell are mangled" [ref=e435]':
+                    - 'link "Defect #14038" [ref=e436] [cursor=pointer]':
+                      - /url: /issues/14038
+                    - text: ": Ordered/unordered lists inside table cell are mangled"
+                  - cell "Actions" [ref=e437]:
+                    - link "Actions" [ref=e438] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #15676: \"Latest\" revisions on repository view is confused Actions" [ref=e439]':
+                  - cell [ref=e440]
+                  - 'cell "Defect #15676: \"Latest\" revisions on repository view is confused" [ref=e441]':
+                    - 'link "Defect #15676" [ref=e442] [cursor=pointer]':
+                      - /url: /issues/15676
+                    - text: ": \"Latest\" revisions on repository view is confused"
+                  - cell "Actions" [ref=e443]:
+                    - link "Actions" [ref=e444] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #17071: Adding Watchers UX Is Not Clean Actions" [ref=e445]':
+                  - cell [ref=e446]
+                  - 'cell "Defect #17071: Adding Watchers UX Is Not Clean" [ref=e447]':
+                    - 'link "Defect #17071" [ref=e448] [cursor=pointer]':
+                      - /url: /issues/17071
+                    - text: ": Adding Watchers UX Is Not Clean"
+                  - cell "Actions" [ref=e449]:
+                    - link "Actions" [ref=e450] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Jean-Baptiste Barth Defect #17830: User creation: clear/plaintext password sent via unencrypted email Actions" [ref=e451]':
+                  - 'cell "Assignee: Jean-Baptiste Barth" [ref=e452]':
+                    - 'img "Assignee: Jean-Baptiste Barth" [ref=e453]'
+                  - 'cell "Defect #17830: User creation: clear/plaintext password sent via unencrypted email" [ref=e454]':
+                    - 'link "Defect #17830" [ref=e455] [cursor=pointer]':
+                      - /url: /issues/17830
+                    - text: ": User creation: clear/plaintext password sent via unencrypted email"
+                  - cell "Actions" [ref=e456]:
+                    - link "Actions" [ref=e457] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #19861: Activities \"save\" and \"reset\"of project setting have no effect if required \"activities\" custom filed exist Actions" [ref=e458]':
+                  - cell [ref=e459]
+                  - 'cell "Defect #19861: Activities \"save\" and \"reset\"of project setting have no effect if required \"activities\" custom filed exist" [ref=e460]':
+                    - 'link "Defect #19861" [ref=e461] [cursor=pointer]':
+                      - /url: /issues/19861
+                    - text: ": Activities \"save\" and \"reset\"of project setting have no effect if required \"activities\" custom filed exist"
+                  - cell "Actions" [ref=e462]:
+                    - link "Actions" [ref=e463] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #24979: Email \"keyword\" lines deleted even if the sender doesn''t have permission to edit that field Actions" [ref=e464]':
+                  - cell [ref=e465]
+                  - 'cell "Defect #24979: Email \"keyword\" lines deleted even if the sender doesn''t have permission to edit that field" [ref=e466]':
+                    - 'link "Defect #24979" [ref=e467] [cursor=pointer]':
+                      - /url: /issues/24979
+                    - text: ": Email \"keyword\" lines deleted even if the sender doesn't have permission to edit that field"
+                  - cell "Actions" [ref=e468]:
+                    - link "Actions" [ref=e469] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #25130: support of agglutinative languages like Hungarian/Magyar Actions" [ref=e470]':
+                  - cell [ref=e471]
+                  - 'cell "Defect #25130: support of agglutinative languages like Hungarian/Magyar" [ref=e472]':
+                    - 'link "Defect #25130" [ref=e473] [cursor=pointer]':
+                      - /url: /issues/25130
+                    - text: ": support of agglutinative languages like Hungarian/Magyar"
+                  - cell "Actions" [ref=e474]:
+                    - link "Actions" [ref=e475] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #25867: Assignable users should respect database collation Actions" [ref=e476]':
+                  - cell [ref=e477]
+                  - 'cell "Defect #25867: Assignable users should respect database collation" [ref=e478]':
+                    - 'link "Defect #25867" [ref=e479] [cursor=pointer]':
+                      - /url: /issues/25867
+                    - text: ": Assignable users should respect database collation"
+                  - cell "Actions" [ref=e480]:
+                    - link "Actions" [ref=e481] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #26023: Category filter only shows categories of current project Actions" [ref=e482]':
+                  - cell [ref=e483]
+                  - 'cell "Defect #26023: Category filter only shows categories of current project" [ref=e484]':
+                    - 'link "Defect #26023" [ref=e485] [cursor=pointer]':
+                      - /url: /issues/26023
+                    - text: ": Category filter only shows categories of current project"
+                  - cell "Actions" [ref=e486]:
+                    - link "Actions" [ref=e487] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #28033: Unable to turn off \"For all projects\" flag of custom queries Actions" [ref=e488]':
+                  - cell [ref=e489]
+                  - 'cell "Defect #28033: Unable to turn off \"For all projects\" flag of custom queries" [ref=e490]':
+                    - 'link "Defect #28033" [ref=e491] [cursor=pointer]':
+                      - /url: /issues/28033
+                    - text: ": Unable to turn off \"For all projects\" flag of custom queries"
+                  - cell "Actions" [ref=e492]:
+                    - link "Actions" [ref=e493] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #28409: Total estimated time value not visible when tracker has estimate time field disabled Actions" [ref=e494]':
+                  - cell [ref=e495]
+                  - 'cell "Defect #28409: Total estimated time value not visible when tracker has estimate time field disabled" [ref=e496]':
+                    - 'link "Defect #28409" [ref=e497] [cursor=pointer]':
+                      - /url: /issues/28409
+                    - text: ": Total estimated time value not visible when tracker has estimate time field disabled"
+                  - cell "Actions" [ref=e498]:
+                    - link "Actions" [ref=e499] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Go MAEDA Defect #30099: Multiple blank lines in pre tags are not preserved in Textile Actions" [ref=e500]':
+                  - 'cell "Assignee: Go MAEDA" [ref=e501]':
+                    - 'img "Assignee: Go MAEDA" [ref=e502]'
+                  - 'cell "Defect #30099: Multiple blank lines in pre tags are not preserved in Textile" [ref=e503]':
+                    - 'link "Defect #30099" [ref=e504] [cursor=pointer]':
+                      - /url: /issues/30099
+                    - text: ": Multiple blank lines in pre tags are not preserved in Textile"
+                  - cell "Actions" [ref=e505]:
+                    - link "Actions" [ref=e506] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #31010: The query visibility option \"To me only\" actually behaves as \"To the owner only\" Actions" [ref=e507]':
+                  - cell [ref=e508]
+                  - 'cell "Defect #31010: The query visibility option \"To me only\" actually behaves as \"To the owner only\"" [ref=e509]':
+                    - 'link "Defect #31010" [ref=e510] [cursor=pointer]':
+                      - /url: /issues/31010
+                    - text: ": The query visibility option \"To me only\" actually behaves as \"To the owner only\""
+                  - cell "Actions" [ref=e511]:
+                    - link "Actions" [ref=e512] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #31550: Project \"Version\" view''s \"Wiki page\" field is still shown, although \"Wiki\" module is disabled on the project Actions" [ref=e513]':
+                  - cell [ref=e514]
+                  - 'cell "Defect #31550: Project \"Version\" view''s \"Wiki page\" field is still shown, although \"Wiki\" module is disabled on the project" [ref=e515]':
+                    - 'link "Defect #31550" [ref=e516] [cursor=pointer]':
+                      - /url: /issues/31550
+                    - text: ": Project \"Version\" view's \"Wiki page\" field is still shown, although \"Wiki\" module is disabled on the project"
+                  - cell "Actions" [ref=e517]:
+                    - link "Actions" [ref=e518] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #31637: CSV and PDF export don''t respect Time span format Actions" [ref=e519]':
+                  - cell [ref=e520]
+                  - 'cell "Defect #31637: CSV and PDF export don''t respect Time span format" [ref=e521]':
+                    - 'link "Defect #31637" [ref=e522] [cursor=pointer]':
+                      - /url: /issues/31637
+                    - text: ": CSV and PDF export don't respect Time span format"
+                  - cell "Actions" [ref=e523]:
+                    - link "Actions" [ref=e524] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #32168: Allow issue id with \"#\" prefix for the value of issue ids filter Actions" [ref=e525]':
+                  - cell [ref=e526]
+                  - 'cell "Defect #32168: Allow issue id with \"#\" prefix for the value of issue ids filter" [ref=e527]':
+                    - 'link "Defect #32168" [ref=e528] [cursor=pointer]':
+                      - /url: /issues/32168
+                    - text: ": Allow issue id with \"#\" prefix for the value of issue ids filter"
+                  - cell "Actions" [ref=e529]:
+                    - link "Actions" [ref=e530] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #32183: Notification sub-events for \"Issue updated\" does not cover all events which consist its parent Actions" [ref=e531]':
+                  - cell [ref=e532]
+                  - 'cell "Defect #32183: Notification sub-events for \"Issue updated\" does not cover all events which consist its parent" [ref=e533]':
+                    - 'link "Defect #32183" [ref=e534] [cursor=pointer]':
+                      - /url: /issues/32183
+                    - text: ": Notification sub-events for \"Issue updated\" does not cover all events which consist its parent"
+                  - cell "Actions" [ref=e535]:
+                    - link "Actions" [ref=e536] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #32664: Adding an empty reply to a forum message does not show any error Actions" [ref=e537]':
+                  - cell [ref=e538]
+                  - 'cell "Defect #32664: Adding an empty reply to a forum message does not show any error" [ref=e539]':
+                    - 'link "Defect #32664" [ref=e540] [cursor=pointer]':
+                      - /url: /issues/32664
+                    - text: ": Adding an empty reply to a forum message does not show any error"
+                  - cell "Actions" [ref=e541]:
+                    - link "Actions" [ref=e542] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Marius BĂLTEANU Defect #33257: Bulk edit for time entries does not support User filed Actions" [ref=e543]':
+                  - 'cell "Assignee: Marius BĂLTEANU" [ref=e544]':
+                    - 'img "Assignee: Marius BĂLTEANU" [ref=e545]'
+                  - 'cell "Defect #33257: Bulk edit for time entries does not support User filed" [ref=e546]':
+                    - 'link "Defect #33257" [ref=e547] [cursor=pointer]':
+                      - /url: /issues/33257
+                    - text: ": Bulk edit for time entries does not support User filed"
+                  - cell "Actions" [ref=e548]:
+                    - link "Actions" [ref=e549] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #33415: Issue#closable? doesn''t handle the case of issues with open subtask(s) ánd being blocked by other open issue(s) Actions" [ref=e550]':
+                  - cell [ref=e551]
+                  - 'cell "Defect #33415: Issue#closable? doesn''t handle the case of issues with open subtask(s) ánd being blocked by other open issue(s)" [ref=e552]':
+                    - 'link "Defect #33415" [ref=e553] [cursor=pointer]':
+                      - /url: /issues/33415
+                    - text: ": Issue#closable? doesn't handle the case of issues with open subtask(s) ánd being blocked by other open issue(s)"
+                  - cell "Actions" [ref=e554]:
+                    - link "Actions" [ref=e555] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #33458: The display of Forums tab of the project settings is broken Actions" [ref=e556]':
+                  - cell [ref=e557]
+                  - 'cell "Defect #33458: The display of Forums tab of the project settings is broken" [ref=e558]':
+                    - 'link "Defect #33458" [ref=e559] [cursor=pointer]':
+                      - /url: /issues/33458
+                    - text: ": The display of Forums tab of the project settings is broken"
+                  - cell "Actions" [ref=e560]:
+                    - link "Actions" [ref=e561] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Go MAEDA Defect #33829: Fix Atom feed for issues to correctly use the updated time for \"updated\" element instead of the created time Actions" [ref=e562]':
+                  - 'cell "Assignee: Go MAEDA" [ref=e563]':
+                    - 'img "Assignee: Go MAEDA" [ref=e564]'
+                  - 'cell "Defect #33829: Fix Atom feed for issues to correctly use the updated time for \"updated\" element instead of the created time" [ref=e565]':
+                    - 'link "Defect #33829" [ref=e566] [cursor=pointer]':
+                      - /url: /issues/33829
+                    - text: ": Fix Atom feed for issues to correctly use the updated time for \"updated\" element instead of the created time"
+                  - cell "Actions" [ref=e567]:
+                    - link "Actions" [ref=e568] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #33912: Sorting of multiple columns including Date column does not work Actions" [ref=e569]':
+                  - cell [ref=e570]
+                  - 'cell "Defect #33912: Sorting of multiple columns including Date column does not work" [ref=e571]':
+                    - 'link "Defect #33912" [ref=e572] [cursor=pointer]':
+                      - /url: /issues/33912
+                    - text: ": Sorting of multiple columns including Date column does not work"
+                  - cell "Actions" [ref=e573]:
+                    - link "Actions" [ref=e574] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #34068: Missing blank option on persisted records Actions" [ref=e575]':
+                  - cell [ref=e576]
+                  - 'cell "Defect #34068: Missing blank option on persisted records" [ref=e577]':
+                    - 'link "Defect #34068" [ref=e578] [cursor=pointer]':
+                      - /url: /issues/34068
+                    - text: ": Missing blank option on persisted records"
+                  - cell "Actions" [ref=e579]:
+                    - link "Actions" [ref=e580] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #34922: Reload whole time entries form on project change Actions" [ref=e581]':
+                  - cell [ref=e582]
+                  - 'cell "Defect #34922: Reload whole time entries form on project change" [ref=e583]':
+                    - 'link "Defect #34922" [ref=e584] [cursor=pointer]':
+                      - /url: /issues/34922
+                    - text: ": Reload whole time entries form on project change"
+                  - cell "Actions" [ref=e585]:
+                    - link "Actions" [ref=e586] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #35557: Fix position when rendering custom field enumerations Actions" [ref=e587]':
+                  - cell [ref=e588]
+                  - 'cell "Defect #35557: Fix position when rendering custom field enumerations" [ref=e589]':
+                    - 'link "Defect #35557" [ref=e590] [cursor=pointer]':
+                      - /url: /issues/35557
+                    - text: ": Fix position when rendering custom field enumerations"
+                  - cell "Actions" [ref=e591]:
+                    - link "Actions" [ref=e592] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #35726: Time Formatting does not apply to CSV exports Actions" [ref=e593]':
+                  - cell [ref=e594]
+                  - 'cell "Defect #35726: Time Formatting does not apply to CSV exports" [ref=e595]':
+                    - 'link "Defect #35726" [ref=e596] [cursor=pointer]':
+                      - /url: /issues/35726
+                    - text: ": Time Formatting does not apply to CSV exports"
+                  - cell "Actions" [ref=e597]:
+                    - link "Actions" [ref=e598] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #36059: Fulltext search in timelog comments Actions" [ref=e599]':
+                  - cell [ref=e600]
+                  - 'cell "Defect #36059: Fulltext search in timelog comments" [ref=e601]':
+                    - 'link "Defect #36059" [ref=e602] [cursor=pointer]':
+                      - /url: /issues/36059
+                    - text: ": Fulltext search in timelog comments"
+                  - cell "Actions" [ref=e603]:
+                    - link "Actions" [ref=e604] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #36444: Validation error message when no trackers are assigned to a project is confusing Actions" [ref=e605]':
+                  - cell [ref=e606]
+                  - 'cell "Defect #36444: Validation error message when no trackers are assigned to a project is confusing" [ref=e607]':
+                    - 'link "Defect #36444" [ref=e608] [cursor=pointer]':
+                      - /url: /issues/36444
+                    - text: ": Validation error message when no trackers are assigned to a project is confusing"
+                  - cell "Actions" [ref=e609]:
+                    - link "Actions" [ref=e610] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #37962: Missing where cause for allowed_to_condition Actions" [ref=e611]':
+                  - cell [ref=e612]
+                  - 'cell "Defect #37962: Missing where cause for allowed_to_condition" [ref=e613]':
+                    - 'link "Defect #37962" [ref=e614] [cursor=pointer]':
+                      - /url: /issues/37962
+                    - text: ": Missing where cause for allowed_to_condition"
+                  - cell "Actions" [ref=e615]:
+                    - link "Actions" [ref=e616] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #40100: User ordering by name is incorrect for french language Actions" [ref=e617]':
+                  - cell [ref=e618]
+                  - 'cell "Defect #40100: User ordering by name is incorrect for french language" [ref=e619]':
+                    - 'link "Defect #40100" [ref=e620] [cursor=pointer]':
+                      - /url: /issues/40100
+                    - text: ": User ordering by name is incorrect for french language"
+                  - cell "Actions" [ref=e621]:
+                    - link "Actions" [ref=e622] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #42517: Add tooltip using stimulus Actions" [ref=e623]':
+                  - cell [ref=e624]
+                  - 'cell "Defect #42517: Add tooltip using stimulus" [ref=e625]':
+                    - 'link "Defect #42517" [ref=e626] [cursor=pointer]':
+                      - /url: /issues/42517
+                    - text: ": Add tooltip using stimulus"
+                  - cell "Actions" [ref=e627]:
+                    - link "Actions" [ref=e628] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Marius BĂLTEANU Defect #44244: Spent time tab on issue page does not render commit references as links Actions" [ref=e629]':
+                  - 'cell "Assignee: Marius BĂLTEANU" [ref=e630]':
+                    - 'img "Assignee: Marius BĂLTEANU" [ref=e631]'
+                  - 'cell "Defect #44244: Spent time tab on issue page does not render commit references as links" [ref=e632]':
+                    - 'link "Defect #44244" [ref=e633] [cursor=pointer]':
+                      - /url: /issues/44244
+                    - text: ": Spent time tab on issue page does not render commit references as links"
+                  - cell "Actions" [ref=e634]:
+                    - link "Actions" [ref=e635] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #44336: Automatic list marker insertion discards the textarea undo history and does not scroll the caret into view Actions" [ref=e636]':
+                  - cell [ref=e637]
+                  - 'cell "Defect #44336: Automatic list marker insertion discards the textarea undo history and does not scroll the caret into view" [ref=e638]':
+                    - 'link "Defect #44336" [ref=e639] [cursor=pointer]':
+                      - /url: /issues/44336
+                    - text: ": Automatic list marker insertion discards the textarea undo history and does not scroll the caret into view"
+                  - cell "Actions" [ref=e640]:
+                    - link "Actions" [ref=e641] [cursor=pointer]:
+                      - /url: "#"
+          - article [ref=e642]:
+            - generic [ref=e643]:
+              - heading "Candidate for next minor release" [level=3] [ref=e644]:
+                - link "Candidate for next minor release" [ref=e645] [cursor=pointer]:
+                  - /url: /versions/33
+              - text: open
+            - generic [ref=e646]:
+              - paragraph [ref=e647]: Fixes that the contributors would like to add in the next minor version
+              - table [ref=e648]:
+                - rowgroup [ref=e649]:
+                  - row [ref=e650]:
+                    - cell [ref=e651]
+              - paragraph [ref=e652]: 0%
+              - insertion [ref=e654]:
+                - generic [ref=e657]:
+                  - heading "These are topics related to the article that might interest you" [level=2] [ref=e659]: Discover more
+                  - link "REST API documentation" [ref=e660] [cursor=pointer]:
+                    - generic "REST API documentation" [ref=e661]
+                    - img [ref=e663]
+                  - link "Redmine support services" [ref=e665] [cursor=pointer]:
+                    - generic "Redmine support services" [ref=e666]
+                    - img [ref=e668]
+                  - link "Freeware & Shareware" [ref=e670] [cursor=pointer]:
+                    - generic "Freeware & Shareware" [ref=e671]
+                    - img [ref=e673]
+              - paragraph [ref=e675]:
+                - link "58 issues" [ref=e676] [cursor=pointer]:
+                  - /url: /projects/redmine/issues?fixed_version_id=33&set_filter=1&status_id=%2A
+                - text: (0 closed —
+                - link "58 open" [ref=e677] [cursor=pointer]:
+                  - /url: /projects/redmine/issues?fixed_version_id=33&set_filter=1&status_id=o
+                - text: )
+            - table "Related issues" [ref=e679]:
+              - caption [ref=e680]: Related issues
+              - rowgroup [ref=e681]:
+                - 'row "Defect #1013: Custom queries can be saved under same name Actions" [ref=e682]':
+                  - cell [ref=e683]
+                  - 'cell "Defect #1013: Custom queries can be saved under same name" [ref=e684]':
+                    - 'link "Defect #1013" [ref=e685] [cursor=pointer]':
+                      - /url: /issues/1013
+                    - text: ": Custom queries can be saved under same name"
+                  - cell "Actions" [ref=e686]:
+                    - link "Actions" [ref=e687] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #2493: Subversion: Error message for some of view differences Actions" [ref=e688]':
+                  - cell [ref=e689]
+                  - 'cell "Defect #2493: Subversion: Error message for some of view differences" [ref=e690]':
+                    - 'link "Defect #2493" [ref=e691] [cursor=pointer]':
+                      - /url: /issues/2493
+                    - text: ": Subversion: Error message for some of view differences"
+                  - cell "Actions" [ref=e692]:
+                    - link "Actions" [ref=e693] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #2638: LDAP authentication should allow username to contain space(s) Actions" [ref=e694]':
+                  - cell [ref=e695]
+                  - 'cell "Defect #2638: LDAP authentication should allow username to contain space(s)" [ref=e696]':
+                    - 'link "Defect #2638" [ref=e697] [cursor=pointer]':
+                      - /url: /issues/2638
+                    - text: ": LDAP authentication should allow username to contain space(s)"
+                  - cell "Actions" [ref=e698]:
+                    - link "Actions" [ref=e699] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #4472: Escape <code> tag Actions" [ref=e700]':
+                  - cell [ref=e701]
+                  - 'cell "Defect #4472: Escape <code> tag" [ref=e702]':
+                    - 'link "Defect #4472" [ref=e703] [cursor=pointer]':
+                      - /url: /issues/4472
+                    - text: ": Escape <code> tag"
+                  - cell "Actions" [ref=e704]:
+                    - link "Actions" [ref=e705] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #5994: Creating new issue via email submission strips attached emails Actions" [ref=e706]':
+                  - cell [ref=e707]
+                  - 'cell "Defect #5994: Creating new issue via email submission strips attached emails" [ref=e708]':
+                    - 'link "Defect #5994" [ref=e709] [cursor=pointer]':
+                      - /url: /issues/5994
+                    - text: ": Creating new issue via email submission strips attached emails"
+                  - cell "Actions" [ref=e710]:
+                    - link "Actions" [ref=e711] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #6857: git references leaking from subproject to project Actions" [ref=e712]':
+                  - cell [ref=e713]
+                  - 'cell "Defect #6857: git references leaking from subproject to project" [ref=e714]':
+                    - 'link "Defect #6857" [ref=e715] [cursor=pointer]':
+                      - /url: /issues/6857
+                    - text: ": git references leaking from subproject to project"
+                  - cell "Actions" [ref=e716]:
+                    - link "Actions" [ref=e717] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #6868: migrate_from_trac and trac 0.12 Actions" [ref=e718]':
+                  - cell [ref=e719]
+                  - 'cell "Defect #6868: migrate_from_trac and trac 0.12" [ref=e720]':
+                    - 'link "Defect #6868" [ref=e721] [cursor=pointer]':
+                      - /url: /issues/6868
+                    - text: ": migrate_from_trac and trac 0.12"
+                  - cell "Actions" [ref=e722]:
+                    - link "Actions" [ref=e723] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #7293: Activity page displays wrong status of modified issues Actions" [ref=e724]':
+                  - cell [ref=e725]
+                  - 'cell "Defect #7293: Activity page displays wrong status of modified issues" [ref=e726]':
+                    - 'link "Defect #7293" [ref=e727] [cursor=pointer]':
+                      - /url: /issues/7293
+                    - text: ": Activity page displays wrong status of modified issues"
+                  - cell "Actions" [ref=e728]:
+                    - link "Actions" [ref=e729] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #8055: Links ending with curly brackets are not correctly interpreted Actions" [ref=e730]':
+                  - cell [ref=e731]
+                  - 'cell "Defect #8055: Links ending with curly brackets are not correctly interpreted" [ref=e732]':
+                    - 'link "Defect #8055" [ref=e733] [cursor=pointer]':
+                      - /url: /issues/8055
+                    - text: ": Links ending with curly brackets are not correctly interpreted"
+                  - cell "Actions" [ref=e734]:
+                    - link "Actions" [ref=e735] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #8603: Query ''without subprojects'' cannot be created Actions" [ref=e736]':
+                  - cell [ref=e737]
+                  - 'cell "Defect #8603: Query ''without subprojects'' cannot be created" [ref=e738]':
+                    - 'link "Defect #8603" [ref=e739] [cursor=pointer]':
+                      - /url: /issues/8603
+                    - text: ": Query 'without subprojects' cannot be created"
+                  - cell "Actions" [ref=e740]:
+                    - link "Actions" [ref=e741] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #9080: Shared versions not shown when upload a file Actions" [ref=e742]':
+                  - cell [ref=e743]
+                  - 'cell "Defect #9080: Shared versions not shown when upload a file" [ref=e744]':
+                    - 'link "Defect #9080" [ref=e745] [cursor=pointer]':
+                      - /url: /issues/9080
+                    - text: ": Shared versions not shown when upload a file"
+                  - cell "Actions" [ref=e746]:
+                    - link "Actions" [ref=e747] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #10528: Error with rake redmine:email:receive_imap and cram-md5 Actions" [ref=e748]':
+                  - cell [ref=e749]
+                  - 'cell "Defect #10528: Error with rake redmine:email:receive_imap and cram-md5" [ref=e750]':
+                    - 'link "Defect #10528" [ref=e751] [cursor=pointer]':
+                      - /url: /issues/10528
+                    - text: ": Error with rake redmine:email:receive_imap and cram-md5"
+                  - cell "Actions" [ref=e752]:
+                    - link "Actions" [ref=e753] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Alan Chandler Defect #10532: migrate_from_mantis script fails with missing table name Actions" [ref=e754]':
+                  - 'cell "Assignee: Alan Chandler" [ref=e755]':
+                    - 'img "Assignee: Alan Chandler" [ref=e756]'
+                  - 'cell "Defect #10532: migrate_from_mantis script fails with missing table name" [ref=e757]':
+                    - 'link "Defect #10532" [ref=e758] [cursor=pointer]':
+                      - /url: /issues/10532
+                    - text: ": migrate_from_mantis script fails with missing table name"
+                  - cell "Actions" [ref=e759]:
+                    - link "Actions" [ref=e760] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Jean-Baptiste Barth Defect #12146: Required (list-, user- or version) custom field \"fixed version\" with Multiple values allows nil value during status transition Actions" [ref=e761]':
+                  - 'cell "Assignee: Jean-Baptiste Barth" [ref=e762]':
+                    - 'img "Assignee: Jean-Baptiste Barth" [ref=e763]'
+                  - 'cell "Defect #12146: Required (list-, user- or version) custom field \"fixed version\" with Multiple values allows nil value during status transition" [ref=e764]':
+                    - 'link "Defect #12146" [ref=e765] [cursor=pointer]':
+                      - /url: /issues/12146
+                    - text: ": Required (list-, user- or version) custom field \"fixed version\" with Multiple values allows nil value during status transition"
+                  - cell "Actions" [ref=e766]:
+                    - link "Actions" [ref=e767] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #18914: Slow rendering pages with many small macros Actions" [ref=e768]':
+                  - cell [ref=e769]
+                  - 'cell "Defect #18914: Slow rendering pages with many small macros" [ref=e770]':
+                    - 'link "Defect #18914" [ref=e771] [cursor=pointer]':
+                      - /url: /issues/18914
+                    - text: ": Slow rendering pages with many small macros"
+                  - cell "Actions" [ref=e772]:
+                    - link "Actions" [ref=e773] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Jean-Philippe Lang Defect #19174: db migrate error from old version to 2.6 Actions" [ref=e774]':
+                  - 'cell "Assignee: Jean-Philippe Lang" [ref=e775]':
+                    - 'img "Assignee: Jean-Philippe Lang" [ref=e776]'
+                  - 'cell "Defect #19174: db migrate error from old version to 2.6" [ref=e777]':
+                    - 'link "Defect #19174" [ref=e778] [cursor=pointer]':
+                      - /url: /issues/19174
+                    - text: ": db migrate error from old version to 2.6"
+                  - cell "Actions" [ref=e779]:
+                    - link "Actions" [ref=e780] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #23341: Markdown Table formatting breaks with redmine wiki links Actions" [ref=e781]':
+                  - cell [ref=e782]
+                  - 'cell "Defect #23341: Markdown Table formatting breaks with redmine wiki links" [ref=e783]':
+                    - 'link "Defect #23341" [ref=e784] [cursor=pointer]':
+                      - /url: /issues/23341
+                    - text: ": Markdown Table formatting breaks with redmine wiki links"
+                  - cell "Actions" [ref=e785]:
+                    - link "Actions" [ref=e786] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Mischa The Evil Defect #26090: Dutch (NL) translation: some small issues found during review of r16029 for #24407 Actions" [ref=e787]':
+                  - 'cell "Assignee: Mischa The Evil" [ref=e788]':
+                    - 'img "Assignee: Mischa The Evil" [ref=e789]'
+                  - 'cell "Defect #26090: Dutch (NL) translation: some small issues found during review of r16029 for #24407" [ref=e790]':
+                    - 'link "Defect #26090" [ref=e791] [cursor=pointer]':
+                      - /url: /issues/26090
+                    - text: ": Dutch (NL) translation: some small issues found during review of r16029 for #24407"
+                  - cell "Actions" [ref=e792]:
+                    - link "Actions" [ref=e793] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #28322: Commit messages referencing issues should stop at line breaks Actions" [ref=e794]':
+                  - cell [ref=e795]
+                  - 'cell "Defect #28322: Commit messages referencing issues should stop at line breaks" [ref=e796]':
+                    - 'link "Defect #28322" [ref=e797] [cursor=pointer]':
+                      - /url: /issues/28322
+                    - text: ": Commit messages referencing issues should stop at line breaks"
+                  - cell "Actions" [ref=e798]:
+                    - link "Actions" [ref=e799] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Marius BĂLTEANU Defect #29694: Some buttons in wiki toolbar are hidden in responsive layout Actions" [ref=e800]':
+                  - 'cell "Assignee: Marius BĂLTEANU" [ref=e801]':
+                    - 'img "Assignee: Marius BĂLTEANU" [ref=e802]'
+                  - 'cell "Defect #29694: Some buttons in wiki toolbar are hidden in responsive layout" [ref=e803]':
+                    - 'link "Defect #29694" [ref=e804] [cursor=pointer]':
+                      - /url: /issues/29694
+                    - text: ": Some buttons in wiki toolbar are hidden in responsive layout"
+                  - cell "Actions" [ref=e805]:
+                    - link "Actions" [ref=e806] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #29695: Duplicated assignee option when selecting a category with default assignee Actions" [ref=e807]':
+                  - cell [ref=e808]
+                  - 'cell "Defect #29695: Duplicated assignee option when selecting a category with default assignee" [ref=e809]':
+                    - 'link "Defect #29695" [ref=e810] [cursor=pointer]':
+                      - /url: /issues/29695
+                    - text: ": Duplicated assignee option when selecting a category with default assignee"
+                  - cell "Actions" [ref=e811]:
+                    - link "Actions" [ref=e812] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Go MAEDA Defect #29855: add_working_days returns wrong date Actions" [ref=e813]':
+                  - 'cell "Assignee: Go MAEDA" [ref=e814]':
+                    - 'img "Assignee: Go MAEDA" [ref=e815]'
+                  - 'cell "Defect #29855: add_working_days returns wrong date" [ref=e816]':
+                    - 'link "Defect #29855" [ref=e817] [cursor=pointer]':
+                      - /url: /issues/29855
+                    - text: ": add_working_days returns wrong date"
+                  - cell "Actions" [ref=e818]:
+                    - link "Actions" [ref=e819] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #30371: Textile formatter generates broken link if a URL is followed by a tag Actions" [ref=e820]':
+                  - cell [ref=e821]
+                  - 'cell "Defect #30371: Textile formatter generates broken link if a URL is followed by a tag" [ref=e822]':
+                    - 'link "Defect #30371" [ref=e823] [cursor=pointer]':
+                      - /url: /issues/30371
+                    - text: ": Textile formatter generates broken link if a URL is followed by a tag"
+                  - cell "Actions" [ref=e824]:
+                    - link "Actions" [ref=e825] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #33432: Rendering of Macros with (empty) text parameter different in preview and non preview mode Actions" [ref=e826]':
+                  - cell [ref=e827]
+                  - 'cell "Defect #33432: Rendering of Macros with (empty) text parameter different in preview and non preview mode" [ref=e828]':
+                    - 'link "Defect #33432" [ref=e829] [cursor=pointer]':
+                      - /url: /issues/33432
+                    - text: ": Rendering of Macros with (empty) text parameter different in preview and non preview mode"
+                  - cell "Actions" [ref=e830]:
+                    - link "Actions" [ref=e831] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #33673: Calendar View / The right side of the tooltip is cut off Actions" [ref=e832]':
+                  - cell [ref=e833]
+                  - 'cell "Defect #33673: Calendar View / The right side of the tooltip is cut off" [ref=e834]':
+                    - 'link "Defect #33673" [ref=e835] [cursor=pointer]':
+                      - /url: /issues/33673
+                    - text: ": Calendar View / The right side of the tooltip is cut off"
+                  - cell "Actions" [ref=e836]:
+                    - link "Actions" [ref=e837] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #34046: Escaping symbols in task subject can broke export to Gantt (PNG) Actions" [ref=e838]':
+                  - cell [ref=e839]
+                  - 'cell "Defect #34046: Escaping symbols in task subject can broke export to Gantt (PNG)" [ref=e840]':
+                    - 'link "Defect #34046" [ref=e841] [cursor=pointer]':
+                      - /url: /issues/34046
+                    - text: ": Escaping symbols in task subject can broke export to Gantt (PNG)"
+                  - cell "Actions" [ref=e842]:
+                    - link "Actions" [ref=e843] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #34108: \"Is duplicate of\" and \"Has duplicate\" issue relations can be a circular reference Actions" [ref=e844]':
+                  - cell [ref=e845]
+                  - 'cell "Defect #34108: \"Is duplicate of\" and \"Has duplicate\" issue relations can be a circular reference" [ref=e846]':
+                    - 'link "Defect #34108" [ref=e847] [cursor=pointer]':
+                      - /url: /issues/34108
+                    - text: ": \"Is duplicate of\" and \"Has duplicate\" issue relations can be a circular reference"
+                  - cell "Actions" [ref=e848]:
+                    - link "Actions" [ref=e849] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #40856: random failing integration test for plugin routes in 5.1.3 Actions" [ref=e850]':
+                  - cell [ref=e851]
+                  - 'cell "Defect #40856: random failing integration test for plugin routes in 5.1.3" [ref=e852]':
+                    - 'link "Defect #40856" [ref=e853] [cursor=pointer]':
+                      - /url: /issues/40856
+                    - text: ": random failing integration test for plugin routes in 5.1.3"
+                  - cell "Actions" [ref=e854]:
+                    - link "Actions" [ref=e855] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #41502: Custom field values for versions are not copied when copying a project that includes versions Actions" [ref=e856]':
+                  - cell [ref=e857]
+                  - 'cell "Defect #41502: Custom field values for versions are not copied when copying a project that includes versions" [ref=e858]':
+                    - 'link "Defect #41502" [ref=e859] [cursor=pointer]':
+                      - /url: /issues/41502
+                    - text: ": Custom field values for versions are not copied when copying a project that includes versions"
+                  - cell "Actions" [ref=e860]:
+                    - link "Actions" [ref=e861] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Marius BĂLTEANU Defect #41726: Allow plugin assets to be loaded from app/assets Actions" [ref=e862]':
+                  - 'cell "Assignee: Marius BĂLTEANU" [ref=e863]':
+                    - 'img "Assignee: Marius BĂLTEANU" [ref=e864]'
+                  - 'cell "Defect #41726: Allow plugin assets to be loaded from app/assets" [ref=e865]':
+                    - 'link "Defect #41726" [ref=e866] [cursor=pointer]':
+                      - /url: /issues/41726
+                    - text: ": Allow plugin assets to be loaded from app/assets"
+                  - cell "Actions" [ref=e867]:
+                    - link "Actions" [ref=e868] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Assignee: Marius BĂLTEANU Defect #43730: Redmine generates invalid HTML when there are multiple `collapse` macros in one paragraph in Textile Actions" [ref=e869]':
+                  - 'cell "Assignee: Marius BĂLTEANU" [ref=e870]':
+                    - 'img "Assignee: Marius BĂLTEANU" [ref=e871]'
+                  - 'cell "Defect #43730: Redmine generates invalid HTML when there are multiple `collapse` macros in one paragraph in Textile" [ref=e872]':
+                    - 'link "Defect #43730" [ref=e873] [cursor=pointer]':
+                      - /url: /issues/43730
+                    - text: ": Redmine generates invalid HTML when there are multiple `collapse` macros in one paragraph in Textile"
+                  - cell "Actions" [ref=e874]:
+                    - link "Actions" [ref=e875] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #44300: Mailer.with_deliveries(false) does not prevent emails from being sent Actions" [ref=e876]':
+                  - cell [ref=e877]
+                  - 'cell "Defect #44300: Mailer.with_deliveries(false) does not prevent emails from being sent" [ref=e878]':
+                    - 'link "Defect #44300" [ref=e879] [cursor=pointer]':
+                      - /url: /issues/44300
+                    - text: ": Mailer.with_deliveries(false) does not prevent emails from being sent"
+                  - cell "Actions" [ref=e880]:
+                    - link "Actions" [ref=e881] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #44361: Preview returns a 404 error on the cross-project news form Actions" [ref=e882]':
+                  - cell [ref=e883]
+                  - 'cell "Defect #44361: Preview returns a 404 error on the cross-project news form" [ref=e884]':
+                    - 'link "Defect #44361" [ref=e885] [cursor=pointer]':
+                      - /url: /issues/44361
+                    - text: ": Preview returns a 404 error on the cross-project news form"
+                  - cell "Actions" [ref=e886]:
+                    - link "Actions" [ref=e887] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #44443: Top menu is thinner than expected when the user is not logged in Actions" [ref=e888]':
+                  - cell [ref=e889]
+                  - 'cell "Defect #44443: Top menu is thinner than expected when the user is not logged in" [ref=e890]':
+                    - 'link "Defect #44443" [ref=e891] [cursor=pointer]':
+                      - /url: /issues/44443
+                    - text: ": Top menu is thinner than expected when the user is not logged in"
+                  - cell "Actions" [ref=e892]:
+                    - link "Actions" [ref=e893] [cursor=pointer]:
+                      - /url: "#"
+          - article [ref=e894]:
+            - generic [ref=e895]:
+              - heading "Unplanned backlogs" [level=3] [ref=e896]:
+                - link "Unplanned backlogs" [ref=e897] [cursor=pointer]:
+                  - /url: /versions/23
+              - text: open
+            - generic [ref=e898]:
+              - paragraph [ref=e899]: Features that the core contributors of Redmine would like to add in a future version
+              - table [ref=e900]:
+                - rowgroup [ref=e901]:
+                  - 'row "% Done: 5%" [ref=e902]':
+                    - 'cell "% Done: 5%" [ref=e903]'
+                    - cell [ref=e904]
+              - paragraph [ref=e905]: 5%
+              - paragraph [ref=e906]:
+                - link "18 issues" [ref=e907] [cursor=pointer]:
+                  - /url: /projects/redmine/issues?fixed_version_id=23&set_filter=1&status_id=%2A
+                - text: (0 closed —
+                - link "18 open" [ref=e908] [cursor=pointer]:
+                  - /url: /projects/redmine/issues?fixed_version_id=23&set_filter=1&status_id=o
+                - text: )
+            - table "Related issues" [ref=e910]:
+              - caption [ref=e911]: Related issues
+              - rowgroup [ref=e912]:
+                - 'row "Assignee: Toshi MARUYAMA Defect #5357: Git: SCM revisions ordered by date/time (should be reverse commit order) Actions" [ref=e913]':
+                  - 'cell "Assignee: Toshi MARUYAMA" [ref=e914]':
+                    - 'img "Assignee: Toshi MARUYAMA" [ref=e915]'
+                  - 'cell "Defect #5357: Git: SCM revisions ordered by date/time (should be reverse commit order)" [ref=e916]':
+                    - 'link "Defect #5357" [ref=e917] [cursor=pointer]':
+                      - /url: /issues/5357
+                    - text: ": Git: SCM revisions ordered by date/time (should be reverse commit order)"
+                  - cell "Actions" [ref=e918]:
+                    - link "Actions" [ref=e919] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #6609: % Done for Parent Tasks [2] Actions" [ref=e920]':
+                  - cell [ref=e921]
+                  - 'cell "Defect #6609: % Done for Parent Tasks [2]" [ref=e922]':
+                    - 'link "Defect #6609" [ref=e923] [cursor=pointer]':
+                      - /url: /issues/6609
+                    - text: ": % Done for Parent Tasks [2]"
+                  - cell "Actions" [ref=e924]:
+                    - link "Actions" [ref=e925] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #6662: JavaScript is not minified for production use Actions" [ref=e926]':
+                  - cell [ref=e927]
+                  - 'cell "Defect #6662: JavaScript is not minified for production use" [ref=e928]':
+                    - 'link "Defect #6662" [ref=e929] [cursor=pointer]':
+                      - /url: /issues/6662
+                    - text: ": JavaScript is not minified for production use"
+                  - cell "Actions" [ref=e930]:
+                    - link "Actions" [ref=e931] [cursor=pointer]:
+                      - /url: "#"
+                - 'row "Defect #6725: Acronyms don''t work for Russian language Actions" [ref=e932]':
+                  - cell [ref=e933]
+                  - 'cell "Defect #6725: Acronyms don''t work for Russian language" [ref=e934]':
+                    - 'link "Defect #6725" [ref=e935] [cursor=pointer]':
+                      - /url: /issues/6725
+                    - text: ": Acronyms don't work for Russian language"
+                  - cell "Actions" [ref=e936]:
+                    - link "Actions" [ref=e937] [cursor=pointer]:
+                      - /url: "#"
+    - generic [ref=e938]:
+      - text: Powered by
+      - link "Redmine" [ref=e939] [cursor=pointer]:
+        - /url: https://www.redmine.org/
+      - text: © 2006-2023 Jean-Philippe Lang
+  - log [ref=e940]
+  - log [ref=e941]
+  - log [ref=e942]
+  - log [ref=e943]
+  - log [ref=e944]
+  - log [ref=e945]
+  - log [ref=e946]
+  - log [ref=e947]
+  - log [ref=e948]
+  - log [ref=e949]
+  - log [ref=e950]
+  - log [ref=e951]
+  - log [ref=e952]
+  - log [ref=e953]
+  - log [ref=e954]
+  - log [ref=e955]
+  - log [ref=e956]
+  - log [ref=e957]
+  - log [ref=e958]
+  - log [ref=e959]
+  - log [ref=e960]
+  - log [ref=e961]
+  - log [ref=e962]
+  - log [ref=e963]
+  - log [ref=e964]
+  - log [ref=e965]
+  - log [ref=e966]
+  - log [ref=e967]
+  - log [ref=e968]
+  - log [ref=e969]
+  - log [ref=e970]
+  - log [ref=e971]
+  - log [ref=e972]
+  - log [ref=e973]
+  - log [ref=e974]
+  - log [ref=e975]
+  - log [ref=e976]
+  - log [ref=e977]
+  - log [ref=e978]
+  - log [ref=e979]
+  - log [ref=e980]
+  - log [ref=e981]
+  - log [ref=e982]
+  - log [ref=e983]
+  - log [ref=e984]
+  - log [ref=e985]
+  - log [ref=e986]
+  - log [ref=e987]
+  - log [ref=e988]
+  - log [ref=e989]
+  - log [ref=e990]
+  - log [ref=e991]
+  - log [ref=e992]
+  - log [ref=e993]
+  - log [ref=e994]
+  - log [ref=e995]
+  - log [ref=e996]
+  - log [ref=e997]
+  - log [ref=e998]
+  - log [ref=e999]
+  - log [ref=e1000]
+  - log [ref=e1001]
+  - log [ref=e1002]
+  - log [ref=e1003]
+  - log [ref=e1004]
+  - log [ref=e1005]
+  - log [ref=e1006]
+  - log [ref=e1007]
+  - log [ref=e1008]
+  - log [ref=e1009]
+  - log [ref=e1010]
+  - log [ref=e1011]
+  - log [ref=e1012]
+  - log [ref=e1013]
+  - log [ref=e1014]
+  - log [ref=e1015]
+  - log [ref=e1016]
+  - log [ref=e1017]
+  - log [ref=e1018]
+  - log [ref=e1019]
+  - log [ref=e1020]
+  - log [ref=e1021]
+  - log [ref=e1022]
+  - log [ref=e1023]
+  - log [ref=e1024]
+  - log [ref=e1025]
+  - log [ref=e1026]
+  - log [ref=e1027]
+  - log [ref=e1028]
+  - log [ref=e1029]
+  - log [ref=e1030]
+  - log [ref=e1031]
+  - log [ref=e1032]
+  - log [ref=e1033]
+  - log [ref=e1034]
+  - log [ref=e1035]
+  - log [ref=e1036]
+  - log [ref=e1037]
+  - log [ref=e1038]
+  - log [ref=e1039]
+  - log [ref=e1040]
+  - log [ref=e1041]
+  - log [ref=e1042]
+  - log [ref=e1043]
+  - log [ref=e1044]
+  - log [ref=e1045]
+  - log [ref=e1046]
+  - log [ref=e1047]
+  - log [ref=e1048]
+  - log [ref=e1049]
+  - log [ref=e1050]
+  - log [ref=e1051]
+  - log [ref=e1052]
+  - log [ref=e1053]
+  - log [ref=e1054]
+  - log [ref=e1055]
+  - log [ref=e1056]
+  - log [ref=e1057]
+  - log [ref=e1058]
+  - log [ref=e1059]
+  - log [ref=e1060]
+  - log [ref=e1061]
+  - log [ref=e1062]
+  - log [ref=e1063]
+  - log [ref=e1064]
+  - log [ref=e1065]
+  - log [ref=e1066]
+  - log [ref=e1067]
+  - log [ref=e1068]
+  - log [ref=e1069]
+  - log [ref=e1070]
+  - log [ref=e1071]
+  - log [ref=e1072]
+  - log [ref=e1073]
+  - log [ref=e1074]
+  - log [ref=e1075]
+  - log [ref=e1076]
+  - log [ref=e1077]
+  - log [ref=e1078]
+  - log [ref=e1079]
+  - log [ref=e1080]
+  - log [ref=e1081]
+  - log [ref=e1082]
+  - log [ref=e1083]
+  - log [ref=e1084]
+  - log [ref=e1085]
+  - log [ref=e1086]
+  - log [ref=e1087]
+  - log [ref=e1088]
+  - log [ref=e1089]
+  - log [ref=e1090]
+  - log [ref=e1091]
+  - log [ref=e1092]
+  - log [ref=e1093]
+  - log [ref=e1094]
+  - log [ref=e1095]
+  - log [ref=e1096]
+  - log [ref=e1097]
+  - log [ref=e1098]
+  - log [ref=e1099]
+  - log [ref=e1100]
+  - log [ref=e1101]
+  - log [ref=e1102]
+  - log [ref=e1103]
+  - log [ref=e1104]
+  - log [ref=e1105]
+  - log [ref=e1106]
+  - log [ref=e1107]
+  - log [ref=e1108]
+  - log [ref=e1109]
+  - log [ref=e1110]
+  - log [ref=e1111]
+  - log [ref=e1112]
+  - log [ref=e1113]
+  - log [ref=e1114]
+  - log [ref=e1115]
+  - log [ref=e1116]
+  - log [ref=e1117]
+  - log [ref=e1118]
+  - log [ref=e1119]
+  - log [ref=e1120]
+  - log [ref=e1121]
+  - log [ref=e1122]
+  - log [ref=e1123]
+  - log [ref=e1124]
+  - log [ref=e1125]
+  - log [ref=e1126]
+  - log [ref=e1127]
+  - log [ref=e1128]
+  - log [ref=e1129]
+  - log [ref=e1130]
+  - log [ref=e1131]
+  - log [ref=e1132]
+  - log [ref=e1133]
+  - log [ref=e1134]
+  - log [ref=e1135]
+  - log [ref=e1136]
+  - log [ref=e1137]
+  - log [ref=e1138]
+  - log [ref=e1139]
+  - log [ref=e1140]
+  - log [ref=e1141]
+  - log [ref=e1142]
+  - log [ref=e1143]
+  - log [ref=e1144]
+  - log [ref=e1145]
+  - log [ref=e1146]
+  - log [ref=e1147]
+  - log [ref=e1148]
+  - log [ref=e1149]
+  - log [ref=e1150]
+  - log [ref=e1151]
+  - log [ref=e1152]
+  - log [ref=e1153]
+  - log [ref=e1154]
+  - log [ref=e1155]
+  - log [ref=e1156]
+  - log [ref=e1157]
+  - log [ref=e1158]
+  - log [ref=e1159]
+  - log [ref=e1160]
+  - log [ref=e1161]
+  - log [ref=e1162]
+  - log [ref=e1163]
+  - log [ref=e1164]
+  - log [ref=e1165]
+  - log [ref=e1166]
+  - log [ref=e1167]
+  - log [ref=e1168]
+  - log [ref=e1169]
+  - log [ref=e1170]
+  - log [ref=e1171]
+  - log [ref=e1172]
+  - log [ref=e1173]
+  - log [ref=e1174]
+  - log [ref=e1175]
+  - log [ref=e1176]
+  - log [ref=e1177]
+  - log [ref=e1178]
+  - log [ref=e1179]
+  - log [ref=e1180]
+  - log [ref=e1181]
+  - log [ref=e1182]
+  - log [ref=e1183]
+  - log [ref=e1184]
+  - log [ref=e1185]
+  - log [ref=e1186]
+  - log [ref=e1187]
+  - log [ref=e1188]
+  - log [ref=e1189]
+  - log [ref=e1190]
+  - log [ref=e1191]
+  - log [ref=e1192]
+  - log [ref=e1193]
+  - log [ref=e1194]
+  - log [ref=e1195]
+  - log [ref=e1196]
+  - log [ref=e1197]
+  - log [ref=e1198]
+  - log [ref=e1199]
+  - log [ref=e1200]
+  - log [ref=e1201]
+  - log [ref=e1202]
+  - log [ref=e1203]
+  - log [ref=e1204]
+  - log [ref=e1205]
+  - log [ref=e1206]
+  - log [ref=e1207]
+  - log [ref=e1208]
+  - log [ref=e1209]
+  - log [ref=e1210]
+  - log [ref=e1211]
+  - log [ref=e1212]
+  - log [ref=e1213]
+  - log [ref=e1214]
+  - log [ref=e1215]
+  - log [ref=e1216]
+  - log [ref=e1217]
+  - log [ref=e1218]
+  - log [ref=e1219]
+  - log [ref=e1220]
+  - log [ref=e1221]
+  - log [ref=e1222]
+  - log [ref=e1223]
+  - log [ref=e1224]
+  - log [ref=e1225]
+  - log [ref=e1226]
+  - log [ref=e1227]
+  - log [ref=e1228]
+  - log [ref=e1229]
+  - log [ref=e1230]
+  - log [ref=e1231]
+  - log [ref=e1232]
+  - log [ref=e1233]
+  - log [ref=e1234]
+  - log [ref=e1235]
+  - log [ref=e1236]
+  - log [ref=e1237]
+  - log [ref=e1238]
+  - log [ref=e1239]
+  - log [ref=e1240]
+  - log [ref=e1241]
+  - log [ref=e1242]
+  - log [ref=e1243]
+  - log [ref=e1244]
+  - log [ref=e1245]
+  - log [ref=e1246]
+  - log [ref=e1247]
+  - log [ref=e1248]
+  - log [ref=e1249]
+  - log [ref=e1250]
+  - log [ref=e1251]
+  - log [ref=e1252]
+  - log [ref=e1253]
+  - log [ref=e1254]
+  - log [ref=e1255]
+  - log [ref=e1256]
+  - log [ref=e1257]
+  - log [ref=e1258]
+  - log [ref=e1259]
+  - log [ref=e1260]
+  - log [ref=e1261]
+  - log [ref=e1262]
+  - log [ref=e1263]
+  - log [ref=e1264]
+  - log [ref=e1265]
+  - log [ref=e1266]
+  - log [ref=e1267]
+  - log [ref=e1268]
+  - log [ref=e1269]
+  - log [ref=e1270]
+  - log [ref=e1271]
+  - log [ref=e1272]
+  - log [ref=e1273]
+  - log [ref=e1274]
+  - log [ref=e1275]
+  - log [ref=e1276]
+  - log [ref=e1277]
+  - log [ref=e1278]
+  - log [ref=e1279]
+  - log [ref=e1280]
+  - log [ref=e1281]
+  - log [ref=e1282]
+  - log [ref=e1283]
+  - log [ref=e1284]
+  - log [ref=e1285]
+  - log [ref=e1286]
+  - log [ref=e1287]
+  - log [ref=e1288]
+  - log [ref=e1289]
+  - log [ref=e1290]
+  - log [ref=e1291]
+  - log [ref=e1292]
+  - log [ref=e1293]
+  - log [ref=e1294]
+  - log [ref=e1295]
+  - log [ref=e1296]
+  - log [ref=e1297]
+  - log [ref=e1298]
+  - log [ref=e1299]
+  - insertion [ref=e1301]
+```
+
+# Test source
+
+```ts
+  1  | export class BasePage {
+  2  |   constructor(page) {
+  3  |     this.page = page
+  4  |   }
+  5  | 
+  6  |   async navigate(path = '') {
+  7  |     await this.page.goto(path)
+  8  |     await this.page.waitForLoadState('networkidle')
+  9  |   }
+  10 | 
+  11 |   async waitForLoad() {
+  12 |     await this.page.waitForLoadState()
+  13 |   }
+  14 | 
+  15 |   async getTitle() {
+  16 |     return await this.page.title()
+  17 |   }
+  18 | 
+  19 |   async takeScreenshot(name) {
+  20 |     await this.page.screenshot({ path: `screenshots/${name}.png` })
+  21 |   }
+  22 | 
+  23 |   async click(selector) {
+  24 |     await this.page.click(selector)
+  25 |   }
+  26 | 
+  27 |   async clickAndNavigate(selector) {
+  28 |     await this.page.click(selector)
+> 29 |     await this.page.waitForLoadState('networkidle')
+     |                     ^ Error: page.waitForLoadState: Test timeout of 30000ms exceeded.
+  30 |   }
+  31 | 
+  32 |   async fill(selector, text) {
+  33 |     await this.page.fill(selector, text)
+  34 |   }
+  35 | 
+  36 |   async getText(selector) {
+  37 |     return await this.page.textContent(selector)
+  38 |   }
+  39 | }
+  40 | 
+```
