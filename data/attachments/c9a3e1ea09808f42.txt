@@ -1,0 +1,7 @@
+HTTP Status: 200
+Response body is valid JSON
+Found 25 issues
+First issue ID: 44461, Subject: Required TOTP enrollment fails when background requests trigger pairing again
+Total issues: 4805
+Offset: 0
+Limit: 25
