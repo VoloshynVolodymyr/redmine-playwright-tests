@@ -1,0 +1,7 @@
+HTTP Status: 200
+Response body is valid JSON
+Found 25 issues
+First issue ID: 44462, Subject: Project list rows show the context menu cursor although no context menu is available
+Total issues: 4790
+Offset: 0
+Limit: 25
