@@ -1,0 +1,7 @@
+HTTP Status: 200
+Response body is valid JSON
+Found 25 issues
+First issue ID: 44463, Subject: Add "Updated" column to the spent time list
+Total issues: 4785
+Offset: 0
+Limit: 25
