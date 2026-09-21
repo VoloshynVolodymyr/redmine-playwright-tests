@@ -1,0 +1,7 @@
+HTTP Status: 200
+Response body is valid JSON
+Found 25 issues
+First issue ID: 44464, Subject: Show a warning when a text filter value contains more than 5 search terms
+Total issues: 4782
+Offset: 0
+Limit: 25
