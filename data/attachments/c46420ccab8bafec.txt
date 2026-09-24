@@ -1,0 +1,7 @@
+HTTP Status: 200
+Response body is valid JSON
+Found 25 issues
+First issue ID: 44482, Subject: Відсутнє фото товару
+Total issues: 4783
+Offset: 0
+Limit: 25
