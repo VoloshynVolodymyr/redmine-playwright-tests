@@ -1,0 +1,7 @@
+HTTP Status: 200
+Response body is valid JSON
+Found 25 issues
+First issue ID: 44567, Subject: Modernize Gantt chart HTML structure and add row highlighting
+Total issues: 4768
+Offset: 0
+Limit: 25
