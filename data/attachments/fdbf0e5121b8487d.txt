@@ -1,0 +1,7 @@
+HTTP Status: 200
+Response body is valid JSON
+Found 25 issues
+First issue ID: 44570, Subject: Empty journal-note div is rendered for time entries without comments
+Total issues: 4770
+Offset: 0
+Limit: 25
