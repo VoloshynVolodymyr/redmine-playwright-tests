@@ -1,0 +1,7 @@
+HTTP Status: 200
+Response body is valid JSON
+Found 25 issues
+First issue ID: 44576, Subject: Swedish translation for trunk
+Total issues: 4773
+Offset: 0
+Limit: 25
