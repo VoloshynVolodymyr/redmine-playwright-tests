@@ -1,0 +1,7 @@
+HTTP Status: 200
+Response body is valid JSON
+Found 25 issues
+First issue ID: 44579, Subject: Attachments added in a single update may be listed in the wrong order in the issue history on PostgreSQL
+Total issues: 4771
+Offset: 0
+Limit: 25
