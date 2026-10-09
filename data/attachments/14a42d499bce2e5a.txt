@@ -1,0 +1,7 @@
+HTTP Status: 200
+Response body is valid JSON
+Found 25 issues
+First issue ID: 44586, Subject: Quoted attribute values are broken in HTML tags added to RedCloth3::ALLOWED_TAGS
+Total issues: 4774
+Offset: 0
+Limit: 25
