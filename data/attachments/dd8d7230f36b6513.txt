@@ -1,0 +1,7 @@
+HTTP Status: 200
+Response body is valid JSON
+Found 25 issues
+First issue ID: 44599, Subject: Document in doc/RUNNING_TESTS how to speed up Mercurial tests by using chg
+Total issues: 4774
+Offset: 0
+Limit: 25
