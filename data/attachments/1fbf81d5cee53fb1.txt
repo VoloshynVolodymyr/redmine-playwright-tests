@@ -1,0 +1,7 @@
+HTTP Status: 200
+Response body is valid JSON
+Found 25 issues
+First issue ID: 44603, Subject: Field wrapper is wrongly detected as a single quote when importing a CSV file that contains apostrophes
+Total issues: 4774
+Offset: 0
+Limit: 25
