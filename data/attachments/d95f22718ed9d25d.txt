@@ -1,0 +1,7 @@
+HTTP Status: 200
+Response body is valid JSON
+Found 25 issues
+First issue ID: 44695, Subject: watchers list in ticket keeps in old state when adding new watcher
+Total issues: 4769
+Offset: 0
+Limit: 25
