@@ -1,0 +1,7 @@
+HTTP Status: 200
+Response body is valid JSON
+Found 25 issues
+First issue ID: 44698, Subject: Remove unused tablesort 5.2.1 JavaScript files
+Total issues: 4770
+Offset: 0
+Limit: 25
