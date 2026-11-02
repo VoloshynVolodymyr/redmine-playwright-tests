@@ -1,0 +1,7 @@
+HTTP Status: 200
+Response body is valid JSON
+Found 25 issues
+First issue ID: 44703, Subject: Tests using a Regexp with :match in assert_select fail with Nokogiri 1.19.5 and later
+Total issues: 4770
+Offset: 0
+Limit: 25
