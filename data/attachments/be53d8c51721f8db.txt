@@ -1,0 +1,7 @@
+HTTP Status: 200
+Response body is valid JSON
+Found 25 issues
+First issue ID: 44710, Subject: Searchable Plugins & Themes directory for redmine.org — would the team be open to it?
+Total issues: 4772
+Offset: 0
+Limit: 25
