@@ -1,0 +1,7 @@
+HTTP Status: 200
+Response body is valid JSON
+Found 25 issues
+First issue ID: 44731, Subject: Issue's history default tab is nil for fixture users
+Total issues: 4776
+Offset: 0
+Limit: 25
