@@ -1,0 +1,7 @@
+HTTP Status: 200
+Response body is valid JSON
+Found 25 issues
+First issue ID: 44736, Subject: Use Enumerable#sum instead of inject and explicit loops to calculate totals
+Total issues: 4778
+Offset: 0
+Limit: 25
